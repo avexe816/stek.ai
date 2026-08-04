@@ -41,6 +41,7 @@ export default {
         BREVO: !!env.BREVO_API_KEY,
       };
       const dry = url.searchParams.get("send") !== "1";
+      if (dry) return json({ ok: true, cfg, note: "設定のみ確認しました。実際に送信するには &send=1 を付けてください。" });
       try {
         const via = await send(envx, {
           kind: "動作確認",
@@ -48,7 +49,7 @@ export default {
           email: env.CONTACT_TO || "info@stek.ai",
           company: "株式会社ステック",
           phone: "",
-          message: dry ? "SMTP 設定の動作確認です（自動送信）。" : "手動送信テストです。",
+          message: "SMTP 設定の動作確認です（管理者による手動テスト）。",
         });
         return json({ ok: true, via, cfg });
       } catch (err) {
