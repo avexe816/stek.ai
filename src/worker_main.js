@@ -14,11 +14,26 @@ export default {
     if (url.pathname === "/api/contact-diag") {
       const secret = url.searchParams.get("secret");
       if (!env.ADMIN_SECRET || secret !== env.ADMIN_SECRET) return json({ ok: false, error: "forbidden" }, 403);
+      const envx = Object.assign({}, env);
+      const ovHost = url.searchParams.get("host");
+      const ovPort = url.searchParams.get("port");
+      const ovUser = url.searchParams.get("user");
+      if (ovHost) envx.SMTP_HOST = ovHost;
+      if (ovPort) envx.SMTP_PORT = ovPort;
+      if (ovUser) envx.SMTP_USER = ovUser;
+      let fp = null;
+      if (env.SMTP_PASS) {
+        const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(String(env.SMTP_PASS)));
+        fp = Array.from(new Uint8Array(buf).slice(0, 4))
+          .map((b) => b.toString(16).padStart(2, "0"))
+          .join("");
+      }
       const cfg = {
-        SMTP_HOST: env.SMTP_HOST || null,
-        SMTP_PORT: env.SMTP_PORT || null,
-        SMTP_USER: env.SMTP_USER || null,
+        SMTP_HOST: envx.SMTP_HOST || null,
+        SMTP_PORT: envx.SMTP_PORT || null,
+        SMTP_USER: envx.SMTP_USER || null,
         SMTP_PASS_len: env.SMTP_PASS ? String(env.SMTP_PASS).length : 0,
+        SMTP_PASS_fp: fp,
         SMTP_PASS_trimmed_differs: env.SMTP_PASS ? String(env.SMTP_PASS) !== String(env.SMTP_PASS).trim() : null,
         CONTACT_TO: env.CONTACT_TO || null,
         CONTACT_FROM: env.CONTACT_FROM || null,
@@ -27,7 +42,7 @@ export default {
       };
       const dry = url.searchParams.get("send") !== "1";
       try {
-        const via = await send(env, {
+        const via = await send(envx, {
           kind: "動作確認",
           name: "配信テスト",
           email: env.CONTACT_TO || "info@stek.ai",
