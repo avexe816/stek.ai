@@ -204,6 +204,14 @@
     "ko": "문의하기｜주식회사 스텍(stek)",
     "locked": true
   },
+  "91899fa1ffe2800c": {
+    "ja": "お急ぎの場合はお電話ください。担当者が不在の場合は、フォームからお問い合わせいただけますと確実です。",
+    "en": "For urgent matters, please call us. If the person in charge is unavailable, the contact form is the surest way to reach us.",
+    "zh": "急事请直接电话联系。若负责人不在，建议通过表单提交咨询，回复更为可靠。",
+    "zh-Hant": "急事請直接電話聯絡。若負責人不在，建議透過表單提交諮詢，回覆更為可靠。",
+    "ko": "급한 용무는 전화로 연락해 주세요. 담당자가 부재중인 경우에는 문의 양식을 이용하시면 확실합니다.",
+    "locked": true
+  },
   "28eeac5d2b7c55b1": {
     "ja": "お知らせ",
     "en": "News",
@@ -212,12 +220,28 @@
     "zh-Hant": "新聞公告",
     "locked": true
   },
+  "7bfe618be0128758": {
+    "ja": "お知らせをすべて見る",
+    "en": "View all news",
+    "zh": "查看全部公告",
+    "zh-Hant": "查看全部公告",
+    "ko": "공지사항 전체 보기",
+    "locked": true
+  },
   "a14710d4d2118336": {
     "ja": "お知らせ｜株式会社ステック",
     "en": "News | STEK Inc.",
     "zh": "通知公告｜STEK",
     "ko": "공지사항｜STEK 주식회사",
     "zh-Hant": "通知公告｜STEK"
+  },
+  "d57e2d08973043d9": {
+    "ja": "お電話でのご連絡",
+    "en": "By Phone",
+    "zh": "电话联系",
+    "zh-Hant": "電話聯絡",
+    "ko": "전화 문의",
+    "locked": true
   },
   "98f7c1de7d81dee8": {
     "ja": "お電話・メールでのご連絡",
@@ -482,6 +506,14 @@
     "zh": "系统与现场紧密衔接",
     "zh-Hant": "系統與現場緊密銜接",
     "ko": "시스템과 현장이 하나로 연결",
+    "locked": true
+  },
+  "6d3ea7b786529e24": {
+    "ja": "システム導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼を承ります。内容を確認のうえ、担当者より改めてご連絡いたします。",
+    "en": "We welcome inquiries about system implementation, operation outsourcing and franchise partnerships, as well as requests for quotations. We will review your message and a representative will contact you.",
+    "zh": "我们承接系统导入咨询、运营受托与加盟咨询以及报价申请。确认内容后，将由负责人与您联系。",
+    "zh-Hant": "我們承接系統導入諮詢、營運受託與加盟諮詢以及報價申請。確認內容後，將由負責人與您聯絡。",
+    "ko": "시스템 도입 상담, 운영 수탁·가맹 문의, 견적 의뢰를 받고 있습니다. 내용을 확인한 후 담당자가 다시 연락드립니다.",
     "locked": true
   },
   "78e06003824a48c4": {
@@ -926,12 +958,12 @@
     "ko": "가격 판단을, 감이 아닌 숫자로.",
     "zh-Hant": "讓價格決策從憑經驗走向靠資料。"
   },
-  "17322b84aed4b6ee": {
-    "ja": "個人情報の取扱いに関するお問い合わせは、当社ウェブサイトのお問い合わせフォーム又は info@stek.ai までご連絡ください。",
-    "en": "For inquiries regarding the handling of personal information, please contact us through the contact form on the Company's website or at info@stek.ai.",
-    "zh": "有关个人信息处理的咨询，请通过本公司网站的咨询表单或 info@stek.ai 与我们联系。",
-    "zh-Hant": "有關個人資料處理的諮詢，請透過本公司網站的諮詢表單或 info@stek.ai 與我們聯絡。",
-    "ko": "개인정보 취급에 관한 문의는 당사 웹사이트의 문의 양식 또는 info@stek.ai로 연락해 주세요.",
+  "289d8e1878779465": {
+    "ja": "個人情報の取扱いに関するお問い合わせは、当社ウェブサイトのお問い合わせフォームよりご連絡ください。",
+    "en": "For inquiries regarding the handling of personal information, please contact us through the contact form on the Company's website.",
+    "zh": "有关个人信息处理的咨询，请通过本公司网站的咨询表单与我们联系。",
+    "zh-Hant": "有關個人資料處理的諮詢，請透過本公司網站的諮詢表單與我們聯絡。",
+    "ko": "개인정보 취급에 관한 문의는 당사 웹사이트의 문의 양식을 통해 연락해 주세요.",
     "locked": true
   },
   "6956169cf75b293e": {
@@ -1482,6 +1514,14 @@
     "ko": "건물, 시설 및 객실의 청소, 위생 관리, 환경 정비 그리고 베드메이킹 업무의 도급 및 수탁 그리고 해당 업무에 관한 관리 및 품질 관리 업무",
     "locked": true
   },
+  "0b3c1b23fa25ce0c": {
+    "ja": "当サイトのお問い合わせフォームより承ります",
+    "en": "Please use the contact form on this website",
+    "zh": "请通过本网站的咨询表单联系我们",
+    "zh-Hant": "請透過本網站的諮詢表單聯絡我們",
+    "ko": "본 사이트의 문의 양식을 통해 접수합니다",
+    "locked": true
+  },
   "8ca7ecf17cf51ae6": {
     "ja": "当社が物件を借り受け、自らの責任で運営する形態です。オーナー様は稼働の変動にかかわらず賃料を受け取ることができ、運営上の判断と人の確保からは離れられます。固定賃料のみ、または固定賃料と売上連動賃料を組み合わせたハイブリッド型のいずれも設計可能です。",
     "en": "This is a form in which we lease the property and operate it under our own responsibility. Owners receive rent regardless of fluctuations in occupancy, and are freed from operational decision-making and staffing. We can design either a fixed-rent-only structure or a hybrid structure combining fixed rent with revenue-linked rent.",
@@ -1765,6 +1805,14 @@
     "ko": "일본어·영어·중국어 간체·중국어 번체·한국어 5개 언어를 지원하는 공식 웹사이트를 공개했습니다.\n사업 내용과 문의 창구를 안내하고 있습니다.",
     "zh-Hant": "我們的官方網站已正式上線，支援日語、英語、簡體中文、繁體中文、韓語共5種語言。\n網站中介紹了業務內容及諮詢聯絡方式。"
   },
+  "efe68b83b4da0c09": {
+    "ja": "暫定",
+    "en": "To be announced",
+    "zh": "暂定",
+    "zh-Hant": "暫定",
+    "ko": "미정",
+    "locked": true
+  },
   "1e7c2c6e58e87070": {
     "ja": "曜日、イベント、競合、リードタイムを踏まえた料金設計。日次で価格と在庫配分を見直し、RevPARの改善を狙います。",
     "en": "Pricing design based on day of week, events, competitors, and lead time. We review pricing and inventory allocation daily to improve RevPAR.",
@@ -1779,6 +1827,14 @@
     "zh": "每日确认星期、季节、周边活动、竞争对手房价、提前预订天数（Lead Time）及预订曲线（Booking Curve），设计各房型、各日期的销售价格与库存分配。定价依据每次都会记录，设施方可随时查看和修改。我们重视将过度依赖个人经验的工作，转变为可顺利交接的标准业务。",
     "ko": "요일, 계절, 주변 이벤트, 경쟁사 요금, 리드타임, 부킹 커브를 일 단위로 확인하여 객실 타입별·날짜별 판매 가격과 재고 배분을 설계합니다. 가격 결정의 근거는 매번 기록하며, 시설 측에서 언제든 확인·수정할 수 있는 상태로 운영합니다. 개인에게 의존하던 업무를 인수인계가 가능한 업무로 전환하는 것을 중시합니다.",
     "zh-Hant": "每日確認星期、季節、周邊活動、競爭對手房價、提前預訂天數（Lead Time）及預訂曲線（Booking Curve），設計各房型、各日期的銷售價格與庫存分配。定價依據每次都會記錄，設施方可隨時檢視和修改。我們重視將過度依賴個人經驗的工作，轉變為可順利交接的標準業務。"
+  },
+  "804588a439006665": {
+    "ja": "最新のお知らせ",
+    "en": "Latest News",
+    "zh": "最新公告",
+    "zh-Hant": "最新公告",
+    "ko": "최신 공지사항",
+    "locked": true
   },
   "0ad3fccdacd4b391": {
     "ja": "月次レポートとダッシュボード",
@@ -2335,12 +2391,12 @@
     "ko": "전송되었습니다",
     "locked": true
   },
-  "19b11a648c2a6b78": {
-    "ja": "送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくか、info@stek.ai まで直接ご連絡ください。",
-    "en": "The message could not be sent. Please try again later, or contact us directly at info@stek.ai.",
-    "zh": "提交失败。请稍后重试，或直接联系 info@stek.ai。",
-    "zh-Hant": "提交失敗。請稍後重試，或直接聯絡 info@stek.ai。",
-    "ko": "전송에 실패했습니다. 번거로우시더라도 시간을 두고 다시 시도하시거나 info@stek.ai로 직접 연락해 주세요.",
+  "76107e381c4a4201": {
+    "ja": "送信に失敗しました。お手数ですが、時間をおいて再度お試しください。",
+    "en": "The message could not be sent. Please wait a moment and try again.",
+    "zh": "提交失败。请稍后重试。",
+    "zh-Hant": "提交失敗。請稍後重試。",
+    "ko": "전송에 실패했습니다. 잠시 후 다시 시도해 주세요.",
     "locked": true
   },
   "d04737dc0c007669": {

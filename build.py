@@ -258,6 +258,28 @@ def page_index(t, lang, s):
     flow = "".join(f"""<li class="rv"><span class="num">{e(f['no'])}</span>
       <h3>{e(f['title'])}</h3><p>{e(f['body'])}</p></li>""" for f in h["flow"])
     faq = "".join(f"""<details><summary>{e(q['q'])}</summary><div class="a"><p>{e(q['a'])}</p></div></details>""" for q in h["faq"])
+    latest = (t.get("posts") or [])[:3]
+    news_html = ""
+    if latest:
+        rows = "".join(
+            f"""<li class="rv"><a href="{url(lang, 'news')}#post-{i + 1}">
+        <span class="post-meta"><time datetime="{e(p_['date'])}">{e(p_['date'])}</time>"""
+            + (f'<span class="post-cat">{e(p_["category"])}</span>' if p_.get("category") else "")
+            + f"""</span>
+        <h3>{e(p_['title'])}</h3></a></li>"""
+            for i, p_ in enumerate(latest))
+        news_html = f"""
+<section class="sec" id="news"><div class="wrap">
+  <div class="sec-head sec-head-row">
+    <div>
+      <p class="eyebrow">{e(h['news_eyebrow'])}</p>
+      <h2 class="h-sec" style="margin:0">{e(h['news_title'])}</h2>
+    </div>
+    <a class="txt-link" href="{url(lang, 'news')}">{e(h['news_more'])}{ARROW}</a>
+  </div>
+  <ul class="news-list">{rows}</ul>
+</div></section>
+"""
     return f"""<main id="main">
 <section class="hero"><div class="wrap hero-in">
   <div>
@@ -301,7 +323,8 @@ def page_index(t, lang, s):
   <ol class="flow">{flow}</ol>
 </div></section>
 
-<section class="sec" id="faq"><div class="wrap">
+{news_html}
+<section class="sec sec-alt" id="faq"><div class="wrap">
   <div class="sec-head">
     <p class="eyebrow">{e(h['faq_eyebrow'])}</p>
     <h2 class="h-sec">{e(h['faq_title'])}</h2>
@@ -455,10 +478,11 @@ def page_contact(t, lang, s):
   <aside class="aside">
     <h2>{e(c['info_title'])}</h2>
     <dl>
-      <div><dt>{e(c['info_mail_label'])}</dt><dd><a href="mailto:{e(s['brand']['email'])}">{e(s['brand']['email'])}</a></dd></div>
+      <div><dt>{e(c['info_tel_label'])}</dt><dd class="tel">{e(t['brand']['tel'])}</dd></div>
       <div><dt>{e(c['info_hours_label'])}</dt><dd>{e(t['brand']['hours'])}</dd></div>
     </dl>
-    <p class="small" style="margin-top:1.2rem">{e(c['info_note'])}</p>
+    <p class="small" style="margin-top:1.1rem">{e(c['info_tel_note'])}</p>
+    <p class="small" style="margin-top:.8rem">{e(c['info_note'])}</p>
   </aside>
 </div></section>
 </main>"""
@@ -468,11 +492,11 @@ def page_news(t, lang, s):
     n = t["news"]
     posts = t.get("posts") or []
     if posts:
-        rows = "".join(f"""<article class="post">
+        rows = "".join(f"""<article class="post" id="post-{i}">
     <div class="post-meta"><time datetime="{e(pt.get('date',''))}">{e(pt.get('date',''))}</time>
-      <span class="post-cat">{e(pt.get('category',''))}</span></div>
+      {f'<span class="post-cat">{e(pt["category"])}</span>' if pt.get("category") else ""}</div>
     <div class="post-body"><h2>{e(pt.get('title',''))}</h2>{para(pt.get('body',''))}</div>
-  </article>""" for pt in posts)
+  </article>""" for i, pt in enumerate(posts, 1))
         body = f'<div class="posts">{rows}</div>'
     else:
         body = f'<p class="empty">{e(n["empty"])}</p>'
