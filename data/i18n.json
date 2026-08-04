@@ -223,7 +223,7 @@
     "ja": "お電話でのご連絡",
     "locked": false,
     "zh": "通过电话联系",
-    "zh-Hant": "",
+    "zh-Hant": "透過電話聯絡",
     "en": "Contact by phone",
     "ko": "전화로 연락하기",
     "th": ""
@@ -2356,7 +2356,7 @@
     "ja": "送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくかい。",
     "locked": false,
     "zh": "发送失败。请您稍后再尝试一次。",
-    "zh-Hant": "",
+    "zh-Hant": "傳送失敗。請您稍後再嘗試一次。",
     "en": "Failed to send. Please try again after some time.",
     "ko": "전송에 실패했습니다. 시간을 두고 다시 시도해 주시기 바랍니다.",
     "th": ""
