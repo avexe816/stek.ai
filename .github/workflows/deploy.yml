@@ -1,10 +1,13 @@
 name: Build & Deploy
 
-# 通常の公開は Cloudflare Pages の Git 連携が行います（push すると Cloudflare 側でビルド）。
-# このワークフローは予備です。Actions タブから "Run workflow" で手動実行できます。
-# 使うには GitHub Secrets に CLOUDFLARE_API_TOKEN と CLOUDFLARE_ACCOUNT_ID が必要です。
+# main に push すると、サイトを作り直して Cloudflare Pages へ公開します。
+# 管理画面（/admin）で保存したときも、このワークフローが動きます。
+# 手動で動かしたいときは Actions タブから "Run workflow" を押してください。
+# 必要な GitHub Secrets: CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 concurrency:
