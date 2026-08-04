@@ -1,12 +1,10 @@
 name: Build & Deploy
 
-# data/ を変更して push すると、自動でサイトを作り直して公開します。
-# 管理画面（/admin）で保存したときも、このワークフローが動きます。
-# 手動で動かしたいときは GitHub の Actions タブから "Run workflow" を押してください。
+# 通常の公開は Cloudflare Pages の Git 連携が行います（push すると Cloudflare 側でビルド）。
+# このワークフローは予備です。Actions タブから "Run workflow" で手動実行できます。
+# 使うには GitHub Secrets に CLOUDFLARE_API_TOKEN と CLOUDFLARE_ACCOUNT_ID が必要です。
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 concurrency:

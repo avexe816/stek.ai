@@ -4,3 +4,4 @@ __pycache__/
 .DS_Store
 data/_strings.json
 data/tr_*.json
+ADMIN_SPEC.md
