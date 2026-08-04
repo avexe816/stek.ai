@@ -1,0 +1,69 @@
+name: Build & Deploy
+
+# data/ を変更して push すると、自動でサイトを作り直して公開します。
+# 管理画面（/admin）で保存したときも、このワークフローが動きます。
+# 手動で動かしたいときは GitHub の Actions タブから "Run workflow" を押してください。
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: ソースを取得
+        uses: actions/checkout@v4
+
+      - name: Python をセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      # 管理画面の自動翻訳は簡体字までしか作りません。
+      # 繁体字は OpenCC ＋ 用語表のほうが精度が高いので、ここで空欄だけ埋めます。
+      - name: 繁体字の空欄を埋める
+        continue-on-error: true
+        run: |
+          pip install --quiet opencc-python-reimplemented
+          python3 tools/zh_hant.py --fill-missing
+
+      - name: サイトを生成（dist/ に全ページ・assets・admin・_worker.js を出力）
+        run: |
+          python3 build.py
+          echo "--- dist ---"
+          ls -1 dist
+          echo "HTML pages: $(find dist -name '*.html' | wc -l)"
+          test -f dist/_worker.js || (echo "_worker.js がありません" && exit 1)
+
+      - name: Cloudflare Pages へ公開
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=stek-ai --branch=main --commit-dirty=true
+
+      # 埋めた繁体字をリポジトリに書き戻す。
+      # GITHUB_TOKEN での push はワークフローを再起動しないので、ループしません。
+      - name: 翻訳ライブラリの更新を書き戻す
+        if: success()
+        run: |
+          if git diff --quiet -- data/i18n.json; then
+            echo "翻訳ライブラリに変更はありません"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/i18n.json
+          git commit -m "繁体字の自動変換を反映 [skip ci]"
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main

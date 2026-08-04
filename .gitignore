@@ -1,0 +1,6 @@
+dist/
+__pycache__/
+*.pyc
+.DS_Store
+data/_strings.json
+data/tr_*.json

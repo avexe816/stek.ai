@@ -1,0 +1,1738 @@
+{
+  "f2c2cc2be9dc3f5a": {
+    "ja": "1施設・1部門からのご相談も歓迎します。",
+    "en": "We welcome inquiries for a single property or a single department.",
+    "zh": "欢迎从单一设施、单一部门开始咨询。",
+    "zh-Hant": "歡迎從單一設施、單一部門開始諮詢。",
+    "ko": "시설 1곳, 부문 1개부터의 상담도 환영합니다.",
+    "locked": true
+  },
+  "f82bd651c32d0e18": {
+    "ja": "4つの領域を、ひとつの窓口で。",
+    "en": "Four areas, one point of contact.",
+    "zh": "四大领域，一个联系入口。",
+    "zh-Hant": "四大領域，一個聯絡入口。",
+    "ko": "4가지 영역을, 하나의 창구에서.",
+    "locked": true
+  },
+  "2b9c7852475b1bf5": {
+    "ja": "AIによる需要予測と料金の自動調整、PMS・予約基盤の統合、そして客室清掃・リネン・人の配置まで。机上のコンサルティングではなく、自ら宿泊施設を運営する事業者として、現場で動く仕組みをつくります。",
+    "en": "AI-driven demand forecasting and automated pricing, integrated PMS and reservation systems, and even room cleaning, linen, and staffing. Not desk-bound consulting — as an operator that runs lodging facilities ourselves, we build systems that work on the ground.",
+    "zh": "基于AI的需求预测与自动调价、PMS与预订系统的整合，直至客房清洁、布草与人员配置。我们并非提供纸上的咨询，而是作为自主运营住宿设施的经营者，构建能在现场真正运转的机制。",
+    "zh-Hant": "基於AI的需求預測與自動調價、PMS與預訂系統的整合，直至客房清潔、布草與人員配置。我們並非提供紙上的諮詢，而是作為自主營運住宿設施的經營者，構建能在現場真正運轉的機制。",
+    "ko": "AI를 활용한 수요 예측과 요금 자동 조정, PMS·예약 기반 통합, 그리고 객실 청소·리넨·인력 배치까지. 탁상 컨설팅이 아니라 직접 숙박시설을 운영하는 사업자로서 현장에서 실제로 작동하는 체계를 만듭니다.",
+    "locked": true
+  },
+  "9289863aa682d52d": {
+    "ja": "AI活用と集客支援",
+    "en": "AI Utilization and Customer Acquisition Support",
+    "zh": "AI应用与获客支持",
+    "zh-Hant": "AI應用與獲客支援",
+    "ko": "AI 활용 및 집객 지원",
+    "locked": true
+  },
+  "0c87e218d4d77a5b": {
+    "ja": "OTAの販売状況、料金設定、清掃コストを確認し、改善余地と概算効果、費用をまとめてご提示します。",
+    "en": "We review your OTA sales performance, pricing, and cleaning costs, then present a proposal covering the potential for improvement, estimated impact, and cost.",
+    "zh": "核查OTA销售情况、定价与清洁成本，汇总改善空间、预估效果及费用后提出方案。",
+    "zh-Hant": "核查OTA銷售情況、定價與清潔成本，彙總改善空間、預估效果及費用後提出方案。",
+    "ko": "OTA 판매 현황, 요금 설정, 청소 비용을 확인하고 개선 여지와 예상 효과, 비용을 정리하여 제시합니다.",
+    "locked": true
+  },
+  "0fb791176d374068": {
+    "ja": "PMS・予約管理の導入と運用",
+    "en": "PMS & Reservation Management Implementation and Operation",
+    "zh": "PMS与预订管理的导入及运维",
+    "zh-Hant": "PMS與預訂管理的匯入及運維",
+    "ko": "PMS·예약 관리 도입 및 운용",
+    "locked": true
+  },
+  "b3908397d2649121": {
+    "ja": "PMS・予約管理・レベニューマネジメントの自動化から、客室清掃・リネン・備品供給まで。ホテルを自ら運営する事業者として、宿泊施設の収益と現場を一体で支えます。",
+    "en": "From automating PMS, reservations, and revenue management to room cleaning, linen, and supplies. As an operator that runs hotels ourselves, we support both the revenue and the on-site operations of lodging facilities as one.",
+    "zh": "从PMS、预订管理、收益管理自动化，到客房清洁、布草、备品供应。作为自主运营酒店的经营者，我们将住宿设施的收益与现场运营一体化支撑。",
+    "zh-Hant": "從PMS、預訂管理、收益管理自動化，到客房清潔、布草、備品供應。作為自主營運飯店的經營者，我們將住宿設施的收益與現場營運一體化支撐。",
+    "ko": "PMS·예약 관리·레베뉴 매니지먼트의 자동화부터 객실 청소·리넨·비품 공급까지. 호텔을 직접 운영하는 사업자로서 숙박시설의 수익과 현장을 함께 지원합니다.",
+    "locked": true
+  },
+  "df17228908c77acb": {
+    "ja": "PMS（宿泊施設管理システム）、予約管理、サイトコントローラー、料金管理を一本の流れに整えます。需要予測にもとづく料金の自動調整により、繁忙日の取りこぼしと閑散日の値崩れを同時に抑えます。既存システムを使い続けながらの部分導入にも対応します。",
+    "en": "We bring PMS (property management system), reservation management, site controller, and rate management together into a single flow. Automated, demand-forecast-based pricing reduces both lost sales on peak days and price collapse on slow days at the same time. Partial implementation alongside your existing systems is also supported.",
+    "zh": "我们将PMS（住宿设施管理系统）、预订管理、渠道管理系统与定价管理整合为统一流程。基于需求预测的自动调价，可同时减少旺季订单流失与淡季价格下滑。也支持在保留现有系统的情况下进行部分导入。",
+    "zh-Hant": "我們將PMS（住宿設施管理系統）、預訂管理、渠道管理系統與定價管理整合為統一流程。基於需求預測的自動調價，可同時減少旺季訂單流失與淡季價格下滑。也支援在保留現有系統的情況下進行部分匯入。",
+    "ko": "PMS(숙박시설 관리 시스템), 예약 관리, 사이트 컨트롤러, 요금 관리를 하나의 흐름으로 정리합니다. 수요 예측에 기반한 요금 자동 조정으로 성수기의 기회 손실과 비수기의 가격 붕괴를 동시에 억제합니다. 기존 시스템을 계속 사용하면서 부분 도입하는 것도 가능합니다.",
+    "locked": true
+  },
+  "0ae37cd30ad36be8": {
+    "ja": "お名前",
+    "en": "Name",
+    "zh": "姓名",
+    "zh-Hant": "姓名",
+    "ko": "성함",
+    "locked": true
+  },
+  "44ff6d3faafff4fc": {
+    "ja": "お問い合わせ",
+    "en": "Contact",
+    "zh": "联系我们",
+    "zh-Hant": "聯絡我們",
+    "ko": "문의하기",
+    "locked": true
+  },
+  "1e1c72591c005a3a": {
+    "ja": "お問い合わせありがとうございます。内容を確認のうえ、通常2営業日以内にご返信します。しばらくお待ちください。",
+    "en": "Thank you for your inquiry. After reviewing the details, we will typically respond within 2 business days. Thank you for your patience.",
+    "zh": "感谢您的咨询。我们确认内容后，通常会在2个工作日内回复，请稍候。",
+    "zh-Hant": "感謝您的諮詢。我們確認內容後，通常會在2個工作日內回覆，請稍候。",
+    "ko": "문의해 주셔서 감사합니다. 내용을 확인한 후 통상 영업일 기준 2일 이내에 답변드립니다. 잠시만 기다려 주세요.",
+    "locked": true
+  },
+  "bf160dc5241fc84c": {
+    "ja": "お問い合わせ内容",
+    "en": "Inquiry Details",
+    "zh": "咨询内容",
+    "zh-Hant": "諮詢內容",
+    "ko": "문의 내용",
+    "locked": true
+  },
+  "8b4920ce12d00fd9": {
+    "ja": "お問い合わせ種別",
+    "en": "Type of Inquiry",
+    "zh": "咨询类型",
+    "zh-Hant": "諮詢類型",
+    "ko": "문의 종류",
+    "locked": true
+  },
+  "10b40c407e09aa99": {
+    "ja": "お問い合わせ｜株式会社ステック",
+    "en": "Contact | stek Inc.",
+    "zh": "联系我们｜株式会社STEK",
+    "zh-Hant": "聯絡我們｜株式會社STEK",
+    "ko": "문의하기｜주식회사 스텍(stek)",
+    "locked": true
+  },
+  "98f7c1de7d81dee8": {
+    "ja": "お電話・メールでのご連絡",
+    "en": "Contact by Phone or Email",
+    "zh": "电话及邮件联系方式",
+    "zh-Hant": "電話及郵件聯絡方式",
+    "ko": "전화·이메일 문의",
+    "locked": true
+  },
+  "3c2cc6123872cf5b": {
+    "ja": "この内容で送信する",
+    "en": "Submit",
+    "zh": "确认并提交",
+    "zh-Hant": "確認並提交",
+    "ko": "이 내용으로 전송하기",
+    "locked": true
+  },
+  "ebcb7376a532a5ca": {
+    "ja": "ご希望の連絡方法",
+    "en": "Preferred Contact Method",
+    "zh": "希望的联系方式",
+    "zh-Hant": "希望的聯絡方式",
+    "ko": "희망 연락 방법",
+    "locked": true
+  },
+  "841fb11e0378b86e": {
+    "ja": "ご本人から、個人情報の開示、訂正、追加、削除、利用停止又は第三者提供の停止をご請求いただいた場合、法令に従い、ご本人であることを確認のうえ、遅滞なく対応します。",
+    "en": "Upon request from the individual concerned for disclosure, correction, addition, deletion, suspension of use, or suspension of provision to third parties of their personal information, the Company will respond without delay after confirming the identity of the individual, in accordance with applicable laws and regulations.",
+    "zh": "如本人提出个人信息的披露、更正、追加、删除、停止使用或停止向第三方提供的请求，本公司将依据法令确认本人身份后及时予以处理。",
+    "zh-Hant": "如本人提出個人資料的披露、更正、追加、刪除、停止使用或停止向第三方提供的請求，本公司將依據法令確認本人身分後及時予以處理。",
+    "ko": "본인으로부터 개인정보의 공개, 정정, 추가, 삭제, 이용 정지 또는 제3자 제공 정지를 요청받은 경우, 법령에 따라 본인임을 확인한 후 지체 없이 대응합니다.",
+    "locked": true
+  },
+  "7c2281ce7193ecc7": {
+    "ja": "その他",
+    "en": "Other",
+    "zh": "其他",
+    "zh-Hant": "其他",
+    "ko": "기타",
+    "locked": true
+  },
+  "af34fcd4d7ab0e6f": {
+    "ja": "どこから手をつけるべきか、から相談できます。",
+    "en": "Not sure where to start? Let's talk about that too.",
+    "zh": "即使尚不确定从何处入手，也可以咨询。",
+    "zh-Hant": "即使尚不確定從何處入手，也可以諮詢。",
+    "ko": "어디서부터 시작해야 할지부터 상담 가능합니다.",
+    "locked": true
+  },
+  "76fd5c844e57612e": {
+    "ja": "どちらでも",
+    "en": "Either",
+    "zh": "均可",
+    "zh-Hant": "均可",
+    "ko": "둘 다 가능",
+    "locked": true
+  },
+  "d0c0a153f0c08ca2": {
+    "ja": "はい。客室10室程度の施設や、1棟のみの運営でもご相談いただけます。まずは料金設定の見直しや清掃だけ、といった部分的な導入も可能です。",
+    "en": "Yes. We welcome inquiries from properties with around 10 rooms, or even a single building. Partial engagements, such as just a pricing review or just cleaning, are also possible.",
+    "zh": "可以。客房约10间的设施，或仅运营一栋建筑的业主均可咨询。也可先从定价优化或清洁等单项服务开始导入。",
+    "zh-Hant": "可以。客房約10間的設施，或僅營運一棟建築的業主均可諮詢。也可先從定價最佳化或清潔等單項服務開始匯入。",
+    "ko": "네. 객실 10실 내외의 시설이나 1개 동만 운영하는 경우도 상담 가능합니다. 우선 요금 설정 재검토나 청소만 의뢰하는 등 부분적인 도입도 가능합니다.",
+    "locked": true
+  },
+  "57e80401501e76c2": {
+    "ja": "まずは、いまの数字を見せてください。",
+    "en": "First, show us your current numbers.",
+    "zh": "请先让我们了解您当前的经营数据。",
+    "zh-Hant": "請先讓我們瞭解您當前的經營資料。",
+    "ko": "먼저 지금의 수치를 보여 주세요.",
+    "locked": true
+  },
+  "d1f2d14bff3f85e2": {
+    "ja": "よくあるご質問",
+    "en": "Frequently Asked Questions",
+    "zh": "常见问题",
+    "zh-Hant": "常見問題",
+    "ko": "자주 묻는 질문",
+    "locked": true
+  },
+  "7ac82e077ca1c0b8": {
+    "ja": "アメニティ、消耗品、業務用資材の企画と仕入れ。輸入品を含め、品質と単価のバランスで選定します。",
+    "en": "Planning and sourcing of amenities, consumables, and operational supplies, including imported goods, selected for the right balance of quality and cost.",
+    "zh": "负责用品、消耗品及业务用资材的策划与采购，包括进口商品，在品质与单价之间取得平衡进行选定。",
+    "zh-Hant": "負責用品、消耗品及業務用資材的策劃與採購，包括進口商品，在品質與單價之間取得平衡進行選定。",
+    "ko": "어메니티, 소모품, 업무용 자재의 기획과 매입. 수입품을 포함하여 품질과 객단가의 균형으로 선정합니다.",
+    "locked": true
+  },
+  "fe8fb3d8cc78e1a6": {
+    "ja": "ウェブサイト及びウェブアプリケーションの企画、制作、運営及び保守並びにインターネットを利用した広告、情報提供及び集客支援に関する業務",
+    "en": "Planning, production, operation, and maintenance of websites and web applications, and advertising, information provision, and customer acquisition support using the internet",
+    "zh": "网站及网络应用程序的策划、制作、运营及维护，以及利用互联网开展广告、信息提供及获客支持相关业务",
+    "zh-Hant": "網站及網路應用程式的策劃、製作、營運及維護，以及利用網際網路開展廣告、資訊提供及獲客支援相關業務",
+    "ko": "웹사이트 및 웹 애플리케이션의 기획, 제작, 운영 및 유지보수 그리고 인터넷을 이용한 광고, 정보 제공 및 집객 지원에 관한 업무",
+    "locked": true
+  },
+  "2bb780b376998247": {
+    "ja": "コンピューターシステム及びソフトウェアの企画、開発、販売、保守及び運用に関する業務並びに人工知能を利用した情報処理システムの研究、開発及び提供",
+    "en": "Planning, development, sales, maintenance, and operation of computer systems and software, and research, development, and provision of information processing systems using artificial intelligence",
+    "zh": "计算机系统及软件的策划、开发、销售、维护与运营相关业务，以及利用人工智能的信息处理系统的研究、开发及提供",
+    "zh-Hant": "計算機系統及軟體的策劃、開發、銷售、維護與營運相關業務，以及利用人工智慧的資訊處理系統的研究、開發及提供",
+    "ko": "컴퓨터 시스템 및 소프트웨어의 기획, 개발, 판매, 유지보수 및 운용에 관한 업무 그리고 인공지능을 이용한 정보처리 시스템의 연구, 개발 및 제공",
+    "locked": true
+  },
+  "db5f29a83ff98ae4": {
+    "ja": "サイトマップ",
+    "en": "Sitemap",
+    "zh": "网站地图",
+    "zh-Hant": "網站地圖",
+    "ko": "사이트맵",
+    "locked": true
+  },
+  "2dd5ca6b6bfa8d89": {
+    "ja": "サービス",
+    "en": "Services",
+    "zh": "服务",
+    "zh-Hant": "服務",
+    "ko": "서비스",
+    "locked": true
+  },
+  "cc3d2a9804bca3aa": {
+    "ja": "サービスを見る",
+    "en": "View Services",
+    "zh": "查看服务",
+    "zh-Hant": "檢視服務",
+    "ko": "서비스 보기",
+    "locked": true
+  },
+  "70418c6c6673c57d": {
+    "ja": "サービス導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼はこちらから。通常2営業日以内にご返信します。",
+    "en": "For inquiries about adopting our services, operation contracting and franchise partnerships, or requesting a quote. We typically respond within 2 business days.",
+    "zh": "如需咨询服务导入、运营受托与加盟事宜，或索取报价，请通过此处联系我们。我们通常在2个工作日内回复。",
+    "zh-Hant": "如需諮詢服務匯入、營運受託與加盟事宜，或索取報價，請透過此處聯絡我們。我們通常在2個工作日內回覆。",
+    "ko": "서비스 도입 상담, 운영 수탁·가맹 문의, 견적 요청은 이곳에서 접수합니다. 통상 영업일 기준 2일 이내에 답변드립니다.",
+    "locked": true
+  },
+  "00dc0062a2447852": {
+    "ja": "サービス導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼を承ります。内容を確認のうえ、通常2営業日以内にご返信します。",
+    "en": "We accept inquiries about adopting our services, operation contracting and franchise partnerships, and requests for quotes. After reviewing the details, we typically respond within 2 business days.",
+    "zh": "我们承接服务导入咨询、运营受托与加盟相关咨询以及报价申请，确认内容后通常在2个工作日内回复。",
+    "zh-Hant": "我們承接服務匯入諮詢、營運受託與加盟相關諮詢以及報價申請，確認內容後通常在2個工作日內回覆。",
+    "ko": "서비스 도입 상담, 운영 수탁·가맹 문의, 견적 요청을 접수합니다. 내용 확인 후 통상 영업일 기준 2일 이내에 답변드립니다.",
+    "locked": true
+  },
+  "59ab055caface20c": {
+    "ja": "サービス｜株式会社ステック",
+    "en": "Services | stek Inc.",
+    "zh": "服务｜株式会社STEK",
+    "zh-Hant": "服務｜株式會社STEK",
+    "ko": "서비스｜주식회사 스텍(stek)",
+    "locked": true
+  },
+  "c9348120428c98b4": {
+    "ja": "システム、運営、現場、資産。4つの領域それぞれを単独でも、組み合わせても導入できます。",
+    "en": "Systems, operations, on-site services, and assets. Each of the four areas can be adopted individually or combined.",
+    "zh": "系统、运营、现场、资产四大领域，可单独导入，也可组合导入。",
+    "zh-Hant": "系統、營運、現場、資產四大領域，可單獨匯入，也可組合匯入。",
+    "ko": "시스템, 운영, 현장, 자산. 4가지 영역을 각각 단독으로도, 조합해서도 도입할 수 있습니다.",
+    "locked": true
+  },
+  "4609521b86371023": {
+    "ja": "システムだけでも、人手だけでも、宿泊施設の利益は動きません。ステックはテクノロジーと現場運営の両方を自社で担い、切れ目のない支援を行います。",
+    "en": "Systems alone can't move a lodging facility's profit, and neither can staff alone. stek handles both technology and on-site operations in-house, delivering seamless support.",
+    "zh": "仅靠系统，或仅靠人力，都无法带动住宿设施的利润增长。STEK自主承担技术与现场运营两方面工作，提供无缝衔接的支持。",
+    "zh-Hant": "僅靠系統，或僅靠人力，都無法帶動住宿設施的利潤增長。STEK自主承擔技術與現場營運兩方面工作，提供無縫銜接的支援。",
+    "ko": "시스템만으로도, 인력만으로도 숙박시설의 이익은 움직이지 않습니다. 스텍(stek)은 기술과 현장 운영을 모두 자사에서 담당하여 끊김 없는 지원을 제공합니다.",
+    "locked": true
+  },
+  "9e352c3e73d8e8e0": {
+    "ja": "システムと現場が地続き",
+    "en": "Systems and On-Site Operations, Seamlessly Connected",
+    "zh": "系统与现场紧密衔接",
+    "zh-Hant": "系統與現場緊密銜接",
+    "ko": "시스템과 현장이 하나로 연결",
+    "locked": true
+  },
+  "78e06003824a48c4": {
+    "ja": "システム設定、料金ルール、業務フロー、シフト、マニュアルを整備します。必要に応じて現地確認を行います。",
+    "en": "We set up systems, pricing rules, workflows, shifts, and manuals. On-site visits are conducted as needed.",
+    "zh": "完善系统设置、定价规则、业务流程、排班与操作手册，并根据需要进行现场确认。",
+    "zh-Hant": "完善系統設定、定價規則、業務流程、排班與操作手冊，並根據需要進行現場確認。",
+    "ko": "시스템 설정, 요금 규칙, 업무 흐름, 시프트, 매뉴얼을 정비합니다. 필요에 따라 현장 확인을 진행합니다.",
+    "locked": true
+  },
+  "eae38d53c0387913": {
+    "ja": "スタッフ採用と教育、料金設計、OTA運用、清掃品質、収支管理までを一括してお引き受けします。",
+    "en": "We take full responsibility for staff recruitment and training, pricing design, OTA management, cleaning quality, and financial management.",
+    "zh": "从员工招聘与培训、定价方案设计、OTA运营、清洁质量到收支管理，均可一并委托。",
+    "zh-Hant": "從員工招募與培訓、定價方案設計、OTA營運、清潔品質到收支管理，均可一併委託。",
+    "ko": "직원 채용과 교육, 요금 설계, OTA 운용, 청소 품질, 수지 관리까지 일괄로 맡아 진행합니다.",
+    "locked": true
+  },
+  "68400c3644501278": {
+    "ja": "ステックは「Stay（宿泊）」と「Technology（技術）」を組み合わせた社名です。テクノロジーだけでも、根性だけでも続かない宿泊事業を、両輪で支える会社でありたいと考えています。",
+    "en": "stek is a name that combines \"Stay\" and \"Technology.\" We want to be a company that supports the lodging business, which can't survive on technology alone or on sheer effort alone, with both wheels turning together.",
+    "zh": "STEK这一名称由“Stay（住宿）”与“Technology（技术）”组合而成。我们希望成为以技术与实干两方面共同支撑住宿业务的公司，因为仅靠技术或仅靠毅力都难以长久维持这项事业。",
+    "zh-Hant": "STEK這一名稱由「Stay（住宿）」與「Technology（技術）」組合而成。我們希望成為以技術與實幹兩方面共同支撐住宿業務的公司，因為僅靠技術或僅靠毅力都難以長久維持這項事業。",
+    "ko": "스텍(stek)은 'Stay(숙박)'와 'Technology(기술)'를 결합한 사명입니다. 기술만으로도, 근성만으로도 지속되지 않는 숙박 사업을 두 바퀴로 지탱하는 회사가 되고자 합니다.",
+    "locked": true
+  },
+  "0d7be9c43229c4f9": {
+    "ja": "ヒアリング",
+    "en": "Hearing",
+    "zh": "需求访谈",
+    "zh-Hant": "需求訪談",
+    "ko": "청취(히어링)",
+    "locked": true
+  },
+  "d54dc84cd6e78e5d": {
+    "ja": "ブランド・FC展開",
+    "en": "Brand & Franchise Development",
+    "zh": "品牌与加盟拓展",
+    "zh-Hant": "品牌與加盟拓展",
+    "ko": "브랜드·FC 전개",
+    "locked": true
+  },
+  "2dee23e06752d208": {
+    "ja": "ブランド加盟（FC）について",
+    "en": "About Brand Franchising",
+    "zh": "关于品牌加盟（FC）",
+    "zh-Hant": "關於品牌加盟（FC）",
+    "ko": "브랜드 가맹(FC)에 관하여",
+    "locked": true
+  },
+  "6bc76e56dfd9e96a": {
+    "ja": "プライバシーポリシー",
+    "en": "Privacy Policy",
+    "zh": "隐私政策",
+    "zh-Hant": "隱私政策",
+    "ko": "개인정보처리방침",
+    "locked": true
+  },
+  "b3ad09e352e4c960": {
+    "ja": "プライバシーポリシーを読む",
+    "en": "Read Our Privacy Policy",
+    "zh": "阅读隐私政策",
+    "zh-Hant": "閱讀隱私政策",
+    "ko": "개인정보처리방침 읽기",
+    "locked": true
+  },
+  "90a5fb7319907616": {
+    "ja": "プライバシーポリシー｜株式会社ステック",
+    "en": "Privacy Policy | stek Inc.",
+    "zh": "隐私政策｜株式会社STEK",
+    "zh-Hant": "隱私政策｜株式會社STEK",
+    "ko": "개인정보처리방침｜주식회사 스텍(stek)",
+    "locked": true
+  },
+  "69cddaef1d3ae27a": {
+    "ja": "ページ上部へ",
+    "en": "Back to Top",
+    "zh": "返回页面顶部",
+    "zh-Hant": "返回頁面頂部",
+    "ko": "페이지 상단으로",
+    "locked": true
+  },
+  "f1e6615b4a1f77d1": {
+    "ja": "ホテルシステム・AI",
+    "en": "Hotel Systems & AI",
+    "zh": "酒店系统与AI",
+    "zh-Hant": "飯店系統與AI",
+    "ko": "호텔 시스템·AI",
+    "locked": true
+  },
+  "c5a5e84764d1a0c0": {
+    "ja": "ホテルシステム・AIの導入",
+    "en": "Hotel Systems & AI Implementation",
+    "zh": "酒店系统与AI导入",
+    "zh-Hant": "飯店系統與AI匯入",
+    "ko": "호텔 시스템·AI 도입",
+    "locked": true
+  },
+  "b7ee311464a88b54": {
+    "ja": "ホテルシステム（PMS・予約・自動調価）、運営受託とブランド・FC展開、清掃・リネンなどの現場支援、車両リースと不動産まで。宿泊事業に必要な機能をまとめて提供します。",
+    "en": "From hotel systems (PMS, reservations, automated pricing) to operation contracting and brand/franchise development, on-site support such as cleaning and linen, and vehicle leasing and real estate. We provide everything a lodging business needs, in one place.",
+    "zh": "酒店系统（PMS、预订、自动调价）、运营受托与品牌加盟拓展、清洁与布草等现场支持，直至车辆租赁与不动产。我们统一提供住宿业务所需的各项功能。",
+    "zh-Hant": "飯店系統（PMS、預訂、自動調價）、營運受託與品牌加盟拓展、清潔與布草等現場支援，直至車輛租賃與不動產。我們統一提供住宿業務所需的各項功能。",
+    "ko": "호텔 시스템(PMS·예약·자동 가격 조정), 운영 수탁과 브랜드·FC 전개, 청소·리넨 등 현장 지원, 차량 리스와 부동산까지. 숙박 사업에 필요한 기능을 한번에 제공합니다.",
+    "locked": true
+  },
+  "ed28cf13bde206b2": {
+    "ja": "ホーム",
+    "en": "Home",
+    "zh": "首页",
+    "zh-Hant": "首頁",
+    "ko": "홈",
+    "locked": true
+  },
+  "84d5e4af37f2c670": {
+    "ja": "ホームへ戻る",
+    "en": "Back to Home",
+    "zh": "返回首页",
+    "zh-Hant": "返回首頁",
+    "ko": "홈으로 돌아가기",
+    "locked": true
+  },
+  "8f99b5f7c588405f": {
+    "ja": "メニュー",
+    "en": "Menu",
+    "zh": "菜单",
+    "zh-Hant": "選單",
+    "ko": "메뉴",
+    "locked": true
+  },
+  "32ed60ff9f0c5fdd": {
+    "ja": "メール",
+    "en": "Email",
+    "zh": "邮箱",
+    "zh-Hant": "郵箱",
+    "ko": "이메일",
+    "locked": true
+  },
+  "893793b5f9aa7223": {
+    "ja": "メールアドレス",
+    "en": "Email Address",
+    "zh": "邮箱地址",
+    "zh-Hant": "郵箱地址",
+    "ko": "이메일 주소",
+    "locked": true
+  },
+  "5e8172dd6d575e77": {
+    "ja": "メールアドレスの形式をご確認ください。",
+    "en": "Please check the format of your email address.",
+    "zh": "请确认邮箱地址的格式。",
+    "zh-Hant": "請確認郵箱地址的格式。",
+    "ko": "이메일 주소 형식을 확인해 주세요.",
+    "locked": true
+  },
+  "f53f5d34d9f1ab7f": {
+    "ja": "リネン、タオル、寝具、衣料品その他繊維製品のクリーニング、レンタル、保管及び配送に関する業務並びに寝具、備品、アメニティ用品その他業務用資材の企画、輸出入及び販売",
+    "en": "Cleaning, rental, storage, and delivery of linen, towels, bedding, clothing, and other textile products, and planning, import/export, and sale of bedding, equipment, amenities, and other operational supplies",
+    "zh": "布草、毛巾、寝具、衣物等纤维制品的洗涤、租赁、保管及配送相关业务，以及寝具、备品、用品等业务用资材的策划、进出口及销售",
+    "zh-Hant": "布草、毛巾、寢具、衣物等纖維製品的洗滌、租賃、保管及配送相關業務，以及寢具、備品、用品等業務用資材的策劃、進出口及銷售",
+    "ko": "리넨, 타월, 침구, 의류 그 밖의 섬유제품의 세탁, 렌탈, 보관 및 배송에 관한 업무 그리고 침구, 비품, 어메니티용품 그 밖의 업무용 자재의 기획, 수출입 및 판매",
+    "locked": true
+  },
+  "9461e6cf14f0f913": {
+    "ja": "リネン・タオル供給と洗濯",
+    "en": "Linen & Towel Supply and Laundering",
+    "zh": "布草、毛巾供应与洗涤",
+    "zh-Hant": "布草、毛巾供應與洗滌",
+    "ko": "리넨·타월 공급 및 세탁",
+    "locked": true
+  },
+  "9589208585f90c57": {
+    "ja": "レベニューマネジメント",
+    "en": "Revenue Management",
+    "zh": "收益管理",
+    "zh-Hant": "收益管理",
+    "ko": "레베뉴 매니지먼트",
+    "locked": true
+  },
+  "7060afe41e7d41b2": {
+    "ja": "レベニューマネジメント・料金の自動調整",
+    "en": "Revenue Management & Automated Pricing",
+    "zh": "收益管理与自动调价",
+    "zh-Hant": "收益管理與自動調價",
+    "ko": "레베뉴 매니지먼트·요금 자동 조정",
+    "locked": true
+  },
+  "2d740415b1cd237d": {
+    "ja": "ロビー、廊下、浴場、ゴミ動線まで含めた日常清掃と定期清掃を行います。",
+    "en": "We handle daily and periodic cleaning covering lobbies, corridors, bathing areas, and waste-disposal routes.",
+    "zh": "对大堂、走廊、浴场及垃圾动线等区域进行日常清洁与定期清洁。",
+    "zh-Hant": "對大廳、走廊、浴場及垃圾動線等區域進行日常清潔與定期清潔。",
+    "ko": "로비, 복도, 욕장, 쓰레기 동선까지 포함한 일상 청소와 정기 청소를 진행합니다.",
+    "locked": true
+  },
+  "b5508fe6f99aedd2": {
+    "ja": "不動産・車両",
+    "en": "Real Estate & Vehicles",
+    "zh": "不动产与车辆",
+    "zh-Hant": "不動產與車輛",
+    "ko": "부동산·차량",
+    "locked": true
+  },
+  "c6a5a6ca203aeab7": {
+    "ja": "不動産・車両リース",
+    "en": "Real Estate & Vehicle Leasing",
+    "zh": "不动产与车辆租赁",
+    "zh-Hant": "不動產與車輛租賃",
+    "ko": "부동산·차량 리스",
+    "locked": true
+  },
+  "6b925e614e93cb67": {
+    "ja": "中古車両の買取・売却を行う場合は、営業所所轄警察署の許可を取得します。",
+    "en": "When buying or selling used vehicles, we obtain a permit from the police department with jurisdiction over our business location.",
+    "zh": "如开展二手车辆的收购与出售业务，将取得营业所所属警察署的许可。",
+    "zh-Hant": "如開展二手車輛的收購與出售業務，將取得營業所所屬警察署的許可。",
+    "ko": "중고 차량의 매입·매각을 진행하는 경우, 영업소 관할 경찰서의 허가를 취득합니다.",
+    "locked": true
+  },
+  "689209805411b379": {
+    "ja": "主な内容",
+    "en": "What's Included",
+    "zh": "主要内容",
+    "zh-Hant": "主要內容",
+    "ko": "주요 내용",
+    "locked": true
+  },
+  "5638f963c649458f": {
+    "ja": "予約から料金決定までを、人の勘に頼らず動かす。",
+    "en": "Run everything from booking to pricing decisions without relying on guesswork.",
+    "zh": "从预订到定价，无需依赖经验判断即可运转。",
+    "zh-Hant": "從預訂到定價，無需依賴經驗判斷即可運轉。",
+    "ko": "예약부터 요금 결정까지, 사람의 감에 의존하지 않고 운영합니다.",
+    "locked": true
+  },
+  "a26910ac106ab5db": {
+    "ja": "事業内容",
+    "en": "Business Description",
+    "zh": "经营业务",
+    "zh-Hant": "經營業務",
+    "ko": "사업 내용",
+    "locked": true
+  },
+  "7af733eb88f4d4de": {
+    "ja": "事業目的",
+    "en": "Business Purpose",
+    "zh": "经营目的",
+    "zh-Hant": "經營目的",
+    "ko": "사업 목적",
+    "locked": true
+  },
+  "0e304fb2996e42ed": {
+    "ja": "代表メッセージ",
+    "en": "Message from the President",
+    "zh": "代表致辞",
+    "zh-Hant": "代表致辭",
+    "ko": "대표 메시지",
+    "locked": true
+  },
+  "9f0fa53387a5bedd": {
+    "ja": "代表取締役",
+    "en": "President & CEO",
+    "zh": "代表取缔役",
+    "zh-Hant": "代表取締役",
+    "ko": "대표이사",
+    "locked": true
+  },
+  "5150645bc5797b67": {
+    "ja": "代表者",
+    "en": "Representative",
+    "zh": "代表人",
+    "zh-Hant": "代表人",
+    "ko": "대표자",
+    "locked": true
+  },
+  "623a8d3806b0d446": {
+    "ja": "任意",
+    "en": "Optional",
+    "zh": "选填",
+    "zh-Hant": "選填",
+    "ko": "선택",
+    "locked": true
+  },
+  "892fbb26f446de7c": {
+    "ja": "会社名・施設名",
+    "en": "Company / Property Name",
+    "zh": "公司名称／设施名称",
+    "zh-Hant": "公司名稱／設施名稱",
+    "ko": "회사명·시설명",
+    "locked": true
+  },
+  "fd66bc0d81fa3b4e": {
+    "ja": "会社情報",
+    "en": "Company",
+    "zh": "公司信息",
+    "zh-Hant": "公司資訊",
+    "ko": "회사 정보",
+    "locked": true
+  },
+  "cf1e186b5f250030": {
+    "ja": "会社情報｜株式会社ステック",
+    "en": "Company | stek Inc.",
+    "zh": "公司信息｜株式会社STEK",
+    "zh-Hant": "公司資訊｜株式會社STEK",
+    "ko": "회사 정보｜주식회사 스텍(stek)",
+    "locked": true
+  },
+  "be2b33d39b0d690f": {
+    "ja": "会社概要",
+    "en": "Company Overview",
+    "zh": "公司概况",
+    "zh-Hant": "公司概況",
+    "ko": "회사 개요",
+    "locked": true
+  },
+  "17322b84aed4b6ee": {
+    "ja": "個人情報の取扱いに関するお問い合わせは、当社ウェブサイトのお問い合わせフォーム又は info@stek.ai までご連絡ください。",
+    "en": "For inquiries regarding the handling of personal information, please contact us through the contact form on the Company's website or at info@stek.ai.",
+    "zh": "有关个人信息处理的咨询，请通过本公司网站的咨询表单或 info@stek.ai 与我们联系。",
+    "zh-Hant": "有關個人資料處理的諮詢，請透過本公司網站的諮詢表單或 info@stek.ai 與我們聯絡。",
+    "ko": "개인정보 취급에 관한 문의는 당사 웹사이트의 문의 양식 또는 info@stek.ai로 연락해 주세요.",
+    "locked": true
+  },
+  "7c6742a9cac1280e": {
+    "ja": "備品・アメニティ調達",
+    "en": "Supplies & Amenity Procurement",
+    "zh": "备品与用品采购",
+    "zh-Hant": "備品與用品採購",
+    "ko": "비품·어메니티 조달",
+    "locked": true
+  },
+  "f680f2c9f4ef1b53": {
+    "ja": "公式サイト、予約導線、館内案内を日・英・簡体・繁体・韓の5言語で標準構築します。訪日客比率の高い都市部・観光地の施設に適しています。",
+    "en": "Our official websites, booking flows, and in-house guidance are built as standard in five languages: Japanese, English, Simplified Chinese, Traditional Chinese, and Korean. Well suited to urban and tourist-area properties with a high share of inbound guests.",
+    "zh": "官网、预订流程、馆内指南均以日、英、简体中文、繁体中文、韩五种语言为标准配置，适合访日游客比例较高的城市和旅游区设施。",
+    "zh-Hant": "官網、預訂流程、館內指南均以日、英、簡體中文、繁體中文、韓五種語言為標準配置，適合訪日遊客比例較高的城市和旅遊區設施。",
+    "ko": "공식 사이트, 예약 동선, 관내 안내를 일본어·영어·중국어 간체·중국어 번체·한국어 5개 언어로 표준 구축합니다. 방일객 비중이 높은 도심·관광지 시설에 적합합니다.",
+    "locked": true
+  },
+  "efbced17220169a7": {
+    "ja": "公式サイト・多言語対応",
+    "en": "Official Website & Multilingual Support",
+    "zh": "官网建设与多语言支持",
+    "zh-Hant": "官網建設與多語言支援",
+    "ko": "공식 사이트·다국어 대응",
+    "locked": true
+  },
+  "329e66a0de4ce583": {
+    "ja": "公式サイト制作・多言語対応",
+    "en": "Official Website Production & Multilingual Support",
+    "zh": "官网建设与多语言支持",
+    "zh-Hant": "官網建設與多語言支援",
+    "ko": "공식 사이트 제작·다국어 대응",
+    "locked": true
+  },
+  "af6a6e4f4a1da29d": {
+    "ja": "共用部清掃・衛生管理",
+    "en": "Common-Area Cleaning & Sanitation Management",
+    "zh": "公共区域清洁与卫生管理",
+    "zh-Hant": "公共區域清潔與衛生管理",
+    "ko": "공용부 청소·위생 관리",
+    "locked": true
+  },
+  "6e8a0a44945ba862": {
+    "ja": "切替後は数値を見ながら調整を継続します。月次で稼働率・単価・RevPAR・清掃品質を共有します。",
+    "en": "After the switchover, we continue to make adjustments based on the numbers. We share monthly occupancy rate, average rate, RevPAR, and cleaning quality data.",
+    "zh": "切换后将持续观察数据并进行调整，按月共享入住率、单价、RevPAR及清洁质量情况。",
+    "zh-Hant": "切換後將持續觀察資料並進行調整，按月共享入住率、單價、RevPAR及清潔品質情況。",
+    "ko": "전환 후에는 수치를 확인하며 지속적으로 조정합니다. 월 단위로 가동률·객단가·RevPAR·청소 품질을 공유합니다.",
+    "locked": true
+  },
+  "eb26cbaa2eba0fb8": {
+    "ja": "初回のご相談から運用開始まで、標準でおよそ60〜90日です。既存システムからの移行や繁忙期を避けた切替も調整します。",
+    "en": "From the first consultation to launch typically takes about 60–90 days. We also accommodate migration from existing systems and switchovers timed to avoid your peak season.",
+    "zh": "从首次咨询到正式运营，标准周期约为60至90天。我们也可协调从现有系统迁移及避开旺季切换的时间安排。",
+    "zh-Hant": "從首次諮詢到正式營運，標準週期約為60至90天。我們也可協調從現有系統遷移及避開旺季切換的時間安排。",
+    "ko": "최초 상담부터 운영 개시까지 표준적으로 약 60~90일이 소요됩니다. 기존 시스템에서의 이전이나 성수기를 피한 전환도 조율합니다.",
+    "locked": true
+  },
+  "19f9058db14412b2": {
+    "ja": "前各号に附帯関連する一切の業務",
+    "en": "Any and all business incidental or related to the foregoing items",
+    "zh": "与前述各项相关联的一切业务",
+    "zh-Hant": "與前述各項相關聯的一切業務",
+    "ko": "전 각호에 부대·관련되는 일체의 업무",
+    "locked": true
+  },
+  "032e7a5fbb15698f": {
+    "ja": "収益改善コンサルティング",
+    "en": "Revenue Improvement Consulting",
+    "zh": "收益改善咨询",
+    "zh-Hant": "收益改善諮詢",
+    "ko": "수익 개선 컨설팅",
+    "locked": true
+  },
+  "a9a31e04cc4bc394": {
+    "ja": "受付時間",
+    "en": "Hours",
+    "zh": "受理时间",
+    "zh-Hant": "受理時間",
+    "ko": "접수 시간",
+    "locked": true
+  },
+  "6670f62a4df34e05": {
+    "ja": "古物商許可",
+    "en": "Secondhand Goods Dealer Permit",
+    "zh": "古物商许可",
+    "zh-Hant": "古物商許可",
+    "ko": "고물상 허가",
+    "locked": true
+  },
+  "11c3facb3e83f79d": {
+    "ja": "古物営業法に基づく古物商",
+    "en": "Secondhand goods dealer business under the Secondhand Goods Business Act",
+    "zh": "依据古物营业法开展的古物商业务",
+    "zh-Hant": "依據古物營業法開展的古物商業務",
+    "ko": "고물영업법에 근거한 고물상",
+    "locked": true
+  },
+  "a90294f6f034134b": {
+    "ja": "可能です。清掃は請負方式でお受けし、当社の現場責任者が要員の配置と品質管理を行います。ご依頼内容と施設の規模に応じてお見積りします。",
+    "en": "Yes. We take on cleaning under a contracting arrangement, with our own on-site manager handling staffing and quality control. Quotes are provided based on the scope of the request and the size of the property.",
+    "zh": "可以。清洁业务以承包方式承接，由我方现场负责人负责人员配置与质量管理，具体报价根据委托内容及设施规模确定。",
+    "zh-Hant": "可以。清潔業務以承包方式承接，由我方現場負責人負責人員配置與品質管理，具體報價根據委託內容及設施規模確定。",
+    "ko": "가능합니다. 청소는 도급 방식으로 접수하며 당사의 현장 책임자가 인력 배치와 품질 관리를 담당합니다. 의뢰 내용과 시설 규모에 따라 견적을 산출합니다.",
+    "locked": true
+  },
+  "8a2a069da6218491": {
+    "ja": "商号",
+    "en": "Company Name",
+    "zh": "商号",
+    "zh-Hant": "商號",
+    "ko": "상호",
+    "locked": true
+  },
+  "533db297e9583095": {
+    "ja": "問い合わせ対応の自動化、多言語での案内文生成、レビュー分析、広告と検索導線の改善までを実務ベースで支援します。",
+    "en": "We provide practical support for automating inquiry responses, generating multilingual guest communications, review analysis, and improving advertising and search performance.",
+    "zh": "从咨询应答自动化、多语言文案生成、评价分析，到广告与搜索流量改善，我们提供实务层面的支持。",
+    "zh-Hant": "從諮詢應答自動化、多語言文案生成、評價分析，到廣告與搜尋流量改善，我們提供實務層面的支援。",
+    "ko": "문의 대응 자동화, 다국어 안내문 생성, 리뷰 분석, 광고 및 검색 유입 개선까지 실무 기반으로 지원합니다.",
+    "locked": true
+  },
+  "0fd3b0fd3e478af3": {
+    "ja": "多言語・インバウンド前提",
+    "en": "Built for Multilingual, Inbound Demand",
+    "zh": "以多语言与入境游客为前提",
+    "zh-Hant": "以多語言與入境遊客為前提",
+    "ko": "다국어·인바운드 전제",
+    "locked": true
+  },
+  "9bbbcfed0aef1819": {
+    "ja": "宅地建物取引業免許",
+    "en": "Real Estate Brokerage License",
+    "zh": "宅地建物交易业许可",
+    "zh-Hant": "宅地建物交易業許可",
+    "ko": "택지건물거래업 면허",
+    "locked": true
+  },
+  "5c7cdadefe93e5d9": {
+    "ja": "宅地建物取引業法に基づく宅地建物取引業並びに不動産の売買、賃貸、管理、仲介及び有効活用に関するコンサルティング業務",
+    "en": "Real estate brokerage business under the Real Estate Brokerage Act, and consulting on the sale, lease, management, brokerage, and effective utilization of real estate",
+    "zh": "依据宅地建物交易业法开展的宅地建物交易业，以及不动产买卖、租赁、管理、中介及有效利用相关咨询业务",
+    "zh-Hant": "依據宅地建物交易業法開展的宅地建物交易業，以及不動產買賣、租賃、管理、中介及有效利用相關諮詢業務",
+    "ko": "택지건물거래업법에 근거한 택지건물거래업 그리고 부동산의 매매, 임대, 관리, 중개 및 유효 활용에 관한 컨설팅 업무",
+    "locked": true
+  },
+  "cc26aa818d0e9528": {
+    "ja": "定款に定める事業目的の要旨です。",
+    "en": "A summary of the business purpose set forth in our articles of incorporation.",
+    "zh": "以下为公司章程所定经营目的的概要。",
+    "zh-Hant": "以下為公司章程所定經營目的的概要。",
+    "ko": "정관에 정한 사업 목적의 요지입니다.",
+    "locked": true
+  },
+  "6fc9c8d381123af3": {
+    "ja": "客室の品質は、毎日の現場でしか守れない。",
+    "en": "Room quality can only be protected on the ground, every single day.",
+    "zh": "客房品质，唯有依靠每日的现场维护才能保障。",
+    "zh-Hant": "客房品質，唯有依靠每日的現場維護才能保障。",
+    "ko": "객실의 품질은 매일의 현장에서만 지킬 수 있습니다.",
+    "locked": true
+  },
+  "df116922f3b191dc": {
+    "ja": "客室数と回転に応じた要員計画を組み、チェックリストと写真で品質を記録します。繁忙期の増員にも対応します。",
+    "en": "We build staffing plans based on room count and turnover, and record quality with checklists and photos. We also accommodate additional staffing during peak periods.",
+    "zh": "根据客房数量与周转情况制定人员计划，通过检查清单与照片记录质量，也可应对旺季增员需求。",
+    "zh-Hant": "根據客房數量與週轉情況制定人員計劃，透過檢查清單與照片記錄品質，也可應對旺季增員需求。",
+    "ko": "객실 수와 회전율에 맞춘 인력 계획을 수립하고 체크리스트와 사진으로 품질을 기록합니다. 성수기 증원에도 대응합니다.",
+    "locked": true
+  },
+  "bfc65c784b4e9a15": {
+    "ja": "客室清掃、共用部清掃、ベッドメイキングを請負方式でお受けします。当社の現場責任者が要員の配置、当日の段取り、仕上がりの確認までを担当し、施設側の管理負担を減らします。リネン・タオルの供給と洗濯、アメニティや業務用資材の調達もあわせてご依頼いただけます。",
+    "en": "We take on room cleaning, common-area cleaning, and bed-making under a contracting arrangement. Our own on-site manager handles staffing, daily coordination, and quality checks, reducing the management burden on the property. Linen and towel supply and laundering, along with procurement of amenities and operational supplies, can also be requested together.",
+    "zh": "我们以承包方式承接客房清洁、公共区域清洁及铺床服务。我方现场负责人负责人员配置、当日安排及成品验收，减轻设施方的管理负担，同时可一并委托布草与毛巾供应及洗涤、备品及业务用品的采购。",
+    "zh-Hant": "我們以承包方式承接客房清潔、公共區域清潔及鋪床服務。我方現場負責人負責人員配置、當日安排及成品驗收，減輕設施方的管理負擔，同時可一併委託布草與毛巾供應及洗滌、備品及業務用品的採購。",
+    "ko": "객실 청소, 공용부 청소, 베드메이킹을 도급 방식으로 접수합니다. 당사의 현장 책임자가 인력 배치, 당일 진행, 마무리 확인까지 담당하여 시설 측의 관리 부담을 줄입니다. 리넨·타월 공급과 세탁, 어메니티 및 업무용 자재 조달도 함께 의뢰하실 수 있습니다.",
+    "locked": true
+  },
+  "7ac3a12e4b189404": {
+    "ja": "客室清掃・ベッドメイキング請負",
+    "en": "Room Cleaning & Bed-Making Contracting",
+    "zh": "客房清洁与铺床承包",
+    "zh-Hant": "客房清潔與鋪床承包",
+    "ko": "객실 청소·베드메이킹 도급",
+    "locked": true
+  },
+  "d78ca569ad5d7f7e": {
+    "ja": "客室清掃業務",
+    "en": "Room Cleaning Services",
+    "zh": "客房清洁业务",
+    "zh-Hant": "客房清潔業務",
+    "ko": "객실 청소 업무",
+    "locked": true
+  },
+  "2abf957fb0dd0e61": {
+    "ja": "客室管理、予約、精算、レポートまで。既存システムからの移行、OTAとの在庫連携、スタッフ研修まで含めて支援します。",
+    "en": "From room management, reservations, and billing to reporting. We support migration from existing systems, inventory integration with OTAs, and staff training.",
+    "zh": "涵盖客房管理、预订、结算及报表，并支持从现有系统迁移、与OTA的库存联动，以及员工培训。",
+    "zh-Hant": "涵蓋客房管理、預訂、結算及報表，並支援從現有系統遷移、與OTA的庫存聯動，以及員工培訓。",
+    "ko": "객실 관리, 예약, 정산, 리포트까지. 기존 시스템에서의 이전, OTA와의 재고 연동, 직원 교육까지 포함하여 지원합니다.",
+    "locked": true
+  },
+  "50c85667857f591c": {
+    "ja": "宿泊事業には複数の許認可が関わります。当社は取得状況を正確にお伝えし、未取得の業務は該当する許認可の取得後に開始します。",
+    "en": "The lodging business involves multiple licenses and permits. We disclose our licensing status accurately and begin any unlicensed business only after obtaining the relevant license or permit.",
+    "zh": "住宿业务涉及多项许可证。本公司将如实告知取得情况，尚未取得许可的业务将在取得相应许可后开始开展。",
+    "zh-Hant": "住宿業務涉及多項許可證。本公司將如實告知取得情況，尚未取得許可的業務將在取得相應許可後開始開展。",
+    "ko": "숙박 사업에는 여러 인허가가 관련됩니다. 당사는 취득 현황을 정확히 안내하며, 미취득 업무는 해당 인허가를 취득한 이후에 개시합니다.",
+    "locked": true
+  },
+  "31f12af254dd2303": {
+    "ja": "宿泊事業に必要な「箱」と「足」を整える。",
+    "en": "Providing the \"space\" and the \"wheels\" your lodging business needs.",
+    "zh": "为住宿业务配齐所需的“场所”与“车辆”。",
+    "zh-Hant": "為住宿業務配齊所需的「場所」與「車輛」。",
+    "ko": "숙박 사업에 필요한 '공간'과 '이동수단'을 정비합니다.",
+    "locked": true
+  },
+  "18489d738ed27ffa": {
+    "ja": "宿泊事業に必要な機能を、\nまとめて引き受ける。",
+    "en": "Everything your lodging business needs,\nhandled together.",
+    "zh": "住宿业务所需的各项功能，\n统一承接。",
+    "zh-Hant": "住宿業務所需的各項功能，\n統一承接。",
+    "ko": "숙박 사업에 필요한 기능을,\n한번에 맡아 드립니다.",
+    "locked": true
+  },
+  "d3fec7b181ab7bbc": {
+    "ja": "宿泊事業の収益を、\n設計から運用まで\n引き上げる。",
+    "en": "Raising the profitability of your lodging business,\nfrom design through operation.",
+    "zh": "从设计到运营，\n全面提升住宿业务的收益。",
+    "zh-Hant": "從設計到營運，\n全面提升住宿業務的收益。",
+    "ko": "숙박 사업의 수익을,\n설계부터 운영까지 끌어올립니다.",
+    "locked": true
+  },
+  "3bd22c912bf97efd": {
+    "ja": "宿泊施設に適した物件の売買・賃貸・仲介と有効活用のご相談をお受けします。あわせて、中小企業向けの自動車リースを提供します。社用車の導入から管理代行、コストの見直しまで、長期契約を前提とした無理のない形でご提案します。",
+    "en": "We handle the sale, lease, and brokerage of properties suited for lodging use, as well as consulting on effective property utilization. We also offer car leasing for small and medium-sized businesses, proposing sensible, long-term-contract-based solutions — from introducing company vehicles to managing them and reviewing costs.",
+    "zh": "我们提供适合住宿设施的物件买卖、租赁、中介及有效利用方面的咨询，并为中小企业提供汽车租赁服务，从公司用车导入、管理代办到成本优化，均以长期合约为前提提出合理方案。",
+    "zh-Hant": "我們提供適合住宿設施的物件買賣、租賃、中介及有效利用方面的諮詢，併為中小企業提供汽車租賃服務，從公司用車匯入、管理代辦到成本最佳化，均以長期合約為前提提出合理方案。",
+    "ko": "숙박시설에 적합한 물건의 매매·임대·중개와 유효 활용 상담을 접수합니다. 아울러 중소기업 대상의 자동차 리스를 제공합니다. 사용 차량 도입부터 관리 대행, 비용 재검토까지 장기 계약을 전제로 무리 없는 형태로 제안합니다.",
+    "locked": true
+  },
+  "9600250ba01527c1": {
+    "ja": "宿泊施設の企画・開発から運営受託、管理受託までをお引き受けします。自社ブランドの開発と商標ライセンス、フランチャイズによる加盟展開も手がけ、加盟店には運営マニュアル、研修、仕入れ、集客の仕組みを提供します。開業前の許認可対応や物件評価の段階からご相談いただけます。",
+    "en": "We handle everything from planning and development of lodging facilities to operation and management contracting. We also develop our own brands and trademark licenses, and expand through franchising — providing franchisees with operation manuals, training, procurement, and customer acquisition systems. We're available for consultation from the stage of pre-opening licensing and property evaluation.",
+    "zh": "我们承接从住宿设施的策划、开发到运营受托、管理受托的全流程业务，同时开展自有品牌开发与商标授权，以及加盟拓展，为加盟店提供运营手册、培训、采购与获客机制。从开业前的许可证办理及物件评估阶段即可开始咨询。",
+    "zh-Hant": "我們承接從住宿設施的策劃、開發到營運受託、管理受託的全流程業務，同時開展自有品牌開發與商標授權，以及加盟拓展，為加盟店提供營運手冊、培訓、採購與獲客機制。從開業前的許可證辦理及物件評估階段即可開始諮詢。",
+    "ko": "숙박시설의 기획·개발부터 운영 수탁, 관리 수탁까지 맡아 진행합니다. 자사 브랜드 개발과 상표 라이선스, 프랜차이즈를 통한 가맹 전개도 진행하며, 가맹점에는 운영 매뉴얼, 연수, 매입, 집객 체계를 제공합니다. 개업 전 인허가 대응이나 물건 평가 단계부터 상담 가능합니다.",
+    "locked": true
+  },
+  "ec4650ee20bbb910": {
+    "ja": "宿泊施設の運営・運営受託、ブランド開発とフランチャイズ展開、宿泊施設向けシステムの開発・提供、レベニューマネジメント、清掃・リネン・備品供給、不動産、自動車リース",
+    "en": "Operation and operation contracting of lodging facilities, brand development and franchising, development and provision of systems for lodging facilities, revenue management, cleaning/linen/supply services, real estate, and car leasing",
+    "zh": "住宿设施的运营与运营受托、品牌开发与加盟拓展、住宿设施系统的开发与提供、收益管理、清洁与布草及备品供应、不动产、汽车租赁",
+    "zh-Hant": "住宿設施的營運與營運受託、品牌開發與加盟拓展、住宿設施系統的開發與提供、收益管理、清潔與布草及備品供應、不動產、汽車租賃",
+    "ko": "숙박시설의 운영·운영 수탁, 브랜드 개발과 프랜차이즈 전개, 숙박시설용 시스템 개발·제공, 레베뉴 매니지먼트, 청소·리넨·비품 공급, 부동산, 자동차 리스",
+    "locked": true
+  },
+  "1ddae463754cf4fe": {
+    "ja": "宿泊施設の開業支援、運営指導、収益管理及び経営に関するコンサルティング業務",
+    "en": "Opening support, operational guidance, revenue management, and management consulting for lodging facilities",
+    "zh": "住宿设施的开业支持、运营指导、收益管理及经营咨询业务",
+    "zh-Hant": "住宿設施的開業支援、營運指導、收益管理及經營諮詢業務",
+    "ko": "숙박시설의 개업 지원, 운영 지도, 수익 관리 및 경영에 관한 컨설팅 업무",
+    "locked": true
+  },
+  "27b5c10a3e836d58": {
+    "ja": "宿泊施設ブランドの企画、開発及び管理、商標その他知的財産権の取得、管理及び使用許諾並びにフランチャイズチェーンシステムの構築、加盟店の募集及び加盟店に対する指導、教育業務",
+    "en": "Planning, development, and management of lodging facility brands; acquisition, management, and licensing of trademarks and other intellectual property rights; and the establishment of franchise chain systems, franchisee recruitment, and guidance and training for franchisees",
+    "zh": "住宿设施品牌的策划、开发及管理，商标等知识产权的取得、管理及许可使用，以及加盟连锁体系的构建、加盟店招募及对加盟店的指导、培训业务",
+    "zh-Hant": "住宿設施品牌的策劃、開發及管理，商標等智慧財產權的取得、管理及許可使用，以及加盟連鎖體系的構建、加盟店招募及對加盟店的指導、培訓業務",
+    "ko": "숙박시설 브랜드의 기획, 개발 및 관리, 상표 그 밖의 지적재산권의 취득, 관리 및 사용 허락 그리고 프랜차이즈 체인 시스템 구축, 가맹점 모집 및 가맹점에 대한 지도, 교육 업무",
+    "locked": true
+  },
+  "7ddbe77aa1357ddd": {
+    "ja": "宿泊施設向け不動産",
+    "en": "Real Estate for Lodging Facilities",
+    "zh": "住宿设施专用不动产",
+    "zh-Hant": "住宿設施專用不動產",
+    "ko": "숙박시설용 부동산",
+    "locked": true
+  },
+  "3938bedb98179f15": {
+    "ja": "宿泊施設向け予約管理システム、宿泊施設管理システム（PMS）、料金管理システム及び収益管理システムの企画、開発、販売、導入支援及び保守",
+    "en": "Planning, development, sales, implementation support, and maintenance of reservation management systems, property management systems (PMS), rate management systems, and revenue management systems for lodging facilities",
+    "zh": "住宿设施用预订管理系统、住宿设施管理系统（PMS）、定价管理系统及收益管理系统的策划、开发、销售、导入支持及维护",
+    "zh-Hant": "住宿設施用預訂管理系統、住宿設施管理系統（PMS）、定價管理系統及收益管理系統的策劃、開發、銷售、匯入支援及維護",
+    "ko": "숙박시설용 예약 관리 시스템, 숙박시설 관리 시스템(PMS), 요금 관리 시스템 및 수익 관리 시스템의 기획, 개발, 판매, 도입 지원 및 유지보수",
+    "locked": true
+  },
+  "3fe9db273fa856d4": {
+    "ja": "宿泊業のためのAI・IT・運営支援",
+    "en": "AI, IT, and Operations Support for the Hospitality Industry",
+    "zh": "住宿行业AI、IT与运营支持",
+    "zh-Hant": "住宿行業AI、IT與營運支援",
+    "ko": "숙박업을 위한 AI·IT·운영 지원",
+    "locked": true
+  },
+  "5b8c61a32a4e08b0": {
+    "ja": "宿泊業の現場では、満室でも利益が残らないことがあります。原因の多くは、料金の決め方、販売チャネルの構成、そして清掃や人繰りといった運営コストにあります。これらは別々の担当者が別々に判断していることが多く、全体として最適になっていません。\n\nステックは、システムと現場運営を同じ会社の中に持つことにしました。料金を決める人間と、客室を仕上げる体制を同じ視点で設計するためです。自社での運営と運営受託を続けながら、そこで得た手応えのある方法だけをシステムとサービスに落とし込んでいきます。\n\n小さな施設からでも構いません。数字を一緒に見るところから始めさせてください。",
+    "en": "In the hospitality industry, it's common for a fully booked property to still fail to turn a profit. The cause is often found in how rates are set, how sales channels are structured, and in operating costs such as cleaning and staffing. These decisions are frequently made separately by different people, with no one optimizing for the whole.\n\nstek decided to house both systems and on-site operations within the same company. This lets the people who set rates and the people who ready the rooms work from the same perspective. As we continue to operate our own properties and take on operation contracts, we translate only the methods that have proven effective on the ground into our systems and services.\n\nEven the smallest property is welcome. Let us start by looking at the numbers together.",
+    "zh": "在住宿行业的现场，即便客满也可能无法留住利润。多数原因在于定价方式、销售渠道构成，以及清洁与人员调配等运营成本。这些事项往往由不同的负责人各自判断，导致整体未能实现最优。\n\nSTEK决定将系统与现场运营纳入同一家公司之中，目的是让制定价格的人与打造客房品质的团队站在同一视角进行设计。我们将持续开展自主运营与运营受托业务，只把在现场验证有效的方法落实到系统与服务之中。\n\n即使是小型设施也没有关系，请先让我们一起查看数据。",
+    "zh-Hant": "在住宿行業的現場，即便客滿也可能無法留住利潤。多數原因在於定價方式、銷售渠道構成，以及清潔與人員調配等營運成本。這些事項往往由不同的負責人各自判斷，導致整體未能實現最優。\n\nSTEK決定將系統與現場營運納入同一家公司之中，目的是讓制定價格的人與打造客房品質的團隊站在同一視角進行設計。我們將持續開展自主營運與營運受託業務，只把在現場驗證有效的方法落實到系統與服務之中。\n\n即使是小型設施也沒有關係，請先讓我們一起檢視資料。",
+    "ko": "숙박업 현장에서는 만실이어도 이익이 남지 않는 경우가 있습니다. 그 원인의 대부분은 요금 결정 방식, 판매 채널 구성, 그리고 청소나 인력 배치와 같은 운영 비용에 있습니다. 이들은 서로 다른 담당자가 각자 판단하는 경우가 많아 전체적으로 최적화되어 있지 않습니다.\n\n스텍(stek)은 시스템과 현장 운영을 같은 회사 안에 두기로 했습니다. 요금을 결정하는 사람과 객실을 마무리하는 체계를 같은 관점에서 설계하기 위해서입니다. 자사 운영과 운영 수탁을 계속하면서 그 과정에서 얻은 실효성 있는 방법만을 시스템과 서비스에 반영해 나가겠습니다.\n\n작은 시설부터라도 괜찮습니다. 수치를 함께 살펴보는 것부터 시작하겠습니다.",
+    "locked": true
+  },
+  "0a6023321953c91a": {
+    "ja": "寝具、タオル、衣料品のクリーニング、レンタル、保管、配送を手配します。在庫回転の設計もあわせて行います。",
+    "en": "We arrange cleaning, rental, storage, and delivery of bedding, towels, and clothing items, along with inventory rotation design.",
+    "zh": "安排寝具、毛巾及衣物的洗涤、租赁、保管与配送，并一并设计库存周转方案。",
+    "zh-Hant": "安排寢具、毛巾及衣物的洗滌、租賃、保管與配送，並一併設計庫存週轉方案。",
+    "ko": "침구, 타월, 의류의 세탁, 렌탈, 보관, 배송을 진행합니다. 재고 회전 설계도 함께 진행합니다.",
+    "locked": true
+  },
+  "a36926acb870f4a7": {
+    "ja": "対応エリアはどこまでですか。",
+    "en": "What areas do you cover?",
+    "zh": "服务范围覆盖到哪里？",
+    "zh-Hant": "服務範圍覆蓋到哪裡？",
+    "ko": "대응 지역은 어디까지인가요?",
+    "locked": true
+  },
+  "948b67c94e7cb1ac": {
+    "ja": "専任の宅地建物取引士と事務所の要件を満たしたうえで申請します。取得までは仲介業務を行いません。",
+    "en": "We apply after meeting the requirements for a licensed real estate transaction specialist and office. We do not conduct brokerage business until the license is obtained.",
+    "zh": "将在满足专任宅地建物交易士及办公场所等要求后提出申请，取得许可前不开展中介业务。",
+    "zh-Hant": "將在滿足專任宅地建物交易士及辦公場所等要求後提出申請，取得許可前不開展中介業務。",
+    "ko": "전임 택지건물거래사와 사무소 요건을 충족한 후 신청합니다. 취득 전까지는 중개 업무를 진행하지 않습니다.",
+    "locked": true
+  },
+  "2e5b1be4dc0525cf": {
+    "ja": "導入の流れ",
+    "en": "How It Works",
+    "zh": "实施流程",
+    "zh-Hant": "實施流程",
+    "ko": "도입 절차",
+    "locked": true
+  },
+  "4eba5a836e5459b6": {
+    "ja": "小規模な施設でも依頼できますか。",
+    "en": "Can you take on small properties?",
+    "zh": "小规模设施也可以委托吗？",
+    "zh-Hant": "小規模設施也可以委託嗎？",
+    "ko": "소규모 시설도 의뢰할 수 있나요?",
+    "locked": true
+  },
+  "26f2e3ff412e167c": {
+    "ja": "平日 10:00 – 18:00",
+    "en": "Weekdays 10:00 AM – 6:00 PM",
+    "zh": "工作日 10:00 – 18:00",
+    "zh-Hant": "工作日 10:00 – 18:00",
+    "ko": "평일 10:00 – 18:00",
+    "locked": true
+  },
+  "672613f290c908f9": {
+    "ja": "建物、施設及び客室の清掃、衛生管理、環境整備並びにベッドメイキング業務の請負及び受託並びに当該業務に関する管理及び品質管理業務",
+    "en": "Contracting and outsourcing of cleaning, sanitation management, and environmental maintenance of buildings, facilities, and guest rooms, and bed-making services, as well as management and quality control related to such services",
+    "zh": "建筑物、设施及客房的清洁、卫生管理、环境维护及铺床业务的承包与受托，以及相关业务的管理与质量管理业务",
+    "zh-Hant": "建築物、設施及客房的清潔、衛生管理、環境維護及鋪床業務的承包與受託，以及相關業務的管理與品質管理業務",
+    "ko": "건물, 시설 및 객실의 청소, 위생 관리, 환경 정비 그리고 베드메이킹 업무의 도급 및 수탁 그리고 해당 업무에 관한 관리 및 품질 관리 업무",
+    "locked": true
+  },
+  "3c5ec6c28b95f5e0": {
+    "ja": "当社は、お問い合わせフォーム、電子メール、お電話、契約手続その他の方法により、氏名、会社名、メールアドレス、電話番号、ご相談内容等の情報を取得します。また、当社ウェブサイトの利用状況に関する情報を、アクセス解析のために取得する場合があります。",
+    "en": "The Company collects information such as name, company name, email address, phone number, and inquiry details through the contact form, email, phone, contract procedures, and other means. We may also collect information regarding usage of our website for the purpose of access analysis.",
+    "zh": "本公司通过咨询表单、电子邮件、电话、合同办理等方式，收集姓名、公司名称、邮箱地址、电话号码及咨询内容等信息。此外，为进行访问分析，本公司可能收集有关本公司网站使用情况的信息。",
+    "zh-Hant": "本公司透過諮詢表單、電子郵件、電話、合約辦理等方式，收集姓名、公司名稱、郵箱地址、電話號碼及諮詢內容等資訊。此外，為進行造訪分析，本公司可能收集有關本公司網站使用情況的資訊。",
+    "ko": "당사는 문의 양식, 이메일, 전화, 계약 절차 그 밖의 방법으로 성명, 회사명, 이메일 주소, 전화번호, 상담 내용 등의 정보를 취득합니다. 또한 당사 웹사이트 이용 현황에 관한 정보를 접속 분석을 위해 취득하는 경우가 있습니다.",
+    "locked": true
+  },
+  "58615cc50245a7a0": {
+    "ja": "当社は、個人情報の漏えい、滅失又は毀損の防止その他の安全管理のために、必要かつ適切な措置を講じます。個人情報を取り扱う従業者及び委託先に対して、必要な監督を行います。",
+    "en": "The Company implements necessary and appropriate measures to prevent the leakage, loss, or damage of personal information and to otherwise maintain security. The Company provides necessary supervision to employees and outsourced parties who handle personal information.",
+    "zh": "本公司将采取必要且适当的措施，防止个人信息泄露、丢失或损毁等安全事故，并对处理个人信息的员工及受托方进行必要的监督。",
+    "zh-Hant": "本公司將採取必要且適當的措施，防止個人資料洩漏、遺失或損毀等安全事故，並對處理個人資料的員工及受託方進行必要的監督。",
+    "ko": "당사는 개인정보의 유출, 멸실 또는 훼손 방지 그 밖의 안전 관리를 위해 필요하고 적절한 조치를 취합니다. 개인정보를 취급하는 종업원 및 위탁처에 대하여 필요한 감독을 실시합니다.",
+    "locked": true
+  },
+  "88bb3c42972472f3": {
+    "ja": "当社は、利用目的の達成に必要な範囲において、個人情報の取扱いを委託することがあります。この場合、当社は委託先に対して必要かつ適切な監督を行います。",
+    "en": "The Company may outsource the handling of personal information to the extent necessary to achieve its purposes of use. In such cases, the Company exercises necessary and appropriate supervision over the outsourced party.",
+    "zh": "本公司可能在达成使用目的所需的范围内，委托第三方处理个人信息。此时，本公司将对受托方进行必要且适当的监督。",
+    "zh-Hant": "本公司可能在達成使用目的所需的範圍內，委託第三方處理個人資料。此時，本公司將對受託方進行必要且適當的監督。",
+    "ko": "당사는 이용 목적 달성에 필요한 범위 내에서 개인정보의 취급을 위탁하는 경우가 있습니다. 이 경우 당사는 위탁처에 대하여 필요하고 적절한 감독을 실시합니다.",
+    "locked": true
+  },
+  "a26612b43b42480f": {
+    "ja": "当社は、取得した個人情報を次の目的で利用します。\n（1）お問い合わせ、ご相談、お見積りへの対応\n（2）当社サービスの提供、運営、保守及び品質向上\n（3）契約の締結、履行及び管理\n（4）当社サービスに関するご案内の送付\n（5）採用選考及びこれに関する連絡\n（6）法令に基づく対応",
+    "en": "The Company uses the personal information it collects for the following purposes.\n(1) Responding to inquiries, consultations, and quote requests\n(2) Providing, operating, maintaining, and improving the quality of the Company's services\n(3) Concluding, performing, and managing contracts\n(4) Sending information about the Company's services\n(5) Recruitment screening and related communications\n(6) Responding to requirements under laws and regulations",
+    "zh": "本公司将收集的个人信息用于以下目的。\n（1）处理咨询、商谈及报价申请\n（2）本公司服务的提供、运营、维护及质量提升\n（3）合同的签订、履行及管理\n（4）发送本公司服务相关信息\n（5）招聘选拔及相关联络\n（6）依据法令要求进行的应对",
+    "zh-Hant": "本公司將收集的個人資料用於以下目的。\n（1）處理諮詢、商談及報價申請\n（2）本公司服務的提供、營運、維護及品質提升\n（3）合約的簽訂、履行及管理\n（4）傳送本公司服務相關資訊\n（5）招募選才及相關聯絡\n（6）依據法令要求進行的應對",
+    "ko": "당사는 취득한 개인정보를 다음의 목적으로 이용합니다.\n（1）문의, 상담, 견적 대응\n（2）당사 서비스의 제공, 운영, 유지보수 및 품질 향상\n（3）계약의 체결, 이행 및 관리\n（4）당사 서비스에 관한 안내 발송\n（5）채용 전형 및 이와 관련된 연락\n（6）법령에 근거한 대응",
+    "locked": true
+  },
+  "045d126ee4f2b217": {
+    "ja": "当社は、法令に基づく場合、人の生命、身体又は財産の保護のために必要がある場合その他個人情報の保護に関する法律で認められる場合を除き、あらかじめご本人の同意を得ることなく個人情報を第三者に提供しません。",
+    "en": "The Company does not provide personal information to third parties without the prior consent of the individual concerned, except where required by law, where necessary to protect a person's life, body, or property, or in other cases permitted under the Act on the Protection of Personal Information.",
+    "zh": "除依据法令、为保护他人生命、身体或财产而有必要，或个人信息保护法所认可的其他情形外，本公司不会在未事先获得本人同意的情况下将个人信息提供给第三方。",
+    "zh-Hant": "除依據法令、為保護他人生命、身體或財產而有必要，或個人資料保護法所認可的其他情形外，本公司不會在未事先獲得本人同意的情況下將個人資料提供給第三方。",
+    "ko": "당사는 법령에 근거하는 경우, 사람의 생명, 신체 또는 재산의 보호를 위해 필요한 경우 그 밖에 개인정보 보호에 관한 법률에서 인정하는 경우를 제외하고, 사전에 본인의 동의를 얻지 않고 개인정보를 제3자에게 제공하지 않습니다.",
+    "locked": true
+  },
+  "8cd4a469e9af5f97": {
+    "ja": "当社は、法令の改正又は事業内容の変更等に応じて、本ポリシーを変更することがあります。変更後の内容は、当社ウェブサイトに掲載した時点から効力を生じます。",
+    "en": "The Company may revise this Policy in response to changes in laws and regulations or in its business. Any revised content takes effect from the time it is posted on the Company's website.",
+    "zh": "本公司可能根据法令修订或经营内容变更等情况修改本政策，修改后的内容自公布于本公司网站之时起生效。",
+    "zh-Hant": "本公司可能根據法令修訂或經營內容變更等情況修改本政策，修改後的內容自公布於本公司網站之時起生效。",
+    "ko": "당사는 법령의 개정 또는 사업 내용의 변경 등에 따라 본 방침을 변경하는 경우가 있습니다. 변경 후의 내용은 당사 웹사이트에 게재한 시점부터 효력이 발생합니다.",
+    "locked": true
+  },
+  "5f941aea86083806": {
+    "ja": "当社ウェブサイトでは、利用状況の把握及びサービス改善のためにクッキー等を利用する場合があります。ブラウザの設定によりクッキーの利用を拒否することができますが、その場合、一部の機能をご利用いただけないことがあります。",
+    "en": "The Company's website may use cookies and similar technologies to understand usage and improve its services. You can refuse the use of cookies through your browser settings, but doing so may prevent you from using some features.",
+    "zh": "本公司网站可能使用Cookie等技术，以了解使用情况并改善服务。您可通过浏览器设置拒绝使用Cookie，但此时部分功能可能无法使用。",
+    "zh-Hant": "本公司網站可能使用Cookie等技術，以瞭解使用情況並改善服務。您可透過瀏覽器設定拒絕使用Cookie，但此時部分功能可能無法使用。",
+    "ko": "당사 웹사이트에서는 이용 현황 파악 및 서비스 개선을 위해 쿠키 등을 이용하는 경우가 있습니다. 브라우저 설정을 통해 쿠키 이용을 거부할 수 있으나, 이 경우 일부 기능을 이용하실 수 없는 경우가 있습니다.",
+    "locked": true
+  },
+  "9a962a3330d970f9": {
+    "ja": "必ずしも必要ありません。既存のPMSやサイトコントローラーを活かしたまま、料金の最適化や公式サイト、現場支援だけをお引き受けする形も選べます。",
+    "en": "Not necessarily. You can keep your existing PMS or site controller and have us handle only pricing optimization, your official website, or on-site support.",
+    "zh": "不一定需要更换。也可以在保留现有PMS或渠道管理系统的情况下，只委托定价优化、官网建设或现场支持等服务。",
+    "zh-Hant": "不一定需要更換。也可以在保留現有PMS或渠道管理系統的情況下，只委託定價最佳化、官網建設或現場支援等服務。",
+    "ko": "반드시 필요하지는 않습니다. 기존 PMS나 사이트 컨트롤러를 그대로 활용하면서 요금 최적화, 공식 사이트, 현장 지원만 맡기는 방식도 선택할 수 있습니다.",
+    "locked": true
+  },
+  "8474501220fe6b18": {
+    "ja": "必要な部分だけの単独導入も、全体の一括委託も可能です。",
+    "en": "You can adopt just the parts you need, or entrust everything to us at once.",
+    "zh": "可仅导入所需的部分，也可整体一并委托。",
+    "zh-Hant": "可僅匯入所需的部分，也可整體一併委託。",
+    "ko": "필요한 부분만 단독 도입도, 전체 일괄 위탁도 가능합니다.",
+    "locked": true
+  },
+  "df7b17a1e3d825c1": {
+    "ja": "必須",
+    "en": "Required",
+    "zh": "必填",
+    "zh-Hant": "必填",
+    "ko": "필수",
+    "locked": true
+  },
+  "01cfb19c7eaa527a": {
+    "ja": "必須項目が入力されていません。",
+    "en": "Please fill in all required fields.",
+    "zh": "必填项尚未填写。",
+    "zh-Hant": "必填項尚未填寫。",
+    "ko": "필수 항목이 입력되지 않았습니다.",
+    "locked": true
+  },
+  "fe837ba65f4bd439": {
+    "ja": "所在地",
+    "en": "Location",
+    "zh": "所在地",
+    "zh-Hant": "所在地",
+    "ko": "소재지",
+    "locked": true
+  },
+  "7d278b1d624e35cd": {
+    "ja": "所有と運営を分け、収益で応える。",
+    "en": "Separate ownership from operation, and deliver through results.",
+    "zh": "所有权与运营分离，以收益回应期待。",
+    "zh-Hant": "所有權與營運分離，以收益回應期待。",
+    "ko": "소유와 운영을 분리하고, 수익으로 답합니다.",
+    "locked": true
+  },
+  "e6c6b607e805e250": {
+    "ja": "採用について",
+    "en": "About Recruitment",
+    "zh": "关于招聘",
+    "zh-Hant": "關於招募",
+    "ko": "채용에 관하여",
+    "locked": true
+  },
+  "0a21ceed84bd3a90": {
+    "ja": "採用に関するお問い合わせも、こちらのフォームからお送りください。",
+    "en": "Please also use this form for inquiries about recruitment.",
+    "zh": "招聘相关咨询也请通过此表单发送。",
+    "zh-Hant": "招募相關諮詢也請透過此表單傳送。",
+    "ko": "채용에 관한 문의도 이 양식을 통해 보내 주세요.",
+    "locked": true
+  },
+  "5e29741e81418695": {
+    "ja": "料金の自動調整",
+    "en": "Automated Pricing",
+    "zh": "自动调价",
+    "zh-Hant": "自動調價",
+    "ko": "요금 자동 조정",
+    "locked": true
+  },
+  "c9b0d6237ef4a02d": {
+    "ja": "料金の自動調整と清掃シフト、備品発注、リネンの回転が同じチームの手の内にあります。導入したのに現場が回らない、という分断を起こしません。",
+    "en": "Automated pricing, cleaning shifts, supply ordering, and linen rotation are all handled by the same team. We don't create the disconnect where a system is introduced but the front line can't keep up.",
+    "zh": "自动调价、清洁排班、备品订购与布草周转均由同一团队掌控，不会出现系统导入后现场无法运转的脱节情况。",
+    "zh-Hant": "自動調價、清潔排班、備品訂購與布草週轉均由同一團隊掌控，不會出現系統匯入後現場無法運轉的脫節情況。",
+    "ko": "요금 자동 조정과 청소 시프트, 비품 발주, 리넨 순환이 같은 팀의 손안에 있습니다. 도입은 했지만 현장이 돌아가지 않는 단절을 만들지 않습니다.",
+    "locked": true
+  },
+  "a0064c7de3676811": {
+    "ja": "施設の所在地、客室数、現在お使いのシステム、ご相談内容などをご記入ください。",
+    "en": "Please include your property's location, number of rooms, current systems, and details of your inquiry.",
+    "zh": "请填写设施所在地、客房数量、目前使用的系统及咨询内容等信息。",
+    "zh-Hant": "請填寫設施所在地、客房數量、目前使用的系統及諮詢內容等資訊。",
+    "ko": "시설 소재지, 객실 수, 현재 사용 중인 시스템, 상담 내용 등을 기재해 주세요.",
+    "locked": true
+  },
+  "bcd6645f408ed43c": {
+    "ja": "施設の規模、客室数、対象範囲によって異なります。初回のヒアリング後に、月額と初期費用を明記したお見積りをお出しします。ヒアリングと概算のご提示は無料です。",
+    "en": "It depends on the size of the property, the number of rooms, and the scope of work. After the initial hearing, we provide a quote clearly stating the monthly fee and initial cost. The hearing and estimate are free of charge.",
+    "zh": "费用因设施规模、客房数量及服务范围而异。首次访谈后，我们会提供明确列出月费与初期费用的报价，访谈及初步估算均为免费。",
+    "zh-Hant": "費用因設施規模、客房數量及服務範圍而異。首次訪談後，我們會提供明確列出月費與初期費用的報價，訪談及初步估算均為免費。",
+    "ko": "시설 규모, 객실 수, 대상 범위에 따라 다릅니다. 최초 청취 이후 월 이용료와 초기 비용을 명시한 견적을 제공합니다. 청취와 개산 제시는 무료입니다.",
+    "locked": true
+  },
+  "dd097eea376acf25": {
+    "ja": "旅行商品の販売開始時点までに登録を行います。",
+    "en": "We register before beginning the sale of any travel products.",
+    "zh": "将在旅行商品开始销售前完成登记。",
+    "zh-Hant": "將在旅行商品開始銷售前完成登記。",
+    "ko": "여행 상품 판매 개시 시점까지 등록을 진행합니다.",
+    "locked": true
+  },
+  "db996a66094fdb62": {
+    "ja": "旅行業法に基づく旅行業、旅行業者代理業及び旅行サービス手配業",
+    "en": "Travel agency business, travel agency intermediary business, and travel service arrangement business under the Travel Agency Act",
+    "zh": "依据旅行业法开展的旅行业、旅行业代理业及旅行服务安排业",
+    "zh-Hant": "依據旅行業法開展的旅行業、旅行業代理業及旅行服務安排業",
+    "ko": "여행업법에 근거한 여행업, 여행업자 대리업 및 여행 서비스 수배업",
+    "locked": true
+  },
+  "257c38ebeed38804": {
+    "ja": "旅行業登録",
+    "en": "Travel Agency Registration",
+    "zh": "旅行业登记",
+    "zh-Hant": "旅行業登記",
+    "ko": "여행업 등록",
+    "locked": true
+  },
+  "54b07f185e7a6071": {
+    "ja": "旅館業法に基づくホテル営業、旅館営業及び簡易宿所営業並びに宿泊施設の企画、開発、経営、運営、管理及び運営受託業務",
+    "en": "Hotel operations, inn operations, and simple lodging operations under the Hotel Business Act, and the planning, development, management, operation, and operation contracting of lodging facilities",
+    "zh": "依据旅馆业法开展的酒店营业、旅馆营业及简易住宿营业，以及住宿设施的策划、开发、经营、运营、管理及运营受托业务",
+    "zh-Hant": "依據旅館業法開展的飯店營業、旅館營業及簡易住宿營業，以及住宿設施的策劃、開發、經營、營運、管理及營運受託業務",
+    "ko": "여관업법에 근거한 호텔 영업, 여관 영업 및 간이 숙소 영업 그리고 숙박시설의 기획, 개발, 경영, 운영, 관리 및 운영 수탁 업무",
+    "locked": true
+  },
+  "7762bb363682311a": {
+    "ja": "旅館業許可",
+    "en": "Hotel Business Permit",
+    "zh": "旅馆业许可",
+    "zh-Hant": "旅館業許可",
+    "ko": "여관업 허가",
+    "locked": true
+  },
+  "41b546c5da69f650": {
+    "ja": "既に別のPMSを使っています。入れ替えが必要ですか。",
+    "en": "We already use a different PMS. Do we need to switch?",
+    "zh": "我们已经在使用其他PMS，是否需要更换？",
+    "zh-Hant": "我們已經在使用其他PMS，是否需要更換？",
+    "ko": "이미 다른 PMS를 사용하고 있습니다. 교체가 필요한가요?",
+    "locked": true
+  },
+  "f26133801a409e59": {
+    "ja": "既存施設の販売構造とコスト構造を洗い出し、単価、稼働、費用の3方向から改善案をご提示します。",
+    "en": "We analyze the sales structure and cost structure of an existing property and present improvement proposals across three dimensions: rate, occupancy, and cost.",
+    "zh": "梳理现有设施的销售结构与成本结构，从单价、入住率、费用三个方面提出改善方案。",
+    "zh-Hant": "梳理現有設施的銷售結構與成本結構，從單價、入住率、費用三個方面提出改善方案。",
+    "ko": "기존 시설의 판매 구조와 비용 구조를 파악하여 객단가, 가동률, 비용의 3가지 방향에서 개선안을 제시합니다.",
+    "locked": true
+  },
+  "fd8c858c3a7c670c": {
+    "ja": "日・英・簡体・繁体・韓の5言語に対応した公式サイトと予約導線を構築します。更新は管理画面から行えます。",
+    "en": "We build official websites and booking flows in five languages: Japanese, English, Simplified Chinese, Traditional Chinese, and Korean. Updates can be made from the admin dashboard.",
+    "zh": "构建支持日、英、简体中文、繁体中文、韩五种语言的官网及预订流程，可通过后台管理系统进行更新。",
+    "zh-Hant": "構建支援日、英、簡體中文、繁體中文、韓五種語言的官網及預訂流程，可透過後臺管理系統進行更新。",
+    "ko": "일본어·영어·중국어 간체·중국어 번체·한국어 5개 언어에 대응하는 공식 사이트와 예약 동선을 구축합니다. 업데이트는 관리 화면에서 진행할 수 있습니다.",
+    "locked": true
+  },
+  "1e7c2c6e58e87070": {
+    "ja": "曜日、イベント、競合、リードタイムを踏まえた料金設計。日次で価格と在庫配分を見直し、RevPARの改善を狙います。",
+    "en": "Pricing design based on day of week, events, competitors, and lead time. We review pricing and inventory allocation daily to improve RevPAR.",
+    "zh": "综合考虑星期、活动、竞争对手及提前预订时长制定定价方案，每日调整价格与库存分配，力求提升RevPAR。",
+    "zh-Hant": "綜合考慮星期、活動、競爭對手及提前預訂時長制定定價方案，每日調整價格與庫存分配，力求提升RevPAR。",
+    "ko": "요일, 이벤트, 경쟁사, 리드타임을 반영한 요금 설계. 매일 가격과 재고 배분을 재검토하여 RevPAR 개선을 도모합니다.",
+    "locked": true
+  },
+  "ab1a66add5a3b764": {
+    "ja": "本ポリシーにおいて個人情報とは、個人情報の保護に関する法律第2条第1項に定める個人情報をいい、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるものをいいます。",
+    "en": "In this Policy, \"personal information\" means personal information as defined in Article 2, Paragraph 1 of the Act on the Protection of Personal Information, meaning information about a living individual that can identify a specific individual by name, date of birth, or other descriptions contained therein.",
+    "zh": "本政策中所称个人信息，是指个人信息保护法第2条第1项所定义的个人信息，即有关存活个人的信息，且可通过该信息所含的姓名、出生日期及其他描述等识别特定个人的信息。",
+    "zh-Hant": "本政策中所稱個人資料，是指個人資料保護法第2條第1項所定義的個人資料，即有關存活個人的資訊，且可透過該資訊所含的姓名、出生日期及其他描述等識別特定個人的資訊。",
+    "ko": "본 방침에서 개인정보란 개인정보 보호에 관한 법률 제2조 제1항에서 정하는 개인정보를 말하며, 생존하는 개인에 관한 정보로서 해당 정보에 포함된 성명, 생년월일 그 밖의 기술 등에 의해 특정 개인을 식별할 수 있는 것을 말합니다.",
+    "locked": true
+  },
+  "1500ceec79635252": {
+    "ja": "本文へスキップ",
+    "en": "Skip to content",
+    "zh": "跳到正文",
+    "zh-Hant": "跳到正文",
+    "ko": "본문으로 건너뛰기",
+    "locked": true
+  },
+  "37a1692539576d26": {
+    "ja": "東京都（準備中）",
+    "en": "Tokyo (details to be announced)",
+    "zh": "东京都（筹备中）",
+    "zh-Hant": "東京都（籌備中）",
+    "ko": "도쿄도(준비 중)",
+    "locked": true
+  },
+  "63ff983203e0e017": {
+    "ja": "東京都（詳細は準備中）",
+    "en": "Tokyo (details to be announced)",
+    "zh": "东京都（详细信息筹备中）",
+    "zh-Hant": "東京都（詳細資訊籌備中）",
+    "ko": "도쿄도(상세 주소 준비 중)",
+    "locked": true
+  },
+  "8ce067547582e0be": {
+    "ja": "株式会社ステック",
+    "en": "stek Inc.",
+    "zh": "株式会社STEK",
+    "zh-Hant": "株式會社STEK",
+    "ko": "주식회사 스텍(stek Inc.)",
+    "locked": true
+  },
+  "05f769ae4487f908": {
+    "ja": "株式会社ステックの個人情報保護方針です。",
+    "en": "This is the personal information protection policy of stek Inc.",
+    "zh": "株式会社STEK的个人信息保护方针。",
+    "zh-Hant": "株式會社STEK的個人資料保護方針。",
+    "ko": "주식회사 스텍(stek)의 개인정보 보호 방침입니다.",
+    "locked": true
+  },
+  "e0174484f5c4f4ce": {
+    "ja": "株式会社ステック（stek）の会社概要、事業目的、代表メッセージ、許認可の取得方針をご案内します。",
+    "en": "An overview of stek Inc., our business purpose, a message from our president, and our approach to licensing and permits.",
+    "zh": "介绍株式会社STEK（stek）的公司概况、经营目的、代表致辞及许可证获取方针。",
+    "zh-Hant": "介紹株式會社STEK（stek）的公司概況、經營目的、代表致辭及許可證獲取方針。",
+    "ko": "주식회사 스텍(stek)의 회사 개요, 사업 목적, 대표 메시지, 인허가 취득 방침을 안내합니다.",
+    "locked": true
+  },
+  "c625b25463d5c9e3": {
+    "ja": "株式会社ステック（以下「当社」といいます。）は、個人情報の保護に関する法律その他の関係法令を遵守し、お客様の個人情報を適切に取り扱います。",
+    "en": "stek Inc. (hereinafter \"the Company\") complies with the Act on the Protection of Personal Information and other relevant laws and regulations, and handles customers' personal information appropriately.",
+    "zh": "株式会社STEK（以下称“本公司”）遵守个人信息保护法及其他相关法律法规，妥善处理您的个人信息。",
+    "zh-Hant": "株式會社STEK（以下稱「本公司」）遵守個人資料保護法及其他相關法律法規，妥善處理您的個人資料。",
+    "ko": "주식회사 스텍(이하 '당사'라 합니다)은 개인정보 보호에 관한 법률 및 그 밖의 관계 법령을 준수하며 고객의 개인정보를 적절히 취급합니다.",
+    "locked": true
+  },
+  "a348c3ff7ec66c56": {
+    "ja": "株式会社ステック（英文表記：stek Inc.）",
+    "en": "stek Inc. (English name: stek Inc.)",
+    "zh": "株式会社STEK（英文名称：stek Inc.）",
+    "zh-Hant": "株式會社STEK（英文名稱：stek Inc.）",
+    "ko": "주식회사 스텍(영문 표기: stek Inc.)",
+    "locked": true
+  },
+  "bbcaed2272a4067d": {
+    "ja": "株式会社ステック｜宿泊業のためのAI・IT・運営支援",
+    "en": "stek Inc. | AI, IT, and Operations Support for the Hospitality Industry",
+    "zh": "株式会社STEK｜住宿行业AI、IT与运营支持",
+    "zh-Hant": "株式會社STEK｜住宿行業AI、IT與營運支援",
+    "ko": "주식회사 스텍(stek)｜숙박업을 위한 AI·IT·운영 지원",
+    "locked": true
+  },
+  "762b545775c7d4fa": {
+    "ja": "泊まる場所を、\n続けられる事業にする。",
+    "en": "Turning a place to stay\ninto a business that lasts.",
+    "zh": "让住宿场所，\n成为可持续经营的事业。",
+    "zh-Hant": "讓住宿場所，\n成為可持續經營的事業。",
+    "ko": "머무는 공간을,\n지속 가능한 사업으로 만듭니다.",
+    "locked": true
+  },
+  "dcc139e9bddada5d": {
+    "ja": "法人向けカーリース",
+    "en": "Corporate Car Leasing",
+    "zh": "法人汽车租赁",
+    "zh-Hant": "法人汽車租賃",
+    "ko": "법인 대상 카리스",
+    "locked": true
+  },
+  "9f7850fa0d400089": {
+    "ja": "清掃だけ、リネンだけの依頼は可能ですか。",
+    "en": "Can we request only cleaning or only linen services?",
+    "zh": "可以只委托清洁或只委托布草服务吗？",
+    "zh-Hant": "可以只委託清潔或只委託布草服務嗎？",
+    "ko": "청소만, 리넨만 의뢰하는 것도 가능한가요?",
+    "locked": true
+  },
+  "37b86454ba3ac3e6": {
+    "ja": "清掃・リネン・備品",
+    "en": "Cleaning, Linen & Supplies",
+    "zh": "清洁、布草与备品",
+    "zh-Hant": "清潔、布草與備品",
+    "ko": "청소·리넨·비품",
+    "locked": true
+  },
+  "69683a901b7df786": {
+    "ja": "準備中",
+    "en": "To be announced",
+    "zh": "筹备中",
+    "zh-Hant": "籌備中",
+    "ko": "준비 중",
+    "locked": true
+  },
+  "530dba7e33908a95": {
+    "ja": "点検、車検、保険、事故対応の窓口を一本化し、社用車にかかる手間とコストを圧縮します。",
+    "en": "We consolidate inspections, vehicle checks, insurance, and accident response into a single point of contact, reducing the time and cost of managing company vehicles.",
+    "zh": "统一负责车辆检查、车检、保险及事故处理的联络窗口，降低公司用车的管理成本与工作量。",
+    "zh-Hant": "統一負責車輛檢查、車檢、保險及事故處理的聯絡視窗，降低公司用車的管理成本與工作量。",
+    "ko": "점검, 차량 검사, 보험, 사고 대응 창구를 일원화하여 사용 차량에 드는 수고와 비용을 절감합니다.",
+    "locked": true
+  },
+  "1514cadbd785742e": {
+    "ja": "無料相談",
+    "en": "Free Consultation",
+    "zh": "免费咨询",
+    "zh-Hant": "免費諮詢",
+    "ko": "무료 상담",
+    "locked": true
+  },
+  "c129f7671b7d0515": {
+    "ja": "無料相談を予約する",
+    "en": "Book a Free Consultation",
+    "zh": "预约免费咨询",
+    "zh-Hant": "預約免費諮詢",
+    "ko": "무료 상담 예약하기",
+    "locked": true
+  },
+  "70fe27e6d0313eee": {
+    "ja": "物件の有効活用コンサルティング",
+    "en": "Property Utilization Consulting",
+    "zh": "物件有效利用咨询",
+    "zh-Hant": "物件有效利用諮詢",
+    "ko": "물건 유효 활용 컨설팅",
+    "locked": true
+  },
+  "95d47a21028bd602": {
+    "ja": "物件評価、事業計画、旅館業許可の取得支援、内装・備品の選定、開業前販売の立ち上げまで伴走します。",
+    "en": "We support you through property evaluation, business planning, obtaining hotel business permits, selecting interiors and equipment, and launching pre-opening sales.",
+    "zh": "从物件评估、事业计划制定、旅馆业许可申请支持、内装与备品选定，到开业前销售启动，全程陪同支持。",
+    "zh-Hant": "從物件評估、事業計劃制定、旅館業許可申請支援、內裝與備品選定，到開業前銷售啟動，全程陪同支援。",
+    "ko": "물건 평가, 사업 계획, 여관업 허가 취득 지원, 인테리어·비품 선정, 개업 전 판매 개시까지 함께합니다.",
+    "locked": true
+  },
+  "8944bcf1dbb4c9c6": {
+    "ja": "現在の稼働率、単価、販売チャネル、人員体制、課題を伺います。オンラインで60分程度、費用はかかりません。",
+    "en": "We ask about your current occupancy rate, average rate, sales channels, staffing, and challenges. About 60 minutes online, at no cost.",
+    "zh": "了解目前的入住率、单价、销售渠道、人员配置及问题所在。线上访谈约60分钟，不收取费用。",
+    "zh-Hant": "瞭解目前的入住率、單價、銷售渠道、人員配置及問題所在。線上訪談約60分鐘，不收取費用。",
+    "ko": "현재의 가동률, 객단가, 판매 채널, 인력 체계, 과제를 여쭙습니다. 온라인으로 약 60분, 비용은 발생하지 않습니다.",
+    "locked": true
+  },
+  "c478338900eff4cc": {
+    "ja": "現場を伴う清掃・リネン・運営受託は首都圏を中心に対応します。システム導入や公式サイト、レベニューマネジメントは全国およびリモートで対応可能です。",
+    "en": "On-site services such as cleaning, linen, and operation contracting are centered on the greater Tokyo area. System implementation, official websites, and revenue management are available nationwide and remotely.",
+    "zh": "涉及现场作业的清洁、布草及运营受托业务以首都圈为中心提供服务；系统导入、官网建设及收益管理业务可在全国范围内以远程方式提供。",
+    "zh-Hant": "涉及現場作業的清潔、布草及營運受託業務以首都圈為中心提供服務；系統匯入、官網建設及收益管理業務可在全國範圍內以遠端方式提供。",
+    "ko": "현장이 수반되는 청소·리넨·운영 수탁은 수도권을 중심으로 대응합니다. 시스템 도입이나 공식 사이트, 레베뉴 매니지먼트는 전국 및 원격으로 대응 가능합니다.",
+    "locked": true
+  },
+  "5102cbe79a62b4b2": {
+    "ja": "現状分析とご提案",
+    "en": "Analysis and Proposal",
+    "zh": "现状分析与提案",
+    "zh-Hant": "現狀分析與提案",
+    "ko": "현황 분석 및 제안",
+    "locked": true
+  },
+  "883568b47ce56c4c": {
+    "ja": "用途地域や建物用途を踏まえ、旅館業許可が取得できる物件かどうかを含めて検討します。",
+    "en": "We assess properties based on zoning and building use, including whether a hotel business permit can be obtained.",
+    "zh": "结合用途地域及建筑用途，评估该物件是否能够取得旅馆业许可。",
+    "zh-Hant": "結合用途地域及建築用途，評估該物件是否能夠取得旅館業許可。",
+    "ko": "용도지역과 건물 용도를 고려하여 여관업 허가 취득이 가능한 물건인지 여부까지 포함하여 검토합니다.",
+    "locked": true
+  },
+  "ca5d4105df8a1465": {
+    "ja": "稼働率と平均単価、清掃にかかっている費用。この3つが分かれば、改善できる幅はおおよそご説明できます。",
+    "en": "Occupancy rate, average rate, and cleaning costs — with just these three figures, we can give you a rough sense of the room for improvement.",
+    "zh": "只要了解入住率、平均单价以及清洁相关支出这三项数据，我们就能大致说明可改善的空间。",
+    "zh-Hant": "只要瞭解入住率、平均單價以及清潔相關支出這三項資料，我們就能大致說明可改善的空間。",
+    "ko": "가동률과 평균 객단가, 청소에 드는 비용. 이 3가지를 알면 개선 가능한 폭을 대략적으로 설명해 드릴 수 있습니다.",
+    "locked": true
+  },
+  "42a0e807a4256e4f": {
+    "ja": "第10条（お問い合わせ窓口）",
+    "en": "Article 10 (Contact for Inquiries)",
+    "zh": "第10条（咨询窗口）",
+    "zh-Hant": "第10條（諮詢窗口）",
+    "ko": "제10조(문의 창구)",
+    "locked": true
+  },
+  "792a7d5f96256732": {
+    "ja": "第1条（個人情報の定義）",
+    "en": "Article 1 (Definition of Personal Information)",
+    "zh": "第1条（个人信息的定义）",
+    "zh-Hant": "第1條（個人資料的定義）",
+    "ko": "제1조(개인정보의 정의)",
+    "locked": true
+  },
+  "1eb06d2949f44a08": {
+    "ja": "第2条（取得する情報）",
+    "en": "Article 2 (Information We Collect)",
+    "zh": "第2条（收集的信息）",
+    "zh-Hant": "第2條（收集的資訊）",
+    "ko": "제2조(취득하는 정보)",
+    "locked": true
+  },
+  "b3226440af9c42d2": {
+    "ja": "第3条（利用目的）",
+    "en": "Article 3 (Purpose of Use)",
+    "zh": "第3条（使用目的）",
+    "zh-Hant": "第3條（使用目的）",
+    "ko": "제3조(이용 목적)",
+    "locked": true
+  },
+  "d9c23a403eaa3334": {
+    "ja": "第4条（第三者提供）",
+    "en": "Article 4 (Provision to Third Parties)",
+    "zh": "第4条（向第三方提供）",
+    "zh-Hant": "第4條（向第三方提供）",
+    "ko": "제4조(제3자 제공)",
+    "locked": true
+  },
+  "f2149021c86632cf": {
+    "ja": "第5条（業務委託）",
+    "en": "Article 5 (Outsourcing)",
+    "zh": "第5条（业务委托）",
+    "zh-Hant": "第5條（業務委託）",
+    "ko": "제5조(업무 위탁)",
+    "locked": true
+  },
+  "24cf6769375fab34": {
+    "ja": "第6条（安全管理措置）",
+    "en": "Article 6 (Security Control Measures)",
+    "zh": "第6条（安全管理措施）",
+    "zh-Hant": "第6條（安全管理措施）",
+    "ko": "제6조(안전관리조치)",
+    "locked": true
+  },
+  "68181b12fb4d49f9": {
+    "ja": "第7条（クッキー等の利用）",
+    "en": "Article 7 (Use of Cookies, etc.)",
+    "zh": "第7条（Cookie等的使用）",
+    "zh-Hant": "第7條（Cookie等的使用）",
+    "ko": "제7조(쿠키 등의 이용)",
+    "locked": true
+  },
+  "6f3d6cf0db89599e": {
+    "ja": "第8条（開示・訂正・利用停止）",
+    "en": "Article 8 (Disclosure, Correction, and Suspension of Use)",
+    "zh": "第8条（信息披露、更正及停止使用）",
+    "zh-Hant": "第8條（資訊披露、更正及停止使用）",
+    "ko": "제8조(공개·정정·이용 정지)",
+    "locked": true
+  },
+  "21d8656a00f68c15": {
+    "ja": "第9条（本ポリシーの変更）",
+    "en": "Article 9 (Changes to This Policy)",
+    "zh": "第9条（本政策的变更）",
+    "zh-Hant": "第9條（本政策的變更）",
+    "ko": "제9조(본 방침의 변경)",
+    "locked": true
+  },
+  "900154ef218ba5a8": {
+    "ja": "自動車のリース業及び賃貸業、自動車の売買並びに社用車の管理代行及び車両管理に関するコンサルティング業務",
+    "en": "Automobile leasing and rental business, automobile sales, and consulting on company vehicle management outsourcing and fleet management",
+    "zh": "汽车租赁业及租赁经营业务、汽车买卖，以及公司用车管理代办及车辆管理相关咨询业务",
+    "zh-Hant": "汽車租賃業及租賃經營業務、汽車買賣，以及公司用車管理代辦及車輛管理相關諮詢業務",
+    "ko": "자동차 리스업 및 임대업, 자동차의 매매 그리고 사용 차량의 관리 대행 및 차량 관리에 관한 컨설팅 업무",
+    "locked": true
+  },
+  "55b56d8c2cc2b002": {
+    "ja": "自社での宿泊施設の運営と運営受託を前提に事業を設計しています。清掃の動線、繁忙期の人繰り、OTAごとの手数料まで含めて、実際の損益で判断します。",
+    "en": "We design our business on the premise of operating and taking on operation contracts for lodging facilities ourselves. We make decisions based on actual profit and loss — down to cleaning workflows, staffing during peak periods, and OTA commission rates.",
+    "zh": "我们以自主运营住宿设施及承接运营受托业务为前提设计业务体系，从清洁动线、旺季人员调配到各OTA手续费，均以实际损益为判断依据。",
+    "zh-Hant": "我們以自主營運住宿設施及承接營運受託業務為前提設計業務體系，從清潔動線、旺季人員調配到各OTA手續費，均以實際損益為判斷依據。",
+    "ko": "자사의 숙박시설 운영과 운영 수탁을 전제로 사업을 설계하고 있습니다. 청소 동선, 성수기 인력 배치, OTA별 수수료까지 포함하여 실제 손익으로 판단합니다.",
+    "locked": true
+  },
+  "e2a0c9ceba6e3d7c": {
+    "ja": "自社ブランドの企画と商標管理、加盟募集、加盟店への経営指導・研修・共同仕入れを行います。",
+    "en": "We handle planning and trademark management for our own brands, franchisee recruitment, and management guidance, training, and joint procurement for franchisees.",
+    "zh": "负责自有品牌策划与商标管理、加盟招募，以及对加盟店的经营指导、培训与联合采购。",
+    "zh-Hant": "負責自有品牌策劃與商標管理、加盟招募，以及對加盟店的經營指導、培訓與聯合採購。",
+    "ko": "자사 브랜드의 기획과 상표 관리, 가맹 모집, 가맹점에 대한 경영 지도·연수·공동 매입을 진행합니다.",
+    "locked": true
+  },
+  "70a27f8930a8b10c": {
+    "ja": "自社運営施設ごとに、都道府県知事等の許可を取得のうえ開業します。",
+    "en": "We obtain the permit from the relevant prefectural governor or other authority for each property we operate ourselves before opening.",
+    "zh": "各自主运营设施均在取得都道府县知事等相关许可后方开业。",
+    "zh-Hant": "各自主營運設施均在取得都道府縣知事等相關許可後方開業。",
+    "ko": "자사 운영 시설별로 도도부현지사 등의 허가를 취득한 후 개업합니다.",
+    "locked": true
+  },
+  "31eecb3ddc6da901": {
+    "ja": "言語",
+    "en": "Language",
+    "zh": "语言",
+    "zh-Hant": "語言",
+    "ko": "언어",
+    "locked": true
+  },
+  "f364fa327de9b491": {
+    "ja": "設定したルールと需要予測にもとづき、料金を自動で更新します。上限・下限は施設側で必ず制御できる設計です。",
+    "en": "Rates are updated automatically based on the rules you set and demand forecasts. The design always lets the property control the upper and lower limits.",
+    "zh": "根据设定的规则与需求预测自动更新价格，价格上下限始终由设施方掌控。",
+    "zh-Hant": "根據設定的規則與需求預測自動更新價格，價格上下限始終由設施方掌控。",
+    "ko": "설정한 규칙과 수요 예측에 기반하여 요금을 자동으로 갱신합니다. 상한·하한은 시설 측에서 반드시 제어할 수 있도록 설계되어 있습니다.",
+    "locked": true
+  },
+  "8cece24b93f51d5d": {
+    "ja": "設立",
+    "en": "Founded",
+    "zh": "成立",
+    "zh-Hant": "成立",
+    "ko": "설립",
+    "locked": true
+  },
+  "b0a391956bc51fb3": {
+    "ja": "設計・準備",
+    "en": "Design and Preparation",
+    "zh": "方案设计与准备",
+    "zh-Hant": "方案設計與準備",
+    "ko": "설계·준비",
+    "locked": true
+  },
+  "ae99da7c41900ab8": {
+    "ja": "許認可について",
+    "en": "About Our Licenses and Permits",
+    "zh": "关于许可证",
+    "zh-Hant": "關於許可證",
+    "ko": "인허가에 관하여",
+    "locked": true
+  },
+  "764bc282c8026e12": {
+    "ja": "詳しく見る",
+    "en": "Learn More",
+    "zh": "查看详情",
+    "zh-Hant": "檢視詳情",
+    "ko": "자세히 보기",
+    "locked": true
+  },
+  "c3e792522dd6d2ab": {
+    "ja": "課題が整理できていない段階でも構いません。数字を拝見して、優先順位のご提案から始めます。",
+    "en": "It's fine if your challenges aren't fully sorted out yet. We'll look at your numbers and start by proposing priorities.",
+    "zh": "即便问题尚未理清也没有关系，我们会先查看数据，再提出优先顺序建议。",
+    "zh-Hant": "即便問題尚未理清也沒有關係，我們會先檢視資料，再提出優先順序建議。",
+    "ko": "과제가 정리되지 않은 단계라도 괜찮습니다. 수치를 확인한 후 우선순위 제안부터 시작합니다.",
+    "locked": true
+  },
+  "4f15c546dcb63022": {
+    "ja": "請負方式で受託し、要員の指揮命令は当社の現場責任者が行います。労働者派遣事業は行いません。",
+    "en": "We take on this work under a contracting arrangement, with our own on-site manager directing staff. We do not operate a worker dispatch business.",
+    "zh": "以承包方式受托，人员的指挥调度由我方现场负责人负责，不开展劳务派遣业务。",
+    "zh-Hant": "以承包方式受託，人員的指揮排程由我方現場負責人負責，不開展勞務派遣業務。",
+    "ko": "도급 방식으로 수탁하며, 인력에 대한 지휘 명령은 당사의 현장 책임자가 진행합니다. 근로자 파견 사업은 진행하지 않습니다.",
+    "locked": true
+  },
+  "77ee2cc07e2a1d31": {
+    "ja": "費用はどのくらいかかりますか。",
+    "en": "How much does it cost?",
+    "zh": "费用大概是多少？",
+    "zh-Hant": "費用大概是多少？",
+    "ko": "비용은 어느 정도 드나요?",
+    "locked": true
+  },
+  "45045706e47f6882": {
+    "ja": "資本金",
+    "en": "Capital",
+    "zh": "注册资本",
+    "zh-Hant": "註冊資本",
+    "ko": "자본금",
+    "locked": true
+  },
+  "6075d34d025138ee": {
+    "ja": "車両管理代行",
+    "en": "Vehicle Management Outsourcing",
+    "zh": "车辆管理代办",
+    "zh-Hant": "車輛管理代辦",
+    "ko": "차량 관리 대행",
+    "locked": true
+  },
+  "795c2bfdae61e4da": {
+    "ja": "送信しています…",
+    "en": "Sending…",
+    "zh": "正在提交……",
+    "zh-Hant": "正在提交……",
+    "ko": "전송 중입니다…",
+    "locked": true
+  },
+  "7860024cecc2ae74": {
+    "ja": "送信しました",
+    "en": "Message Sent",
+    "zh": "提交成功",
+    "zh-Hant": "提交成功",
+    "ko": "전송되었습니다",
+    "locked": true
+  },
+  "19b11a648c2a6b78": {
+    "ja": "送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくか、info@stek.ai まで直接ご連絡ください。",
+    "en": "The message could not be sent. Please try again later, or contact us directly at info@stek.ai.",
+    "zh": "提交失败。请稍后重试，或直接联系 info@stek.ai。",
+    "zh-Hant": "提交失敗。請稍後重試，或直接聯絡 info@stek.ai。",
+    "ko": "전송에 실패했습니다. 번거로우시더라도 시간을 두고 다시 시도하시거나 info@stek.ai로 직접 연락해 주세요.",
+    "locked": true
+  },
+  "d04737dc0c007669": {
+    "ja": "送信をもって、プライバシーポリシーに同意いただいたものとみなします。",
+    "en": "By submitting this form, you agree to our privacy policy.",
+    "zh": "提交即视为您已同意本公司隐私政策。",
+    "zh-Hant": "提交即視為您已同意本公司隱私政策。",
+    "ko": "전송 시, 개인정보처리방침에 동의한 것으로 간주합니다.",
+    "locked": true
+  },
+  "a258e3b092bff124": {
+    "ja": "連絡先",
+    "en": "Contact",
+    "zh": "联系方式",
+    "zh-Hant": "聯絡方式",
+    "ko": "연락처",
+    "locked": true
+  },
+  "5b1be9b7190ee3d0": {
+    "ja": "遊休不動産や既存ビルの宿泊転用、収支シミュレーション、運営者としての引受まで検討します。",
+    "en": "We consider converting idle real estate or existing buildings for lodging use, run profitability simulations, and can even take on the role of operator ourselves.",
+    "zh": "针对闲置不动产及既有建筑转为住宿用途的方案、收支模拟，以及以运营者身份承接的可能性进行评估。",
+    "zh-Hant": "針對閒置不動產及既有建築轉為住宿用途的方案、收支模擬，以及以營運者身分承接的可能性進行評估。",
+    "ko": "유휴 부동산이나 기존 건물의 숙박 용도 전환, 수지 시뮬레이션, 운영자로서의 인수까지 검토합니다.",
+    "locked": true
+  },
+  "1815b2e6c81c1cec": {
+    "ja": "運営受託・ブランド・FC",
+    "en": "Operation Contracting, Brand & Franchise",
+    "zh": "运营受托、品牌与加盟",
+    "zh-Hant": "營運受託、品牌與加盟",
+    "ko": "운영 수탁·브랜드·FC",
+    "locked": true
+  },
+  "5e48639a3b42b37b": {
+    "ja": "運営受託・管理受託",
+    "en": "Operation & Management Contracting",
+    "zh": "运营受托与管理受托",
+    "zh-Hant": "營運受託與管理受託",
+    "ko": "운영 수탁·관리 수탁",
+    "locked": true
+  },
+  "586e704238c9119a": {
+    "ja": "運営受託・開業支援",
+    "en": "Operation Contracting & Opening Support",
+    "zh": "运营受托与开业支持",
+    "zh-Hant": "營運受託與開業支援",
+    "ko": "운영 수탁·개업 지원",
+    "locked": true
+  },
+  "9a67f41a1bba5430": {
+    "ja": "運営者としての視点",
+    "en": "An Operator's Perspective",
+    "zh": "运营者的视角",
+    "zh-Hant": "營運者的視角",
+    "ko": "운영자로서의 관점",
+    "locked": true
+  },
+  "fe1809427246ce46": {
+    "ja": "運用開始",
+    "en": "Launch",
+    "zh": "正式运营",
+    "zh-Hant": "正式營運",
+    "ko": "운영 개시",
+    "locked": true
+  },
+  "62f5ccbfdefea616": {
+    "ja": "選ばれる3つの理由",
+    "en": "3 Reasons We're Chosen",
+    "zh": "获得信赖的三大理由",
+    "zh-Hant": "獲得信賴的三大理由",
+    "ko": "선택받는 3가지 이유",
+    "locked": true
+  },
+  "fd8585c49548502c": {
+    "ja": "長期契約による社用車のリース。車検証上の使用者はお客様となり、レンタカー許可を要しない形で提供します。",
+    "en": "Long-term contract leasing for company vehicles. The registered user on the vehicle inspection certificate is the customer, so no rental car license is required.",
+    "zh": "以长期合约方式提供公司用车租赁，行驶证上的使用者为客户本人，无需取得租车业许可。",
+    "zh-Hant": "以長期合約方式提供公司用車租賃，行駛證上的使用者為客戶本人，無需取得租車業許可。",
+    "ko": "장기 계약을 통한 사용 차량 리스. 차량등록증상의 사용자는 고객사가 되며, 렌터카 허가가 필요 없는 형태로 제공합니다.",
+    "locked": true
+  },
+  "3da5c1855151b370": {
+    "ja": "閉じる",
+    "en": "Close",
+    "zh": "关闭",
+    "zh-Hant": "關閉",
+    "ko": "닫기",
+    "locked": true
+  },
+  "1c6d0ad8dfdb7804": {
+    "ja": "開業支援",
+    "en": "Opening Support",
+    "zh": "开业支持",
+    "zh-Hant": "開業支援",
+    "ko": "개업 지원",
+    "locked": true
+  },
+  "7177787c6e84b7f6": {
+    "ja": "電話",
+    "en": "Phone",
+    "zh": "电话",
+    "zh-Hant": "電話",
+    "ko": "전화",
+    "locked": true
+  },
+  "8835fa85e12bd0c7": {
+    "ja": "電話番号",
+    "en": "Phone Number",
+    "zh": "电话号码",
+    "zh-Hant": "電話號碼",
+    "ko": "전화번호",
+    "locked": true
+  },
+  "d38c8f6fc8f8e8e2": {
+    "ja": "飲食店、カフェ、バー、宴会施設、浴場施設その他宿泊施設に附随する施設の経営",
+    "en": "Operation of restaurants, cafes, bars, banquet facilities, bathing facilities, and other facilities incidental to lodging facilities",
+    "zh": "餐饮店、咖啡厅、酒吧、宴会设施、浴场设施等住宿设施附属设施的经营",
+    "zh-Hant": "餐飲店、咖啡廳、酒吧、宴會設施、浴場設施等住宿設施附屬設施的經營",
+    "ko": "음식점, 카페, 바, 연회 시설, 욕장 시설 그 밖의 숙박시설에 부수하는 시설의 경영",
+    "locked": true
+  }
+}
