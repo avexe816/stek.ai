@@ -60,7 +60,7 @@ def url(lang, page):
 
 
 # ------------------------------------------------------------------ chunks
-LOGO_SVG = """<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 27.2c-4.9 0-9.4-2.1-9.4-7.2 0-6.1 4.2-11.4 9.4-16 5.2 4.6 9.4 9.9 9.4 16 0 5.1-4.5 7.2-9.4 7.2Z" fill="currentColor" opacity=".16"/><path d="M16 26.4c-4.6 0-8.8-2-8.8-6.7 0-5.8 4-10.9 8.8-15.3 4.8 4.4 8.8 9.5 8.8 15.3 0 4.7-4.2 6.7-8.8 6.7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M16 26.4V4.4" stroke="currentColor" stroke-width="1.2" opacity=".55"/><path d="M11 24.6c1.4-4.3 2.6-8.4 3.2-12.4M21 24.6c-1.4-4.3-2.6-8.4-3.2-12.4" stroke="currentColor" stroke-width="1.1" opacity=".4" stroke-linecap="round"/></svg>"""
+LOGO_SVG = """<svg class="mark" viewBox="48 60 309 278" fill="none" aria-hidden="true"><path fill="var(--logo-leaf,#5E8B72)" d="M234.80 265.97C234.19 265.29 234.16 263.99 234.00 224.22C233.83 183.17 233.83 183.17 232.39 179.00C229.14 169.61 223.69 163.79 214.15 159.51C210.01 157.65 208.79 156.71 208.34 155.02C207.56 152.13 208.06 75.40 208.87 73.67C212.01 66.96 218.82 63.91 227.11 65.50C228.55 65.78 230.82 66.00 232.16 66.00C233.69 66.00 235.81 66.32 237.87 66.85C239.67 67.32 242.21 67.84 243.53 68.00C244.84 68.17 247.02 68.67 248.37 69.13C249.73 69.58 252.68 70.49 254.95 71.17C257.21 71.84 260.06 72.84 261.28 73.39C262.50 73.94 264.93 74.97 266.69 75.67C271.92 77.76 277.30 80.41 281.01 82.73C282.93 83.92 285.55 85.48 286.83 86.18C288.12 86.88 290.30 88.33 291.69 89.39C293.08 90.45 295.35 92.11 296.75 93.08C303.17 97.52 314.56 108.45 320.29 115.67C327.38 124.59 330.09 128.19 330.91 129.83C331.38 130.75 332.77 133.08 334.01 135.01C336.34 138.63 340.85 147.86 342.16 151.68C342.58 152.88 343.44 155.07 344.09 156.55C344.74 158.03 345.61 160.34 346.01 161.70C346.41 163.06 347.41 166.19 348.22 168.67C349.03 171.14 349.83 174.17 349.98 175.40C350.14 176.63 350.65 179.25 351.11 181.23C354.58 196.11 355.31 221.14 352.46 227.61C349.51 234.31 345.84 235.27 331.95 232.97C324.92 231.81 305.78 231.51 301.33 232.49C300.14 232.76 297.89 233.22 296.33 233.52C285.82 235.55 274.87 239.25 268.83 242.80C267.18 243.77 264.71 245.15 263.33 245.87C261.96 246.58 259.35 248.26 257.55 249.61C255.74 250.95 253.19 252.73 251.88 253.56C250.42 254.49 247.38 257.17 244.00 260.50C237.31 267.09 236.34 267.67 234.80 265.97ZM167.50 265.61C166.43 265.03 164.11 262.71 161.63 259.76C160.36 258.26 158.31 256.31 157.08 255.44C155.84 254.57 153.66 252.91 152.22 251.76C142.05 243.63 122.92 235.34 110.00 233.49C107.89 233.18 105.07 232.73 103.72 232.47C100.09 231.77 79.40 231.81 76.17 232.52C74.88 232.80 72.79 233.26 71.51 233.54C60.47 235.92 54.25 232.84 52.38 224.07C51.79 221.31 51.87 200.03 52.49 195.67C52.76 193.74 53.22 190.29 53.51 188.00C53.80 185.71 54.47 181.96 54.99 179.67C55.51 177.38 56.03 174.63 56.14 173.57C56.35 171.56 56.86 169.91 60.43 159.67C66.41 142.53 74.31 128.74 86.08 114.93C87.59 113.15 89.97 110.35 91.37 108.71C93.85 105.78 94.95 104.72 102.70 97.75C110.34 90.88 126.61 80.53 135.64 76.79C136.84 76.28 139.55 75.15 141.65 74.26C143.76 73.37 146.76 72.25 148.32 71.78C149.89 71.31 152.59 70.49 154.33 69.96C162.42 67.50 169.44 66.00 172.87 66.00C174.68 66.00 177.52 65.76 179.17 65.46C188.64 63.78 194.84 67.50 196.63 75.93C197.11 78.23 197.16 153.29 196.67 154.97C196.16 156.76 195.10 157.64 191.16 159.50C180.38 164.60 173.43 173.71 171.93 184.72C171.48 188.00 171.48 188.64 171.85 198.17C172.04 203.14 171.98 204.84 171.48 208.11C170.91 211.85 170.91 212.23 171.44 215.61C172.19 220.29 172.22 231.92 171.50 236.00C171.12 238.18 171.00 241.71 171.00 251.23C171.00 266.19 170.71 267.38 167.50 265.61Z"/><path fill="var(--logo-stem,#C29A3C)" d="M184.22 334.53C181.88 333.67 179.75 330.91 178.62 327.27C177.26 322.90 180.28 317.72 185.11 316.14C192.12 313.84 204.74 304.11 209.67 297.20C210.31 296.30 211.30 294.90 211.88 294.09C212.46 293.28 213.27 292.25 213.69 291.80C214.12 291.35 215.97 288.03 217.82 284.41C221.73 276.72 221.40 277.01 226.44 277.00C232.98 277.00 232.96 276.87 228.67 290.17C226.28 297.60 222.04 306.68 219.05 310.83C218.12 312.12 216.44 314.52 215.31 316.17C213.11 319.38 205.81 327.04 203.33 328.75C202.51 329.32 201.34 330.21 200.73 330.73C196.65 334.24 188.51 336.12 184.22 334.53Z"/></svg>"""
 
 ARROW = """<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 8h11m0 0L9 3.5M13.5 8 9 12.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>"""
 
@@ -98,7 +98,7 @@ def head(t, page, lang, s):
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/style.css">
   <script>(function(){{try{{var t=localStorage.getItem('stek-theme');if(!t)t=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';document.documentElement.dataset.theme=t;}}catch(e){{}}}})();</script>
 </head>
@@ -279,8 +279,12 @@ def page_services(t, lang, s):
 def page_about(t, lang, s):
     a = t["about"]
     rows = "".join(f"<div><dt>{e(r['k'])}</dt><dd>{nl2br(r['v'])}</dd></div>" for r in a["profile"])
-    lic = "".join(f"<div><dt>{e(r['k'])}</dt><dd>{nl2br(r['v'])}</dd></div>" for r in a["license"])
-    purpose = "".join(f"<li>{e(x)}</li>" for x in a["purpose"])
+    vals = "".join(
+        f'<li><span class="n">{e(v["no"])}</span>'
+        f'<h3>{e(v["t"])}</h3><p>{e(v["d"])}</p></li>'
+        for v in a["values"])
+    cases = "".join(
+        f'<li><h3>{e(c["t"])}</h3><p>{e(c["d"])}</p></li>' for c in a["cases"])
     return f"""<main id="main">
 <section class="page-hero"><div class="wrap">
   <p class="eyebrow">{e(a['hero_eyebrow'])}</p>
@@ -300,18 +304,18 @@ def page_about(t, lang, s):
 
 <section class="sec"><div class="wrap">
   <div class="sec-head">
-    <h2 class="h-sec" style="margin:0">{e(a['purpose_title'])}</h2>
-    <p class="lead">{e(a['purpose_lead'])}</p>
+    <h2 class="h-sec" style="margin:0">{e(a['values_title'])}</h2>
+    <p class="lead">{e(a['values_lead'])}</p>
   </div>
-  <ol class="purpose">{purpose}</ol>
+  <ul class="values">{vals}</ul>
 </div></section>
 
 <section class="sec sec-alt"><div class="wrap">
   <div class="sec-head">
-    <h2 class="h-sec" style="margin:0">{e(a['license_title'])}</h2>
-    <p class="lead">{e(a['license_lead'])}</p>
+    <h2 class="h-sec" style="margin:0">{e(a['cases_title'])}</h2>
+    <p class="lead">{e(a['cases_lead'])}</p>
   </div>
-  <dl class="table">{lic}</dl>
+  <ul class="cases">{cases}</ul>
 </div></section>
 {cta_band(t, lang)}
 </main>"""

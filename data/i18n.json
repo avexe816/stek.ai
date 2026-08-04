@@ -1734,5 +1734,157 @@
     "zh-Hant": "餐飲店、咖啡廳、酒吧、宴會設施、浴場設施等住宿設施附屬設施的經營",
     "ko": "음식점, 카페, 바, 연회 시설, 욕장 시설 그 밖의 숙박시설에 부수하는 시설의 경영",
     "locked": true
+  },
+  "170fbec3f7f9a4f7": {
+    "ja": "大切にしている3つのこと",
+    "en": "Three Things We Hold To",
+    "zh": "我们坚持的三件事",
+    "ko": "우리가 지키는 세 가지",
+    "locked": true,
+    "zh-Hant": "我們堅持的三件事"
+  },
+  "a4c536dcb412aaec": {
+    "ja": "提案の内容が案件ごとに変わっても、判断の基準はいつも同じです。",
+    "en": "Our proposals differ from project to project, but the standards behind them never change.",
+    "zh": "方案会因项目而异，但我们判断的标准始终不变。",
+    "ko": "제안 내용은 안건마다 달라지지만, 판단 기준은 언제나 같습니다.",
+    "locked": true,
+    "zh-Hant": "方案會因案件而異，但我們判斷的標準始終不變。"
+  },
+  "828deb66a1518a27": {
+    "ja": "現場が回る設計だけを提案する",
+    "en": "We only propose what works on the floor",
+    "zh": "只提出现场能够运转的方案",
+    "ko": "현장이 돌아가는 설계만 제안합니다",
+    "locked": true,
+    "zh-Hant": "只提出現場能夠運轉的方案"
+  },
+  "938720607f0c592c": {
+    "ja": "机上で最適に見える計画でも、清掃・フロント・仕入れまで含めて回らなければ意味がありません。運用が破綻する提案はしません。",
+    "en": "A plan that looks optimal on paper means nothing if housekeeping, the front desk and procurement cannot keep up. We never propose something that breaks in operation.",
+    "zh": "纸面上再理想的方案，若客房清扫、前台与采购无法配合运转，也没有意义。我们不会提出让运营难以为继的方案。",
+    "ko": "서류상 최적으로 보이는 계획이라도 청소·프런트·매입까지 포함해 돌아가지 않으면 의미가 없습니다. 운영이 무너지는 제안은 하지 않습니다.",
+    "locked": true,
+    "zh-Hant": "紙面上再理想的方案，若客房清掃、櫃台與採購無法配合運轉，也沒有意義。我們不會提出讓營運難以為繼的方案。"
+  },
+  "a58f4ad10530fa5f": {
+    "ja": "数字を隠さない",
+    "en": "We do not hide the numbers",
+    "zh": "不隐藏数字",
+    "ko": "숫자를 숨기지 않습니다",
+    "locked": true,
+    "zh-Hant": "不隱藏數字"
+  },
+  "3079e3caf9c178fb": {
+    "ja": "稼働率・ADR・RevPAR から清掃単価まで、同じ画面を見ながら議論します。良くない数字も、そのままお伝えします。",
+    "en": "From occupancy, ADR and RevPAR down to the cost per room cleaned, we discuss everything while looking at the same screen. Unfavourable figures are reported as they are.",
+    "zh": "从入住率、ADR、RevPAR 到清扫单价，我们与您看着同一个画面讨论。不理想的数字，也会如实告知。",
+    "ko": "가동률·ADR·RevPAR부터 청소 단가까지, 같은 화면을 보며 논의합니다. 좋지 않은 숫자도 그대로 전해 드립니다.",
+    "locked": true,
+    "zh-Hant": "從入住率、ADR、RevPAR 到清掃單價，我們與您看著同一個畫面討論。不理想的數字，也會如實告知。"
+  },
+  "4a11a6dbbf95f700": {
+    "ja": "小さく始めて、続けられる形にする",
+    "en": "Start small, then make it sustainable",
+    "zh": "从小处着手，做成能持续的形态",
+    "ko": "작게 시작해 계속할 수 있는 형태로",
+    "locked": true,
+    "zh-Hant": "從小處著手，做成能持續的形態"
+  },
+  "eb7a9f52e33d07c3": {
+    "ja": "一度にすべてを入れ替えることはしません。既存のシステムや取引先を活かしたまま、効果の出る順に組み替えていきます。",
+    "en": "We never replace everything at once. Keeping your existing systems and partners in place, we rebuild in the order that delivers results.",
+    "zh": "我们不会一次性全部替换。在保留现有系统与合作方的前提下，按见效顺序逐步重组。",
+    "ko": "한 번에 모든 것을 교체하지 않습니다. 기존 시스템과 거래처를 살린 채, 효과가 나는 순서대로 재구성해 갑니다.",
+    "locked": true,
+    "zh-Hant": "我們不會一次性全部替換。在保留現有系統與合作方的前提下，按見效順序逐步重組。"
+  },
+  "5336e1e5a17dcbcb": {
+    "ja": "よくいただくご相談",
+    "en": "Questions We Often Receive",
+    "zh": "常见的咨询内容",
+    "ko": "자주 받는 상담",
+    "locked": true,
+    "zh-Hant": "常見的諮詢內容"
+  },
+  "a4f5131d34a26c3b": {
+    "ja": "こうしたご相談から始まることが多くあります。近いものがあれば、まずはお聞かせください。",
+    "en": "Most engagements begin with one of these. If any of them sounds familiar, tell us about it first.",
+    "zh": "多数合作都从这些咨询开始。若有相近的情况，请先告诉我们。",
+    "ko": "이런 상담에서 시작되는 경우가 많습니다. 비슷한 상황이 있다면 먼저 들려주세요.",
+    "locked": true,
+    "zh-Hant": "多數合作都從這些諮詢開始。若有相近的情況，請先告訴我們。"
+  },
+  "6099a9898f48fee6": {
+    "ja": "満室なのに、利益が残らない",
+    "en": "Fully booked, yet no profit is left",
+    "zh": "明明满房，却没有利润",
+    "ko": "만실인데 이익이 남지 않는다",
+    "locked": true,
+    "zh-Hant": "明明滿房，卻沒有利潤"
+  },
+  "3dd0fd5439218d1f": {
+    "ja": "料金設定とチャネル構成、清掃・リネンの単価を並べて確認し、どこで利益が消えているかを整理します。",
+    "en": "We lay out your pricing, channel mix and housekeeping and linen unit costs side by side to find where the profit is disappearing.",
+    "zh": "我们会将定价、渠道结构与清扫、布草单价并列核对，梳理利润究竟消失在哪里。",
+    "ko": "요금 설정과 채널 구성, 청소·린넨 단가를 나란히 확인해 어디에서 이익이 사라지는지 정리합니다.",
+    "locked": true,
+    "zh-Hant": "我們會將定價、渠道結構與清掃、布草單價並列核對，梳理利潤究竟消失在哪裡。"
+  },
+  "57e9ea3660cabcac": {
+    "ja": "人が足りず、運営が回らない",
+    "en": "Short of staff, operations cannot keep up",
+    "zh": "人手不足，运营难以为继",
+    "ko": "인력이 부족해 운영이 돌아가지 않는다",
+    "locked": true,
+    "zh-Hant": "人手不足，營運難以為繼"
+  },
+  "ff8e7f806e65e5c9": {
+    "ja": "清掃・リネン・備品の供給体制を見直したうえで、受託する範囲を決め、現場が続けられる体制をつくります。",
+    "en": "After reviewing your housekeeping, linen and supplies chain, we define the scope we take on and build a structure the site can sustain.",
+    "zh": "在重新梳理清扫、布草与备品供应体系后，确定我们受托的范围，建立现场能够持续的体制。",
+    "ko": "청소·린넨·비품 공급 체제를 재점검한 뒤 수탁 범위를 정하고, 현장이 지속할 수 있는 체제를 만듭니다.",
+    "locked": true,
+    "zh-Hant": "在重新梳理清掃、布草與備品供應體系後，確定我們受託的範圍，建立現場能夠持續的體制。"
+  },
+  "7ed4e437c6d5187d": {
+    "ja": "施設はあるが、運営を任せたい",
+    "en": "We own the property but want operations handled",
+    "zh": "已有物业，希望委托运营",
+    "ko": "시설은 있지만 운영을 맡기고 싶다",
+    "locked": true,
+    "zh-Hant": "已有物業，希望委託營運"
+  },
+  "02c2b467d357607b": {
+    "ja": "運営受託とブランド加盟のどちらが合うかを、収支の見通しを出したうえでご相談します。",
+    "en": "We prepare a profit-and-loss outlook first, then discuss whether contract operation or brand franchising suits you better.",
+    "zh": "我们会先给出收支预估，再与您讨论运营受托与品牌加盟哪一种更合适。",
+    "ko": "운영 수탁과 브랜드 가맹 중 어느 쪽이 맞는지, 수지 전망을 낸 뒤 상담해 드립니다.",
+    "locked": true,
+    "zh-Hant": "我們會先給出收支預估，再與您討論營運受託與品牌加盟哪一種更合適。"
+  },
+  "389ccd96a0f1d391": {
+    "ja": "インバウンドの取りこぼしが多い",
+    "en": "We are missing too many inbound guests",
+    "zh": "入境客源流失较多",
+    "ko": "인바운드 고객을 놓치는 일이 많다",
+    "locked": true,
+    "zh-Hant": "入境客源流失較多"
+  },
+  "c1cf683185a3eef9": {
+    "ja": "多言語対応、OTA の掲載内容、予約から到着までの導線を点検し、優先順位をつけて手を入れます。",
+    "en": "We audit your multilingual coverage, OTA listings and the path from booking to arrival, then fix them in order of priority.",
+    "zh": "我们会检查多语言支持、OTA 页面内容以及从预订到抵达的动线，并按优先级逐项改善。",
+    "ko": "다국어 대응, OTA 게재 내용, 예약부터 도착까지의 동선을 점검하고 우선순위를 정해 개선합니다.",
+    "locked": true,
+    "zh-Hant": "我們會檢查多語言支援、OTA 頁面內容以及從預訂到抵達的動線，並按優先順序逐項改善。"
+  },
+  "8fbc593329e6c697": {
+    "ja": "株式会社ステック（stek）の会社概要、代表メッセージ、大切にしている考え方、よくいただくご相談をご紹介します。",
+    "en": "Company profile, message from the CEO, the principles we hold to, and the questions we are most often asked at stek Inc.",
+    "zh": "介绍株式会社 stek 的公司概要、代表致辞、我们坚持的理念，以及常见的咨询内容。",
+    "zh-Hant": "介紹株式會社 stek 的公司概要、代表致辭、我們堅持的理念，以及常見的諮詢內容。",
+    "ko": "주식회사 stek의 회사 개요, 대표 메시지, 우리가 지키는 생각, 자주 받는 상담을 소개합니다.",
+    "locked": true
   }
 }
