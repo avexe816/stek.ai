@@ -219,6 +219,15 @@
     "ko": "공지사항｜STEK 주식회사",
     "zh-Hant": "通知公告｜STEK"
   },
+  "d57e2d08973043d9": {
+    "ja": "お電話でのご連絡",
+    "locked": false,
+    "zh": "通过电话联系",
+    "zh-Hant": "",
+    "en": "Contact by phone",
+    "ko": "전화로 연락하기",
+    "th": ""
+  },
   "98f7c1de7d81dee8": {
     "ja": "お電話・メールでのご連絡",
     "en": "Contact by Phone or Email",
@@ -2342,6 +2351,15 @@
     "zh-Hant": "提交失敗。請稍後重試，或直接聯絡 info@stek.ai。",
     "ko": "전송에 실패했습니다. 번거로우시더라도 시간을 두고 다시 시도하시거나 info@stek.ai로 직접 연락해 주세요.",
     "locked": true
+  },
+  "ac3fdfd2b1ca22b1": {
+    "ja": "送信に失敗しました。お手数ですが、時間をおいて再度お試しいただくかい。",
+    "locked": false,
+    "zh": "发送失败。请您稍后再尝试一次。",
+    "zh-Hant": "",
+    "en": "Failed to send. Please try again after some time.",
+    "ko": "전송에 실패했습니다. 시간을 두고 다시 시도해 주시기 바랍니다.",
+    "th": ""
   },
   "d04737dc0c007669": {
     "ja": "送信をもって、プライバシーポリシーに同意いただいたものとみなします。",
