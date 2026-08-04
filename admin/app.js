@@ -1153,6 +1153,8 @@
     body: "本文",
     name: "名称",
     lead: "リード文",
+    date: "日付（例：2026-04-01）",
+    category: "カテゴリー（例：会社 / サービス / 採用）",
     items: "サービス項目",
   };
 
@@ -1189,7 +1191,7 @@
 
     const labelRow = h("label", { class: advanced ? "field-label--adv" : "" }, [
       advanced ? "上級者向け：" + label : label,
-      typeof value === "string" && value.trim() && subKey !== "link"
+      typeof value === "string" && value.trim() && subKey !== "link" && subKey !== "date"
         ? h("button", { type: "button", class: "trans-btn", style: "margin-left:8px", onClick: (e) => (e.preventDefault(), openTransPanel(value)) }, "訳文")
         : null,
     ]);

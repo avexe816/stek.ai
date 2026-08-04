@@ -1,5 +1,11 @@
 {
-  "langs": ["ja", "en", "zh", "zh-Hant", "ko"],
+  "langs": [
+    "ja",
+    "en",
+    "zh",
+    "zh-Hant",
+    "ko"
+  ],
   "langLabels": {
     "ja": "日本語（原稿）",
     "en": "English",
@@ -8,25 +14,97 @@
     "ko": "한국어"
   },
   "groups": [
-    { "id": "home", "key": "home", "name": "トップページ", "desc": "ヒーロー、選ばれる理由、導入の流れ、よくあるご質問、下部の申し込み枠。" },
-    { "id": "services", "key": "services", "name": "サービスの4領域", "desc": "トップページのカードと、サービスページの各セクションで共通して使われます。" },
-    { "id": "services_page", "key": "services_page", "name": "サービスページ（見出し）", "desc": "サービスページの冒頭と最後の案内文。" },
-    { "id": "about", "key": "about", "name": "会社情報ページ", "desc": "代表メッセージ、会社概要、大切にしている3つのこと、よくいただくご相談。" },
-    { "id": "contact", "key": "contact", "name": "お問い合わせページ", "desc": "フォームの項目名、選択肢、送信後のメッセージ。" },
-    { "id": "privacy", "key": "privacy", "name": "プライバシーポリシー", "desc": "各条文の見出しと本文。" },
-    { "id": "brand", "key": "brand", "name": "会社の基本情報", "desc": "社名、連絡先、受付時間。サイト全体で使われます。" },
-    { "id": "menu", "key": "menu", "name": "メニュー（追加・削除）", "desc": "ヘッダーとフッターのメニューを自由に追加・削除・並べ替えできます。リンク先には index / services / about / contact / privacy のいずれか、#flow のようなページ内リンク、https:// で始まる外部URLを入力してください。外部URLは自動で別タブで開きます。" },
-    { "id": "nav", "key": "nav", "name": "右上のボタン", "desc": "ヘッダー右上の申し込みボタンの文言。" },
-    { "id": "footer", "key": "footer", "name": "フッター", "desc": "ページ下部の見出しと文言。" },
-    { "id": "meta", "key": "meta", "name": "検索結果の表示（SEO）", "desc": "Google などの検索結果に出るタイトルと説明文。" },
-    { "id": "common", "key": "common", "name": "共通の文言", "desc": "メニューボタンなど、細かな共通表示。" }
+    {
+      "id": "home",
+      "key": "home",
+      "name": "トップページ",
+      "desc": "ヒーロー、選ばれる理由、導入の流れ、よくあるご質問、下部の申し込み枠。"
+    },
+    {
+      "id": "services",
+      "key": "services",
+      "name": "事業内容（4領域）",
+      "desc": "トップページのカードと、事業内容ページの各セクションで共通して使われます。"
+    },
+    {
+      "id": "services_page",
+      "key": "services_page",
+      "name": "事業内容ページ（見出し）",
+      "desc": "事業内容ページの冒頭と最後の案内文。"
+    },
+    {
+      "id": "news",
+      "key": "news",
+      "name": "お知らせページ（見出し）",
+      "desc": "お知らせページの冒頭の文言と、記事が1件もないときの表示。"
+    },
+    {
+      "id": "posts",
+      "key": "posts",
+      "name": "お知らせ記事（追加・削除）",
+      "desc": "記事を自由に追加・削除・並べ替えできます。上にあるものほどページの上に表示されます。日付は 2026-04-01 のように入力してください。"
+    },
+    {
+      "id": "about",
+      "key": "about",
+      "name": "会社情報ページ",
+      "desc": "代表メッセージ、会社概要、大切にしている3つのこと、よくいただくご相談。"
+    },
+    {
+      "id": "contact",
+      "key": "contact",
+      "name": "お問い合わせページ",
+      "desc": "フォームの項目名、選択肢、送信後のメッセージ。"
+    },
+    {
+      "id": "privacy",
+      "key": "privacy",
+      "name": "プライバシーポリシー",
+      "desc": "各条文の見出しと本文。"
+    },
+    {
+      "id": "brand",
+      "key": "brand",
+      "name": "会社の基本情報",
+      "desc": "社名、連絡先、受付時間。サイト全体で使われます。"
+    },
+    {
+      "id": "menu",
+      "key": "menu",
+      "name": "メニュー（追加・削除）",
+      "desc": "ヘッダーとフッターのメニューを自由に追加・削除・並べ替えできます。リンク先には index / services / about / contact / privacy のいずれか、#flow のようなページ内リンク、https:// で始まる外部URLを入力してください。外部URLは自動で別タブで開きます。"
+    },
+    {
+      "id": "nav",
+      "key": "nav",
+      "name": "右上のボタン",
+      "desc": "ヘッダー右上の申し込みボタンの文言。"
+    },
+    {
+      "id": "footer",
+      "key": "footer",
+      "name": "フッター",
+      "desc": "ページ下部の見出しと文言。"
+    },
+    {
+      "id": "meta",
+      "key": "meta",
+      "name": "検索結果の表示（SEO）",
+      "desc": "Google などの検索結果に出るタイトルと説明文。"
+    },
+    {
+      "id": "common",
+      "key": "common",
+      "name": "共通の文言",
+      "desc": "メニューボタンなど、細かな共通表示。"
+    }
   ],
   "itemLabels": {
     "home.why": "理由",
     "home.flow": "ステップ",
     "home.faq": "質問",
-    "services": "サービス領域",
-    "services.items": "サービス項目",
+    "services": "事業領域",
+    "services.items": "事業内容の項目",
     "about.profile": "会社概要の行",
     "about.values": "大切にしている3つのこと",
     "about.cases": "よくいただくご相談",
@@ -34,9 +112,19 @@
     "menu.footer": "フッターのサイトマップ",
     "privacy.articles": "条文",
     "contact.kinds": "お問い合わせ種別",
-    "contact.reply_options": "連絡方法の選択肢"
+    "contact.reply_options": "連絡方法の選択肢",
+    "posts": "お知らせ記事"
   },
-  "titleKeys": ["label", "name", "title", "q", "h", "k", "t", "no"],
+  "titleKeys": [
+    "label",
+    "name",
+    "title",
+    "q",
+    "h",
+    "k",
+    "t",
+    "no"
+  ],
   "labels": {
     "brand.name": "ブランド表記（英字）",
     "brand.legal": "商号",
@@ -45,20 +133,19 @@
     "brand.email": "問い合わせ先メールアドレス",
     "brand.address": "所在地",
     "brand.hours": "受付時間",
-
     "nav.cta": "右上のボタン（お問い合わせページに移動します）",
-
     "meta.home_title": "トップページ：検索タイトル",
     "meta.home_desc": "トップページ：検索の説明文",
-    "meta.services_title": "サービス：検索タイトル",
-    "meta.services_desc": "サービス：検索の説明文",
+    "meta.services_title": "事業内容：検索タイトル",
+    "meta.services_desc": "事業内容：検索の説明文",
+    "meta.news_title": "お知らせ：検索タイトル",
+    "meta.news_desc": "お知らせ：検索の説明文",
     "meta.about_title": "会社情報：検索タイトル",
     "meta.about_desc": "会社情報：検索の説明文",
     "meta.contact_title": "お問い合わせ：検索タイトル",
     "meta.contact_desc": "お問い合わせ：検索の説明文",
     "meta.privacy_title": "プライバシー：検索タイトル",
     "meta.privacy_desc": "プライバシー：検索の説明文",
-
     "home.hero_eyebrow": "ヒーロー：小見出し",
     "home.hero_title": "ヒーロー：大見出し（改行はそのまま反映されます）",
     "home.hero_lead": "ヒーロー：本文",
@@ -79,7 +166,6 @@
     "home.cta_title": "下部の申し込み枠：見出し",
     "home.cta_lead": "下部の申し込み枠：本文",
     "home.cta_button": "下部の申し込み枠：ボタン",
-
     "about.hero_title": "見出し（改行はそのまま反映されます）",
     "about.message_title": "代表メッセージ：見出し",
     "about.message_body": "代表メッセージ：本文（空行で段落が分かれます）",
@@ -89,7 +175,6 @@
     "about.values_lead": "考え方：説明",
     "about.cases_title": "ご相談：見出し",
     "about.cases_lead": "ご相談：説明",
-
     "contact.hero_title": "見出し",
     "contact.hero_lead": "冒頭の説明",
     "contact.info_title": "右側ボックスの見出し",
@@ -100,25 +185,47 @@
     "contact.error_required": "エラー：未入力",
     "contact.error_email": "エラー：メール形式",
     "contact.error_send": "エラー：送信失敗",
-
     "privacy.title": "見出し",
     "privacy.lead": "冒頭の文",
     "privacy.signature": "末尾の署名",
-
-    "footer.tagline": "フッターの説明文",
-    "footer.nav_title": "フッター：サイトマップ見出し",
-    "footer.contact_title": "フッター：連絡先見出し",
-    "footer.privacy": "フッター：プライバシーリンク",
-    "footer.copyright": "フッター：著作権表示"
+    "footer.tagline": "フッター：紹介文",
+    "footer.nav_title": "フッター：サイトマップの見出し",
+    "footer.contact_title": "フッター：相談枠の見出し",
+    "footer.privacy": "フッター：プライバシーポリシーの表記",
+    "footer.copyright": "フッター：著作権表示",
+    "news.hero_eyebrow": "お知らせ：小見出し",
+    "news.hero_title": "お知らせ：大見出し",
+    "news.hero_lead": "お知らせ：本文",
+    "news.empty": "記事がないときの表示",
+    "footer.company_label": "フッター：運営会社の項目名",
+    "footer.address_label": "フッター：所在地の項目名",
+    "footer.services_title": "フッター：事業内容の見出し",
+    "footer.contact_lead": "フッター：相談枠の本文",
+    "footer.contact_btn": "フッター：相談枠のボタン"
   },
   "images": {
     "dir": "assets/img",
     "slots": [
-      { "file": "hero.webp", "label": "トップページ：ヒーロー写真" },
-      { "file": "tech.webp", "label": "サービス：ホテルシステム・AI" },
-      { "file": "operation.webp", "label": "サービス：運営受託・ブランド・FC" },
-      { "file": "facility.webp", "label": "サービス：清掃・リネン・備品" },
-      { "file": "asset.webp", "label": "サービス：不動産・車両" }
+      {
+        "file": "hero.webp",
+        "label": "トップページ：ヒーロー写真"
+      },
+      {
+        "file": "tech.webp",
+        "label": "事業内容：収益管理・IT・Web"
+      },
+      {
+        "file": "operation.webp",
+        "label": "事業内容：運営受託・ブランド・FC"
+      },
+      {
+        "file": "facility.webp",
+        "label": "事業内容：清掃・リネン・備品"
+      },
+      {
+        "file": "asset.webp",
+        "label": "事業内容：不動産活用"
+      }
     ]
   }
 }

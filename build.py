@@ -35,10 +35,22 @@ LANGS = [
 ]
 LANG_DIR = {"ja": "", "en": "en", "zh": "zh", "zh-Hant": "zh-hant", "ko": "ko"}
 
-PAGES = ["index", "services", "about", "contact", "privacy"]
+PAGES = ["index", "services", "news", "about", "contact", "privacy"]
 NAV = [("index", "home"), ("services", "services"), ("about", "about"), ("contact", "contact")]
 
 SERVICE_IMG = {"tech": "tech", "operation": "operation", "facility": "facility", "asset": "asset"}
+
+SVC_ICON = {
+    # 収益管理・IT・Web — 上昇するグラフ
+    "tech": '<svg class="svc-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 26h24"/><path d="M4 22V10M11 22v-7M18 22v-12M25 22V6"/><path d="M4 10l7 5 7-9 7 4" stroke-dasharray="0"/></svg>',
+    # 運営受託 — 建物と鍵
+    "operation": '<svg class="svc-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 27V8l9-4v23"/><path d="M14 13h13v14"/><path d="M5 27h24"/><path d="M9 12h1M9 17h1M9 22h1M19 18h1M23 18h1M19 23h1M23 23h1"/></svg>',
+    # 清掃・リネン — ベッドと輝き
+    "facility": '<svg class="svc-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 25v-9h20a5 5 0 0 1 5 5v4"/><path d="M3 25h25"/><path d="M3 16v-7"/><path d="M8 16v-3h7v3"/><path d="M24 4l1.2 2.8L28 8l-2.8 1.2L24 12l-1.2-2.8L20 8l2.8-1.2z"/></svg>',
+    # 不動産活用 — 敷地と拡大
+    "asset": '<svg class="svc-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h11v11H4z"/><path d="M4 20h11v8H4z"/><path d="M20 4h8v8h-8z"/><circle cx="23" cy="21" r="5"/><path d="M27 25l2.5 2.5"/></svg>',
+}
+
 
 
 def e(s):
@@ -70,7 +82,7 @@ GLOBE_SVG = """<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="wi
 
 
 def head(t, page, lang, s):
-    key = {"index": "home", "services": "services", "about": "about",
+    key = {"index": "home", "services": "services", "news": "news", "about": "about",
            "contact": "contact", "privacy": "privacy"}[page]
     title = t["meta"][f"{key}_title"]
     desc = t["meta"][f"{key}_desc"]
@@ -184,28 +196,38 @@ def header(t, page, lang, s):
 
 
 def footer(t, page, lang, s):
+    f = t["footer"]
     nav = "".join(
         f'<li><a href="{resolve_link(lang, lk)}"'
         f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a></li>'
         for lb, lk in menu_items(t, "footer")
     )
+    svc = "".join(
+        f'<li><a href="{url(lang, "services")}#{sv["id"]}">{e(sv["name"])}</a></li>'
+        for sv in t["services"]
+    )
     return f"""<footer class="ft">
   <div class="wrap">
     <div class="ft-in">
-      <div>
+      <div class="ft-brand">
         <a class="logo" href="{url(lang, 'index')}">{LOGO_SVG}<b>stek</b><span>{e(s['brand']['tagline'])}</span></a>
-        <p>{e(t['footer']['tagline'])}</p>
+        <p>{e(f['tagline'])}</p>
+        <dl class="ft-meta">
+          <div><dt>{e(f['company_label'])}</dt><dd>{e(s['brand']['legal'])}</dd></div>
+          <div><dt>{e(f['address_label'])}</dt><dd>{e(t['brand']['address'])}</dd></div>
+        </dl>
       </div>
-      <div><h3>{e(t['footer']['nav_title'])}</h3><ul>{nav}</ul></div>
-      <div><h3>{e(t['footer']['contact_title'])}</h3><ul>
-        <li><a href="mailto:{e(s['brand']['email'])}">{e(s['brand']['email'])}</a></li>
-        <li>{e(t['brand']['hours'])}</li>
-        <li>{e(t['brand']['address'])}</li>
-      </ul></div>
+      <div><h3>{e(f['services_title'])}</h3><ul>{svc}</ul></div>
+      <div><h3>{e(f['nav_title'])}</h3><ul>{nav}</ul></div>
+      <div class="ft-cta">
+        <h3>{e(f['contact_title'])}</h3>
+        <p class="ft-cta-lead">{e(f['contact_lead'])}</p>
+        <a class="btn btn-l" href="{url(lang, 'contact')}">{e(f['contact_btn'])}{ARROW}</a>
+      </div>
     </div>
     <div class="ft-btm">
-      <span>© {e(t['footer']['copyright'])}</span>
-      <a href="{url(lang, 'privacy')}">{e(t['footer']['privacy'])}</a>
+      <span>© {e(f['copyright'])}</span>
+      <a href="{url(lang, 'privacy')}">{e(f['privacy'])}</a>
     </div>
   </div>
 </footer>
@@ -227,7 +249,7 @@ def cta_band(t, lang):
 def page_index(t, lang, s):
     h = t["home"]
     cards = "".join(f"""<a class="scard rv" href="{url(lang, 'services')}#{sv['id']}">
-      <span class="num">{e(sv['no'])}</span>
+      <span class="svc-mark">{SVC_ICON[sv['id']]}<span class="num">{e(sv['no'])}</span></span>
       <h3>{e(sv['name'])}</h3>
       <p>{e(sv['lead'])}</p>
       <span class="more">{e(h['services_more'])}{ARROW}</span></a>""" for sv in t["services"])
@@ -298,7 +320,7 @@ def page_services(t, lang, s):
         blocks.append(f"""<section class="svc" id="{sv['id']}"><div class="wrap">
   <div class="svc-top">
     <div>
-      <span class="num">{e(sv['no'])}</span>
+      <span class="svc-mark">{SVC_ICON[sv['id']]}<span class="num">{e(sv['no'])}</span></span>
       <h2>{e(sv['name'])}</h2>
       <p class="sub">{e(sv['lead'])}</p>
       <p class="lead">{e(sv['body'])}</p>
@@ -442,6 +464,29 @@ def page_contact(t, lang, s):
 </main>"""
 
 
+def page_news(t, lang, s):
+    n = t["news"]
+    posts = t.get("posts") or []
+    if posts:
+        rows = "".join(f"""<article class="post">
+    <div class="post-meta"><time datetime="{e(pt.get('date',''))}">{e(pt.get('date',''))}</time>
+      <span class="post-cat">{e(pt.get('category',''))}</span></div>
+    <div class="post-body"><h2>{e(pt.get('title',''))}</h2>{para(pt.get('body',''))}</div>
+  </article>""" for pt in posts)
+        body = f'<div class="posts">{rows}</div>'
+    else:
+        body = f'<p class="empty">{e(n["empty"])}</p>'
+    return f"""<main id="main">
+<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">{e(n['hero_eyebrow'])}</p>
+  <h1>{nl2br(n['hero_title'])}</h1>
+  <p class="lead">{e(n['hero_lead'])}</p>
+</div></section>
+<section class="sec"><div class="wrap wrap-n">{body}</div></section>
+{cta_band(t, lang)}
+</main>"""
+
+
 def page_privacy(t, lang, s):
     p = t["privacy"]
     arts = "".join(f"<h2>{e(a['h'])}</h2><p>{nl2br(a['b'])}</p>" for a in p["articles"])
@@ -457,7 +502,8 @@ def page_privacy(t, lang, s):
 </main>"""
 
 
-BUILDERS = {"index": page_index, "services": page_services, "about": page_about,
+BUILDERS = {"index": page_index, "services": page_services,
+    "news": page_news, "about": page_about,
             "contact": page_contact, "privacy": page_privacy}
 
 
