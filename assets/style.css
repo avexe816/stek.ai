@@ -411,7 +411,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* --------------------------------------------------------------- footer */
 .ft { background: var(--brand); color: var(--brand-ink); padding: clamp(3.5rem, 7vw, 5rem) 0 2rem; }
 :root[data-theme="dark"] .ft { background: var(--bg-alt); color: var(--ink); border-top: 1px solid var(--line); }
-.ft-in { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; }
+.ft-in { display: grid; grid-template-columns: 1.6fr 1fr 1.2fr; gap: 3rem; }
 .ft h1, .ft h2, .ft h3, .ft h4 { color: inherit; }
 .ft .logo b, .ft .logo span { color: inherit; }
 .ft .logo .mark { --logo-leaf: #8CC4A4; --logo-stem: #E2AC5F; }

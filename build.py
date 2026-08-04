@@ -189,7 +189,6 @@ def footer(t, page, lang, s):
         f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a></li>'
         for lb, lk in menu_items(t, "footer")
     )
-    langs = "".join(f'<li><a href="{url(c, page)}" hreflang="{h}">{e(l)}</a></li>' for c, h, l, _s in LANGS)
     return f"""<footer class="ft">
   <div class="wrap">
     <div class="ft-in">
@@ -203,7 +202,6 @@ def footer(t, page, lang, s):
         <li>{e(t['brand']['hours'])}</li>
         <li>{e(t['brand']['address'])}</li>
       </ul></div>
-      <div><h3>{e(t['footer']['lang_title'])}</h3><ul>{langs}</ul></div>
     </div>
     <div class="ft-btm">
       <span>© {e(t['footer']['copyright'])}</span>
