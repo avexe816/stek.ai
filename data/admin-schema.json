@@ -15,7 +15,8 @@
     { "id": "contact", "key": "contact", "name": "お問い合わせページ", "desc": "フォームの項目名、選択肢、送信後のメッセージ。" },
     { "id": "privacy", "key": "privacy", "name": "プライバシーポリシー", "desc": "各条文の見出しと本文。" },
     { "id": "brand", "key": "brand", "name": "会社の基本情報", "desc": "社名、連絡先、受付時間。サイト全体で使われます。" },
-    { "id": "nav", "key": "nav", "name": "メニュー", "desc": "ヘッダーとフッターのメニュー項目。" },
+    { "id": "menu", "key": "menu", "name": "メニュー（追加・削除）", "desc": "ヘッダーとフッターのメニューを自由に追加・削除・並べ替えできます。リンク先には index / services / about / contact / privacy のいずれか、#flow のようなページ内リンク、https:// で始まる外部URLを入力してください。外部URLは自動で別タブで開きます。" },
+    { "id": "nav", "key": "nav", "name": "右上のボタン", "desc": "ヘッダー右上の申し込みボタンの文言。" },
     { "id": "footer", "key": "footer", "name": "フッター", "desc": "ページ下部の見出しと文言。" },
     { "id": "meta", "key": "meta", "name": "検索結果の表示（SEO）", "desc": "Google などの検索結果に出るタイトルと説明文。" },
     { "id": "common", "key": "common", "name": "共通の文言", "desc": "メニューボタンなど、細かな共通表示。" }
@@ -29,11 +30,13 @@
     "about.profile": "会社概要の行",
     "about.values": "大切にしている3つのこと",
     "about.cases": "よくいただくご相談",
+    "menu.header": "ヘッダーのメニュー",
+    "menu.footer": "フッターのサイトマップ",
     "privacy.articles": "条文",
     "contact.kinds": "お問い合わせ種別",
     "contact.reply_options": "連絡方法の選択肢"
   },
-  "titleKeys": ["name", "title", "q", "h", "k", "t", "no"],
+  "titleKeys": ["label", "name", "title", "q", "h", "k", "t", "no"],
   "labels": {
     "brand.name": "ブランド表記（英字）",
     "brand.legal": "商号",
@@ -43,12 +46,7 @@
     "brand.address": "所在地",
     "brand.hours": "受付時間",
 
-    "nav.home": "メニュー：ホーム",
-    "nav.services": "メニュー：サービス",
-    "nav.flow": "メニュー：導入の流れ",
-    "nav.about": "メニュー：会社情報",
-    "nav.contact": "メニュー：お問い合わせ",
-    "nav.cta": "右上のボタン",
+    "nav.cta": "右上のボタン（お問い合わせページに移動します）",
 
     "meta.home_title": "トップページ：検索タイトル",
     "meta.home_desc": "トップページ：検索の説明文",

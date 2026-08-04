@@ -107,17 +107,61 @@ def head(t, page, lang, s):
 """
 
 
+def resolve_link(lang, link):
+    """管理画面で入力されたリンク先を実際の URL に変換する。
+
+    - ページ名（index / services / about / contact / privacy）→ 言語別のページ URL
+    - "#flow" のようなページ内リンク → トップページの該当位置
+    - "/" や "http" や "mailto:" で始まるもの → そのまま
+    """
+    link = str(link or "").strip()
+    if not link:
+        return ""
+    if link in PAGES:
+        return url(lang, link)
+    if link.startswith("#"):
+        return url(lang, "index") + link
+    if link.startswith(("http://", "https://", "mailto:", "tel:", "/")):
+        return link
+    return url(lang, link) if link in PAGES else "/" + link.lstrip("/")
+
+
+def menu_items(t, kind):
+    src = (t.get("menu") or {}).get(kind) or []
+    out = []
+    for it in src:
+        if not isinstance(it, dict):
+            continue
+        label = str(it.get("label") or "").strip()
+        link = str(it.get("link") or "").strip()
+        if label and link:
+            out.append((label, link))
+    return out
+
+
+def is_ext(link):
+    return link.startswith(("http://", "https://"))
+
+
 def header(t, page, lang, s):
+    items = menu_items(t, "header")
     nav = "".join(
-        f'<a href="{url(lang, p)}"{" aria-current=\"page\"" if p == page else ""}>{e(t["nav"][k])}</a>'
-        for p, k in NAV
+        f'<a href="{resolve_link(lang, lk)}"'
+        f'{" aria-current=\"page\"" if lk == page else ""}'
+        f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}'
+        f'>{e(lb)}</a>'
+        for lb, lk in items
     )
     langs = "".join(
         f'<a href="{url(c, page)}" hreflang="{h}"{" aria-current=\"true\"" if c == lang else ""}>{e(l)}<i>{e(sh)}</i></a>'
         for c, h, l, sh in LANGS
     )
     cur = next(sh for c, _h, _l, sh in LANGS if c == lang)
-    mob = "".join(f'<a href="{url(lang, p)}">{e(t["nav"][k])}</a>' for p, k in NAV)
+    mob = "".join(
+        f'<a href="{resolve_link(lang, lk)}"'
+        f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a>'
+        for lb, lk in items
+    )
     return f"""<header class="hd">
   <div class="wrap hd-in">
     <a class="logo" href="{url(lang, 'index')}" aria-label="{e(s['brand']['legal'])}">{LOGO_SVG}<b>stek</b><span>{e(s['brand']['tagline'])}</span></a>
@@ -140,7 +184,11 @@ def header(t, page, lang, s):
 
 
 def footer(t, page, lang, s):
-    nav = "".join(f'<li><a href="{url(lang, p)}">{e(t["nav"][k])}</a></li>' for p, k in NAV)
+    nav = "".join(
+        f'<li><a href="{resolve_link(lang, lk)}"'
+        f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a></li>'
+        for lb, lk in menu_items(t, "footer")
+    )
     langs = "".join(f'<li><a href="{url(c, page)}" hreflang="{h}">{e(l)}</a></li>' for c, h, l, _s in LANGS)
     return f"""<footer class="ft">
   <div class="wrap">
@@ -207,7 +255,7 @@ def page_index(t, lang, s):
   </figure>
 </div></section>
 
-<section class="sec sec-alt"><div class="wrap">
+<section class="sec sec-alt" id="services-top"><div class="wrap">
   <div class="sec-head">
     <p class="eyebrow">{e(h['pillars_eyebrow'])}</p>
     <h2 class="h-sec">{e(h['pillars_title'])}</h2>
@@ -216,7 +264,7 @@ def page_index(t, lang, s):
   <div class="grid-4">{cards}</div>
 </div></section>
 
-<section class="sec"><div class="wrap">
+<section class="sec" id="why"><div class="wrap">
   <div class="sec-head">
     <p class="eyebrow">{e(h['why_eyebrow'])}</p>
     <h2 class="h-sec">{e(h['why_title'])}</h2>
@@ -224,7 +272,7 @@ def page_index(t, lang, s):
   <ul class="why">{why}</ul>
 </div></section>
 
-<section class="sec sec-alt"><div class="wrap">
+<section class="sec sec-alt" id="flow"><div class="wrap">
   <div class="sec-head">
     <p class="eyebrow">{e(h['flow_eyebrow'])}</p>
     <h2 class="h-sec">{e(h['flow_title'])}</h2>
@@ -233,7 +281,7 @@ def page_index(t, lang, s):
   <ol class="flow">{flow}</ol>
 </div></section>
 
-<section class="sec"><div class="wrap">
+<section class="sec" id="faq"><div class="wrap">
   <div class="sec-head">
     <p class="eyebrow">{e(h['faq_eyebrow'])}</p>
     <h2 class="h-sec">{e(h['faq_title'])}</h2>

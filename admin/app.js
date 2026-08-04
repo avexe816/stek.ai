@@ -1013,7 +1013,7 @@
 
   // ---- オブジェクト配列（折りたたみカード） ----
   function cardTitleFor(item) {
-    const titleKeys = (state.schema && state.schema.titleKeys) || ["name", "title", "q", "h", "k", "no"];
+    const titleKeys = (state.schema && state.schema.titleKeys) || ["label", "name", "title", "q", "h", "k", "no"];
     for (const key of titleKeys) {
       if (item && typeof item[key] === "string" && item[key].trim()) return item[key];
     }
@@ -1141,6 +1141,8 @@
   }
 
   const SUBFIELD_LABELS = {
+    label: "表示名",
+    link: "リンク先（例：index / services / about / contact / privacy / #flow / https://…）",
     q: "質問",
     a: "回答",
     k: "項目名",
@@ -1187,7 +1189,7 @@
 
     const labelRow = h("label", { class: advanced ? "field-label--adv" : "" }, [
       advanced ? "上級者向け：" + label : label,
-      typeof value === "string" && value.trim()
+      typeof value === "string" && value.trim() && subKey !== "link"
         ? h("button", { type: "button", class: "trans-btn", style: "margin-left:8px", onClick: (e) => (e.preventDefault(), openTransPanel(value)) }, "訳文")
         : null,
     ]);

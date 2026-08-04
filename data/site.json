@@ -9,12 +9,45 @@
     "hours": "平日 10:00 – 18:00"
   },
   "nav": {
-    "home": "ホーム",
-    "services": "サービス",
-    "flow": "導入の流れ",
-    "about": "会社情報",
-    "contact": "お問い合わせ",
     "cta": "無料相談"
+  },
+  "menu": {
+    "header": [
+      {
+        "label": "ホーム",
+        "link": "index"
+      },
+      {
+        "label": "サービス",
+        "link": "services"
+      },
+      {
+        "label": "会社情報",
+        "link": "about"
+      },
+      {
+        "label": "お問い合わせ",
+        "link": "contact"
+      }
+    ],
+    "footer": [
+      {
+        "label": "ホーム",
+        "link": "index"
+      },
+      {
+        "label": "サービス",
+        "link": "services"
+      },
+      {
+        "label": "会社情報",
+        "link": "about"
+      },
+      {
+        "label": "お問い合わせ",
+        "link": "contact"
+      }
+    ]
   },
   "meta": {
     "home_title": "株式会社ステック｜宿泊業のためのAI・IT・運営支援",

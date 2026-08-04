@@ -82,7 +82,7 @@ img, svg, video { max-width: 100%; height: auto; display: block; }
 a { color: inherit; }
 h1, h2, h3, h4 {
   font-family: var(--font-display); font-weight: 500; line-height: 1.5;
-  letter-spacing: .015em; margin: 0; color: var(--h, var(--ink-2));
+  letter-spacing: .015em; margin: 0; color: var(--ink-2);
   word-break: auto-phrase; line-break: strict; text-wrap: pretty;
 }
 p { margin: 0; }
@@ -321,7 +321,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 :root[data-theme="dark"] .faq .a::before { color: var(--brand-2); }
 
 /* cta band */
-.cta { background: var(--brand); color: var(--brand-ink); --h: inherit; }
+.cta { background: var(--brand); color: var(--brand-ink); }
+.cta h1, .cta h2, .cta h3, .cta h4 { color: inherit; }
 :root[data-theme="dark"] .cta { background: var(--surface-2); border-block: 1px solid var(--line); color: var(--ink); }
 .cta-in { display: flex; gap: 2.5rem; align-items: center; justify-content: space-between; padding: clamp(3rem, 6vw, 4.5rem) 0; flex-wrap: wrap; }
 .cta h2 { font-size: var(--step-3); max-width: 22ch; }
@@ -408,9 +409,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .prose p { color: var(--ink-2); white-space: pre-line; }
 
 /* --------------------------------------------------------------- footer */
-.ft { --h: inherit; background: var(--brand); color: var(--brand-ink); padding: clamp(3.5rem, 7vw, 5rem) 0 2rem; }
+.ft { background: var(--brand); color: var(--brand-ink); padding: clamp(3.5rem, 7vw, 5rem) 0 2rem; }
 :root[data-theme="dark"] .ft { background: var(--bg-alt); color: var(--ink); border-top: 1px solid var(--line); }
 .ft-in { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 2.5rem; }
+.ft h1, .ft h2, .ft h3, .ft h4 { color: inherit; }
 .ft .logo b, .ft .logo span { color: inherit; }
 .ft .logo .mark { --logo-leaf: #8CC4A4; --logo-stem: #E2AC5F; }
 .ft .logo span { border-color: color-mix(in srgb, currentColor 30%, transparent); }
