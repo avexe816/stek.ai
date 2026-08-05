@@ -20,7 +20,10 @@
     head: null,
     i18nByJa: null, // Map ja文字列 -> i18n entry（entry.__key にキーを持たせる）
     i18nEdits: {}, // 訳文の手直し { キー: { 言語: 文字列 or null(再翻訳) } }
-    currentGroup: null, // group id | "__images__"
+    currentGroup: null, // group id | "__images__" | "__i18n__" | "__search__"
+    search: "", // 全体検索のキーワード
+    jumpTo: null, // 検索結果から移動したときに光らせるパス
+    restore: null, // 未保存の下書きの復元候補
     openCards: {}, // "パス#idx" -> bool（配列カードの開閉）
     status: { state: "idle", url: "", at: "", message: "" },
     statusTimer: null,
@@ -464,6 +467,7 @@
       state.original = deepClone(files);
       state.draft = deepClone(files);
       buildI18nIndex();
+      checkDraftLocal();
 
       if (!state.currentGroup && state.schema && state.schema.groups && state.schema.groups[0]) {
         state.currentGroup = state.schema.groups[0].id;
@@ -609,6 +613,7 @@
         state.head = res.data.sha;
         state.original = deepClone(state.draft);
         state.i18nEdits = {};
+        clearDraftLocal();
         state.saving = false;
         state.modal = null;
         const tr = res.data.translated;
@@ -658,6 +663,184 @@
 
   // ============================================================ 描画：ルート
 
+  // ============================================================ 下書きの自動保存
+
+  const DRAFT_KEY = "stek-admin-draft";
+  let draftTimer = null;
+
+  function saveDraftLocal() {
+    if (!state.draft || !state.original) return;
+    try {
+      if (!dirtyFiles().length && !hasI18nEdits()) {
+        localStorage.removeItem(DRAFT_KEY);
+        return;
+      }
+      localStorage.setItem(
+        DRAFT_KEY,
+        JSON.stringify({ head: state.head, at: new Date().toISOString(), draft: state.draft, i18nEdits: state.i18nEdits })
+      );
+    } catch (e) {
+      /* 容量超過などは無視する */
+    }
+  }
+
+  function scheduleDraftSave() {
+    clearTimeout(draftTimer);
+    draftTimer = setTimeout(saveDraftLocal, 600);
+  }
+
+  function clearDraftLocal() {
+    try {
+      localStorage.removeItem(DRAFT_KEY);
+    } catch (e) {}
+  }
+
+  function checkDraftLocal() {
+    let saved = null;
+    try {
+      saved = JSON.parse(localStorage.getItem(DRAFT_KEY) || "null");
+    } catch (e) {}
+    if (!saved || !saved.draft) return;
+    if (saved.head && state.head && saved.head !== state.head) {
+      clearDraftLocal();
+      return;
+    }
+    if (JSON.stringify(saved.draft) === JSON.stringify(state.original)) {
+      clearDraftLocal();
+      return;
+    }
+    state.restore = saved;
+  }
+
+  function renderRestoreBar() {
+    if (!state.restore) return null;
+    let when = "";
+    try {
+      when = new Date(state.restore.at).toLocaleString("ja-JP", { month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" });
+    } catch (e) {}
+    return h("div", { class: "restore-bar" }, [
+      h("span", null, "保存されていない編集内容がこの端末に残っています" + (when ? "（" + when + "）" : "") + "。"),
+      h(
+        "button",
+        {
+          class: "btn btn-sm",
+          type: "button",
+          onClick: () => {
+            state.draft = deepClone(state.restore.draft);
+            state.i18nEdits = state.restore.i18nEdits || {};
+            state.restore = null;
+            pushToast("編集内容を復元しました", "ok");
+            render();
+          },
+        },
+        "復元する"
+      ),
+      h(
+        "button",
+        {
+          class: "btn btn-sm btn-ghost",
+          type: "button",
+          onClick: () => {
+            state.restore = null;
+            clearDraftLocal();
+            render();
+          },
+        },
+        "破棄する"
+      ),
+    ]);
+  }
+
+  // ============================================================ 全体検索
+
+  function searchHits(q) {
+    const needle = q.trim().toLowerCase();
+    if (!needle) return [];
+    const site = state.draft["data/site.json"] || {};
+    const hits = [];
+    const walk = (val, path) => {
+      if (hits.length >= 60) return;
+      if (Array.isArray(val)) {
+        val.forEach((v, i) => walk(v, path.concat(String(i))));
+      } else if (val && typeof val === "object") {
+        Object.entries(val).forEach(([k, v]) => walk(v, path.concat(k)));
+      } else if (typeof val === "string" || typeof val === "number") {
+        const s = String(val);
+        const label = searchLabel(site, path);
+        if (s.toLowerCase().includes(needle) || label.toLowerCase().includes(needle)) {
+          hits.push({ path: path.join("."), value: s, label: label, group: path[0] });
+        }
+      }
+    };
+    Object.entries(site).forEach(([k, v]) => walk(v, [k]));
+    return hits;
+  }
+
+  // 検索結果に出す場所の名前（例：選ばれる3つの理由 › 運営者としての視点 › 本文）
+  function searchLabel(site, path) {
+    const titleKeys = (state.schema && state.schema.titleKeys) || ["label", "name", "title", "q", "h", "k", "t", "no"];
+    const parts = [];
+    for (let i = 1; i < path.length; i++) {
+      const seg = path[i];
+      if (/^\d+$/.test(seg)) {
+        const item = getPath(site, path.slice(0, i + 1).join("."));
+        let title = "";
+        if (item && typeof item === "object") {
+          for (const k of titleKeys) {
+            if (typeof item[k] === "string" && item[k].trim()) {
+              title = item[k];
+              break;
+            }
+          }
+        }
+        parts.push(title ? (title.length > 24 ? title.slice(0, 24) + "…" : title) : "#" + (Number(seg) + 1));
+      } else if (i === path.length - 1) {
+        parts.push(SUBFIELD_LABELS[seg] ? String(SUBFIELD_LABELS[seg]).split("（")[0] : siteLabel(path.join(".")));
+      } else {
+        parts.push(siteLabel(path.slice(0, i + 1).join(".")));
+      }
+    }
+    return parts.join("　›　");
+  }
+
+  function jumpToPath(path) {
+    const seg = path.split(".");
+    state.currentGroup = (state.schema.groups || []).map((g) => g.id).includes(seg[0]) ? seg[0] : state.currentGroup;
+    // 途中の配列カードをすべて開く
+    for (let i = 1; i < seg.length; i++) {
+      if (/^\d+$/.test(seg[i])) state.openCards[seg.slice(0, i).join(".") + "#" + seg[i]] = true;
+    }
+    state.jumpTo = path;
+    state.sideOpen = false;
+    render();
+  }
+
+  function renderSearchPage() {
+    const hits = searchHits(state.search);
+    const body = [
+      h("h1", { class: "page-title" }, "検索結果"),
+      h("p", { class: "page-desc" }, "「" + state.search + "」を含む項目：" + hits.length + "件" + (hits.length >= 60 ? "（上位60件）" : "")),
+    ];
+    if (!hits.length) {
+      body.push(h("div", { class: "empty-state" }, "見つかりませんでした。別の言葉でお試しください。"));
+    }
+    const re = new RegExp(state.search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "gi");
+    for (const hit of hits) {
+      const snippet = hit.value.length > 160 ? hit.value.slice(0, 160) + "…" : hit.value;
+      body.push(
+        h("button", { class: "hit", type: "button", onClick: () => jumpToPath(hit.path) }, [
+          h("div", { class: "hit-where" }, groupNameById(hit.group) + "　›　" + hit.label),
+          h("div", { class: "hit-text", html: escapeHtml(snippet).replace(re, (m) => "<mark>" + m + "</mark>") }),
+        ])
+      );
+    }
+    return h("main", { class: "main" }, [h("div", { class: "main-inner" }, body)]);
+  }
+
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  }
+
   function render() {
     const root = document.getElementById("app");
     root.innerHTML = "";
@@ -685,6 +868,18 @@
     }
 
     root.querySelectorAll("textarea[data-autogrow]").forEach((t) => autoGrow(t));
+
+    if (state.jumpTo) {
+      const target = root.querySelector('[data-path="' + state.jumpTo.replace(/"/g, '\\"') + '"]');
+      state.jumpTo = null;
+      if (target) {
+        target.classList.add("field--flash");
+        target.scrollIntoView({ block: "center", behavior: "smooth" });
+        setTimeout(() => target.classList.remove("field--flash"), 2200);
+      }
+    }
+
+    scheduleDraftSave();
   }
 
   function renderSkeleton() {
@@ -795,6 +990,7 @@
   function renderShell() {
     return h("div", { class: "app" }, [
       renderHeader(),
+      renderRestoreBar(),
       h("div", { class: "shell" }, [
         renderSidebar(),
         h("div", { class: "side-backdrop" + (state.sideOpen ? " open" : ""), onClick: () => ((state.sideOpen = false), render()) }),
@@ -857,6 +1053,29 @@
 
   function renderSidebar() {
     const items = [];
+    items.push(
+      h("div", { class: "side-search" }, [
+        h("input", {
+          type: "search",
+          class: "side-search-input",
+          placeholder: "サイト内の文章を探す",
+          value: state.search,
+          onInput: (e) => {
+            state.search = e.target.value;
+            state.currentGroup = state.search.trim() ? "__search__" : (state.schema.groups[0] || {}).id;
+            const pos = e.target.selectionStart;
+            render();
+            const box = document.querySelector(".side-search-input");
+            if (box) {
+              box.focus();
+              try {
+                box.setSelectionRange(pos, pos);
+              } catch (err) {}
+            }
+          },
+        }),
+      ])
+    );
     for (const group of state.schema.groups || []) {
       items.push(
         h(
@@ -927,6 +1146,7 @@
     if (!state.currentGroup) {
       return h("main", { class: "main" }, [h("div", { class: "main-inner" }, [h("div", { class: "empty-state" }, "編集する項目を左のメニューから選んでください。")])]);
     }
+    if (state.currentGroup === "__search__") return renderSearchPage();
     if (state.currentGroup === "__images__") return renderImagesPage();
     if (state.currentGroup === "__i18n__") return renderTransPage();
     return renderGroupPage();
@@ -961,8 +1181,38 @@
     }
 
     return h("main", { class: "main" }, [
-      h("div", { class: "main-inner" }, [h("div", { class: "group-head" }, [h("h1", null, group.name), h("p", null, group.desc)]), ...fields]),
+      h("div", { class: "main-inner" }, [
+        h("div", { class: "group-head" }, [h("h1", null, group.name), h("p", null, group.desc), renderPreviewLink(group.id)]),
+        ...fields,
+      ]),
     ]);
+  }
+
+  // 編集中の内容が載るページを別タブで確認
+  const GROUP_PREVIEW = {
+    home: "/",
+    services: "/services",
+    services_page: "/services",
+    news: "/news",
+    posts: "/news",
+    about: "/about",
+    contact: "/contact",
+    privacy: "/privacy",
+    brand: "/",
+    menu: "/",
+    nav: "/",
+    footer: "/",
+    common: "/",
+  };
+
+  function renderPreviewLink(groupId) {
+    const url = GROUP_PREVIEW[groupId];
+    if (!url) return null;
+    return h(
+      "a",
+      { class: "preview-link", href: url, target: "_blank", rel: "noopener" },
+      "公開中のページを見る ↗"
+    );
   }
 
   /** key配下（オブジェクト）を再帰的に走査してフィールドを積む */
@@ -1023,7 +1273,21 @@
         : null,
     ]);
 
-    return h("div", { class: "field" + (advanced ? " field--adv" : "") }, [labelRow, control]);
+    return h("div", { class: "field" + (advanced ? " field--adv" : ""), "data-path": path }, [labelRow, control, seoHint(path, value)]);
+  }
+
+  // 検索結果に出る文章は長さの目安を表示する
+  const SEO_RANGE = { title: [20, 32], desc: [70, 120] };
+
+  function seoHint(path, value) {
+    if (typeof value !== "string") return null;
+    const m = /^meta\.[a-z0-9_]+_(title|desc)$/.exec(path);
+    if (!m) return null;
+    const [lo, hi] = SEO_RANGE[m[1]];
+    const n = Array.from(value).length;
+    const state_ = n === 0 ? "warn" : n < lo ? "warn" : n > hi ? "warn" : "ok";
+    const note = n > hi ? "長すぎると検索結果で途切れます" : n < lo ? "もう少し詳しく書くと効果的です" : "ちょうどよい長さです";
+    return h("div", { class: "seo-hint seo-hint--" + state_ }, n + "文字（目安 " + lo + "〜" + hi + "文字）・" + note);
   }
 
   function renderArrayField(path, arr) {
@@ -1043,7 +1307,7 @@
 
     const control = looksLikeObjArr ? renderListObj(path, arr, onChange) : renderListText(arr, onChange);
 
-    return h("div", { class: "field" }, [labelRow, control]);
+    return h("div", { class: "field", "data-path": path }, [labelRow, control]);
   }
 
   function guessArrayIsObjFromSchema(path) {
@@ -1208,7 +1472,7 @@
             type: "button",
             onClick: (e) => {
               e.stopPropagation();
-              if (!confirm("この項目を削除します。よろしいですか？")) return;
+              if (!confirm("「" + (title || "（未入力）") + "」を削除します。この操作は取り消せません（未保存なら「変更を取り消す」で戻せます）。よろしいですか？")) return;
               const copy = arr.slice();
               copy.splice(idx, 1);
               onChange(copy);
@@ -1324,7 +1588,7 @@
         : null,
     ]);
 
-    return h("div", { class: "obj-card-field" }, [labelRow, control]);
+    return h("div", { class: "obj-card-field", "data-path": path + "." + idx + "." + subKey }, [labelRow, control]);
   }
 
   // ============================================================ 訳文パネル

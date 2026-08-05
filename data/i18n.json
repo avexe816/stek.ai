@@ -85,7 +85,7 @@
     "ja": "PMS・OTA運用・システム導入",
     "en": "PMS / OTA operations / system implementation",
     "zh": "PMS・OTA运营・系统引入",
-    "zh-Hant": "PMS・OTA營運・系統導入",
+    "zh-Hant": "PMS・OTA營運・系統引入",
     "ko": "PMS・OTA 운영・시스템 도입",
     "locked": true
   },
@@ -224,7 +224,7 @@
     "ja": "お知らせをすべて見る",
     "en": "View all news",
     "zh": "查看全部公告",
-    "zh-Hant": "查看全部公告",
+    "zh-Hant": "檢視全部公告",
     "ko": "공지사항 전체 보기",
     "locked": true
   },
@@ -512,7 +512,7 @@
     "ja": "システム導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼を承ります。内容を確認のうえ、担当者より改めてご連絡いたします。",
     "en": "We welcome inquiries about system implementation, operation outsourcing and franchise partnerships, as well as requests for quotations. We will review your message and a representative will contact you.",
     "zh": "我们承接系统导入咨询、运营受托与加盟咨询以及报价申请。确认内容后，将由负责人与您联系。",
-    "zh-Hant": "我們承接系統導入諮詢、營運受託與加盟諮詢以及報價申請。確認內容後，將由負責人與您聯絡。",
+    "zh-Hant": "我們承接系統匯入諮詢、營運受託與加盟諮詢以及報價申請。確認內容後，將由負責人與您聯絡。",
     "ko": "시스템 도입 상담, 운영 수탁·가맹 문의, 견적 의뢰를 받고 있습니다. 내용을 확인한 후 담당자가 다시 연락드립니다.",
     "locked": true
   },
@@ -1120,7 +1120,7 @@
     "ja": "収益管理・AI自動調価の導入",
     "en": "Revenue management / AI dynamic pricing",
     "zh": "收益管理・AI自动调价的引入",
-    "zh-Hant": "收益管理・AI自動調價的導入",
+    "zh-Hant": "收益管理・AI自動調價的引入",
     "ko": "수익 관리・AI 자동 가격 조정 도입",
     "locked": true
   },
@@ -2575,5 +2575,125 @@
     "zh-Hant": "餐飲店、咖啡廳、酒吧、宴會設施、浴場設施等住宿設施附屬設施的經營",
     "ko": "음식점, 카페, 바, 연회 시설, 욕장 시설 그 밖의 숙박시설에 부수하는 시설의 경영",
     "locked": true
+  },
+  "fb4979f76276dc55": {
+    "en": "AI Dynamic Pricing (Automated Rate Adjustment)",
+    "zh": "AI动态定价（价格自动调整）",
+    "ko": "AI 다이내믹 프라이싱(가격 자동 조정)",
+    "ja": "AIダイナミックプライシング（価格の自動調整）",
+    "locked": true,
+    "zh-Hant": "AI動態定價（價格自動調整）"
+  },
+  "6db3a0c3f68dcf10": {
+    "en": "We turn demand forecasts and each property's sales policy into rules in advance, so daily rate changes happen automatically. Ceiling and floor prices, the line below which you will never discount, and the price band you want to maintain as a brand can all be set and changed by the property at any time. We also support settings that automatically raise rates during events or sudden demand spikes, preventing both lost sales and unnecessary discounting.",
+    "zh": "预先将需求预测与各设施的销售方针设定为规则，每日的价格调整自动完成。价格上限与下限、绝不再下调的底线、以及作为品牌希望维持的价位区间，设施方随时都可以自行设定与变更。同时支持在活动期间或需求骤增时自动上调价格的设定，既避免卖漏，也避免贱卖。",
+    "ko": "수요 예측과 시설별 판매 방침을 미리 규칙으로 정해 두고, 매일의 가격 개정을 자동으로 진행합니다. 상한가·하한가, 더 이상 내리지 않는 기준선, 브랜드로서 유지하고 싶은 가격대는 시설 측에서 언제든지 설정하고 변경할 수 있습니다. 이벤트나 갑작스러운 수요 증가 시 가격을 자동으로 올리는 설정에도 대응하여, 판매 기회 손실과 과도한 할인을 모두 방지합니다.",
+    "ja": "需要予測と施設ごとの販売方針をあらかじめルールにしておき、日々の価格改定を自動で行います。上限価格・下限価格、これ以上は値下げしないライン、ブランドとして維持したい価格帯は、施設側でいつでも設定・変更できます。イベントや急な需要増のときは価格を自動で引き上げる設定にも対応し、売り逃しと安売りのどちらも防ぎます。",
+    "locked": true,
+    "zh-Hant": "預先將需求預測與各設施的銷售方針設定為規則，每日的價格調整自動完成。價格上限與下限、絕不再下調的底線、以及作為品牌希望維持的價位區間，設施方隨時都可以自行設定與變更。同時支援在活動期間或需求驟增時自動上調價格的設定，既避免賣漏，也避免賤賣。"
+  },
+  "a2d1ba7730c48d5f": {
+    "en": "From revenue management and AI-driven automated rate adjustment to official website production and SEO, hotel operation outsourcing, guest-room cleaning and linen supply, and the conversion of idle real estate into lodging use—as an operator that runs hotels ourselves, we support revenue and on-site operations as one integrated whole.",
+    "zh": "从收益管理与AI价格自动调整、官网建设与SEO，到酒店委托运营、客房清洁与布草供应，再到闲置房产的住宿化改造。作为亲自运营酒店的经营者，我们将收益与现场运营一体化支持。",
+    "ko": "레비뉴 매니지먼트와 AI를 활용한 가격 자동 조정, 공식 웹사이트 제작과 SEO, 호텔 운영 위탁, 객실 청소·린넨 서플라이, 유휴 부동산의 숙박시설 전환까지. 스스로 호텔을 운영하는 사업자로서 수익과 현장을 하나로 지원합니다.",
+    "ja": "レベニューマネジメントとAIによる価格の自動調整、公式サイト制作とSEO、ホテルの運営受託、客室清掃・リネン供給、遊休不動産の宿泊転用まで。自らホテルを運営する事業者として、収益と現場を一体で支えます。",
+    "locked": true,
+    "zh-Hant": "從收益管理與AI價格自動調整、官網建設與SEO，到飯店委託營運、客房清潔與布草供應，再到閒置房產的住宿化改造。作為親自營運飯店的經營者，我們將收益與現場營運一體化支援。"
+  },
+  "c634123714b5db48": {
+    "en": "From revenue management and AI-driven automated rate adjustment, PMS/OTA operation, official website production and SEO, hotel operation outsourcing and franchise development, to guest-room cleaning, linen and supplies, and the conversion of idle real estate into lodging use—we provide, all together, the functions a lodging business needs.",
+    "zh": "从收益管理与AI价格自动调整、PMS・OTA运营，到官网建设与SEO、酒店委托运营与加盟连锁拓展，再到客房清洁・布草・备品供应，以及闲置房产的住宿化改造，我们统一提供住宿业务所需的各项功能。",
+    "ko": "수익 관리와 AI 가격 자동 조정, PMS·OTA 운영, 공식 웹사이트 제작과 SEO, 호텔 운영 위탁과 FC 전개, 객실 청소·린넨·비품 공급, 유휴 부동산의 숙박시설 전환까지. 숙박사업에 필요한 기능을 한데 모아 제공합니다.",
+    "ja": "収益管理とAIによる価格の自動調整、PMS・OTA運用、公式サイト制作とSEO、ホテルの運営受託とFC展開、客室清掃・リネン・備品供給、遊休不動産の宿泊転用まで。宿泊事業に必要な機能をまとめて提供します。",
+    "locked": true,
+    "zh-Hant": "從收益管理與AI價格自動調整、PMS・OTA營運，到官網建設與SEO、飯店委託營運與加盟連鎖拓展，再到客房清潔・布草・備品供應，以及閒置房產的住宿化改造，我們統一提供住宿業務所需的各項功能。"
+  },
+  "ed0ac06d08945ccd": {
+    "en": "Revenue management / AI dynamic pricing",
+    "zh": "收益管理・AI价格自动调整的引入",
+    "ko": "수익 관리·AI 가격 자동 조정 도입",
+    "ja": "収益管理・AIによる価格調整の導入",
+    "locked": true,
+    "zh-Hant": "收益管理・AI價格自動調整的引入"
+  },
+  "c707197932baddfe": {
+    "en": "Talk to us about implementing our systems, operation contracts and franchising, or request a quotation. We will review your enquiry and a member of our team will get back to you.",
+    "zh": "系统导入咨询、运营受托与加盟洽谈、报价申请请由此提交。我们确认内容后，将由专人与您联系。",
+    "ko": "시스템 도입 상담, 운영 수탁·가맹 문의, 견적 의뢰는 이곳에서. 내용을 확인한 뒤 담당자가 다시 연락드립니다.",
+    "ja": "システム導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼はこちらから。内容を確認のうえ、担当者より改めてご連絡いたします。",
+    "locked": true,
+    "zh-Hant": "系統匯入諮詢、營運受託與加盟洽談、報價申請請由此提交。我們確認內容後，將由專人與您聯絡。"
+  },
+  "2f90ae2dc337b3a7": {
+    "en": "We support the selection, implementation, and migration of PMS (property management systems), booking engines, and channel managers, centrally managing inventory across multiple OTAs to prevent overbooking. Our scope of operation includes listing content, plan design, photos, and review responses on platforms such as Rakuten Travel, Jalan, Booking.com, Expedia, and Agoda. Partial implementation that keeps your existing systems in place is also possible.",
+    "zh": "我们协助您选型、导入及迁移PMS（酒店管理系统）、预订引擎及渠道管理器，统一管理多个OTA的库存，防止超额预订。运营范围涵盖乐天旅游、Jalan、Booking.com、Expedia、Agoda等平台的信息发布、套餐设计、图片及评论回复。也支持在保留现有系统的基础上进行部分导入。",
+    "ko": "PMS(숙박 관리 시스템)와 예약 엔진, 사이트 컨트롤러의 선정·도입·이전을 지원하며, 복수 OTA의 재고를 일괄 관리하여 오버부킹을 방지합니다. 라쿠텐 트래블, 자란(じゃらん), Booking.com, Expedia, Agoda 등의 게재 내용, 플랜 설계, 사진, 리뷰 답변까지를 운영 대상으로 포함합니다. 기존 시스템을 유지한 채 부분적으로 도입하는 것도 가능합니다.",
+    "ja": "PMS（宿泊管理システム）や予約エンジン、サイトコントローラーの選定・導入・移行を支援し、複数OTAの在庫を一元管理してオーバーブッキングを防ぎます。楽天トラベル、じゃらん、Booking.com、Expedia、Agoda などの掲載内容、プラン設計、写真、レビュー返信までを運用対象に含めます。既存システムを残したままの部分導入も可能です。",
+    "locked": true,
+    "zh-Hant": "我們協助您選型、匯入及遷移PMS（飯店管理系統）、預訂引擎及渠道管理器，統一管理多個OTA的庫存，防止超額預訂。營運範圍涵蓋樂天旅遊、Jalan、Booking.com、Expedia、Agoda等平臺的資訊釋出、套餐設計、圖片及評論回覆。也支援在保留現有系統的基礎上進行部分匯入。"
+  },
+  "b734708e66c1f8ff": {
+    "en": "In addition to capturing branded searches for the property's name, we also capture the segment searching by \"area + purpose.\" We handle the technical side—page structure and internal links, structured data, page speed (Core Web Vitals), and multilingual hreflang settings—and we also manage Google Business Profile (MEO) information and review responses, and, as needed, listing ad operation.",
+    "zh": "除了针对设施名称的指名搜索，我们也吸引以“地区+目的”方式搜索的潜在客户。从技术层面完善页面结构、内部链接、结构化数据、加载速度（Core Web Vitals）以及多语言hreflang设置，同时负责完善Google商家资料（MEO）信息、处理用户评价，并可根据需要负责搜索广告的投放运营。",
+    "ko": "시설명으로 하는 지명 검색뿐 아니라 '지역+목적'으로 검색하는 고객층도 확보합니다. 페이지 구조와 내부 링크, 구조화 데이터, 표시 속도(Core Web Vitals), 다국어 hreflang 설정까지 기술적인 측면에서 정비하고, Google 비즈니스 프로필(MEO)의 정보 정비와 리뷰 대응, 필요에 따라 리스팅 광고 운영도 담당합니다.",
+    "ja": "施設名での指名検索に加え、「エリア＋目的」で探す層も取り込みます。ページ構造と内部リンク、構造化データ、表示速度（Core Web Vitals）、多言語のhreflang設定までを技術面から整え、Googleビジネスプロフィール（MEO）の情報整備と口コミ対応、必要に応じてリスティング広告の運用も担当します。",
+    "locked": true,
+    "zh-Hant": "除了針對設施名稱的指名搜尋，我們也吸引以「地區+目的」方式搜尋的潛在客戶。從技術層面完善頁面結構、內部連結、結構化資料、載入速度（Core Web Vitals）以及多語言hreflang設定，同時負責完善Google商家資料（MEO）資訊、處理使用者評價，並可根據需要負責搜尋廣告的投放營運。"
+  },
+  "913d3bdbee19cbf3": {
+    "en": "We build staffing plans based on room count and turnover rate, and finish rooms within the time between checkout and check-in. Our standard scope of work includes in-room cleaning, bathroom disinfection, linen replacement, amenity restocking, trash collection, and checking for and reporting lost items, with a standard working time set per room. We also arrange in advance for increased room volume during peak periods, stay-over cleaning for consecutive-night guests, and late check-out handling.",
+    "zh": "我们根据客房数量与周转次数制定人员计划，在退房到入住之间的时间内完成清洁工作。标准业务范围包括客房内清洁、浴室消毒、布草更换、洗漱用品补充、垃圾回收，以及遗失物品的确认与报告，并设定每间客房的标准作业时长进行运营管理。旺季增房、连住清洁（Stay-over）及延迟退房应对等事项均会事先约定。",
+    "ko": "객실 수와 회전율에 맞춘 인력 계획을 짜서 체크아웃부터 체크인까지의 시간 내에 마무리합니다. 청소, 욕실 소독, 린넨 교체, 어메니티 보충, 쓰레기 수거, 분실물 확인 및 보고까지를 표준 업무 범위로 하고, 객실당 표준 작업 시간을 정하여 운영합니다. 성수기 증실, 연박 청소(스테이오버), 레이트 체크아웃 대응도 사전에 협의합니다.",
+    "ja": "客室数と回転数に応じた要員計画を組み、チェックアウトからチェックインまでの時間内に仕上げます。客室内の清掃、バスルームの消毒、リネン交換、アメニティ補充、ゴミ回収、忘れ物の確認と報告までを標準の業務範囲とし、1室あたりの標準作業時間を定めて運用します。繁忙期の増室、連泊清掃（ステイオーバー）、レイトチェックアウト対応も事前に取り決めます。",
+    "locked": true,
+    "zh-Hant": "我們根據客房數量與週轉次數制定人員計劃，在退房到入住之間的時間內完成清潔工作。標準業務範圍包括客房內清潔、浴室消毒、布草更換、盥洗用品補充、垃圾回收，以及遺失物品的確認與報告，並設定每間客房的標準作業時長進行營運管理。旺季增房、連住清潔（Stay-over）及延遲退房應對等事項均會事先約定。"
+  },
+  "f92c433a6afdf560": {
+    "en": "We handle daily cleaning of the lobby, entrance, corridors, stairs, elevators, shared restrooms, communal baths, and waste-collection areas. We also carry out planned periodic cleaning at set intervals, including carpet shampoo cleaning and stain removal, floor polishing and waxing, glass cleaning, and disassembly cleaning of lighting fixtures and air-conditioner filters.",
+    "zh": "我们负责大厅、入口、走廊、楼梯、电梯、公共卫生间、大浴场及垃圾存放处的日常清洁。同时，还会按既定频次系统性开展地毯洗涤除渍、地板打磨上蜡、玻璃清洁、灯具及空调滤网拆解清洁等定期特别清洁工作。",
+    "ko": "로비, 입구, 복도, 계단, 엘리베이터, 공용 화장실, 대욕장, 쓰레기 집하장의 일상 청소를 진행합니다. 아울러 카펫 샴푸 클리닝과 얼룩 제거, 바닥 연마·왁싱, 유리 청소, 조명기구와 에어컨 필터 분해 청소 등 주기를 정한 정기 청소도 계획적으로 실시합니다.",
+    "ja": "ロビー、エントランス、廊下、階段、エレベーター、共用トイレ、大浴場、ゴミ置き場の日常清掃を行います。あわせて、カーペットのシャンプークリーニングとシミ抜き、床の研磨・ワックス、ガラス清掃、照明器具やエアコンフィルターの分解清掃など、頻度を決めた定期清掃も計画的に実施します。",
+    "locked": true,
+    "zh-Hant": "我們負責大廳、入口、走廊、樓梯、電梯、公共衛生間、大浴場及垃圾存放處的日常清潔。同時，還會按既定頻次系統性開展地毯洗滌除漬、地板打磨上蠟、玻璃清潔、燈具及空調濾網拆解清潔等定期特別清潔工作。"
+  },
+  "9ee474e31118bf8a": {
+    "en": "We select and supply shampoo products, toothbrushes, slippers, room wear, cleaning supplies, and guest-room items, balancing quality against unit cost. We handle both domestic procurement and imports, and after comparing your existing procurement and unit costs side by side, we propose switching only the items that should be switched. We can also plan original-specification (OEM) amenities.",
+    "zh": "我们在品质与单价之间取得平衡，精选并供应洗发水类产品、牙刷、拖鞋、馆内服、清洁用物料及客房备品。同时支持国内采购与进口采购，会将现有采购内容与单价进行对比，仅针对需要更换的部分提出建议。也可提供原创规格（OEM）洗漱用品的策划服务。",
+    "ko": "샴푸류, 치약솔, 슬리퍼, 실내복, 청소용 자재, 객실 비품을 품질과 단가의 균형을 고려하여 선정하고 공급합니다. 국내 조달과 수입 모두에 대응하며, 기존 매입 내용과 단가를 비교한 후 전환할 필요가 있는 항목만 제안합니다. 자체 사양(OEM)의 어메니티 기획도 가능합니다.",
+    "ja": "シャンプー類、歯ブラシ、スリッパ、館内着、清掃用資材、客室備品を、品質と単価のバランスで選定して供給します。国内調達と輸入の双方に対応し、既存の仕入れ内容と単価を並べて比較したうえで、切り替えるべきものだけをご提案します。オリジナル仕様（OEM）のアメニティ企画も可能です。",
+    "locked": true,
+    "zh-Hant": "我們在品質與單價之間取得平衡，精選並供應洗髮水類產品、牙刷、拖鞋、館內服、清潔用物料及客房備品。同時支援國內採購與進口採購，會將現有采購內容與單價進行對比，僅針對需要更換的部分提出建議。也可提供原創規格（OEM）盥洗用品的策劃服務。"
+  },
+  "50b2a4b3da6932c7": {
+    "en": "Automated pricing, cleaning shifts, supply ordering, and linen rotation are all completed within the same team. We don't create the disconnect where a system is introduced but the front line can't keep up.",
+    "zh": "价格自动调整、清洁排班、备品订购与布草周转均在同一团队内完成，不会出现系统导入后现场无法运转的脱节情况。",
+    "ko": "요금 자동 조정과 청소 시프트, 비품 발주, 리넨 순환을 같은 팀 안에서 완결합니다. 도입은 했지만 현장이 돌아가지 않는 단절을 만들지 않습니다.",
+    "ja": "料金の自動調整と清掃シフト、備品発注、リネンの回転を、同じチームの中で完結させます。導入したのに現場が回らない、という分断を起こしません。",
+    "locked": true,
+    "zh-Hant": "價格自動調整、清潔排班、備品訂購與布草週轉均在同一團隊內完成，不會出現系統匯入後現場無法運轉的脫節情況。"
+  },
+  "5bc34ee01cc70022": {
+    "en": "We design our business on the premise that we run lodging facilities ourselves and also take on operation contracts for others. We make decisions based on actual profit and loss — down to cleaning workflows, staffing during peak periods, and OTA commission rates.",
+    "zh": "我们以自主运营住宿设施、同时承接他方设施运营为前提设计业务体系，从清洁动线、旺季人员调配到各OTA手续费，均以实际损益为判断依据。",
+    "ko": "자사가 직접 숙박시설을 운영하고 타사 시설의 운영도 수탁하는 것을 전제로 사업을 설계합니다. 청소 동선, 성수기 인력 배치, OTA별 수수료까지 포함하여 실제 손익으로 판단합니다.",
+    "ja": "自社で宿泊施設を運営し、他社施設の運営も受託することを前提に事業を設計しています。清掃の動線、繁忙期の人繰り、OTAごとの手数料まで含めて、実際の損益で判断します。",
+    "locked": true,
+    "zh-Hant": "我們以自主營運住宿設施、同時承接他方設施營運為前提設計業務體系，從清潔動線、旺季人員調配到各OTA手續費，均以實際損益為判斷依據。"
+  },
+  "56b0696768d01b0b": {
+    "en": "We build the official website, booking flow, in-house guest information, and inquiry response as standard in five languages: Japanese, English, Chinese (Simplified / Traditional), and Korean. This is well suited to properties in urban areas and tourist destinations with a high proportion of inbound guests.",
+    "zh": "官网、预订路径、馆内引导、咨询应答均以日语、英语、中文（简体／繁体）、韩语5种语言为标准构建，适合访日游客占比较高的城市及观光地区设施。",
+    "ko": "공식 웹사이트, 예약 유도 경로, 시설 안내, 문의 대응을 일본어·영어·중국어(간체／번체)·한국어 5개 언어로 표준 구축합니다. 방일객 비율이 높은 도심지·관광지 시설에 적합합니다.",
+    "ja": "公式サイト、予約導線、館内案内、問い合わせ対応を日本語・英語・中国語（簡体字／繁体字）・韓国語の5言語を標準で構築します。訪日客比率の高い都市部・観光地の施設に適しています。",
+    "locked": true,
+    "zh-Hant": "官網、預訂路徑、館內引導、諮詢應答均以日語、英語、中文（簡體／繁體）、韓語5種語言為標準構建，適合訪日遊客佔比較高的城市及觀光地區設施。"
+  },
+  "cffe37850ee631dc": {
+    "en": "For urgent matters, please call us. The person in charge may be away, so we recommend the contact form if you need a reliable reply.",
+    "zh": "急事请直接电话联系。负责人有时会不在，如需确保得到回复，建议通过表单提交咨询。",
+    "ko": "급한 용무는 전화로 연락해 주세요. 담당자가 자리를 비울 수 있으므로, 확실한 답변을 원하시면 문의 양식을 이용해 주세요.",
+    "ja": "お急ぎの場合はお電話ください。担当者が不在のこともございますので、確実にご連絡を差し上げるにはフォームのご利用をおすすめします。",
+    "locked": true,
+    "zh-Hant": "急事請直接電話聯絡。負責人有時會不在，如需確保得到回覆，建議透過表單提交諮詢。"
   }
 }

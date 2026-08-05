@@ -467,3 +467,68 @@ textarea { resize: none; overflow: hidden; min-height: 46px; line-height: 1.8; }
 .tr-foot{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
 .tr-log{font-size:13px;margin:12px 0 0;color:#3f6b55}
 @media (max-width:700px){.tr-row{grid-template-columns:1fr;gap:6px}.tr-num{text-align:left}}
+
+/* --- サイト内検索 --- */
+.side-search { padding: 12px 12px 6px; }
+.side-search-input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 14px;
+}
+.side-search-input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.hit {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  font: inherit;
+}
+.hit:hover { border-color: var(--accent); }
+.hit-where { font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.hit-text { font-size: 14px; line-height: 1.65; }
+.hit-text mark { background: var(--warn-tint); color: inherit; padding: 0 2px; border-radius: 2px; }
+.field--flash { animation: fieldFlash 2.2s ease; border-radius: 10px; }
+@keyframes fieldFlash {
+  0%, 60% { box-shadow: 0 0 0 3px var(--accent); }
+  100% { box-shadow: 0 0 0 3px transparent; }
+}
+
+/* --- 未保存の下書きの復元 --- */
+.restore-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background: var(--warn-tint);
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  color: var(--ink);
+}
+
+/* --- SEO の文字数の目安 --- */
+.seo-hint { margin-top: 6px; font-size: 12px; color: var(--muted); }
+.seo-hint--warn { color: var(--warn); }
+
+/* --- 公開中のページを見る --- */
+.preview-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+}
+.preview-link:hover { color: var(--accent-2); }
