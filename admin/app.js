@@ -12,6 +12,11 @@
     original: null, // { "data/site.json": {...}, "data/i18n.json": {...} } 深いコピー
     draft: null,
     images: [],
+    imageMeta: {},
+    picker: null,
+    imgSel: {},
+    dragOver: false,
+    trans: { stats: null, loading: false, running: false, log: "" },
     head: null,
     i18nByJa: null, // Map ja文字列 -> i18n entry（entry.__key にキーを持たせる）
     i18nEdits: {}, // 訳文の手直し { キー: { 言語: 文字列 or null(再翻訳) } }
@@ -226,6 +231,7 @@
 
   function groupNameById(id) {
     if (id === "__images__") return "写真";
+    if (id === "__i18n__") return "翻訳の状況";
     const g = (state.schema.groups || []).find((g) => g.id === id);
     return g ? g.name : id;
   }
@@ -322,6 +328,98 @@
     if (old && old.parentNode) old.parentNode.replaceChild(renderSaveBar(), old);
   }
 
+  // ============================================================ 翻訳の状況
+
+  const LANG_JA = { en: "英語", zh: "簡体字中国語", ko: "韓国語", "zh-Hant": "繁体字中国語" };
+
+  async function loadTransStats() {
+    state.trans.loading = true;
+    render();
+    try {
+      const res = await api("/translate-stats", { method: "GET" });
+      state.trans.stats = res.data && res.data.ok ? res.data : null;
+      if (!state.trans.stats) state.trans.log = "件数を取得できませんでした。";
+    } catch (e) {
+      state.trans.log = "サーバーに接続できませんでした。";
+    }
+    state.trans.loading = false;
+    render();
+  }
+
+  async function runTransFill() {
+    state.trans.running = true;
+    state.trans.log = "翻訳しています…";
+    render();
+    let done = 0;
+    for (let round = 0; round < 12; round++) {
+      let res;
+      try {
+        res = await api("/translate-fill", { method: "POST", body: JSON.stringify({ limit: 80 }) });
+      } catch (e) {
+        state.trans.log = "サーバーに接続できませんでした。";
+        break;
+      }
+      const d = res.data || {};
+      if (!d.ok) {
+        state.trans.log = d.hint || (d.error === "conflict" ? "ほかの方が先に保存しました。画面を再読み込みしてください。" : "翻訳できませんでした。");
+        break;
+      }
+      done += d.added || 0;
+      state.trans.log = `${done}件を翻訳しました。` + (d.pending ? `残り ${d.pending}件…` : "");
+      render();
+      if (!d.pending || !d.added) break;
+    }
+    state.trans.running = false;
+    state.trans.log = done ? `${done}件の翻訳を追加しました。公開まで数分かかります。` : state.trans.log || "未翻訳はありませんでした。";
+    if (done) startStatusPolling();
+    render();
+    loadTransStats();
+  }
+
+  function renderTransPage() {
+    const t = state.trans;
+    const st = t.stats;
+    const rows = st
+      ? ["en", "zh", "ko"].map((l) =>
+          h("div", { class: "tr-row" }, [
+            h("div", { class: "tr-lang" }, LANG_JA[l]),
+            h("div", { class: "tr-bar" }, [
+              h("span", { style: `width:${st.total ? Math.round(((st.total - st.missing[l]) / st.total) * 100) : 100}%` }),
+            ]),
+            h("div", { class: "tr-num" + (st.missing[l] ? " is-warn" : "") }, st.missing[l] ? "未翻訳 " + st.missing[l] + "件" : "すべて翻訳済み"),
+          ])
+        )
+      : [];
+
+    return h("main", { class: "main" }, [
+      h("div", { class: "main-inner" }, [
+        h("div", { class: "group-head" }, [
+          h("h1", null, "翻訳の状況"),
+          h("p", null, "日本語で書いた文章は、保存するときに英語・簡体字中国語・韓国語へ自動で翻訳されます（繁体字は公開時に簡体字から変換されます）。ここでは残っている未翻訳をまとめて処理できます。"),
+        ]),
+        h("div", { class: "card" }, [
+          h("div", { class: "card-head" }, [h("h3", null, "言語ごとの状況")]),
+          t.loading ? h("div", { class: "empty-state" }, "確認しています…") : null,
+          st ? h("div", { class: "tr-list" }, rows) : null,
+          st ? h("p", { class: "tr-note" }, `文章の総数 ${st.total}件／人が確認済みの訳 ${st.locked}件`) : null,
+          h("div", { class: "tr-foot" }, [
+            h(
+              "button",
+              { class: "btn btn-primary", type: "button", disabled: t.running || t.loading, onClick: runTransFill },
+              t.running ? "翻訳しています…" : "未翻訳をまとめて翻訳する"
+            ),
+            h("button", { class: "btn btn-ghost", type: "button", disabled: t.running, onClick: loadTransStats }, "最新の状況を見る"),
+          ]),
+          t.log ? h("p", { class: "tr-log" }, t.log) : null,
+        ]),
+        h("div", { class: "card" }, [
+          h("div", { class: "card-head" }, [h("h3", null, "個別に訳を直したいとき")]),
+          h("p", { class: "tr-note" }, "各入力欄の横にある「訳文」ボタンから、言語ごとの訳を確認・手直しできます。手直しした訳は以後、自動翻訳で上書きされません。もう一度自動翻訳させたい場合は、訳文パネルの「日本語から再翻訳」を押してください。"),
+        ]),
+      ]),
+    ]);
+  }
+
   // ============================================================ 起動
 
   async function boot() {
@@ -358,6 +456,7 @@
       }
       state.head = bRes.data.head;
       state.images = bRes.data.images || [];
+      state.imageMeta = bRes.data.imageMeta || {};
       state.schema = bRes.data.files["data/admin-schema.json"];
       const files = {};
       files["data/site.json"] = bRes.data.files["data/site.json"] || {};
@@ -579,6 +678,7 @@
     root.appendChild(renderToasts());
     if (state.modal === "diff") root.appendChild(renderDiffModal());
     if (state.modal === "conflict") root.appendChild(renderConflictModal());
+    if (state.modal === "picker") root.appendChild(renderPickerModal());
     if (state.transPanel) {
       root.appendChild(renderTransOverlay());
       root.appendChild(renderTransPanel());
@@ -788,6 +888,21 @@
         ["写真", state.upload.queue.length ? h("span", { class: "side-dot" }) : null]
       )
     );
+    items.push(
+      h(
+        "button",
+        {
+          class: "side-item" + (state.currentGroup === "__i18n__" ? " active" : ""),
+          onClick: () => {
+            state.currentGroup = "__i18n__";
+            state.sideOpen = false;
+            render();
+            loadTransStats();
+          },
+        },
+        ["翻訳の状況", state.trans.stats && state.trans.stats.missingTotal ? h("span", { class: "side-dot" }) : null]
+      )
+    );
 
     const statusBox = h("div", { class: "side-status" }, [
       h("div", { class: "side-status-label" }, "公開状況"),
@@ -813,6 +928,7 @@
       return h("main", { class: "main" }, [h("div", { class: "main-inner" }, [h("div", { class: "empty-state" }, "編集する項目を左のメニューから選んでください。")])]);
     }
     if (state.currentGroup === "__images__") return renderImagesPage();
+    if (state.currentGroup === "__i18n__") return renderTransPage();
     return renderGroupPage();
   }
 
@@ -882,7 +998,9 @@
 
     const isMultiline = typeof value === "string" && (value.length > 48 || value.includes("\n"));
     let control;
-    if (typeof value === "number") {
+    if (isImageKey(path)) {
+      control = renderImageControl(value, onChange);
+    } else if (typeof value === "number") {
       control = h("input", { type: "number", value: value, onInput: (e) => onChange(e.target.value === "" ? "" : Number(e.target.value)) });
     } else if (isMultiline) {
       control = h("textarea", {
@@ -900,7 +1018,7 @@
     const labelRow = h("div", { class: "field-label-row" }, [
       h("span", { class: "field-label" + (advanced ? " field-label--adv" : "") }, advanced ? "上級者向け：" + label : label),
       dirty ? h("span", { class: "dirty-dot" }) : null,
-      typeof value === "string" && value.trim()
+      typeof value === "string" && value.trim() && !isImageKey(path)
         ? h("button", { type: "button", class: "trans-btn", onClick: () => openTransPanel(value) }, "訳文")
         : null,
     ]);
@@ -1125,7 +1243,14 @@
         class: "btn btn-sm add-card-btn",
         type: "button",
         onClick: () => {
-          const template = arr.length ? deepClone(arr[0]) : {};
+          const tpl = (state.schema.templates || {})[path.replace(/\.\d+\./g, ".")];
+          const template = tpl ? deepClone(tpl) : arr.length ? deepClone(arr[0]) : {};
+          if (tpl) {
+            const copy0 = arr.concat([template]);
+            onChange(copy0);
+            state.openCards[path + "#" + (copy0.length - 1)] = true;
+            return;
+          }
           for (const k of Object.keys(template)) {
             template[k] = typeof template[k] === "string" ? "" : Array.isArray(template[k]) ? [] : typeof template[k] === "number" ? 0 : template[k];
           }
@@ -1156,6 +1281,7 @@
     date: "日付（例：2026-04-01）",
     category: "カテゴリー（例：会社 / サービス / 採用）",
     items: "サービス項目",
+    img: "写真",
   };
 
   function renderObjSubField(path, arr, idx, subKey, value, onChange) {
@@ -1169,7 +1295,9 @@
     };
 
     let control;
-    if (Array.isArray(value)) {
+    if (isImageKey(subKey)) {
+      control = renderImageControl(value, (val) => update(val));
+    } else if (Array.isArray(value)) {
       const isObjArr = value.length > 0 && typeof value[0] === "object" && value[0] !== null && !Array.isArray(value[0]);
       control = isObjArr
         ? h("div", null, [renderListObj(path + "." + idx + "." + subKey, value, (newArr) => update(newArr))])
@@ -1191,7 +1319,7 @@
 
     const labelRow = h("label", { class: advanced ? "field-label--adv" : "" }, [
       advanced ? "上級者向け：" + label : label,
-      typeof value === "string" && value.trim() && subKey !== "link" && subKey !== "date"
+      typeof value === "string" && value.trim() && subKey !== "link" && subKey !== "date" && subKey !== "slug" && !isImageKey(subKey)
         ? h("button", { type: "button", class: "trans-btn", style: "margin-left:8px", onClick: (e) => (e.preventDefault(), openTransPanel(value)) }, "訳文")
         : null,
     ]);
@@ -1410,6 +1538,7 @@
 
   function closeModal() {
     state.modal = null;
+    state.picker = null;
     render();
   }
 
@@ -1597,47 +1726,299 @@
     }
   }
 
+  // ============================================================ 画像ライブラリ
+
+  /** その項目が「写真を選ぶ欄」かどうか */
+  function isImageKey(path) {
+    const last = String(path || "").split(".").pop();
+    return last === "img" || last === "hero_img" || last === "og_img" || /_img$/.test(last);
+  }
+
+  /** 画像が使われている場所を洗い出す（削除前の確認に使う） */
+  function groupLabelForKey(key) {
+    const g = (state.schema.groups || []).find((x) => x.key === key);
+    return g ? g.name : key;
+  }
+
+  function imageUsage() {
+    const used = {};
+    const walk = (obj, trail) => {
+      if (obj == null) return;
+      if (Array.isArray(obj)) {
+        obj.forEach((v, i) => walk(v, trail.concat(["#" + (i + 1)])));
+        return;
+      }
+      if (typeof obj !== "object") return;
+      for (const [k, v] of Object.entries(obj)) {
+        if (typeof v === "string" && isImageKey(k) && v.trim()) {
+          const top = groupLabelForKey(trail[0] || k);
+          const idx = trail.find((t) => t.startsWith("#"));
+          const title = obj.title || obj.name || "";
+          const where = top + (title ? "：" + title : idx ? " " + idx : "");
+          (used[v.trim()] = used[v.trim()] || []).push(where);
+        } else {
+          walk(v, trail.concat([k]));
+        }
+      }
+    };
+    walk(state.draft["data/site.json"] || {}, []);
+    return used;
+  }
+
+  function thumbUrl(name) {
+    return "/assets/img/" + name + "-sm.webp";
+  }
+
+  /** 写真を選ぶ欄（サムネイル＋選び直し） */
+  function renderImageControl(value, onChange) {
+    const name = String(value || "").trim();
+    const known = state.images.includes(name);
+    const thumb = name
+      ? known
+        ? h("img", { class: "imgpick-thumb", src: thumbUrl(name), alt: "", loading: "lazy" })
+        : h("div", { class: "imgpick-thumb imgpick-thumb-missing" }, "見つかりません")
+      : h("div", { class: "imgpick-thumb imgpick-thumb-empty" }, "写真なし");
+
+    return h("div", { class: "imgpick" }, [
+      thumb,
+      h("div", { class: "imgpick-body" }, [
+        h("div", { class: "imgpick-name" }, name ? name + ".webp" : "（設定されていません）"),
+        h("div", { class: "imgpick-btns" }, [
+          h(
+            "button",
+            { class: "btn btn-sm", type: "button", onClick: () => openPicker(name, (picked) => onChange(picked)) },
+            name ? "写真を選び直す" : "写真を選ぶ"
+          ),
+          name ? h("button", { class: "btn btn-ghost btn-sm", type: "button", onClick: () => onChange("") }, "写真を外す") : null,
+        ]),
+      ]),
+    ]);
+  }
+
+  function openPicker(current, cb) {
+    state.picker = { current: current || "", cb: cb, q: "" };
+    state.modal = "picker";
+    render();
+  }
+
+  function renderPickerModal() {
+    const p = state.picker || { current: "", cb: () => {} };
+    const q = (p.q || "").trim().toLowerCase();
+    const list = state.images.filter((n) => !q || n.includes(q));
+
+    const pick = (name) => {
+      const cb = p.cb;
+      state.modal = null;
+      state.picker = null;
+      cb(name);
+    };
+
+    const cells = list.map((n) =>
+      h(
+        "button",
+        {
+          class: "pick-cell" + (n === p.current ? " is-current" : ""),
+          type: "button",
+          onClick: () => pick(n),
+        },
+        [h("img", { src: thumbUrl(n), alt: "", loading: "lazy" }), h("span", { class: "pick-name" }, n)]
+      )
+    );
+
+    const fileId = "pickerUpload";
+    return h("div", { class: "modal-overlay", onClick: (e) => e.target === e.currentTarget && closeModal() }, [
+      h("div", { class: "modal modal-wide" }, [
+        h("div", { class: "modal-head" }, [
+          h("h2", null, "写真を選ぶ"),
+          h("button", { class: "btn btn-icon btn-ghost", type: "button", onClick: closeModal }, "×"),
+        ]),
+        h("div", { class: "modal-body" }, [
+          h("div", { class: "pick-toolbar" }, [
+            h("input", {
+              type: "text",
+              placeholder: "名前でしぼり込む",
+              value: p.q || "",
+              onInput: (e) => {
+                state.picker.q = e.target.value;
+                render();
+              },
+            }),
+            h("input", {
+              type: "file",
+              accept: "image/*",
+              multiple: true,
+              id: fileId,
+              style: "display:none",
+              onChange: (e) => {
+                if (e.target.files && e.target.files.length) addFilesToQueue(e.target.files);
+                e.target.value = "";
+                state.modal = null;
+                state.picker = null;
+                state.currentGroup = "__images__";
+                render();
+              },
+            }),
+            h(
+              "button",
+              { class: "btn btn-sm", type: "button", onClick: () => document.getElementById(fileId).click() },
+              "パソコンから写真を追加する"
+            ),
+          ]),
+          list.length ? h("div", { class: "pick-grid" }, cells) : h("div", { class: "empty-state" }, "写真がありません。上のボタンから追加してください。"),
+        ]),
+        h("div", { class: "modal-foot" }, [
+          h("button", { class: "btn btn-ghost", type: "button", onClick: () => pick("") }, "写真を使わない"),
+          h("button", { class: "btn", type: "button", onClick: closeModal }, "閉じる"),
+        ]),
+      ]),
+    ]);
+  }
+
+  /** 画像の削除 */
+  async function deleteImages(names) {
+    if (!names.length) return;
+    state.upload.busy = true;
+    render();
+    try {
+      const res = await api("/images/delete", { method: "POST", body: JSON.stringify({ names }) });
+      if (!res.data || !res.data.ok) {
+        pushToast((res.data && res.data.hint) || "削除できませんでした。", "error");
+      } else {
+        state.images = state.images.filter((n) => !names.includes(n));
+        pushToast(names.length + "枚を削除しました。公開まで数分かかります。", "ok");
+        startStatusPolling();
+      }
+    } catch (e) {
+      pushToast("サーバーに接続できませんでした。", "error");
+    }
+    state.upload.busy = false;
+    render();
+  }
+
   // ------------------------------------------------------------ 画像ページ
 
   function renderImagesPage() {
-    const slots = (state.schema.images && state.schema.images.slots) || [];
     const q = state.upload;
+    const usage = imageUsage();
+    const sel = state.imgSel || (state.imgSel = {});
 
-    const slotCells = slots.map((slot) => {
-      const name = slot.file.replace(/\.webp$/, "");
-      const known = state.images.includes(name);
-      const pendingEntry = q.queue.find((e) => e.name === name && e.status !== "error");
+    const fileId = "libUpload";
+    const fileInput = h("input", {
+      type: "file",
+      accept: "image/*",
+      multiple: true,
+      id: fileId,
+      style: "display:none",
+      onChange: (e) => {
+        if (e.target.files && e.target.files.length) addFilesToQueue(e.target.files);
+        e.target.value = "";
+      },
+    });
 
-      const fileInputId = "slotFile_" + name.replace(/[^a-z0-9]/g, "_");
-      const fileInput = h("input", {
-        type: "file",
-        accept: "image/*",
-        id: fileInputId,
-        style: "display:none",
-        onChange: (e) => {
-          if (e.target.files && e.target.files.length) addFilesToQueue(e.target.files, name);
-          e.target.value = "";
+    const dropZone = h(
+      "div",
+      {
+        class: "drop-zone" + (state.dragOver ? " is-over" : ""),
+        onDragOver: (e) => {
+          e.preventDefault();
+          if (!state.dragOver) {
+            state.dragOver = true;
+            render();
+          }
         },
-      });
-
-      const img = pendingEntry && pendingEntry.previewUrl
-        ? h("img", { src: pendingEntry.previewUrl, alt: slot.label })
-        : known
-        ? h("img", { src: `/assets/img/${name}-sm.webp`, alt: slot.label, loading: "lazy" })
-        : h("div", { class: "img-slot-empty" }, "未登録");
-
-      return h("div", { class: "img-cell" + (q.justUploaded.includes(name) ? " img-cell-new" : "") }, [
-        img,
+        onDragLeave: () => {
+          state.dragOver = false;
+          render();
+        },
+        onDrop: (e) => {
+          e.preventDefault();
+          state.dragOver = false;
+          if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length) addFilesToQueue(e.dataTransfer.files);
+          render();
+        },
+      },
+      [
+        h("p", { class: "drop-title" }, "ここに写真をドラッグしてください"),
+        h("p", { class: "drop-note" }, "JPEG・PNG・HEIC などをそのまま入れられます。パソコン用（長辺1920px）とスマートフォン用（長辺900px）の2種類が自動で作られます。"),
         fileInput,
-        h("div", { class: "img-cell-label" }, slot.label),
-        h("div", { class: "img-cell-id" }, slot.file),
-        h(
-          "button",
-          { class: "btn btn-ghost btn-sm", type: "button", disabled: q.busy, onClick: () => document.getElementById(fileInputId).click() },
-          known || pendingEntry ? "写真を差し替える" : "写真を追加する"
-        ),
+        h("button", { class: "btn", type: "button", disabled: q.busy, onClick: () => document.getElementById(fileId).click() }, "パソコンから選ぶ"),
+      ]
+    );
+
+    const selected = Object.keys(sel).filter((k) => sel[k]);
+    const cells = state.images.map((n) => {
+      const where = usage[n] || [];
+      const checked = !!sel[n];
+      return h("div", { class: "lib-cell" + (checked ? " is-sel" : "") + (q.justUploaded.includes(n) ? " lib-cell-new" : "") }, [
+        h("label", { class: "lib-thumb" }, [
+          h("input", {
+            type: "checkbox",
+            checked: checked,
+            onChange: (e) => {
+              sel[n] = e.target.checked;
+              render();
+            },
+          }),
+          h("img", { src: thumbUrl(n), alt: "", loading: "lazy" }),
+        ]),
+        h("div", { class: "lib-name" }, n + ".webp"),
+        where.length
+          ? h("div", { class: "lib-use" }, where.map((w) => h("span", { class: "lib-tag" }, w)))
+          : h("div", { class: "lib-use lib-use-none" }, "どこにも使われていません"),
+        h("div", { class: "lib-btns" }, [
+          h(
+            "button",
+            {
+              class: "btn btn-ghost btn-sm",
+              type: "button",
+              disabled: q.busy,
+              onClick: () => {
+                const id = "swap_" + n.replace(/[^a-z0-9]/g, "_");
+                let el = document.getElementById(id);
+                if (!el) {
+                  el = document.createElement("input");
+                  el.type = "file";
+                  el.accept = "image/*";
+                  el.id = id;
+                  el.style.display = "none";
+                  el.addEventListener("change", (e) => {
+                    if (e.target.files && e.target.files.length) addFilesToQueue(e.target.files, n);
+                    e.target.value = "";
+                    render();
+                  });
+                  document.body.appendChild(el);
+                }
+                el.click();
+              },
+            },
+            "同じ名前で差し替える"
+          ),
+        ]),
       ]);
     });
+
+    const bulkBar = selected.length
+      ? h("div", { class: "lib-bulk" }, [
+          h("span", null, selected.length + "枚を選択中"),
+          h(
+            "button",
+            {
+              class: "btn btn-danger btn-sm",
+              type: "button",
+              disabled: q.busy,
+              onClick: () => {
+                const inUse = selected.filter((n) => (usage[n] || []).length);
+                const warn = inUse.length ? "\n\nこのうち " + inUse.length + "枚はページで使われています。削除するとその場所の写真が消えます。" : "";
+                if (!confirm(selected.length + "枚の写真を削除します。元に戻せません。" + warn)) return;
+                state.imgSel = {};
+                deleteImages(selected);
+              },
+            },
+            "選んだ写真を削除する"
+          ),
+          h("button", { class: "btn btn-ghost btn-sm", type: "button", onClick: () => ((state.imgSel = {}), render()) }, "選択をやめる"),
+        ])
+      : null;
 
     const queueRows = q.queue.map((entry) =>
       h("div", { class: "up-row" + (entry.status === "error" || q.problems[entry.id] ? " up-row-err" : "") }, [
@@ -1680,10 +2061,12 @@
       h("div", { class: "main-inner" }, [
         h("div", { class: "group-head" }, [
           h("h1", null, "写真"),
-          h("p", null, "写真を選ぶと、パソコン用（長辺1920px）とスマートフォン用（長辺900px）の2種類が自動で作られます。同じ場所に差し替えるだけで、ページの写真が入れ替わります。"),
+          h("p", null, "サイトで使う写真をここでまとめて管理します。追加した写真は、各ページの「写真を選ぶ」から呼び出せます。"),
         ]),
-        h("div", { class: "img-grid" }, slotCells),
+        dropZone,
         queuePanel,
+        h("div", { class: "lib-head" }, [h("h2", null, "写真ライブラリ（" + state.images.length + "枚）"), bulkBar]),
+        state.images.length ? h("div", { class: "lib-grid" }, cells) : h("div", { class: "empty-state" }, "まだ写真がありません。"),
       ]),
     ]);
   }

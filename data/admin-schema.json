@@ -97,6 +97,12 @@
       "key": "common",
       "name": "共通の文言",
       "desc": "メニューボタンなど、細かな共通表示。"
+    },
+    {
+      "id": "pages",
+      "key": "pages",
+      "name": "自由ページ（追加・削除）",
+      "desc": "会社案内・採用情報など、好きなページを追加できます。ページ名（URL）を決め、見出し・本文・写真のブロックを積み上げてください。追加後は「メニュー（追加・削除）」でリンク先にページ名を入れると、ヘッダーやフッターに表示されます。"
     }
   ],
   "itemLabels": {
@@ -113,7 +119,22 @@
     "privacy.articles": "条文",
     "contact.kinds": "お問い合わせ種別",
     "contact.reply_options": "連絡方法の選択肢",
-    "posts": "お知らせ記事"
+    "posts": "お知らせ記事",
+    "services.img": "写真",
+    "pages.slug": "ページ名（URL・半角英数字とハイフン）",
+    "pages.eyebrow": "小見出し（英語の飾り文字・任意）",
+    "pages.title": "ページタイトル",
+    "pages.lead": "冒頭の説明文",
+    "pages.desc": "検索結果に出る説明文（任意）",
+    "pages.blocks": "本文ブロック",
+    "pages.blocks.heading": "見出し",
+    "pages.blocks.body": "本文（空行で段落が分かれます）",
+    "pages.blocks.img": "写真",
+    "slug": "ページ名（URL・半角英数字とハイフン）",
+    "eyebrow": "小見出し（英字の飾り・任意）",
+    "desc": "検索結果に出る説明文（任意）",
+    "blocks": "本文ブロック（見出し＋本文＋写真）",
+    "heading": "見出し"
   },
   "titleKeys": [
     "label",
@@ -201,31 +222,33 @@
     "footer.address_label": "フッター：所在地の項目名",
     "footer.services_title": "フッター：事業内容の見出し",
     "footer.contact_lead": "フッター：相談枠の本文",
-    "footer.contact_btn": "フッター：相談枠のボタン"
+    "footer.contact_btn": "フッター：相談枠のボタン",
+    "home.hero_img": "ヒーロー写真",
+    "meta.og_img": "SNS共有時の写真",
+    "pages": "ページ一覧"
   },
   "images": {
-    "dir": "assets/img",
-    "slots": [
-      {
-        "file": "hero.webp",
-        "label": "トップページ：ヒーロー写真"
-      },
-      {
-        "file": "tech.webp",
-        "label": "事業内容：収益管理・IT・Web"
-      },
-      {
-        "file": "operation.webp",
-        "label": "事業内容：運営受託・ブランド・FC"
-      },
-      {
-        "file": "facility.webp",
-        "label": "事業内容：清掃・リネン・備品"
-      },
-      {
-        "file": "asset.webp",
-        "label": "事業内容：不動産活用"
-      }
-    ]
+    "dir": "assets/img"
+  },
+  "templates": {
+    "pages": {
+      "slug": "new-page",
+      "eyebrow": "",
+      "title": "新しいページ",
+      "lead": "",
+      "desc": "",
+      "blocks": [
+        {
+          "heading": "",
+          "body": "",
+          "img": ""
+        }
+      ]
+    },
+    "pages.blocks": {
+      "heading": "",
+      "body": "",
+      "img": ""
+    }
   }
 }

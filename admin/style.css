@@ -409,3 +409,61 @@ textarea { resize: none; overflow: hidden; min-height: 46px; line-height: 1.8; }
   .img-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 10px; }
   .obj-card-title span { max-width: 140px; }
 }
+
+/* ============================================================ 写真ライブラリ */
+.drop-zone{border:1.5px dashed var(--line-strong,#c9c6bd);border-radius:14px;padding:34px 24px;text-align:center;
+  background:var(--surface-2,#f7f6f2);transition:background .15s,border-color .15s;margin-bottom:22px}
+.drop-zone.is-over{border-color:var(--accent,#0F3A2C);background:#eef3ef}
+.drop-title{margin:0 0 6px;font-weight:600}
+.drop-note{margin:0 0 16px;font-size:13px;color:var(--muted,#6b6860);line-height:1.7}
+
+.lib-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:30px 0 14px}
+.lib-head h2{margin:0;font-size:16px}
+.lib-bulk{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--muted,#6b6860)}
+.lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px}
+.lib-cell{border:1px solid var(--line,#e3e0d8);border-radius:12px;padding:10px;background:#fff;display:flex;flex-direction:column;gap:8px}
+.lib-cell.is-sel{border-color:var(--accent,#0F3A2C);box-shadow:0 0 0 2px rgba(15,58,44,.12)}
+.lib-cell-new{border-color:#3f8f6a}
+.lib-thumb{position:relative;display:block;aspect-ratio:4/3;border-radius:8px;overflow:hidden;background:#efeee9;cursor:pointer}
+.lib-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.lib-thumb input{position:absolute;top:8px;left:8px;width:18px;height:18px;z-index:2;cursor:pointer}
+.lib-name{font-size:12px;font-family:ui-monospace,monospace;color:var(--muted,#6b6860);word-break:break-all}
+.lib-use{display:flex;flex-wrap:wrap;gap:4px;font-size:11px}
+.lib-tag{background:#eef1ec;border-radius:5px;padding:2px 6px;color:#3c5a4c}
+.lib-use-none{color:#a19d93}
+.lib-btns{margin-top:auto}
+.btn-danger{background:#8f2f2f;color:#fff;border-color:#8f2f2f}
+.btn-danger:hover{background:#7a2727}
+
+/* 写真を選ぶ欄 */
+.imgpick{display:flex;gap:14px;align-items:center;border:1px solid var(--line,#e3e0d8);border-radius:10px;padding:10px;background:#fff}
+.imgpick-thumb{width:132px;height:88px;border-radius:8px;object-fit:cover;background:#efeee9;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;font-size:12px;color:#a19d93}
+.imgpick-thumb-missing{color:#8f2f2f}
+.imgpick-body{min-width:0}
+.imgpick-name{font-size:12px;font-family:ui-monospace,monospace;color:var(--muted,#6b6860);margin-bottom:8px;word-break:break-all}
+.imgpick-btns{display:flex;gap:8px;flex-wrap:wrap}
+
+/* 写真を選ぶモーダル */
+.modal-wide{max-width:860px;width:94vw}
+.pick-toolbar{display:flex;gap:10px;align-items:center;margin-bottom:16px;flex-wrap:wrap}
+.pick-toolbar input[type=text]{flex:1 1 200px}
+.pick-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;max-height:52vh;overflow:auto;padding:2px}
+.pick-cell{border:1px solid var(--line,#e3e0d8);border-radius:10px;padding:6px;background:#fff;cursor:pointer;text-align:left}
+.pick-cell:hover{border-color:var(--accent,#0F3A2C)}
+.pick-cell.is-current{border-color:var(--accent,#0F3A2C);box-shadow:0 0 0 2px rgba(15,58,44,.14)}
+.pick-cell img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;display:block}
+.pick-name{display:block;margin-top:6px;font-size:11px;font-family:ui-monospace,monospace;color:var(--muted,#6b6860);word-break:break-all}
+
+/* ============================================================ 翻訳の状況 */
+.tr-list{display:flex;flex-direction:column;gap:14px;padding:4px 0}
+.tr-row{display:grid;grid-template-columns:9rem 1fr 9.5rem;gap:14px;align-items:center}
+.tr-lang{font-weight:600;font-size:14px}
+.tr-bar{height:8px;border-radius:99px;background:#e8e6df;overflow:hidden}
+.tr-bar span{display:block;height:100%;background:#3f8f6a;border-radius:99px;transition:width .3s}
+.tr-num{font-size:13px;color:var(--muted,#6b6860);text-align:right}
+.tr-num.is-warn{color:#8a5a12;font-weight:600}
+.tr-note{font-size:13px;color:var(--muted,#6b6860);line-height:1.8;margin:10px 0 0}
+.tr-foot{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.tr-log{font-size:13px;margin:12px 0 0;color:#3f6b55}
+@media (max-width:700px){.tr-row{grid-template-columns:1fr;gap:6px}.tr-num{text-align:left}}

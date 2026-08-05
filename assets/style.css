@@ -510,3 +510,15 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .news-list a{grid-template-columns:1fr;gap:.6rem;padding:1.2rem .1rem}
   .sec-head-row{align-items:flex-start;gap:1.2rem}
 }
+
+/* --- 自由ページ（管理画面から追加） --- */
+.cpage-row{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.cpage-row.rev>div:first-child{order:2}
+.cpage-row h2{margin:0 0 1rem;font-size:clamp(1.35rem,2.4vw,1.9rem);line-height:1.4}
+.cpage-row p{margin:0 0 1rem;line-height:2;color:var(--fg-2)}
+.cpage-row p:last-child{margin-bottom:0}
+.cpage-row img{width:100%;height:auto;border-radius:14px;display:block}
+@media (max-width:820px){
+  .cpage-row{grid-template-columns:1fr;gap:1.8rem}
+  .cpage-row.rev>div:first-child{order:0}
+}

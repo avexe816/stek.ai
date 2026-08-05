@@ -11,6 +11,7 @@
 import argparse
 import html
 import json
+import re
 import os
 import shutil
 import sys
@@ -36,9 +37,18 @@ LANGS = [
 LANG_DIR = {"ja": "", "en": "en", "zh": "zh", "zh-Hant": "zh-hant", "ko": "ko"}
 
 PAGES = ["index", "services", "news", "about", "contact", "privacy"]
+RE_SLUG = re.compile(r"^[a-z0-9][a-z0-9-]{0,38}[a-z0-9]$")
 NAV = [("index", "home"), ("services", "services"), ("about", "about"), ("contact", "contact")]
 
-SERVICE_IMG = {"tech": "tech", "operation": "operation", "facility": "facility", "asset": "asset"}
+def img_tag(name, *, cls="", w=1200, hgt=750, eager=False, alt=""):
+    """画像名（拡張子なし）から <img> を作る。未設定なら何も出さない。"""
+    n = str(name or "").strip()
+    if not n:
+        return ""
+    a = f' class="{cls}"' if cls else ""
+    load = ' fetchpriority="high"' if eager else ' loading="lazy"'
+    return (f'<img src="/assets/img/{n}.webp" srcset="/assets/img/{n}-sm.webp 900w, /assets/img/{n}.webp 1800w" '
+            f'sizes="(max-width:800px) 100vw, 50vw" alt="{alt}" width="{w}" height="{hgt}"{load}{a}>')
 
 SVC_ICON = {
     # 収益管理・IT・Web — 上昇するグラフ
@@ -81,11 +91,15 @@ THEME_SVG = """<svg class="i-moon" viewBox="0 0 24 24" fill="none" aria-hidden="
 GLOBE_SVG = """<svg viewBox="0 0 24 24" fill="none" aria-hidden="true" style="width:15px;height:15px"><circle cx="12" cy="12" r="8.6" stroke="currentColor" stroke-width="1.5"/><path d="M3.5 12h17M12 3.4c2.3 2.4 3.4 5.4 3.4 8.6S14.3 18.2 12 20.6c-2.3-2.4-3.4-5.4-3.4-8.6S9.7 5.8 12 3.4Z" stroke="currentColor" stroke-width="1.5"/></svg>"""
 
 
-def head(t, page, lang, s):
-    key = {"index": "home", "services": "services", "news": "news", "about": "about",
-           "contact": "contact", "privacy": "privacy"}[page]
-    title = t["meta"][f"{key}_title"]
-    desc = t["meta"][f"{key}_desc"]
+def head(t, page, lang, s, custom=None):
+    if custom is not None:
+        title = f"{custom.get('title','')}｜{s['brand']['legal']}"
+        desc = custom.get("desc") or custom.get("lead") or t["meta"]["home_desc"]
+    else:
+        key = {"index": "home", "services": "services", "news": "news", "about": "about",
+               "contact": "contact", "privacy": "privacy"}[page]
+        title = t["meta"][f"{key}_title"]
+        desc = t["meta"][f"{key}_desc"]
     hl = dict((c, h) for c, h, _l, _s in LANGS)[lang]
     alts = "\n  ".join(
         f'<link rel="alternate" hreflang="{dict((c,h) for c,h,_l,_s in LANGS)[c]}" href="{SITE_URL}{url(c, page)}">'
@@ -102,7 +116,7 @@ def head(t, page, lang, s):
   <meta property="og:description" content="{e(desc)}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{e(s['brand']['legal'])}">
-  <meta property="og:image" content="{SITE_URL}/assets/img/hero.webp">
+  <meta property="og:image" content="{SITE_URL}/assets/img/{e(s['meta'].get('og_img') or 'hero')}.webp">
   <meta name="theme-color" content="#0F3A2C">
   <link rel="canonical" href="{SITE_URL}{url(lang, page)}">
   {alts}
@@ -135,7 +149,9 @@ def resolve_link(lang, link):
         return url(lang, "index") + link
     if link.startswith(("http://", "https://", "mailto:", "tel:", "/")):
         return link
-    return url(lang, link) if link in PAGES else "/" + link.lstrip("/")
+    if RE_SLUG.match(link):  # 管理画面で追加した自由ページ
+        return url(lang, link)
+    return "/" + link.lstrip("/")
 
 
 def menu_items(t, kind):
@@ -293,7 +309,7 @@ def page_index(t, lang, s):
     <p class="small hero-note">{e(h['hero_note'])}</p>
   </div>
   <figure class="hero-fig">
-    <img src="/assets/img/hero.webp" alt="" width="1200" height="960" fetchpriority="high">
+    {img_tag(h.get('hero_img'), w=1200, hgt=960, eager=True)}
   </figure>
 </div></section>
 
@@ -348,7 +364,7 @@ def page_services(t, lang, s):
       <p class="sub">{e(sv['lead'])}</p>
       <p class="lead">{e(sv['body'])}</p>
     </div>
-    <img src="/assets/img/{SERVICE_IMG[sv['id']]}.webp" alt="" width="1200" height="750" loading="lazy">
+    {img_tag(sv.get('img'))}
   </div>
   <p class="items-label">{e(p['items_label'])}</p>
   <ul class="svc-items">{items}</ul>
@@ -526,6 +542,43 @@ def page_privacy(t, lang, s):
 </main>"""
 
 
+def page_custom(t, lang, s, pg):
+    """管理画面から追加された自由ページ。見出し＋本文＋写真のブロックを積む。"""
+    secs = []
+    for i, b in enumerate(pg.get("blocks") or []):
+        heading = str(b.get("heading") or "").strip()
+        body = str(b.get("body") or "").strip()
+        img = str(b.get("img") or "").strip()
+        if not (heading or body or img):
+            continue
+        alt = " sec-alt" if i % 2 else ""
+        if img:
+            inner = f'''<div class="cpage-row{" rev" if i % 2 else ""}">
+    <div>
+      {f"<h2>{e(heading)}</h2>" if heading else ""}
+      {para(body) if body else ""}
+    </div>
+    {img_tag(img)}
+  </div>'''
+        else:
+            inner = f'''<div class="prose">
+    {f"<h2>{e(heading)}</h2>" if heading else ""}
+    {para(body) if body else ""}
+  </div>'''
+        secs.append(f'''<section class="sec{alt}"><div class="wrap">
+  {inner}
+</div></section>''')
+    hero_lead = str(pg.get("lead") or "").strip()
+    return f'''<main id="main">
+<section class="page-hero"><div class="wrap">
+  {f"<p class=\'eyebrow\'>{e(pg.get('eyebrow'))}</p>" if pg.get("eyebrow") else ""}
+  <h1>{e(pg.get("title") or "")}</h1>
+  {f"<p class=\'lead\'>{e(hero_lead)}</p>" if hero_lead else ""}
+</div></section>
+{"".join(secs)}
+</main>'''
+
+
 BUILDERS = {"index": page_index, "services": page_services,
     "news": page_news, "about": page_about,
             "contact": page_contact, "privacy": page_privacy}
@@ -554,6 +607,17 @@ def build(langs=None):
             with open(os.path.join(outdir, name), "w", encoding="utf-8") as f:
                 f.write(doc)
             count += 1
+        for pg in (t.get("pages") or []):
+            slug = str(pg.get("slug") or "").strip()
+            if not slug or slug in PAGES or not RE_SLUG.match(slug):
+                if slug:
+                    print(f"  ! ページ名が使えません（半角英数字とハイフンのみ）: {slug}")
+                continue
+            body = page_custom(t, code, site, pg)
+            doc = head(t, slug, code, site, custom=pg) + header(t, slug, code, site) + body + footer(t, slug, code, site)
+            with open(os.path.join(outdir, f"{slug}.html"), "w", encoding="utf-8") as f:
+                f.write(doc)
+            count += 1
 
     # static assets
     for d in ("assets", "admin"):
@@ -578,8 +642,11 @@ def build(langs=None):
 
 def sitemap(dist):
     urls = []
+    site = json.load(open(os.path.join(DATA, "site.json"), encoding="utf-8"))
+    slugs = [str(p.get("slug") or "").strip() for p in (site.get("pages") or [])]
+    slugs = [x for x in slugs if x and x not in PAGES and RE_SLUG.match(x)]
     for code, _h, _l, _s in LANGS:
-        for page in PAGES:
+        for page in PAGES + slugs:
             urls.append(f"  <url><loc>{SITE_URL}{url(code, page)}</loc><changefreq>monthly</changefreq></url>")
     xml = ('<?xml version="1.0" encoding="UTF-8"?>\n'
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'

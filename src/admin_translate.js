@@ -330,3 +330,27 @@ export function sortMemory(mem) {
   for (const k of keys) out[k] = mem[k];
   return out;
 }
+
+/**
+ * 翻訳の残り件数をかぞえる。
+ * @returns {{total:number, missing:object, missingTotal:number, locked:number}}
+ */
+export async function translationStats(mem, trees) {
+  const strings = new Set();
+  for (const t of trees) collectStrings(t, strings);
+  const missing = {};
+  for (const l of AUTO_LANGS) missing[l] = 0;
+  let locked = 0;
+  let total = 0;
+  for (const ja of strings) {
+    total++;
+    const key = await keyOf(ja);
+    const entry = mem[key];
+    if (entry && entry.locked) locked++;
+    for (const l of AUTO_LANGS) {
+      if (!(entry && entry[l])) missing[l]++;
+    }
+  }
+  const missingTotal = Object.values(missing).reduce((a, b) => a + b, 0);
+  return { total, missing, missingTotal, locked };
+}

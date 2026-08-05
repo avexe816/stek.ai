@@ -346,6 +346,30 @@ export function sortMemory(mem) {
   return out;
 }
 
+/**
+ * 翻訳の残り件数をかぞえる。
+ * @returns {{total:number, missing:object, missingTotal:number, locked:number}}
+ */
+export async function translationStats(mem, trees) {
+  const strings = new Set();
+  for (const t of trees) collectStrings(t, strings);
+  const missing = {};
+  for (const l of AUTO_LANGS) missing[l] = 0;
+  let locked = 0;
+  let total = 0;
+  for (const ja of strings) {
+    total++;
+    const key = await keyOf(ja);
+    const entry = mem[key];
+    if (entry && entry.locked) locked++;
+    for (const l of AUTO_LANGS) {
+      if (!(entry && entry[l])) missing[l]++;
+    }
+  }
+  const missingTotal = Object.values(missing).reduce((a, b) => a + b, 0);
+  return { total, missing, missingTotal, locked };
+}
+
 // ==== src/admin_api.js ================================================
 // ============================================================================
 // stek.ai 管理画面 API
@@ -527,15 +551,20 @@ async function loadBundle(env) {
     })
   );
   // 画像一覧（管理画面の画像選択用）
-  out.images = tree.tree
-    .filter((t) => t.path.startsWith("assets/img/") && t.path.endsWith(".webp") && !t.path.endsWith("-sm.webp"))
-    .map((t) => t.path.replace("assets/img/", "").replace(".webp", ""))
-    .sort();
+  const imgNodes = tree.tree.filter(
+    (t) => t.path.startsWith("assets/img/") && t.path.endsWith(".webp") && !t.path.endsWith("-sm.webp")
+  );
+  out.images = imgNodes.map((t) => t.path.replace("assets/img/", "").replace(".webp", "")).sort();
+  out.imagePaths = tree.tree.filter((t) => t.path.startsWith("assets/img/")).map((t) => t.path);
+  out.imageMeta = {};
+  for (const t of imgNodes) {
+    out.imageMeta[t.path.replace("assets/img/", "").replace(".webp", "")] = { bytes: t.size || 0 };
+  }
   return out;
 }
 
 // 複数ファイルを 1 コミットで保存する（Git Data API）
-async function commitFiles(env, { files, message, author, expectHead }) {
+async function commitFiles(env, { files, message, author, expectHead, deletes }) {
   const R = repo(env);
   const ref = await ghJson(env, `/repos/${R}/git/ref/heads/main`);
   const head = ref.object.sha;
@@ -547,6 +576,8 @@ async function commitFiles(env, { files, message, author, expectHead }) {
   const base = await ghJson(env, `/repos/${R}/git/commits/${head}`);
 
   // content が {b64: "..."} の形なら画像などのバイナリとして、そのまま送る
+  const removals = (deletes || []).map((path) => ({ path, mode: "100644", type: "blob", sha: null }));
+
   const blobs = await Promise.all(
     Object.entries(files).map(async ([path, content]) => {
       const payload = content && typeof content === "object" && typeof content.b64 === "string" ? content.b64 : b64utf8(String(content));
@@ -560,7 +591,7 @@ async function commitFiles(env, { files, message, author, expectHead }) {
 
   const tree = await ghJson(env, `/repos/${R}/git/trees`, {
     method: "POST",
-    body: JSON.stringify({ base_tree: base.tree.sha, tree: blobs }),
+    body: JSON.stringify({ base_tree: base.tree.sha, tree: blobs.concat(removals) }),
   });
 
   const commit = await ghJson(env, `/repos/${R}/git/commits`, {
@@ -719,7 +750,7 @@ async function handleAdmin(request, env, url) {
     // --- 全データ読み込み
     if (path === "/bundle") {
       const b = await loadBundle(env);
-      return J({ ok: true, head: b.head, files: b.files, images: b.images });
+      return J({ ok: true, head: b.head, files: b.files, images: b.images, imageMeta: b.imageMeta });
     }
 
     // --- 画像アップロード（ブラウザ側で webp に変換済みのものを受け取る）
@@ -757,6 +788,71 @@ async function handleAdmin(request, env, url) {
         if (e.code === "conflict") return J({ ok: false, error: "conflict" }, 409);
         throw e;
       }
+    }
+
+    // --- 画像の削除（本体と -sm をまとめて消す）
+    if (path === "/images/delete" && request.method === "POST") {
+      const body = await request.json();
+      const names = (Array.isArray(body.names) ? body.names : []).map((n) => String(n || "").trim()).filter(Boolean);
+      if (!names.length) return J({ ok: false, error: "no_items" }, 400);
+      if (names.length > 40) return J({ ok: false, error: "too_many" }, 400);
+      for (const n of names) {
+        if (!IMG_NAME_RE.test(n)) return J({ ok: false, error: "bad_name", name: n }, 400);
+      }
+      const bundle = await loadBundle(env);
+      const havePath = new Set(bundle.imagePaths || []);
+      const deletes = [];
+      for (const n of names) {
+        for (const p2 of [`assets/img/${n}.webp`, `assets/img/${n}-sm.webp`]) {
+          if (havePath.has(p2)) deletes.push(p2);
+        }
+      }
+      if (!deletes.length) return J({ ok: false, error: "not_found" }, 404);
+      const message = names.length === 1 ? `画像を削除: ${names[0]}` : `画像を削除: ${names.length}枚`;
+      try {
+        const sha = await commitFiles(env, { files: {}, deletes, message, author: email });
+        return J({ ok: true, sha, names });
+      } catch (e) {
+        if (e.code === "conflict") return J({ ok: false, error: "conflict" }, 409);
+        throw e;
+      }
+    }
+
+    // --- 未翻訳をまとめて翻訳（本文は変えずに、訳が足りない分だけ埋める）
+    if (path === "/translate-fill" && request.method === "POST") {
+      if (!env.AI) return J({ ok: false, error: "no_ai_binding", hint: "自動翻訳の設定がされていません。" }, 503);
+      const body = await request.json().catch(() => ({}));
+      const limit = Math.min(120, Math.max(10, Number(body.limit) || 80));
+      const current = await loadBundle(env);
+      const mem = current.files["data/i18n.json"] || {};
+      const trees = [current.files["data/site.json"]];
+      let report;
+      try {
+        report = await fillTranslations(env, mem, trees, limit);
+      } catch (err) {
+        return J({ ok: false, error: "translate_failed", hint: String(err).slice(0, 120) }, 502);
+      }
+      if (!report.added) return J({ ok: true, added: 0, pending: 0, langs: {}, sha: null });
+      try {
+        const sha = await commitFiles(env, {
+          files: { "data/i18n.json": JSON.stringify(sortMemory(mem), null, 2) + "\n" },
+          message: `未翻訳をまとめて翻訳（${report.added}件）`,
+          author: email,
+          expectHead: current.head,
+        });
+        return J({ ok: true, sha, ...report });
+      } catch (e) {
+        if (e.code === "conflict") return J({ ok: false, error: "conflict" }, 409);
+        throw e;
+      }
+    }
+
+    // --- 翻訳の残り件数
+    if (path === "/translate-stats") {
+      const current = await loadBundle(env);
+      const mem = current.files["data/i18n.json"] || {};
+      const stats = await translationStats(mem, [current.files["data/site.json"]]);
+      return J({ ok: true, ...stats });
     }
 
     // --- 公開状況
