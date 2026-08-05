@@ -841,8 +841,62 @@
     return String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   }
 
+  // 再描画で「スクロール位置が先頭に戻る」「入力中のカーソルが外れる」のを防ぐ。
+  // 描画前に位置と入力状態を控え、描画後に同じ場所へ戻す。
+  function captureUiState(root) {
+    const snap = { win: window.scrollY || 0, panes: [], path: null, selStart: null, selEnd: null };
+    root.querySelectorAll(".main, .side, .modal-body, .trans-panel-body").forEach((el, i) => {
+      snap.panes.push({ i: i, cls: el.className, top: el.scrollTop });
+    });
+    const a = document.activeElement;
+    if (a && a !== document.body && root.contains(a)) {
+      const path = [];
+      let cur = a;
+      while (cur && cur !== root) {
+        const par = cur.parentNode;
+        if (!par) return snap;
+        path.unshift([].indexOf.call(par.childNodes, cur));
+        cur = par;
+      }
+      snap.path = path;
+      try {
+        if (typeof a.selectionStart === "number") {
+          snap.selStart = a.selectionStart;
+          snap.selEnd = a.selectionEnd;
+        }
+      } catch (e) {}
+    }
+    return snap;
+  }
+
+  function restoreUiState(root, snap) {
+    if (!snap) return;
+    const panes = root.querySelectorAll(".main, .side, .modal-body, .trans-panel-body");
+    snap.panes.forEach((p) => {
+      const el = panes[p.i];
+      if (el && el.className === p.cls) el.scrollTop = p.top;
+    });
+    if (window.scrollY !== snap.win) window.scrollTo(0, snap.win);
+    if (!snap.path) return;
+    let cur = root;
+    for (const idx of snap.path) {
+      cur = cur.childNodes[idx];
+      if (!cur) return;
+    }
+    if (cur === document.activeElement) return;
+    if (typeof cur.focus !== "function") return;
+    try {
+      cur.focus({ preventScroll: true });
+      if (snap.selStart !== null && typeof cur.setSelectionRange === "function") {
+        cur.setSelectionRange(snap.selStart, snap.selEnd);
+      }
+    } catch (e) {}
+  }
+
   function render() {
     const root = document.getElementById("app");
+    const snap = captureUiState(root);
+    const hadJump = !!state.jumpTo;
     root.innerHTML = "";
 
     if (state.loading) {
@@ -868,6 +922,8 @@
     }
 
     root.querySelectorAll("textarea[data-autogrow]").forEach((t) => autoGrow(t));
+
+    if (!hadJump) restoreUiState(root, snap);
 
     if (state.jumpTo) {
       const target = root.querySelector('[data-path="' + state.jumpTo.replace(/"/g, '\\"') + '"]');
