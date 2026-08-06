@@ -30,9 +30,10 @@ LANGS = [
     # code,      html lang, label,      short
     ("ja",       "ja",      "日本語",     "JA"),
     ("en",       "en",      "English",  "EN"),
-    ("zh",       "zh-Hans", "简体中文",   "简"),
-    ("zh-Hant",  "zh-Hant", "繁體中文",   "繁"),
-    ("ko",       "ko",      "한국어",     "KO"),
+    # 公開停止中（翻訳データは data/i18n.json に残してあるので、行を戻せば復活します）
+    # ("zh",       "zh-Hans", "简体中文",   "简"),
+    # ("zh-Hant",  "zh-Hant", "繁體中文",   "繁"),
+    # ("ko",       "ko",      "한국어",     "KO"),
 ]
 LANG_DIR = {"ja": "", "en": "en", "zh": "zh", "zh-Hant": "zh-hant", "ko": "ko"}
 
