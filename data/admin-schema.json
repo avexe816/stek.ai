@@ -71,8 +71,8 @@
     {
       "id": "menu",
       "key": "menu",
-      "name": "メニュー（追加・削除）",
-      "desc": "ヘッダーとフッターのメニューを自由に追加・削除・並べ替えできます。リンク先には index / services / about / contact / privacy のいずれか、#flow のようなページ内リンク、https:// で始まる外部URLを入力してください。外部URLは自動で別タブで開きます。"
+      "name": "ヘッダーのメニュー（追加・削除）",
+      "desc": "ヘッダー上部のメニューを自由に追加・削除・並べ替えできます。フッターのリンクは「フッター」で編集してください。リンク先には index / services / news / about / contact / privacy のいずれか、#flow のようなページ内リンク、https:// で始まる外部URLを入力してください。外部URLは自動で別タブで開きます。"
     },
     {
       "id": "nav",
@@ -84,7 +84,7 @@
       "id": "footer",
       "key": "footer",
       "name": "フッター",
-      "desc": "ページ下部の見出しと文言。"
+      "desc": "ページ下部の文言・会社情報の行・リンクの列を、それぞれ自由に追加・修正・削除できます。列は左から順に並びます。「自動表示」を事業内容にした列は、事業内容（4領域）の並びに自動で追従します。"
     },
     {
       "id": "meta",
@@ -115,7 +115,6 @@
     "about.values": "大切にしている3つのこと",
     "about.cases": "よくいただくご相談",
     "menu.header": "ヘッダーのメニュー",
-    "menu.footer": "フッターのサイトマップ",
     "privacy.articles": "条文",
     "contact.kinds": "お問い合わせ種別",
     "contact.reply_options": "連絡方法の選択肢",
@@ -134,7 +133,19 @@
     "eyebrow": "小見出し（英字の飾り・任意）",
     "desc": "検索結果に出る説明文（任意）",
     "blocks": "本文ブロック（見出し＋本文＋写真）",
-    "heading": "見出し"
+    "heading": "見出し",
+    "footer.meta": "会社情報の行（運営会社・所在地など）",
+    "footer.meta.k": "項目名（例：運営会社／所在地／電話）",
+    "footer.meta.v": "内容（{legal}=社名／{address}=所在地／{tel}=電話／{hours}=受付時間 と書くと「会社の基本情報」から自動で入ります）",
+    "footer.columns": "リンクの列（左から順に並びます）",
+    "footer.columns.title": "列の見出し（例：事業内容／サイトマップ）",
+    "footer.columns.auto": "自動表示",
+    "footer.columns.items": "この列のリンク",
+    "footer.columns.items.label": "表示名",
+    "footer.columns.items.link": "リンク先（例：index / services / news / about / contact / privacy / #flow / https://…）",
+    "footer.links": "最下部（© の行）に並べるリンク",
+    "footer.links.label": "表示名",
+    "footer.links.link": "リンク先（例：privacy / https://…）"
   },
   "titleKeys": [
     "label",
@@ -210,17 +221,13 @@
     "privacy.lead": "冒頭の文",
     "privacy.signature": "末尾の署名",
     "footer.tagline": "フッター：紹介文",
-    "footer.nav_title": "フッター：サイトマップの見出し",
-    "footer.contact_title": "フッター：相談枠の見出し",
-    "footer.privacy": "フッター：プライバシーポリシーの表記",
-    "footer.copyright": "フッター：著作権表示",
+    "footer.contact_title": "フッター：相談枠の見出し（空欄にすると枠ごと非表示）",
+    "footer.privacy": "フッター：最下部のプライバシーポリシーの表記（空欄にすると非表示）",
+    "footer.copyright": "フッター：著作権表示（© のあとに出る文字）",
     "news.hero_eyebrow": "お知らせ：小見出し",
     "news.hero_title": "お知らせ：大見出し",
     "news.hero_lead": "お知らせ：本文",
     "news.empty": "記事がないときの表示",
-    "footer.company_label": "フッター：運営会社の項目名",
-    "footer.address_label": "フッター：所在地の項目名",
-    "footer.services_title": "フッター：事業内容の見出し",
     "footer.contact_lead": "フッター：相談枠の本文",
     "footer.contact_btn": "フッター：相談枠のボタン",
     "home.hero_img": "ヒーロー写真",
@@ -249,6 +256,28 @@
       "heading": "",
       "body": "",
       "img": ""
+    },
+    "footer.columns": {
+      "title": "新しい列",
+      "auto": "",
+      "items": [
+        {
+          "label": "",
+          "link": ""
+        }
+      ]
+    },
+    "footer.columns.items": {
+      "label": "",
+      "link": ""
+    },
+    "footer.meta": {
+      "k": "",
+      "v": ""
+    },
+    "footer.links": {
+      "label": "",
+      "link": ""
     }
   }
 }

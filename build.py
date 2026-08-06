@@ -211,40 +211,155 @@ def header(t, page, lang, s):
 """
 
 
+def footer_meta_value(text, t, s):
+    """{legal} {address} {tel} {hours} を「会社の基本情報」から差し込む。"""
+    out = str(text or "")
+    if "{" not in out:
+        return out
+    brand_ja = s.get("brand") or {}
+    brand_tr = t.get("brand") or {}
+    for token, key, src in (
+        ("{legal}", "legal", brand_ja),
+        ("{name}", "name", brand_ja),
+        ("{address}", "address", brand_tr),
+        ("{tel}", "tel", brand_tr),
+        ("{hours}", "hours", brand_tr),
+        ("{domain}", "domain", brand_ja),
+    ):
+        if token in out:
+            out = out.replace(token, str(src.get(key) or ""))
+    return out
+
+
+def footer_columns(t):
+    """フッターのリンク列。管理画面の footer.columns が正。
+
+    旧データ（footer.services_title / footer.nav_title / menu.footer）しか無い
+    ときは、それを組み立て直して同じ形にする。
+    """
+    cols = (t.get("footer") or {}).get("columns")
+    if isinstance(cols, list):
+        out = []
+        for c in cols:
+            if not isinstance(c, dict):
+                continue
+            title = str(c.get("title") or "").strip()
+            auto = str(c.get("auto") or "").strip()
+            items = [
+                (str(it.get("label") or "").strip(), str(it.get("link") or "").strip())
+                for it in (c.get("items") or [])
+                if isinstance(it, dict)
+            ]
+            items = [(lb, lk) for lb, lk in items if lb and lk]
+            if not title and not items and not auto:
+                continue
+            out.append({"title": title, "auto": auto, "items": items})
+        return out
+    f = t.get("footer") or {}
+    legacy = []
+    if f.get("services_title"):
+        legacy.append({"title": f["services_title"], "auto": "services", "items": []})
+    if f.get("nav_title"):
+        legacy.append({"title": f["nav_title"], "auto": "", "items": menu_items(t, "footer")})
+    return legacy
+
+
+def footer_meta_rows(t, s):
+    f = t.get("footer") or {}
+    rows = f.get("meta")
+    if isinstance(rows, list):
+        out = []
+        for r in rows:
+            if not isinstance(r, dict):
+                continue
+            k = str(r.get("k") or "").strip()
+            v = footer_meta_value(r.get("v"), t, s).strip()
+            if k or v:
+                out.append((k, v))
+        return out
+    out = []
+    if f.get("company_label"):
+        out.append((f["company_label"], (s.get("brand") or {}).get("legal", "")))
+    if f.get("address_label"):
+        out.append((f["address_label"], (t.get("brand") or {}).get("address", "")))
+    return out
+
+
 def footer(t, page, lang, s):
     f = t["footer"]
-    nav = "".join(
-        f'<li><a href="{resolve_link(lang, lk)}"'
-        f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a></li>'
-        for lb, lk in menu_items(t, "footer")
+
+    meta = "".join(
+        f"<div><dt>{e(k)}</dt><dd>{e(v)}</dd></div>" for k, v in footer_meta_rows(t, s)
     )
-    svc = "".join(
-        f'<li><a href="{url(lang, "services")}#{sv["id"]}">{e(sv["name"])}</a></li>'
-        for sv in t["services"]
-    )
+    meta_html = f'<dl class="ft-meta">{meta}</dl>' if meta else ""
+
+    cols_html = ""
+    n_cols = 0
+    for col in footer_columns(t):
+        if col["auto"] == "services":
+            li = "".join(
+                f'<li><a href="{url(lang, "services")}#{sv["id"]}">{e(sv["name"])}</a></li>'
+                for sv in t["services"]
+            )
+        elif col["auto"] == "posts":
+            li = "".join(
+                f'<li><a href="{url(lang, "news")}">{e(p.get("title", ""))}</a></li>'
+                for p in (t.get("posts") or [])[:5]
+            )
+        else:
+            li = "".join(
+                f'<li><a href="{resolve_link(lang, lk)}"'
+                f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a></li>'
+                for lb, lk in col["items"]
+            )
+        if not li and not col["title"]:
+            continue
+        head_html = f"<h3>{e(col['title'])}</h3>" if col["title"] else ""
+        cols_html += f"<div>{head_html}<ul>{li}</ul></div>"
+        n_cols += 1
+
+    has_cta = bool(f.get("contact_title") or f.get("contact_lead") or f.get("contact_btn"))
+    cta_html = ""
+    if has_cta:
+        btn = (
+            f'<a class="btn btn-l" href="{url(lang, "contact")}">{e(f["contact_btn"])}{ARROW}</a>'
+            if f.get("contact_btn")
+            else ""
+        )
+        cta_html = f"""<div class="ft-cta">
+        {f'<h3>{e(f["contact_title"])}</h3>' if f.get("contact_title") else ""}
+        {f'<p class="ft-cta-lead">{e(f["contact_lead"])}</p>' if f.get("contact_lead") else ""}
+        {btn}
+      </div>"""
+
+    grid = "1.5fr" + " .85fr" * max(n_cols, 0) + (" 1.15fr" if has_cta else "")
+
+    btm = []
+    if f.get("copyright"):
+        btm.append(f"<span>© {e(f['copyright'])}</span>")
+    if f.get("privacy"):
+        btm.append(f'<a href="{url(lang, "privacy")}">{e(f["privacy"])}</a>')
+    for it in (f.get("links") or []):
+        if not isinstance(it, dict):
+            continue
+        lb, lk = str(it.get("label") or "").strip(), str(it.get("link") or "").strip()
+        if lb and lk:
+            ext = ' target="_blank" rel="noopener"' if is_ext(lk) else ""
+            btm.append(f'<a href="{resolve_link(lang, lk)}"{ext}>{e(lb)}</a>')
+    btm_html = f'<div class="ft-btm">{"".join(btm)}</div>' if btm else ""
+
     return f"""<footer class="ft">
   <div class="wrap">
-    <div class="ft-in">
+    <div class="ft-in" style="--ft-grid:{grid}">
       <div class="ft-brand">
         <a class="logo" href="{url(lang, 'index')}">{LOGO_SVG}<b>stek</b><span>{e(s['brand']['tagline'])}</span></a>
-        <p>{e(f['tagline'])}</p>
-        <dl class="ft-meta">
-          <div><dt>{e(f['company_label'])}</dt><dd>{e(s['brand']['legal'])}</dd></div>
-          <div><dt>{e(f['address_label'])}</dt><dd>{e(t['brand']['address'])}</dd></div>
-        </dl>
+        {f'<p>{e(f["tagline"])}</p>' if f.get("tagline") else ""}
+        {meta_html}
       </div>
-      <div><h3>{e(f['services_title'])}</h3><ul>{svc}</ul></div>
-      <div><h3>{e(f['nav_title'])}</h3><ul>{nav}</ul></div>
-      <div class="ft-cta">
-        <h3>{e(f['contact_title'])}</h3>
-        <p class="ft-cta-lead">{e(f['contact_lead'])}</p>
-        <a class="btn btn-l" href="{url(lang, 'contact')}">{e(f['contact_btn'])}{ARROW}</a>
-      </div>
+      {cols_html}
+      {cta_html}
     </div>
-    <div class="ft-btm">
-      <span>© {e(f['copyright'])}</span>
-      <a href="{url(lang, 'privacy')}">{e(f['privacy'])}</a>
-    </div>
+    {btm_html}
   </div>
 </footer>
 <script src="/assets/app.js" defer></script>

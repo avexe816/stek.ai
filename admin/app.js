@@ -1604,9 +1604,34 @@
     img: "写真",
   };
 
+  // 選択式にする項目（パスは番号を除いた形）
+  const SUBFIELD_OPTIONS = {
+    "footer.columns.auto": [
+      { v: "", l: "手入力（下のリンク一覧を使います）" },
+      { v: "services", l: "事業内容を自動表示" },
+      { v: "posts", l: "お知らせの新しい5件を自動表示" },
+    ],
+  };
+
+  /** "footer.columns.0.items" -> "footer.columns.items"（番号を除いた形） */
+  function genericPath(path) {
+    return String(path || "")
+      .split(".")
+      .filter((seg) => !/^\d+$/.test(seg))
+      .join(".");
+  }
+
+  function subFieldLabel(path, subKey) {
+    const item = (state.schema && state.schema.itemLabels) || {};
+    const key = genericPath(path) + "." + subKey;
+    if (item[key]) return item[key];
+    return SUBFIELD_LABELS[subKey] || subKey;
+  }
+
   function renderObjSubField(path, arr, idx, subKey, value, onChange) {
     const advanced = subKey === "id" || subKey === "no";
-    const label = SUBFIELD_LABELS[subKey] || subKey;
+    const label = subFieldLabel(path, subKey);
+    const options = SUBFIELD_OPTIONS[genericPath(path) + "." + subKey];
 
     const update = (val) => {
       const copy = arr.map((x) => x);
@@ -1615,10 +1640,20 @@
     };
 
     let control;
-    if (isImageKey(subKey)) {
+    if (options) {
+      control = h(
+        "select",
+        { onChange: (e) => update(e.target.value) },
+        options.map((o) =>
+          h("option", { value: o.v, selected: String(value || "") === o.v }, o.l)
+        )
+      );
+    } else if (isImageKey(subKey)) {
       control = renderImageControl(value, (val) => update(val));
     } else if (Array.isArray(value)) {
-      const isObjArr = value.length > 0 && typeof value[0] === "object" && value[0] !== null && !Array.isArray(value[0]);
+      const isObjArr = value.length > 0
+        ? typeof value[0] === "object" && value[0] !== null && !Array.isArray(value[0])
+        : guessArrayIsObjFromSchema(genericPath(path + "." + idx + "." + subKey));
       control = isObjArr
         ? h("div", null, [renderListObj(path + "." + idx + "." + subKey, value, (newArr) => update(newArr))])
         : h("div", null, [renderListText(value, (newArr) => update(newArr))]);
@@ -1639,7 +1674,7 @@
 
     const labelRow = h("label", { class: advanced ? "field-label--adv" : "" }, [
       advanced ? "上級者向け：" + label : label,
-      typeof value === "string" && value.trim() && subKey !== "link" && subKey !== "date" && subKey !== "slug" && !isImageKey(subKey)
+      typeof value === "string" && value.trim() && !options && subKey !== "link" && subKey !== "date" && subKey !== "slug" && !isImageKey(subKey)
         ? h("button", { type: "button", class: "trans-btn", style: "margin-left:8px", onClick: (e) => (e.preventDefault(), openTransPanel(value)) }, "訳文")
         : null,
     ]);
