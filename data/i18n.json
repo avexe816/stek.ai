@@ -10,7 +10,7 @@
     "ja": "1室単価での請負だけでなく、ハウスキーピング部門そのものを受託する形にも対応します。要員の採用と教育、シフト、資材の在庫管理、リネン発注までを部門単位でお引き受けし、施設側の管理工数を削減します。当社の雇用したスタッフで部門を編成するため、施設側で人を採用・教育する必要がなくなります。",
     "locked": false,
     "zh": "我们不仅承接按房间单价的承包，也承接整个保洁部门的委托。我们以部门为单位承接人员招聘与培训、排班、物资库存管理、布草订单等，减少设施方的管理工时。由于部门由我公司雇佣的员工组成，设施方无需自行招聘和培训人员。",
-    "zh-Hant": "",
+    "zh-Hant": "我們不僅承接按房間單價的承包，也承接整個保潔部門的委託。我們以部門為單位承接人員招募與培訓、排班、物資庫存管理、布草訂單等，減少設施方的管理工時。由於部門由我公司僱傭的員工組成，設施方無需自行招募和培訓人員。",
     "en": "We also accept the outsourcing of the entire housekeeping department, not just per-room pricing. We take responsibility for the department level, including staff recruitment and training, shifts, inventory management of materials, and linen orders, reducing the management effort of the facility. Since the department is composed of our employed staff, the facility no longer needs to recruit and train staff.",
     "ko": "1실 단가로 계약하는 것뿐만 아니라, 하우스키핑 부서 자체를 수탁하는 형태에도 대응합니다. 인력 채용과 교육, 근무 시간, 자재 재고 관리, 리넨 주문까지 부서 단위로 받아들여, 시설 측의 관리 노동을 줄입니다. 당사가 고용한 직원으로 부서를 구성하기 때문에, 시설 측에서 직원을 채용·교육할 필요가 없습니다.",
     "th": ""
@@ -170,7 +170,7 @@
     "ja": "「建物はあるが、運営する体制がない」「いまの運営会社の数字に納得がいかない」。そうした施設の運営を、契約形態から一緒に設計してお引き受けします。運営受託（MC方式）、賃貸借（リース）方式、フランチャイズ加盟のいずれにも対応し、オーナー様がどこまでリスクと収益の変動を取るかによって最適な形は変わります。開業前の物件がまだ宿泊施設として成立するか分からない段階でしたら、先に「不動産活用・コンサルティング」で可否を確かめてから、運営の設計に進みます。",
     "locked": false,
     "zh": "“建筑物已存在，但缺乏运营体制”、“对当前运营公司的数据不满意”。针对此类设施，我们将从合同形式开始共同设计并承接运营。我们可应对运营受托（MC方式）、租赁（租借）方式、特许加盟等，根据业主希望承担的风险和收益波动程度，选择最适合的形式。如果在开业前的物业尚未确定是否能作为住宿设施成立，可先通过“不动产利用·咨询”确认可行性，再进入运营设计阶段。",
-    "zh-Hant": "",
+    "zh-Hant": "「建築物已存在，但缺乏營運體制」、「對當前營運公司的資料不滿意」。針對此類設施，我們將從合約形式開始共同設計並承接營運。我們可應對營運受託（MC方式）、租賃（租借）方式、特許加盟等，根據業主希望承擔的風險和收益波動程度，選擇最適合的形式。如果在開業前的物業尚未確定是否能作為住宿設施成立，可先透過「不動產利用·諮詢」確認可行性，再進入營運設計階段。",
     "en": "\"The building exists, but there is no operational structure,\" or \"you are not satisfied with the current operator's numbers.\" We will design and accept the operation together with the contract form. We respond to operation contracting (MC method), lease (rental) method, and franchise membership, and the optimal form varies depending on how much risk and revenue fluctuation the owner is willing to take. If the property before opening is still unclear whether it can function as a lodging facility, we first confirm the feasibility through \"real estate utilization and consulting,\" and then proceed with the operation design.",
     "ko": "\"건물은 있지만 운영 체제가 없다\", \"현재 운영 회사의 수치에 만족하지 못한다\". 이러한 시설의 운영을, 계약 형태부터 함께 설계하여 받아들입니다. 운영 수탁(MC 방식), 임대(리스) 방식, 프랜차이즈 가맹 중 어느 것도 대응하며, 오너님께서 얼마나 위험과 수익 변동을 감수할지를 따라 최적의 형태는 달라집니다. 개업 전의 물건이 아직 숙박시설로 성립할 수 있는지 모르는 단계였다면, 먼저 \"부동산 활용·컨설팅\"으로 가능 여부를 확인한 후 운영 설계로 이어갑니다.",
     "th": ""
@@ -531,7 +531,7 @@
     "ja": "システムだけでも、人手だけでも、宿泊施設の利益は動きません。4つの領域は別々のサービスではなく、宿泊事業のひとつの流れとしてつながっています。使われていない建物が宿泊施設として成立するかを確かめ（不動産活用）、開業して運営を回し（運営受託）、客室の品質と物の供給を毎日支え（清掃・リネン）、価格と販路で利益を残す（収益管理・IT）。必要な領域だけを単独で導入することもできます。",
     "locked": false,
     "zh": "仅靠系统或仅靠人力，住宿设施的利润都无法运转。四个领域并非独立的服务，而是住宿业务的一个流程。确认未使用的建筑物是否能作为住宿设施成立（不动产利用），开业后进行运营（运营受托），每天支撑客房质量和物资供应（清洁·布草），通过价格和销售渠道保留利润（收益管理·IT）。也可以单独导入所需领域。",
-    "zh-Hant": "",
+    "zh-Hant": "僅靠系統或僅靠人力，住宿設施的利潤都無法運轉。四個領域並非獨立的服務，而是住宿業務的一個流程。確認未使用的建築物是否能作為住宿設施成立（不動產利用），開業後進行營運（營運受託），每天支撐客房品質和物資供應（清潔·布草），透過價格和銷售渠道保留利潤（收益管理·IT）。也可以單獨匯入所需領域。",
     "en": "A lodging facility's profits will not move with just a system or just manpower. The four areas are not separate services, but connected as a single flow of the lodging business. We confirm whether an unused building can function as a lodging facility (real estate utilization), operate it after opening (operation contracting), support the daily quality of guest rooms and supplies (cleaning and linen), and maintain profits through pricing and sales channels (revenue management and IT). It is also possible to introduce only the necessary areas individually.",
     "ko": "시스템만으로도, 인력만으로도 숙박시설의 수익은 움직이지 않습니다. 4개 분야는 별도의 서비스가 아니라 숙박사업의 한 흐름으로 연결되어 있습니다. 사용되지 않는 건물이 숙박시설로 성립할 수 있는지를 확인(부동산 활용), 개업하여 운영을 회전(운영 수탁), 객실의 품질과 물품 공급을 매일 뒷받침(청소·리넨), 가격과 유통로로 수익을 남기는(수익관리·IT). 필요한 분야만 단독으로 도입할 수도 있습니다.",
     "th": ""
@@ -609,7 +609,7 @@
     "ja": "スタッフの直接雇用と教育体制",
     "locked": false,
     "zh": "员工直接雇佣与教育体系",
-    "zh-Hant": "",
+    "zh-Hant": "員工直接僱傭與教育體系",
     "en": "Direct employment and training system for staff",
     "ko": "직영 직원과 교육 체제",
     "th": ""
@@ -813,7 +813,7 @@
     "ja": "レビュースコアを最も直接的に左右するのは、客室の仕上がりです。ステックは客室清掃とベッドメイキングを請負方式でお受けします。作業にあたるのは、当社が直接雇用し、自社で研修を行ったスタッフです。日ごとに人を集める都度手配や多重下請けの形を取らないため、仕上がりの水準が担当者によって変わらず、繁忙期にも要員を確保できます。あわせて、リネンの供給と洗濯、アメニティや消耗品の調達もお引き受けできるため、施設側は複数の業者を個別に管理する必要がなくなります。契約時には、業務範囲、品質基準、責任分界点、繁忙期の増室対応を書面で明確にします。",
     "locked": false,
     "zh": "最直接影响评分的是客房的清洁程度。STEK承接客房清洁和铺床服务。作业由我公司直接雇佣并进行培训的员工完成。由于不采用每次临时召集人员或多重分包的方式，因此清洁质量不会因负责人不同而变化，即使在旺季也能确保人员。此外，我们还可承接布草供应和洗涤、洗漱用品和消耗品的采购，因此设施方无需分别管理多个供应商。在合同中，我们将明确业务范围、质量标准、责任划分及旺季增加房间的应对措施。",
-    "zh-Hant": "",
+    "zh-Hant": "最直接影響評分的是客房的清潔程度。STEK承接客房清潔和鋪床服務。作業由我公司直接僱傭並進行培訓的員工完成。由於不採用每次臨時召集人員或多重分包的方式，因此清潔品質不會因負責人不同而變化，即使在旺季也能確保人員。此外，我們還可承接布草供應和洗滌、盥洗用品和消耗品的採購，因此設施方無需分別管理多個供應商。在合約中，我們將明確業務範圍、品質標準、責任劃分及旺季增加房間的應對措施。",
     "en": "The most direct factor influencing review scores is the condition of the guest rooms. Stek accepts guest room cleaning and bed making on a subcontracted basis. The work is performed by our directly hired staff who have undergone our in-house training. Since we do not arrange staff on an as-needed basis or use multiple subcontractors, the quality remains consistent regardless of the staff, and we can ensure staff during busy periods. In addition, we can also accept the supply and washing of linens, and the procurement of amenities and consumables, so the facility no longer needs to manage multiple vendors individually. At the time of contract, we clearly define the scope of work, quality standards, responsibility boundaries, and how to handle additional rooms during busy periods in writing.",
     "ko": "리뷰 스코어를 가장 직접적으로 좌우하는 것은 객실의 완성도입니다. 스텍은 객실 청소와 베드 메이킹을 계약 방식으로 받아들입니다. 작업은 당사가 직접 고용하고, 자체적으로 교육한 직원이 수행합니다. 매일 인력을 모으는 방식이나 중간 하도급 형태를 취하지 않기 때문에, 완성도가 담당자에 따라 달라지지 않으며, 성수기에도 인력을 확보할 수 있습니다. 또한, 리넨 공급과 세탁, 아메니티 및 소모품 조달도 받아들일 수 있기 때문에, 시설 측은 여러 업체를 개별적으로 관리할 필요가 없습니다. 계약 시에는 업무 범위, 품질 기준, 책임 구분점, 성수기의 추가 객실 대응을 서면으로 명확히 합니다.",
     "th": ""
@@ -1237,7 +1237,7 @@
     "ja": "収益管理とIT、運営受託、清掃・リネン、不動産活用。この4つは、宿泊事業のライフサイクルに沿って並んでいます。建物が宿泊施設として成立するかを確かめ、開業して運営を回し、客室の品質を毎日守り、価格と販路で利益を残す。それぞれを単独でも、組み合わせても導入できます。すべて、自ら宿泊施設を運営する事業者としての視点で設計しています。",
     "locked": false,
     "zh": "收益管理与IT、运营委托、清洁与布草、不动产利用。这四个方面是按照住宿业务的生命周期依次排列的。确认建筑物是否能作为住宿设施成立，开业后进行运营，每天维护客房品质，通过价格和销售渠道保持利润。这些内容既可以单独导入，也可以组合导入。所有方案均从自身运营住宿设施的经营者视角进行设计。",
-    "zh-Hant": "",
+    "zh-Hant": "收益管理與IT、營運委託、清潔與布草、不動產利用。這四個方面是按照住宿業務的生命週期依次排列的。確認建築物是否能作為住宿設施成立，開業後進行營運，每天維護客房品質，透過價格和銷售渠道保持利潤。這些內容既可以單獨匯入，也可以組合匯入。所有方案均從自身營運住宿設施的經營者視角進行設計。",
     "en": "Revenue management and IT, operation contracting, cleaning and linen, and real estate utilization. These four aspects are aligned with the lifecycle of a lodging business. Confirming whether a building can function as a lodging facility, operating after opening, maintaining the quality of guest rooms every day, and retaining profits through pricing and distribution channels. Each can be implemented individually or in combination. All are designed from the perspective of operators who themselves manage lodging facilities.",
     "ko": "수익 관리와 IT, 운영 수탁, 청소·리넨, 부동산 활용. 이 네 가지는 숙박 사업의 라이프사이클에 따라 나란히 위치합니다. 건물이 숙박시설로서 성립할 수 있는지를 확인하고, 개업하여 운영을 회전시키며, 객실의 품질을 매일 지키고, 가격과 유통 경로로 이익을 남깁니다. 각각을 단독으로도, 조합으로도 도입할 수 있습니다. 모두, 자체적으로 숙박시설을 운영하는 사업자의 시점에서 설계되었습니다.",
     "th": ""
@@ -1294,7 +1294,7 @@
     "ja": "可能です。清掃は請負方式でお受けし、当社が直接雇用したスタッフが作業を行います。要員の配置と品質管理は当社の現場責任者が担当します。ご依頼内容と施設の規模に応じてお見積りします。",
     "locked": false,
     "zh": "可以。清洁工作以承包方式承接，由我公司直接雇佣的员工进行作业。人员配置和质量管理由我公司的现场负责人负责。根据您的需求和设施规模进行报价。",
-    "zh-Hant": "",
+    "zh-Hant": "可以。清潔工作以承包方式承接，由我公司直接僱傭的員工進行作業。人員配置和品質管理由我公司的現場負責人負責。根據您的需求和設施規模進行報價。",
     "en": "Yes. We accept cleaning on a subcontracted basis, and our directly hired staff will perform the work. Our on-site supervisor is responsible for staff deployment and quality control. We will provide a quotation based on the request and the facility size.",
     "ko": "가능합니다. 청소는 계약 방식으로 받아들여, 당사가 직접 고용한 직원이 작업을 수행합니다. 인력 배치와 품질 관리는 당사의 현장 담당자가 담당합니다. 요청 내용과 시설 규모에 따라 견적을 제공합니다.",
     "th": ""
@@ -1405,7 +1405,7 @@
     "ja": "客室数と回転数に応じた要員計画を組み、チェックアウトからチェックインまでの時間内に仕上げます。客室内の清掃、バスルームの消毒、リネン交換、アメニティ補充、ゴミ回収、忘れ物の確認と報告までを標準の業務範囲とし、1室あたりの標準作業時間を定めて運用します。同じ施設には可能なかぎり同じスタッフを継続して配置し、間取りや備品の位置を覚えた状態で入ります。繁忙期の増室、連泊清掃（ステイオーバー）、レイトチェックアウト対応も事前に取り決めます。",
     "locked": false,
     "zh": "根据客房数量和周转率制定人员计划，在检查退房到入住的时间内完成清洁。标准业务范围包括客房清洁、浴室消毒、布草更换、洗漱用品补充、垃圾清理、遗失物品的检查与报告，并设定每间客房的标准作业时间进行运营。尽可能为同一设施安排相同的员工，使其在熟悉房间布局和物品位置的情况下进行作业。旺季增加房间、连住清洁（Stay Over）、延迟退房应对等事项将在事前约定。",
-    "zh-Hant": "",
+    "zh-Hant": "根據客房數量和週轉率制定人員計劃，在檢查退房到入住的時間內完成清潔。標準業務範圍包括客房清潔、浴室消毒、布草更換、盥洗用品補充、垃圾清理、遺失物品的檢查與報告，並設定每間客房的標準作業時間進行營運。儘可能為同一設施安排相同的員工，使其在熟悉房間佈局和物品位置的情況下進行作業。旺季增加房間、連住清潔（Stay Over）、延遲退房應對等事項將在事前約定。",
     "en": "We plan the staffing according to the number of rooms and turnover rate, and complete the work within the time between check-out and check-in. The standard scope of work includes cleaning inside the room, disinfecting the bathroom, replacing linens, restocking amenities, collecting garbage, and checking and reporting for forgotten items. We operate by setting a standard working time per room. We try to assign the same staff to the same facility as much as possible, so they can enter with knowledge of the layout and the location of the fixtures. We also pre-arrange additional rooms during busy periods, stay-over cleaning, and late check-out.",
     "ko": "객실 수와 회전 수에 따라 인력 계획을 수립하고, 체크아웃부터 체크인까지 시간 내에 완료합니다. 객실 내 청소, 화장실 소독, 리넨 교체, 아메니티 보충, 쓰레기 수거, 잊어버린 물품 확인 및 보고까지를 표준 업무 범위로 하며, 1실당 표준 작업 시간을 정해 운영합니다. 같은 시설에는 가능한 한 동일한 직원을 지속적으로 배치하여, 객실 구조와 비품 위치를 기억한 상태로 들어갑니다. 성수기의 추가 객실, 연박 청소(스테이 오버), 레이트 체크아웃 대응도 사전에 결정합니다.",
     "th": ""
@@ -1507,7 +1507,7 @@
     "ja": "宿泊単価の決め方は、いまも担当者個人の経験に依存している施設が少なくありません。担当者が休めない、異動で引き継げない、繁忙日に売り急いで安く出してしまう。ステックは、需要予測にもとづく価格設計とAIによる自動反映、PMS・サイトコントローラー・OTAの連携、そして直販を支える公式サイトとSEOまでを一続きの仕組みとしてお引き受けします。ADR（平均客室単価）・OCC（稼働率）・RevPAR（販売可能客室あたり収益）を共通の物差しに、どこに改善余地があるかを数字で示したうえで着手します。なお、全体をまとめてお任せいただく必要はありません。レベニューマネジメントだけ、OTA運用だけ、公式サイトだけといった一部のご委託にも対応します。",
     "locked": false,
     "zh": "目前仍有许多设施依赖于负责人个人的经验来决定住宿单价。负责人无法休假、调动时无法交接、在繁忙时段急于低价出售。STEK可承接从基于需求预测的定价设计、AI自动反映、PMS·渠道管理系统·OTA的联动，到支撑直销的官方网站和SEO等一整套机制。以ADR（平均客房单价）·OCC（入住率）·RevPAR（可售客房收益）作为共同的衡量标准，通过数字明确指出哪里有改善空间后开始实施。此外，无需整体委托，也可承接仅收益管理、仅OTA运营、仅官网运营等部分委托。",
-    "zh-Hant": "",
+    "zh-Hant": "目前仍有許多設施依賴於負責人個人的經驗來決定住宿單價。負責人無法休假、調動時無法交接、在繁忙時段急於低價出售。STEK可承接從基於需求預測的定價設計、AI自動反映、PMS·渠道管理系統·OTA的聯動，到支撐直銷的官方網站和SEO等一整套機制。以ADR（平均客房單價）·OCC（入住率）·RevPAR（可售客房收益）作為共同的衡量標準，透過數字明確指出哪裡有改善空間後開始實施。此外，無需整體委託，也可承接僅收益管理、僅OTA營運、僅官網營運等部分委託。",
     "en": "Many facilities still rely on individual staff experience to determine room rates. Staff may be unavailable, difficult to transfer during relocation, or forced to lower prices during busy periods. Stek accepts a comprehensive system that includes price design based on demand forecasting, automatic reflection by AI, integration with PMS, channel manager, and OTA, and a official website and SEO that support direct sales. We start by showing where improvements are needed through common metrics such as ADR (average daily rate), OCC (occupancy rate), and RevPAR (revenue per available room). Note that you do not need to entrust us with everything. We also accept partial commissions such as revenue management, OTA operations, or official website management.",
     "ko": "숙박 단가의 결정 방법은 여전히 담당자의 개인 경험에 의존하는 시설이 적지 않습니다. 담당자가 휴직할 경우, 이동으로 인해 인수인계가 어려운 경우, 성수기에는 급하게 저렴하게 판매하는 경우가 있습니다. 스텍은 수요 예측에 기반한 가격 설계와 AI를 통한 자동 반영, PMS·사이트 컨트롤러·OTA 연계, 그리고 직매를 지원하는 공식 사이트와 SEO까지 하나의 연속된 시스템으로 받아들입니다. ADR(평균 객실 단가)·OCC(가동률)·RevPAR(판매 가능 객실당 수익)를 공통의 기준으로 삼아, 어디에 개선 여지가 있는지를 수치로 보여준 후에 시작합니다. 다만, 전체를 일임할 필요는 없습니다. 수익관리만, OTA 운영만, 공식 사이트만과 같은 일부 위탁에도 대응합니다.",
     "th": ""
@@ -1870,7 +1870,7 @@
     "ja": "新規開業、または転用後の立ち上げにあたり、開業までの工程表づくり、支配人とスタッフの採用・研修、業務マニュアルとシフトの整備、PMS・予約基盤・サイトコントローラーの初期設定、仕入先の選定とリネン・備品の手配、開業前販売（プレオープンセール）の立ち上げまでを担当します。用途変更にともなう建築確認、旅館業法・消防法にかかわる許認可、そもそも宿泊施設として成立するかの可否判定は「不動産活用・コンサルティング」でお引き受けし、許可取得後の運営体制づくりをこちらで引き継ぎます。",
     "locked": false,
     "zh": "在新店开业或用途变更后的启动阶段，我们负责制定开业流程表、招聘和培训主管及员工、准备业务手册和排班、进行PMS·预订基础·渠道管理系统的初始设置、选择供应商并安排布草和用品、启动开业前销售（预开业促销）。用途变更相关的建筑确认、旅馆业法和消防法相关的许可、以及住宿设施是否能成立的可行性判断由“不动产利用·咨询”承接，许可取得后由我们接续运营体系的建设。",
-    "zh-Hant": "",
+    "zh-Hant": "在新店開業或用途變更後的啟動階段，我們負責制定開業流程表、招募和培訓主管及員工、準備業務手冊和排班、進行PMS·預訂基礎·渠道管理系統的初始設定、選擇供應商並安排布草和用品、啟動開業前銷售（預開業促銷）。用途變更相關的建築確認、旅館業法和消防法相關的許可、以及住宿設施是否能成立的可行性判斷由「不動產利用·諮詢」承接，許可取得後由我們接續營運體系的建設。",
     "en": "When opening a new facility or after repurposing, we take responsibility for creating a schedule for the opening process, hiring and training managers and staff, preparing operational manuals and shifts, initial setup of PMS, reservation platform, and channel manager, selecting suppliers, arranging linen and supplies, and launching pre-opening sales. We also accept the confirmation of building permits, permits and licenses related to the Hotel Business Act and Fire Service Act, and the feasibility of the lodging facility itself through \"real estate utilization and consulting,\" and then take over the creation of the operational structure after obtaining the permits.",
     "ko": "신규 개업이나, 또는 전용 후의 시작 단계에서는 개업까지의 일정표 작성, 감독자와 직원 채용·교육, 업무 매뉴얼과 근무 시간표 정비, PMS·예약 기반·사이트 컨트롤러의 초기 설정, 납품업체 선정과 리넨·비품 조달, 개업 전 판매(프리오픈 세일)의 준비까지 담당합니다. 용도 변경과 관련된 건축 확인, 여관업법·소방법 관련 승인, 그리고 무엇보다도 숙박시설로 성립할 수 있는지의 판단은 \"부동산 활용·컨설팅\"에서 받아들여, 승인 취득 후 운영 체제 구축은 여기서 이어갑니다.",
     "th": ""
@@ -2175,7 +2175,7 @@
     "ja": "清掃スタッフは当社が直接雇用し、配属前に研修を行います。客室タイプ別の手順書、使用する薬剤と用具、感染症対策、宿泊者と鉢合わせたときの応対、忘れ物と貴重品の取り扱いまでを共通の基準として教えます。外国籍スタッフにも対応できるよう、手順書は写真と多言語で用意します。人材の確保と教育を自社で行うため、繁忙期に人が集まらない、日によって仕上がりが変わるといった請負特有の問題を抑えられます。",
     "locked": false,
     "zh": "清洁员工由我公司直接雇佣，并在派遣前进行培训。我们教授统一标准，包括不同客房类型的作业流程、使用的药剂和工具、防疫措施、与住客相遇时的应对方式、遗失物品和贵重物品的处理方式。为应对外籍员工，流程手册配有照片和多语言版本。由于我们自行负责人员招聘和培训，可有效避免旺季人员不足、作业质量因日而异等承包特有的问题。",
-    "zh-Hant": "",
+    "zh-Hant": "清潔員工由我公司直接僱傭，並在派遣前進行培訓。我們教授統一標準，包括不同客房類型的作業流程、使用的藥劑和工具、防疫措施、與住客相遇時的應對方式、遺失物品和貴重物品的處理方式。為應對外籍員工，流程手冊配有照片和多語言版本。由於我們自行負責人員招募和培訓，可有效避免旺季人員不足、作業品質因日而異等承包特有的問題。",
     "en": "Cleaning staff are directly employed by us and undergo training before being assigned. We teach common standards including procedures for different types of guest rooms, the chemicals and tools used, infection control, and how to respond when encountering guests, as well as handling lost items and valuables. To accommodate foreign staff, the procedures are prepared with photos and in multiple languages. By managing the recruitment and training of staff in-house, we can reduce the unique issues of subcontracting such as difficulty in gathering staff during busy periods or inconsistent quality.",
     "ko": "청소 직원은 당사가 직접 고용하고, 배치 전에 교육을 실시합니다. 객실 유형별 절차서, 사용하는 약제와 도구, 감염병 대책, 숙박객과 마주쳤을 때의 대응, 잊어버린 물품과 귀중품의 처리까지를 공통 기준으로 가르칩니다. 외국인 직원에도 대응할 수 있도록 절차서는 사진과 다국어로 준비합니다. 인재 확보와 교육을 자체적으로 수행하기 때문에, 성수기에는 사람이 모이지 않거나, 일에 따라 완성도가 달라지는 계약 특유의 문제를 억제할 수 있습니다.",
     "th": ""
@@ -2347,7 +2347,7 @@
     "ja": "立ち上げから、日々の利益まで。",
     "locked": false,
     "zh": "从启动到日常利润。",
-    "zh-Hant": "",
+    "zh-Hant": "從啟動到日常利潤。",
     "en": "From launch to daily profits.",
     "ko": "설립부터 일일 수익까지.",
     "th": ""
@@ -2544,7 +2544,7 @@
     "ja": "診断と計画のみで終わらせず、当社が借り上げて運営する、あるいは運営を受託するところまでを選択肢としてご提示できます。自ら運営を引き受ける前提で数字を作るため、机上の計画になりません。運営受託（MC方式）・賃貸借方式・フランチャイズ加盟それぞれの条件は「運営受託・ブランド・FC」でご確認ください。",
     "locked": false,
     "zh": "不仅提供诊断和计划，我们还可提供从本公司租赁并运营，或接受运营委托的选择。以自行承担运营为前提制定数字，避免纸上谈兵。运营委托（MC方式）、租赁方式、特许加盟各自的条件请在“运营委托・品牌・FC”中确认。",
-    "zh-Hant": "",
+    "zh-Hant": "不僅提供診斷和計劃，我們還可提供從本公司租賃並營運，或接受營運委託的選擇。以自行承擔營運為前提製定數字，避免紙上談兵。營運委託（MC方式）、租賃方式、特許加盟各自的條件請在「營運委託・品牌・FC」中確認。",
     "en": "We can offer as options the ability to either have our company lease and operate, or take on the operation contracting. By creating numbers with the premise of taking on operations ourselves, we avoid theoretical planning. Please check the conditions of operation contracting (MC method), lease agreement, and franchise membership in \"Operation Contracting, Brand, FC\".",
     "ko": "진단과 계획에 그치지 않고, 당사가 임대하여 운영하거나 운영을 수탁하는 것도 선택지로 제시할 수 있습니다. 자체적으로 운영을 맡는 것을 전제로 한 수치를 만들기 때문에, 책상 위의 계획이 되지 않습니다. 운영 수탁(MC 방식), 임대차 방식, 프랜차이즈 가맹 각각의 조건은 \"운영 수탁·브랜드·FC\"에서 확인해 주십시오.",
     "th": ""
@@ -2778,7 +2778,7 @@
     "ja": "開業支援（プレオープン）",
     "locked": false,
     "zh": "开业支持（预开业）",
-    "zh-Hant": "",
+    "zh-Hant": "開業支援（預開業）",
     "en": "Pre-opening support (pre-opening)",
     "ko": "개업 지원(프리오픈)",
     "th": ""
