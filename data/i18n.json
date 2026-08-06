@@ -6,6 +6,15 @@
     "ko": "객실당 단가로 도급받는 것뿐 아니라 하우스키핑 부문 자체를 위탁받는 형태에도 대응합니다. 인력 채용과 교육, 근무 편성, 자재 재고 관리, 린넨 발주까지 부문 단위로 대행하여 시설 측의 관리 부담을 줄입니다.",
     "zh-Hant": "除按單間單價承包外，我們也支援整體受託營運客房部（Housekeeping部門）。我們以部門單位統一負責人員招募與培訓、排班、物料庫存管理及布草訂購，從而減少設施方的管理負擔。"
   },
+  "14bbc196179c061b": {
+    "ja": "1室単価での請負だけでなく、ハウスキーピング部門そのものを受託する形にも対応します。要員の採用と教育、シフト、資材の在庫管理、リネン発注までを部門単位でお引き受けし、施設側の管理工数を削減します。当社の雇用したスタッフで部門を編成するため、施設側で人を採用・教育する必要がなくなります。",
+    "locked": false,
+    "zh": "我们不仅承接按房间单价的承包，也承接整个保洁部门的委托。我们以部门为单位承接人员招聘与培训、排班、物资库存管理、布草订单等，减少设施方的管理工时。由于部门由我公司雇佣的员工组成，设施方无需自行招聘和培训人员。",
+    "zh-Hant": "",
+    "en": "We also accept the outsourcing of the entire housekeeping department, not just per-room pricing. We take responsibility for the department level, including staff recruitment and training, shifts, inventory management of materials, and linen orders, reducing the management effort of the facility. Since the department is composed of our employed staff, the facility no longer needs to recruit and train staff.",
+    "ko": "1실 단가로 계약하는 것뿐만 아니라, 하우스키핑 부서 자체를 수탁하는 형태에도 대응합니다. 인력 채용과 교육, 근무 시간, 자재 재고 관리, 리넨 주문까지 부서 단위로 받아들여, 시설 측의 관리 노동을 줄입니다. 당사가 고용한 직원으로 부서를 구성하기 때문에, 시설 측에서 직원을 채용·교육할 필요가 없습니다.",
+    "th": ""
+  },
   "9a26f2424acdcabd": {
     "ja": "1施設・1部門からでも承ります。初回のご相談とお見積りは無料です。",
     "en": "We accept requests starting from a single property or a single department. Your first consultation and quote are free of charge.",
@@ -43,6 +52,14 @@
     "zh-Hant": "基於AI的需求預測與自動調價、PMS與預訂系統的整合，直至客房清潔、布草與人員配置。我們並非提供紙上的諮詢，而是作為自主營運住宿設施的經營者，構建能在現場真正運轉的機制。",
     "ko": "AI를 활용한 수요 예측과 요금 자동 조정, PMS·예약 기반 통합, 그리고 객실 청소·리넨·인력 배치까지. 탁상 컨설팅이 아니라 직접 숙박시설을 운영하는 사업자로서 현장에서 실제로 작동하는 체계를 만듭니다.",
     "locked": true
+  },
+  "fb4979f76276dc55": {
+    "en": "AI Dynamic Pricing (Automated Rate Adjustment)",
+    "zh": "AI动态定价（价格自动调整）",
+    "ko": "AI 다이내믹 프라이싱(가격 자동 조정)",
+    "ja": "AIダイナミックプライシング（価格の自動調整）",
+    "locked": true,
+    "zh-Hant": "AI動態定價（價格自動調整）"
   },
   "9a6641e6888dc8f8": {
     "ja": "AIダイナミックプライシング（自動調価）",
@@ -120,6 +137,14 @@
     "ko": "PMS(숙박시설 관리 시스템), 예약 관리, 사이트 컨트롤러, 요금 관리를 하나의 흐름으로 정리합니다. 수요 예측에 기반한 요금 자동 조정으로 성수기의 기회 손실과 비수기의 가격 붕괴를 동시에 억제합니다. 기존 시스템을 계속 사용하면서 부분 도입하는 것도 가능합니다.",
     "locked": true
   },
+  "2f90ae2dc337b3a7": {
+    "en": "We support the selection, implementation, and migration of PMS (property management systems), booking engines, and channel managers, centrally managing inventory across multiple OTAs to prevent overbooking. Our scope of operation includes listing content, plan design, photos, and review responses on platforms such as Rakuten Travel, Jalan, Booking.com, Expedia, and Agoda. Partial implementation that keeps your existing systems in place is also possible.",
+    "zh": "我们协助您选型、导入及迁移PMS（酒店管理系统）、预订引擎及渠道管理器，统一管理多个OTA的库存，防止超额预订。运营范围涵盖乐天旅游、Jalan、Booking.com、Expedia、Agoda等平台的信息发布、套餐设计、图片及评论回复。也支持在保留现有系统的基础上进行部分导入。",
+    "ko": "PMS(숙박 관리 시스템)와 예약 엔진, 사이트 컨트롤러의 선정·도입·이전을 지원하며, 복수 OTA의 재고를 일괄 관리하여 오버부킹을 방지합니다. 라쿠텐 트래블, 자란(じゃらん), Booking.com, Expedia, Agoda 등의 게재 내용, 플랜 설계, 사진, 리뷰 답변까지를 운영 대상으로 포함합니다. 기존 시스템을 유지한 채 부분적으로 도입하는 것도 가능합니다.",
+    "ja": "PMS（宿泊管理システム）や予約エンジン、サイトコントローラーの選定・導入・移行を支援し、複数OTAの在庫を一元管理してオーバーブッキングを防ぎます。楽天トラベル、じゃらん、Booking.com、Expedia、Agoda などの掲載内容、プラン設計、写真、レビュー返信までを運用対象に含めます。既存システムを残したままの部分導入も可能です。",
+    "locked": true,
+    "zh-Hant": "我們協助您選型、匯入及遷移PMS（飯店管理系統）、預訂引擎及渠道管理器，統一管理多個OTA的庫存，防止超額預訂。營運範圍涵蓋樂天旅遊、Jalan、Booking.com、Expedia、Agoda等平臺的資訊釋出、套餐設計、圖片及評論回覆。也支援在保留現有系統的基礎上進行部分匯入。"
+  },
   "3f2e1c93df3ab352": {
     "ja": "PMS（施設管理システム）や予約エンジン、サイトコントローラーの選定・導入・移行を支援し、複数OTAの在庫を一元管理してオーバーブッキングを防ぎます。楽天トラベル、じゃらん、Booking.com、Expedia、Agoda などの掲載内容、プラン設計、写真、レビュー返信までを運用対象に含めます。既存システムを残したままの部分導入も可能です。",
     "en": "We support the selection, implementation, and migration of PMS (property management systems), booking engines, and channel managers, centrally managing inventory across multiple OTAs to prevent overbooking. Our scope of operation includes listing content, plan design, photos, and review responses on platforms such as Rakuten Travel, Jalan, Booking.com, Expedia, and Agoda. Partial implementation that keeps your existing systems in place is also possible.",
@@ -140,6 +165,15 @@
     "zh": "“有建筑物，却没有运营团队”“对现有运营公司的业绩不满意”——针对这类设施的运营，我们从合同形式开始与您共同设计并承接。我们支持委托运营（MC方式）、租赁方式以及加盟连锁三种形式，业主愿意承担多大程度的风险与收益波动，决定了最合适的形式。无论是闲置物业转为住宿设施的阶段，还是开业前的许可审批阶段，我们都欢迎您咨询。",
     "ko": "'건물은 있지만 운영할 체계가 없다', '지금의 운영회사 실적에 만족할 수 없다'. 이러한 시설의 운영을 계약 형태부터 함께 설계하여 대행합니다. 위탁운영(MC 방식), 임대차(리스) 방식, 프랜차이즈 가맹 모두에 대응하며, 오너께서 어디까지 리스크와 수익 변동을 감수할지에 따라 최적의 형태가 달라집니다. 유휴 상태인 부동산을 숙박시설로 전환하는 단계, 개업 전 허가·인가 단계부터의 상담도 환영합니다.",
     "zh-Hant": "「有建築物，卻沒有營運團隊」「對現有營運公司的業績不滿意」——針對這類設施的營運，我們從合約形式開始與您共同設計並承接。我們支援委託營運（MC方式）、租賃方式以及加盟連鎖三種形式，業主願意承擔多大程度的風險與收益波動，決定了最合適的形式。無論是閒置物業轉為住宿設施的階段，還是開業前的許可審批階段，我們都歡迎您諮詢。"
+  },
+  "17fefe2ff9b2d756": {
+    "ja": "「建物はあるが、運営する体制がない」「いまの運営会社の数字に納得がいかない」。そうした施設の運営を、契約形態から一緒に設計してお引き受けします。運営受託（MC方式）、賃貸借（リース）方式、フランチャイズ加盟のいずれにも対応し、オーナー様がどこまでリスクと収益の変動を取るかによって最適な形は変わります。開業前の物件がまだ宿泊施設として成立するか分からない段階でしたら、先に「不動産活用・コンサルティング」で可否を確かめてから、運営の設計に進みます。",
+    "locked": false,
+    "zh": "“建筑物已存在，但缺乏运营体制”、“对当前运营公司的数据不满意”。针对此类设施，我们将从合同形式开始共同设计并承接运营。我们可应对运营受托（MC方式）、租赁（租借）方式、特许加盟等，根据业主希望承担的风险和收益波动程度，选择最适合的形式。如果在开业前的物业尚未确定是否能作为住宿设施成立，可先通过“不动产利用·咨询”确认可行性，再进入运营设计阶段。",
+    "zh-Hant": "",
+    "en": "\"The building exists, but there is no operational structure,\" or \"you are not satisfied with the current operator's numbers.\" We will design and accept the operation together with the contract form. We respond to operation contracting (MC method), lease (rental) method, and franchise membership, and the optimal form varies depending on how much risk and revenue fluctuation the owner is willing to take. If the property before opening is still unclear whether it can function as a lodging facility, we first confirm the feasibility through \"real estate utilization and consulting,\" and then proceed with the operation design.",
+    "ko": "\"건물은 있지만 운영 체제가 없다\", \"현재 운영 회사의 수치에 만족하지 못한다\". 이러한 시설의 운영을, 계약 형태부터 함께 설계하여 받아들입니다. 운영 수탁(MC 방식), 임대(리스) 방식, 프랜차이즈 가맹 중 어느 것도 대응하며, 오너님께서 얼마나 위험과 수익 변동을 감수할지를 따라 최적의 형태는 달라집니다. 개업 전의 물건이 아직 숙박시설로 성립할 수 있는지 모르는 단계였다면, 먼저 \"부동산 활용·컨설팅\"으로 가능 여부를 확인한 후 운영 설계로 이어갑니다.",
+    "th": ""
   },
   "0ae37cd30ad36be8": {
     "ja": "お名前",
@@ -203,6 +237,14 @@
     "zh-Hant": "聯絡我們｜株式會社STEK",
     "ko": "문의하기｜주식회사 스텍(stek)",
     "locked": true
+  },
+  "cffe37850ee631dc": {
+    "en": "For urgent matters, please call us. The person in charge may be away, so we recommend the contact form if you need a reliable reply.",
+    "zh": "急事请直接电话联系。负责人有时会不在，如需确保得到回复，建议通过表单提交咨询。",
+    "ko": "급한 용무는 전화로 연락해 주세요. 담당자가 자리를 비울 수 있으므로, 확실한 답변을 원하시면 문의 양식을 이용해 주세요.",
+    "ja": "お急ぎの場合はお電話ください。担当者が不在のこともございますので、確実にご連絡を差し上げるにはフォームのご利用をおすすめします。",
+    "locked": true,
+    "zh-Hant": "急事請直接電話聯絡。負責人有時會不在，如需確保得到回覆，建議透過表單提交諮詢。"
   },
   "91899fa1ffe2800c": {
     "ja": "お急ぎの場合はお電話ください。担当者が不在の場合は、フォームからお問い合わせいただけますと確実です。",
@@ -485,6 +527,15 @@
     "ko": "시스템, 운영, 현장, 자산. 4가지 영역을 각각 단독으로도, 조합해서도 도입할 수 있습니다.",
     "locked": true
   },
+  "563c863e333e6936": {
+    "ja": "システムだけでも、人手だけでも、宿泊施設の利益は動きません。4つの領域は別々のサービスではなく、宿泊事業のひとつの流れとしてつながっています。使われていない建物が宿泊施設として成立するかを確かめ（不動産活用）、開業して運営を回し（運営受託）、客室の品質と物の供給を毎日支え（清掃・リネン）、価格と販路で利益を残す（収益管理・IT）。必要な領域だけを単独で導入することもできます。",
+    "locked": false,
+    "zh": "仅靠系统或仅靠人力，住宿设施的利润都无法运转。四个领域并非独立的服务，而是住宿业务的一个流程。确认未使用的建筑物是否能作为住宿设施成立（不动产利用），开业后进行运营（运营受托），每天支撑客房质量和物资供应（清洁·布草），通过价格和销售渠道保留利润（收益管理·IT）。也可以单独导入所需领域。",
+    "zh-Hant": "",
+    "en": "A lodging facility's profits will not move with just a system or just manpower. The four areas are not separate services, but connected as a single flow of the lodging business. We confirm whether an unused building can function as a lodging facility (real estate utilization), operate it after opening (operation contracting), support the daily quality of guest rooms and supplies (cleaning and linen), and maintain profits through pricing and sales channels (revenue management and IT). It is also possible to introduce only the necessary areas individually.",
+    "ko": "시스템만으로도, 인력만으로도 숙박시설의 수익은 움직이지 않습니다. 4개 분야는 별도의 서비스가 아니라 숙박사업의 한 흐름으로 연결되어 있습니다. 사용되지 않는 건물이 숙박시설로 성립할 수 있는지를 확인(부동산 활용), 개업하여 운영을 회전(운영 수탁), 객실의 품질과 물품 공급을 매일 뒷받침(청소·리넨), 가격과 유통로로 수익을 남기는(수익관리·IT). 필요한 분야만 단독으로 도입할 수도 있습니다.",
+    "th": ""
+  },
   "4609521b86371023": {
     "ja": "システムだけでも、人手だけでも、宿泊施設の利益は動きません。ステックはテクノロジーと現場運営の両方を自社で担い、切れ目のない支援を行います。",
     "en": "Systems alone can't move a lodging facility's profit, and neither can staff alone. stek handles both technology and on-site operations in-house, delivering seamless support.",
@@ -507,6 +558,14 @@
     "zh-Hant": "系統與現場緊密銜接",
     "ko": "시스템과 현장이 하나로 연결",
     "locked": true
+  },
+  "c707197932baddfe": {
+    "en": "Talk to us about implementing our systems, operation contracts and franchising, or request a quotation. We will review your enquiry and a member of our team will get back to you.",
+    "zh": "系统导入咨询、运营受托与加盟洽谈、报价申请请由此提交。我们确认内容后，将由专人与您联系。",
+    "ko": "시스템 도입 상담, 운영 수탁·가맹 문의, 견적 의뢰는 이곳에서. 내용을 확인한 뒤 담당자가 다시 연락드립니다.",
+    "ja": "システム導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼はこちらから。内容を確認のうえ、担当者より改めてご連絡いたします。",
+    "locked": true,
+    "zh-Hant": "系統匯入諮詢、營運受託與加盟洽談、報價申請請由此提交。我們確認內容後，將由專人與您聯絡。"
   },
   "6d3ea7b786529e24": {
     "ja": "システム導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼を承ります。内容を確認のうえ、担当者より改めてご連絡いたします。",
@@ -531,12 +590,29 @@
     "ko": "샴푸류, 치약솔, 슬리퍼, 시설 내 슬리퍼, 청소용 자재, 객실 비품을 품질과 단가의 균형을 고려하여 선정하고 공급합니다. 국내 조달과 수입 모두에 대응하며, 기존 매입 내용과 단가를 비교한 후 전환할 필요가 있는 항목만 제안합니다. 자체 사양(OEM)의 어메니티 기획도 가능합니다.",
     "zh-Hant": "我們在品質與單價之間取得平衡，精選並供應洗髮水類產品、牙刷、拖鞋、館內拖鞋、清潔用物料及客房備品。同時支援國內採購與進口採購，會將現有采購內容與單價進行對比，僅針對需要更換的部分提出建議。也可提供原創規格（OEM）盥洗用品的策劃服務。"
   },
+  "9ee474e31118bf8a": {
+    "en": "We select and supply shampoo products, toothbrushes, slippers, room wear, cleaning supplies, and guest-room items, balancing quality against unit cost. We handle both domestic procurement and imports, and after comparing your existing procurement and unit costs side by side, we propose switching only the items that should be switched. We can also plan original-specification (OEM) amenities.",
+    "zh": "我们在品质与单价之间取得平衡，精选并供应洗发水类产品、牙刷、拖鞋、馆内服、清洁用物料及客房备品。同时支持国内采购与进口采购，会将现有采购内容与单价进行对比，仅针对需要更换的部分提出建议。也可提供原创规格（OEM）洗漱用品的策划服务。",
+    "ko": "샴푸류, 치약솔, 슬리퍼, 실내복, 청소용 자재, 객실 비품을 품질과 단가의 균형을 고려하여 선정하고 공급합니다. 국내 조달과 수입 모두에 대응하며, 기존 매입 내용과 단가를 비교한 후 전환할 필요가 있는 항목만 제안합니다. 자체 사양(OEM)의 어메니티 기획도 가능합니다.",
+    "ja": "シャンプー類、歯ブラシ、スリッパ、館内着、清掃用資材、客室備品を、品質と単価のバランスで選定して供給します。国内調達と輸入の双方に対応し、既存の仕入れ内容と単価を並べて比較したうえで、切り替えるべきものだけをご提案します。オリジナル仕様（OEM）のアメニティ企画も可能です。",
+    "locked": true,
+    "zh-Hant": "我們在品質與單價之間取得平衡，精選並供應洗髮水類產品、牙刷、拖鞋、館內服、清潔用物料及客房備品。同時支援國內採購與進口採購，會將現有采購內容與單價進行對比，僅針對需要更換的部分提出建議。也可提供原創規格（OEM）盥洗用品的策劃服務。"
+  },
   "d0363a052dbb540d": {
     "ja": "シーツ、デュベカバー、枕カバー、バスタオル、フェイスタオル、バスマット、館内着などを、レンタルまたは客先所有のいずれの形でも運用します。回収・洗濯・仕上げ・納品までを一括で手配し、必要枚数と回転数（在庫サイクル）を客室数と稼働から逆算して設計するため、欠品と過剰在庫の両方を防ぎます。",
     "en": "We handle sheets, duvet covers, pillowcases, bath towels, face towels, bath mats, and in-house robes, whether on a rental basis or using items owned by the property. We arrange collection, laundering, finishing, and delivery all together, and design the required quantity and turnover rate (inventory cycle) by working backward from room count and occupancy, preventing both shortages and excess inventory.",
     "zh": "无论是租赁形式还是客户自有的床单、被套、枕套、浴巾、面巾、浴室脚垫、馆内服等布草，我们均可提供运营支持。从回收、洗涤、整理到配送，我们统一安排，并根据客房数量与入住率反向推算所需数量与周转次数（库存周期），从而同时避免缺货与库存过剩。",
     "ko": "시트, 듀베 커버, 베갯잇, 바스타월, 페이스타월, 바스매트, 시설 내 의류 등을 렌탈 또는 고객사 소유 방식 모두로 운영합니다. 수거·세탁·마무리·납품까지 일괄 처리하며, 필요 수량과 회전율(재고 사이클)을 객실 수와 가동률로부터 산출하여 설계하기 때문에 결품과 과잉 재고를 모두 방지합니다.",
     "zh-Hant": "無論是租賃形式還是客戶自有的床單、被套、枕套、浴巾、面巾、浴室腳墊、館內服等布草，我們均可提供營運支援。從回收、洗滌、整理到配送，我們統一安排，並根據客房數量與入住率反向推算所需數量與週轉次數（庫存週期），從而同時避免缺貨與庫存過剩。"
+  },
+  "8841bd13298dff96": {
+    "ja": "スタッフの直接雇用と教育体制",
+    "locked": false,
+    "zh": "员工直接雇佣与教育体系",
+    "zh-Hant": "",
+    "en": "Direct employment and training system for staff",
+    "ko": "직영 직원과 교육 체제",
+    "th": ""
   },
   "eae38d53c0387913": {
     "ja": "スタッフ採用と教育、料金設計、OTA運用、清掃品質、収支管理までを一括してお引き受けします。",
@@ -733,6 +809,15 @@
     "ko": "리뷰 점수를 가장 직접적으로 좌우하는 것은 객실의 마무리 상태입니다. STEK는 객실 청소와 침대 정리를 도급 방식으로 수행하며, 당사의 현장 책임자가 인력 계획, 당일 진행, 인스펙션(마무리 점검)까지 담당합니다. 아울러 린넨 공급과 세탁, 어메니티와 소모품 조달도 함께 대행할 수 있어 시설 측이 여러 업체를 개별적으로 관리할 필요가 없어집니다. 계약 시에는 업무 범위, 품질 기준, 책임 소재, 성수기 증실 대응을 문서로 명확히 합니다.",
     "zh-Hant": "客房的完成品質，是直接影響評論評分最重要的因素。STEK以承包方式承接客房清潔與鋪床服務，由本公司現場負責人統籌人員規劃、當日安排及驗收檢查（品質檢驗）。同時，我們還可承接布草的供應與洗滌，以及盥洗用品和消耗品的採購，使設施方無需再分別管理多家供應商。簽約時，我們會以書面形式明確業務範圍、品質標準、責任分界點及旺季增房應對方案。"
   },
+  "77c22af983863939": {
+    "ja": "レビュースコアを最も直接的に左右するのは、客室の仕上がりです。ステックは客室清掃とベッドメイキングを請負方式でお受けします。作業にあたるのは、当社が直接雇用し、自社で研修を行ったスタッフです。日ごとに人を集める都度手配や多重下請けの形を取らないため、仕上がりの水準が担当者によって変わらず、繁忙期にも要員を確保できます。あわせて、リネンの供給と洗濯、アメニティや消耗品の調達もお引き受けできるため、施設側は複数の業者を個別に管理する必要がなくなります。契約時には、業務範囲、品質基準、責任分界点、繁忙期の増室対応を書面で明確にします。",
+    "locked": false,
+    "zh": "最直接影响评分的是客房的清洁程度。STEK承接客房清洁和铺床服务。作业由我公司直接雇佣并进行培训的员工完成。由于不采用每次临时召集人员或多重分包的方式，因此清洁质量不会因负责人不同而变化，即使在旺季也能确保人员。此外，我们还可承接布草供应和洗涤、洗漱用品和消耗品的采购，因此设施方无需分别管理多个供应商。在合同中，我们将明确业务范围、质量标准、责任划分及旺季增加房间的应对措施。",
+    "zh-Hant": "",
+    "en": "The most direct factor influencing review scores is the condition of the guest rooms. Stek accepts guest room cleaning and bed making on a subcontracted basis. The work is performed by our directly hired staff who have undergone our in-house training. Since we do not arrange staff on an as-needed basis or use multiple subcontractors, the quality remains consistent regardless of the staff, and we can ensure staff during busy periods. In addition, we can also accept the supply and washing of linens, and the procurement of amenities and consumables, so the facility no longer needs to manage multiple vendors individually. At the time of contract, we clearly define the scope of work, quality standards, responsibility boundaries, and how to handle additional rooms during busy periods in writing.",
+    "ko": "리뷰 스코어를 가장 직접적으로 좌우하는 것은 객실의 완성도입니다. 스텍은 객실 청소와 베드 메이킹을 계약 방식으로 받아들입니다. 작업은 당사가 직접 고용하고, 자체적으로 교육한 직원이 수행합니다. 매일 인력을 모으는 방식이나 중간 하도급 형태를 취하지 않기 때문에, 완성도가 담당자에 따라 달라지지 않으며, 성수기에도 인력을 확보할 수 있습니다. 또한, 리넨 공급과 세탁, 아메니티 및 소모품 조달도 받아들일 수 있기 때문에, 시설 측은 여러 업체를 개별적으로 관리할 필요가 없습니다. 계약 시에는 업무 범위, 품질 기준, 책임 구분점, 성수기의 추가 객실 대응을 서면으로 명확히 합니다.",
+    "th": ""
+  },
   "9589208585f90c57": {
     "ja": "レベニューマネジメント",
     "en": "Revenue Management",
@@ -740,6 +825,14 @@
     "zh-Hant": "收益管理",
     "ko": "레베뉴 매니지먼트",
     "locked": true
+  },
+  "a2d1ba7730c48d5f": {
+    "en": "From revenue management and AI-driven automated rate adjustment to official website production and SEO, hotel operation outsourcing, guest-room cleaning and linen supply, and the conversion of idle real estate into lodging use—as an operator that runs hotels ourselves, we support revenue and on-site operations as one integrated whole.",
+    "zh": "从收益管理与AI价格自动调整、官网建设与SEO，到酒店委托运营、客房清洁与布草供应，再到闲置房产的住宿化改造。作为亲自运营酒店的经营者，我们将收益与现场运营一体化支持。",
+    "ko": "레비뉴 매니지먼트와 AI를 활용한 가격 자동 조정, 공식 웹사이트 제작과 SEO, 호텔 운영 위탁, 객실 청소·린넨 서플라이, 유휴 부동산의 숙박시설 전환까지. 스스로 호텔을 운영하는 사업자로서 수익과 현장을 하나로 지원합니다.",
+    "ja": "レベニューマネジメントとAIによる価格の自動調整、公式サイト制作とSEO、ホテルの運営受託、客室清掃・リネン供給、遊休不動産の宿泊転用まで。自らホテルを運営する事業者として、収益と現場を一体で支えます。",
+    "locked": true,
+    "zh-Hant": "從收益管理與AI價格自動調整、官網建設與SEO，到飯店委託營運、客房清潔與布草供應，再到閒置房產的住宿化改造。作為親自營運飯店的經營者，我們將收益與現場營運一體化支援。"
   },
   "709dc6e960a4c2b2": {
     "ja": "レベニューマネジメントとAIによる自動調価、公式サイト制作とSEO、ホテルの運営受託、客室清掃・リネン供給、遊休不動産の宿泊転用まで。自らホテルを運営する事業者として、収益と現場を一体で支えます。",
@@ -769,6 +862,14 @@
     "zh": "我们负责大厅、入口、走廊、楼梯、电梯、公共卫生间、大浴场及垃圾动线的日常清洁。同时，还会按既定频次系统性开展地毯洗涤除渍、地板打磨上蜡、玻璃清洁、灯具及空调滤网拆解清洁等定期特别清洁工作。",
     "ko": "로비, 입구, 복도, 계단, 엘리베이터, 공용 화장실, 대욕장, 쓰레기 이동 경로의 일상 청소를 진행합니다. 아울러 카펫 샴푸 클리닝과 얼룩 제거, 바닥 연마·왁싱, 유리 청소, 조명기구와 에어컨 필터 분해 청소 등 주기를 정한 정기 청소도 계획적으로 실시합니다.",
     "zh-Hant": "我們負責大廳、入口、走廊、樓梯、電梯、公共衛生間、大浴場及垃圾動線的日常清潔。同時，還會按既定頻次系統性開展地毯洗滌除漬、地板打磨上蠟、玻璃清潔、燈具及空調濾網拆解清潔等定期特別清潔工作。"
+  },
+  "f92c433a6afdf560": {
+    "en": "We handle daily cleaning of the lobby, entrance, corridors, stairs, elevators, shared restrooms, communal baths, and waste-collection areas. We also carry out planned periodic cleaning at set intervals, including carpet shampoo cleaning and stain removal, floor polishing and waxing, glass cleaning, and disassembly cleaning of lighting fixtures and air-conditioner filters.",
+    "zh": "我们负责大厅、入口、走廊、楼梯、电梯、公共卫生间、大浴场及垃圾存放处的日常清洁。同时，还会按既定频次系统性开展地毯洗涤除渍、地板打磨上蜡、玻璃清洁、灯具及空调滤网拆解清洁等定期特别清洁工作。",
+    "ko": "로비, 입구, 복도, 계단, 엘리베이터, 공용 화장실, 대욕장, 쓰레기 집하장의 일상 청소를 진행합니다. 아울러 카펫 샴푸 클리닝과 얼룩 제거, 바닥 연마·왁싱, 유리 청소, 조명기구와 에어컨 필터 분해 청소 등 주기를 정한 정기 청소도 계획적으로 실시합니다.",
+    "ja": "ロビー、エントランス、廊下、階段、エレベーター、共用トイレ、大浴場、ゴミ置き場の日常清掃を行います。あわせて、カーペットのシャンプークリーニングとシミ抜き、床の研磨・ワックス、ガラス清掃、照明器具やエアコンフィルターの分解清掃など、頻度を決めた定期清掃も計画的に実施します。",
+    "locked": true,
+    "zh-Hant": "我們負責大廳、入口、走廊、樓梯、電梯、公共衛生間、大浴場及垃圾存放處的日常清潔。同時，還會按既定頻次系統性開展地毯洗滌除漬、地板打磨上蠟、玻璃清潔、燈具及空調濾網拆解清潔等定期特別清潔工作。"
   },
   "2d740415b1cd237d": {
     "ja": "ロビー、廊下、浴場、ゴミ動線まで含めた日常清掃と定期清掃を行います。",
@@ -988,6 +1089,14 @@
     "ko": "공식 웹사이트, 예약 유도 경로, 시설 안내, 문의 대응을 일본어·영어·중국어 간체·중국어 번체·한국어 5개 언어로 표준 구축합니다. 방일객 비율이 높은 도심지·관광지 시설에 적합합니다.",
     "zh-Hant": "官網、預訂路徑、館內引導、諮詢應答均以日語、英語、簡體中文、繁體中文、韓語5種語言為標準構建，適合訪日遊客佔比較高的城市及觀光地區設施。"
   },
+  "56b0696768d01b0b": {
+    "en": "We build the official website, booking flow, in-house guest information, and inquiry response as standard in five languages: Japanese, English, Chinese (Simplified / Traditional), and Korean. This is well suited to properties in urban areas and tourist destinations with a high proportion of inbound guests.",
+    "zh": "官网、预订路径、馆内引导、咨询应答均以日语、英语、中文（简体／繁体）、韩语5种语言为标准构建，适合访日游客占比较高的城市及观光地区设施。",
+    "ko": "공식 웹사이트, 예약 유도 경로, 시설 안내, 문의 대응을 일본어·영어·중국어(간체／번체)·한국어 5개 언어로 표준 구축합니다. 방일객 비율이 높은 도심지·관광지 시설에 적합합니다.",
+    "ja": "公式サイト、予約導線、館内案内、問い合わせ対応を日本語・英語・中国語（簡体字／繁体字）・韓国語の5言語を標準で構築します。訪日客比率の高い都市部・観光地の施設に適しています。",
+    "locked": true,
+    "zh-Hant": "官網、預訂路徑、館內引導、諮詢應答均以日語、英語、中文（簡體／繁體）、韓語5種語言為標準構建，適合訪日遊客佔比較高的城市及觀光地區設施。"
+  },
   "f680f2c9f4ef1b53": {
     "ja": "公式サイト、予約導線、館内案内を日・英・簡体・繁体・韓の5言語で標準構築します。訪日客比率の高い都市部・観光地の施設に適しています。",
     "en": "Our official websites, booking flows, and in-house guidance are built as standard in five languages: Japanese, English, Simplified Chinese, Traditional Chinese, and Korean. Well suited to urban and tourist-area properties with a high share of inbound guests.",
@@ -1102,6 +1211,14 @@
     "ko": "수익 개선 컨설팅(부분 위탁)",
     "zh-Hant": "收益改善諮詢（部分委託）"
   },
+  "c634123714b5db48": {
+    "en": "From revenue management and AI-driven automated rate adjustment, PMS/OTA operation, official website production and SEO, hotel operation outsourcing and franchise development, to guest-room cleaning, linen and supplies, and the conversion of idle real estate into lodging use—we provide, all together, the functions a lodging business needs.",
+    "zh": "从收益管理与AI价格自动调整、PMS・OTA运营，到官网建设与SEO、酒店委托运营与加盟连锁拓展，再到客房清洁・布草・备品供应，以及闲置房产的住宿化改造，我们统一提供住宿业务所需的各项功能。",
+    "ko": "수익 관리와 AI 가격 자동 조정, PMS·OTA 운영, 공식 웹사이트 제작과 SEO, 호텔 운영 위탁과 FC 전개, 객실 청소·린넨·비품 공급, 유휴 부동산의 숙박시설 전환까지. 숙박사업에 필요한 기능을 한데 모아 제공합니다.",
+    "ja": "収益管理とAIによる価格の自動調整、PMS・OTA運用、公式サイト制作とSEO、ホテルの運営受託とFC展開、客室清掃・リネン・備品供給、遊休不動産の宿泊転用まで。宿泊事業に必要な機能をまとめて提供します。",
+    "locked": true,
+    "zh-Hant": "從收益管理與AI價格自動調整、PMS・OTA營運，到官網建設與SEO、飯店委託營運與加盟連鎖拓展，再到客房清潔・布草・備品供應，以及閒置房產的住宿化改造，我們統一提供住宿業務所需的各項功能。"
+  },
   "b5ed79e3f31c6c16": {
     "ja": "収益管理とAI自動調価、PMS・OTA運用、公式サイト制作とSEO、ホテルの運営受託とFC展開、客室清掃・リネン・備品供給、遊休不動産の宿泊転用まで。宿泊事業に必要な機能をまとめて提供します。",
     "en": "From revenue management and AI automatic pricing, PMS/OTA operation, official website production and SEO, hotel operation outsourcing and franchise development, to guest-room cleaning, linen and supplies, and the conversion of idle real estate into lodging use—we provide, all together, the functions a lodging business needs.",
@@ -1115,6 +1232,23 @@
     "zh": "收益管理与IT、委托运营、清洁・布草、房产利用——这四大领域既可单独导入，也可组合使用。所有方案均以自身运营住宿设施的经营者视角进行设计。",
     "ko": "수익 관리와 IT, 운영 위탁, 청소·린넨, 부동산 활용. 4개 영역 각각을 단독으로도, 조합해서도 도입할 수 있습니다. 모두 스스로 숙박시설을 운영하는 사업자의 관점에서 설계되었습니다.",
     "zh-Hant": "收益管理與IT、委託營運、清潔・布草、房產利用——這四大領域既可單獨匯入，也可組合使用。所有方案均以自身營運住宿設施的經營者視角進行設計。"
+  },
+  "7cc5319436edeca4": {
+    "ja": "収益管理とIT、運営受託、清掃・リネン、不動産活用。この4つは、宿泊事業のライフサイクルに沿って並んでいます。建物が宿泊施設として成立するかを確かめ、開業して運営を回し、客室の品質を毎日守り、価格と販路で利益を残す。それぞれを単独でも、組み合わせても導入できます。すべて、自ら宿泊施設を運営する事業者としての視点で設計しています。",
+    "locked": false,
+    "zh": "收益管理与IT、运营委托、清洁与布草、不动产利用。这四个方面是按照住宿业务的生命周期依次排列的。确认建筑物是否能作为住宿设施成立，开业后进行运营，每天维护客房品质，通过价格和销售渠道保持利润。这些内容既可以单独导入，也可以组合导入。所有方案均从自身运营住宿设施的经营者视角进行设计。",
+    "zh-Hant": "",
+    "en": "Revenue management and IT, operation contracting, cleaning and linen, and real estate utilization. These four aspects are aligned with the lifecycle of a lodging business. Confirming whether a building can function as a lodging facility, operating after opening, maintaining the quality of guest rooms every day, and retaining profits through pricing and distribution channels. Each can be implemented individually or in combination. All are designed from the perspective of operators who themselves manage lodging facilities.",
+    "ko": "수익 관리와 IT, 운영 수탁, 청소·리넨, 부동산 활용. 이 네 가지는 숙박 사업의 라이프사이클에 따라 나란히 위치합니다. 건물이 숙박시설로서 성립할 수 있는지를 확인하고, 개업하여 운영을 회전시키며, 객실의 품질을 매일 지키고, 가격과 유통 경로로 이익을 남깁니다. 각각을 단독으로도, 조합으로도 도입할 수 있습니다. 모두, 자체적으로 숙박시설을 운영하는 사업자의 시점에서 설계되었습니다.",
+    "th": ""
+  },
+  "ed0ac06d08945ccd": {
+    "en": "Revenue management / AI dynamic pricing",
+    "zh": "收益管理・AI价格自动调整的引入",
+    "ko": "수익 관리·AI 가격 자동 조정 도입",
+    "ja": "収益管理・AIによる価格調整の導入",
+    "locked": true,
+    "zh-Hant": "收益管理・AI價格自動調整的引入"
   },
   "b9d9876013a4f9bb": {
     "ja": "収益管理・AI自動調価の導入",
@@ -1155,6 +1289,15 @@
     "zh-Hant": "依據古物營業法開展的古物商業務",
     "ko": "고물영업법에 근거한 고물상",
     "locked": true
+  },
+  "6e72e6c7adb8db41": {
+    "ja": "可能です。清掃は請負方式でお受けし、当社が直接雇用したスタッフが作業を行います。要員の配置と品質管理は当社の現場責任者が担当します。ご依頼内容と施設の規模に応じてお見積りします。",
+    "locked": false,
+    "zh": "可以。清洁工作以承包方式承接，由我公司直接雇佣的员工进行作业。人员配置和质量管理由我公司的现场负责人负责。根据您的需求和设施规模进行报价。",
+    "zh-Hant": "",
+    "en": "Yes. We accept cleaning on a subcontracted basis, and our directly hired staff will perform the work. Our on-site supervisor is responsible for staff deployment and quality control. We will provide a quotation based on the request and the facility size.",
+    "ko": "가능합니다. 청소는 계약 방식으로 받아들여, 당사가 직접 고용한 직원이 작업을 수행합니다. 인력 배치와 품질 관리는 당사의 현장 담당자가 담당합니다. 요청 내용과 시설 규모에 따라 견적을 제공합니다.",
+    "th": ""
   },
   "a90294f6f034134b": {
     "ja": "可能です。清掃は請負方式でお受けし、当社の現場責任者が要員の配置と品質管理を行います。ご依頼内容と施設の規模に応じてお見積りします。",
@@ -1258,6 +1401,23 @@
     "ko": "객실 수와 회전율에 맞춘 인력 계획을 수립하고 체크리스트와 사진으로 품질을 기록합니다. 성수기 증원에도 대응합니다.",
     "locked": true
   },
+  "ef2cfe0b5d67c22c": {
+    "ja": "客室数と回転数に応じた要員計画を組み、チェックアウトからチェックインまでの時間内に仕上げます。客室内の清掃、バスルームの消毒、リネン交換、アメニティ補充、ゴミ回収、忘れ物の確認と報告までを標準の業務範囲とし、1室あたりの標準作業時間を定めて運用します。同じ施設には可能なかぎり同じスタッフを継続して配置し、間取りや備品の位置を覚えた状態で入ります。繁忙期の増室、連泊清掃（ステイオーバー）、レイトチェックアウト対応も事前に取り決めます。",
+    "locked": false,
+    "zh": "根据客房数量和周转率制定人员计划，在检查退房到入住的时间内完成清洁。标准业务范围包括客房清洁、浴室消毒、布草更换、洗漱用品补充、垃圾清理、遗失物品的检查与报告，并设定每间客房的标准作业时间进行运营。尽可能为同一设施安排相同的员工，使其在熟悉房间布局和物品位置的情况下进行作业。旺季增加房间、连住清洁（Stay Over）、延迟退房应对等事项将在事前约定。",
+    "zh-Hant": "",
+    "en": "We plan the staffing according to the number of rooms and turnover rate, and complete the work within the time between check-out and check-in. The standard scope of work includes cleaning inside the room, disinfecting the bathroom, replacing linens, restocking amenities, collecting garbage, and checking and reporting for forgotten items. We operate by setting a standard working time per room. We try to assign the same staff to the same facility as much as possible, so they can enter with knowledge of the layout and the location of the fixtures. We also pre-arrange additional rooms during busy periods, stay-over cleaning, and late check-out.",
+    "ko": "객실 수와 회전 수에 따라 인력 계획을 수립하고, 체크아웃부터 체크인까지 시간 내에 완료합니다. 객실 내 청소, 화장실 소독, 리넨 교체, 아메니티 보충, 쓰레기 수거, 잊어버린 물품 확인 및 보고까지를 표준 업무 범위로 하며, 1실당 표준 작업 시간을 정해 운영합니다. 같은 시설에는 가능한 한 동일한 직원을 지속적으로 배치하여, 객실 구조와 비품 위치를 기억한 상태로 들어갑니다. 성수기의 추가 객실, 연박 청소(스테이 오버), 레이트 체크아웃 대응도 사전에 결정합니다.",
+    "th": ""
+  },
+  "913d3bdbee19cbf3": {
+    "en": "We build staffing plans based on room count and turnover rate, and finish rooms within the time between checkout and check-in. Our standard scope of work includes in-room cleaning, bathroom disinfection, linen replacement, amenity restocking, trash collection, and checking for and reporting lost items, with a standard working time set per room. We also arrange in advance for increased room volume during peak periods, stay-over cleaning for consecutive-night guests, and late check-out handling.",
+    "zh": "我们根据客房数量与周转次数制定人员计划，在退房到入住之间的时间内完成清洁工作。标准业务范围包括客房内清洁、浴室消毒、布草更换、洗漱用品补充、垃圾回收，以及遗失物品的确认与报告，并设定每间客房的标准作业时长进行运营管理。旺季增房、连住清洁（Stay-over）及延迟退房应对等事项均会事先约定。",
+    "ko": "객실 수와 회전율에 맞춘 인력 계획을 짜서 체크아웃부터 체크인까지의 시간 내에 마무리합니다. 청소, 욕실 소독, 린넨 교체, 어메니티 보충, 쓰레기 수거, 분실물 확인 및 보고까지를 표준 업무 범위로 하고, 객실당 표준 작업 시간을 정하여 운영합니다. 성수기 증실, 연박 청소(스테이오버), 레이트 체크아웃 대응도 사전에 협의합니다.",
+    "ja": "客室数と回転数に応じた要員計画を組み、チェックアウトからチェックインまでの時間内に仕上げます。客室内の清掃、バスルームの消毒、リネン交換、アメニティ補充、ゴミ回収、忘れ物の確認と報告までを標準の業務範囲とし、1室あたりの標準作業時間を定めて運用します。繁忙期の増室、連泊清掃（ステイオーバー）、レイトチェックアウト対応も事前に取り決めます。",
+    "locked": true,
+    "zh-Hant": "我們根據客房數量與週轉次數制定人員計劃，在退房到入住之間的時間內完成清潔工作。標準業務範圍包括客房內清潔、浴室消毒、布草更換、盥洗用品補充、垃圾回收，以及遺失物品的確認與報告，並設定每間客房的標準作業時長進行營運管理。旺季增房、連住清潔（Stay-over）及延遲退房應對等事項均會事先約定。"
+  },
   "9a9b80bb9d01d234": {
     "ja": "客室数と回転数に応じた要員計画を組み、チェックアウトからチェックインまでの時間内に仕上げます。清掃、バスルームの消毒、リネン交換、アメニティ補充、ゴミ回収、忘れ物の確認と報告までを標準の業務範囲とし、1室あたりの標準作業時間を定めて運用します。繁忙期の増室、連泊清掃（ステイオーバー）、レイトチェックアウト対応も事前に取り決めます。",
     "en": "We build staffing plans based on room count and turnover rate, and finish rooms within the time between checkout and check-in. Our standard scope of work includes cleaning, bathroom disinfection, linen replacement, amenity restocking, trash collection, and checking for and reporting lost items, with a standard working time set per room. We also arrange in advance for increased room volume during peak periods, stay-over cleaning for consecutive-night guests, and late check-out handling.",
@@ -1342,6 +1502,15 @@
     "zh": "许多设施的住宿单价仍然依赖负责人个人的经验来决定：负责人无法休假、人事调动时难以交接、旺季时又急于出售导致定价过低。STEK将基于需求预测的价格设计与AI自动执行、PMS・渠道管理器・OTA的联动，以及支撑直销的官网与SEO，作为一套连贯的体系为您提供服务。我们以ADR（平均房价）・OCC（入住率）・RevPAR（每间可售房收益）作为共同的衡量标准，用数据展示可改善的空间后再着手推进。",
     "ko": "숙박 단가를 정하는 방식은 지금도 담당자 개인의 경험에 의존하는 시설이 적지 않습니다. 담당자가 쉴 수 없거나, 인사이동으로 인수인계가 되지 않거나, 성수기에 서둘러 판매하다 저렴하게 판매해 버리는 경우도 있습니다. STEK는 수요 예측에 기반한 가격 설계와 AI를 통한 자동 반영, PMS·사이트 컨트롤러·OTA의 연동, 그리고 직판을 지원하는 공식 웹사이트와 SEO까지를 하나로 이어지는 체계로 대행합니다. ADR(평균 객실 단가)·OCC(객실 점유율)·RevPAR(판매 가능 객실당 수익)를 공통 지표로 삼아, 어디에 개선 여지가 있는지를 숫자로 제시한 뒤 착수합니다.",
     "zh-Hant": "許多設施的住宿單價仍然依賴負責人個人的經驗來決定：負責人無法休假、人事調動時難以交接、旺季時又急於出售導致定價過低。STEK將基於需求預測的價格設計與AI自動執行、PMS・渠道管理器・OTA的聯動，以及支撐直銷的官網與SEO，作為一套連貫的體系為您提供服務。我們以ADR（平均房價）・OCC（入住率）・RevPAR（每間可售房收益）作為共同的衡量標準，用資料展示可改善的空間後再著手推進。"
+  },
+  "e5e4dcdd8f0b81f5": {
+    "ja": "宿泊単価の決め方は、いまも担当者個人の経験に依存している施設が少なくありません。担当者が休めない、異動で引き継げない、繁忙日に売り急いで安く出してしまう。ステックは、需要予測にもとづく価格設計とAIによる自動反映、PMS・サイトコントローラー・OTAの連携、そして直販を支える公式サイトとSEOまでを一続きの仕組みとしてお引き受けします。ADR（平均客室単価）・OCC（稼働率）・RevPAR（販売可能客室あたり収益）を共通の物差しに、どこに改善余地があるかを数字で示したうえで着手します。なお、全体をまとめてお任せいただく必要はありません。レベニューマネジメントだけ、OTA運用だけ、公式サイトだけといった一部のご委託にも対応します。",
+    "locked": false,
+    "zh": "目前仍有许多设施依赖于负责人个人的经验来决定住宿单价。负责人无法休假、调动时无法交接、在繁忙时段急于低价出售。STEK可承接从基于需求预测的定价设计、AI自动反映、PMS·渠道管理系统·OTA的联动，到支撑直销的官方网站和SEO等一整套机制。以ADR（平均客房单价）·OCC（入住率）·RevPAR（可售客房收益）作为共同的衡量标准，通过数字明确指出哪里有改善空间后开始实施。此外，无需整体委托，也可承接仅收益管理、仅OTA运营、仅官网运营等部分委托。",
+    "zh-Hant": "",
+    "en": "Many facilities still rely on individual staff experience to determine room rates. Staff may be unavailable, difficult to transfer during relocation, or forced to lower prices during busy periods. Stek accepts a comprehensive system that includes price design based on demand forecasting, automatic reflection by AI, integration with PMS, channel manager, and OTA, and a official website and SEO that support direct sales. We start by showing where improvements are needed through common metrics such as ADR (average daily rate), OCC (occupancy rate), and RevPAR (revenue per available room). Note that you do not need to entrust us with everything. We also accept partial commissions such as revenue management, OTA operations, or official website management.",
+    "ko": "숙박 단가의 결정 방법은 여전히 담당자의 개인 경험에 의존하는 시설이 적지 않습니다. 담당자가 휴직할 경우, 이동으로 인해 인수인계가 어려운 경우, 성수기에는 급하게 저렴하게 판매하는 경우가 있습니다. 스텍은 수요 예측에 기반한 가격 설계와 AI를 통한 자동 반영, PMS·사이트 컨트롤러·OTA 연계, 그리고 직매를 지원하는 공식 사이트와 SEO까지 하나의 연속된 시스템으로 받아들입니다. ADR(평균 객실 단가)·OCC(가동률)·RevPAR(판매 가능 객실당 수익)를 공통의 기준으로 삼아, 어디에 개선 여지가 있는지를 수치로 보여준 후에 시작합니다. 다만, 전체를 일임할 필요는 없습니다. 수익관리만, OTA 운영만, 공식 사이트만과 같은 일부 위탁에도 대응합니다.",
+    "th": ""
   },
   "3bd22c912bf97efd": {
     "ja": "宿泊施設に適した物件の売買・賃貸・仲介と有効活用のご相談をお受けします。あわせて、中小企業向けの自動車リースを提供します。社用車の導入から管理代行、コストの見直しまで、長期契約を前提とした無理のない形でご提案します。",
@@ -1681,6 +1850,14 @@
     "ko": "요금 자동 조정과 청소 시프트, 비품 발주, 리넨 순환이 같은 팀의 손안에 있습니다. 도입은 했지만 현장이 돌아가지 않는 단절을 만들지 않습니다.",
     "locked": true
   },
+  "50b2a4b3da6932c7": {
+    "en": "Automated pricing, cleaning shifts, supply ordering, and linen rotation are all completed within the same team. We don't create the disconnect where a system is introduced but the front line can't keep up.",
+    "zh": "价格自动调整、清洁排班、备品订购与布草周转均在同一团队内完成，不会出现系统导入后现场无法运转的脱节情况。",
+    "ko": "요금 자동 조정과 청소 시프트, 비품 발주, 리넨 순환을 같은 팀 안에서 완결합니다. 도입은 했지만 현장이 돌아가지 않는 단절을 만들지 않습니다.",
+    "ja": "料金の自動調整と清掃シフト、備品発注、リネンの回転を、同じチームの中で完結させます。導入したのに現場が回らない、という分断を起こしません。",
+    "locked": true,
+    "zh-Hant": "價格自動調整、清潔排班、備品訂購與布草週轉均在同一團隊內完成，不會出現系統匯入後現場無法運轉的脫節情況。"
+  },
   "3dd0fd5439218d1f": {
     "ja": "料金設定とチャネル構成、清掃・リネンの単価を並べて確認し、どこで利益が消えているかを整理します。",
     "en": "We lay out your pricing, channel mix and housekeeping and linen unit costs side by side to find where the profit is disappearing.",
@@ -1688,6 +1865,15 @@
     "ko": "요금 설정과 채널 구성, 청소·린넨 단가를 나란히 확인해 어디에서 이익이 사라지는지 정리합니다.",
     "locked": true,
     "zh-Hant": "我們會將定價、渠道結構與清掃、布草單價並列核對，梳理利潤究竟消失在哪裡。"
+  },
+  "cbcb585b9f2f860e": {
+    "ja": "新規開業、または転用後の立ち上げにあたり、開業までの工程表づくり、支配人とスタッフの採用・研修、業務マニュアルとシフトの整備、PMS・予約基盤・サイトコントローラーの初期設定、仕入先の選定とリネン・備品の手配、開業前販売（プレオープンセール）の立ち上げまでを担当します。用途変更にともなう建築確認、旅館業法・消防法にかかわる許認可、そもそも宿泊施設として成立するかの可否判定は「不動産活用・コンサルティング」でお引き受けし、許可取得後の運営体制づくりをこちらで引き継ぎます。",
+    "locked": false,
+    "zh": "在新店开业或用途变更后的启动阶段，我们负责制定开业流程表、招聘和培训主管及员工、准备业务手册和排班、进行PMS·预订基础·渠道管理系统的初始设置、选择供应商并安排布草和用品、启动开业前销售（预开业促销）。用途变更相关的建筑确认、旅馆业法和消防法相关的许可、以及住宿设施是否能成立的可行性判断由“不动产利用·咨询”承接，许可取得后由我们接续运营体系的建设。",
+    "zh-Hant": "",
+    "en": "When opening a new facility or after repurposing, we take responsibility for creating a schedule for the opening process, hiring and training managers and staff, preparing operational manuals and shifts, initial setup of PMS, reservation platform, and channel manager, selecting suppliers, arranging linen and supplies, and launching pre-opening sales. We also accept the confirmation of building permits, permits and licenses related to the Hotel Business Act and Fire Service Act, and the feasibility of the lodging facility itself through \"real estate utilization and consulting,\" and then take over the creation of the operational structure after obtaining the permits.",
+    "ko": "신규 개업이나, 또는 전용 후의 시작 단계에서는 개업까지의 일정표 작성, 감독자와 직원 채용·교육, 업무 매뉴얼과 근무 시간표 정비, PMS·예약 기반·사이트 컨트롤러의 초기 설정, 납품업체 선정과 리넨·비품 조달, 개업 전 판매(프리오픈 세일)의 준비까지 담당합니다. 용도 변경과 관련된 건축 확인, 여관업법·소방법 관련 승인, 그리고 무엇보다도 숙박시설로 성립할 수 있는지의 판단은 \"부동산 활용·컨설팅\"에서 받아들여, 승인 취득 후 운영 체제 구축은 여기서 이어갑니다.",
+    "th": ""
   },
   "0a749bc81647c4b3": {
     "ja": "施設のコンセプト、客層、価格帯、内装、館内サービスを見直し、ブランドを掛け替えます。改修に大きな投資が必要かどうかは物件ごとに異なるため、投資額と回収期間を先に出したうえで判断していただきます。",
@@ -1719,6 +1905,14 @@
     "ko": "시설은 있지만 운영을 맡기고 싶다",
     "locked": true,
     "zh-Hant": "已有物業，希望委託營運"
+  },
+  "b734708e66c1f8ff": {
+    "en": "In addition to capturing branded searches for the property's name, we also capture the segment searching by \"area + purpose.\" We handle the technical side—page structure and internal links, structured data, page speed (Core Web Vitals), and multilingual hreflang settings—and we also manage Google Business Profile (MEO) information and review responses, and, as needed, listing ad operation.",
+    "zh": "除了针对设施名称的指名搜索，我们也吸引以“地区+目的”方式搜索的潜在客户。从技术层面完善页面结构、内部链接、结构化数据、加载速度（Core Web Vitals）以及多语言hreflang设置，同时负责完善Google商家资料（MEO）信息、处理用户评价，并可根据需要负责搜索广告的投放运营。",
+    "ko": "시설명으로 하는 지명 검색뿐 아니라 '지역+목적'으로 검색하는 고객층도 확보합니다. 페이지 구조와 내부 링크, 구조화 데이터, 표시 속도(Core Web Vitals), 다국어 hreflang 설정까지 기술적인 측면에서 정비하고, Google 비즈니스 프로필(MEO)의 정보 정비와 리뷰 대응, 필요에 따라 리스팅 광고 운영도 담당합니다.",
+    "ja": "施設名での指名検索に加え、「エリア＋目的」で探す層も取り込みます。ページ構造と内部リンク、構造化データ、表示速度（Core Web Vitals）、多言語のhreflang設定までを技術面から整え、Googleビジネスプロフィール（MEO）の情報整備と口コミ対応、必要に応じてリスティング広告の運用も担当します。",
+    "locked": true,
+    "zh-Hant": "除了針對設施名稱的指名搜尋，我們也吸引以「地區+目的」方式搜尋的潛在客戶。從技術層面完善頁面結構、內部連結、結構化資料、載入速度（Core Web Vitals）以及多語言hreflang設定，同時負責完善Google商家資料（MEO）資訊、處理使用者評價，並可根據需要負責搜尋廣告的投放營運。"
   },
   "4646ac212ca7616b": {
     "ja": "施設名での指名検索に加え、「エリア＋目的」で探す層を取りにいきます。ページ構造と内部リンク、構造化データ、表示速度（Core Web Vitals）、多言語のhreflang設定までを技術面から整え、Googleビジネスプロフィール（MEO）の情報整備と口コミ対応、必要に応じてリスティング広告の運用も担当します。",
@@ -1977,6 +2171,15 @@
     "ko": "청소만, 리넨만 의뢰하는 것도 가능한가요?",
     "locked": true
   },
+  "b29172e814fff759": {
+    "ja": "清掃スタッフは当社が直接雇用し、配属前に研修を行います。客室タイプ別の手順書、使用する薬剤と用具、感染症対策、宿泊者と鉢合わせたときの応対、忘れ物と貴重品の取り扱いまでを共通の基準として教えます。外国籍スタッフにも対応できるよう、手順書は写真と多言語で用意します。人材の確保と教育を自社で行うため、繁忙期に人が集まらない、日によって仕上がりが変わるといった請負特有の問題を抑えられます。",
+    "locked": false,
+    "zh": "清洁员工由我公司直接雇佣，并在派遣前进行培训。我们教授统一标准，包括不同客房类型的作业流程、使用的药剂和工具、防疫措施、与住客相遇时的应对方式、遗失物品和贵重物品的处理方式。为应对外籍员工，流程手册配有照片和多语言版本。由于我们自行负责人员招聘和培训，可有效避免旺季人员不足、作业质量因日而异等承包特有的问题。",
+    "zh-Hant": "",
+    "en": "Cleaning staff are directly employed by us and undergo training before being assigned. We teach common standards including procedures for different types of guest rooms, the chemicals and tools used, infection control, and how to respond when encountering guests, as well as handling lost items and valuables. To accommodate foreign staff, the procedures are prepared with photos and in multiple languages. By managing the recruitment and training of staff in-house, we can reduce the unique issues of subcontracting such as difficulty in gathering staff during busy periods or inconsistent quality.",
+    "ko": "청소 직원은 당사가 직접 고용하고, 배치 전에 교육을 실시합니다. 객실 유형별 절차서, 사용하는 약제와 도구, 감염병 대책, 숙박객과 마주쳤을 때의 대응, 잊어버린 물품과 귀중품의 처리까지를 공통 기준으로 가르칩니다. 외국인 직원에도 대응할 수 있도록 절차서는 사진과 다국어로 준비합니다. 인재 확보와 교육을 자체적으로 수행하기 때문에, 성수기에는 사람이 모이지 않거나, 일에 따라 완성도가 달라지는 계약 특유의 문제를 억제할 수 있습니다.",
+    "th": ""
+  },
   "37b86454ba3ac3e6": {
     "ja": "清掃・リネン・備品",
     "en": "Housekeeping, Linen & Supplies",
@@ -2140,6 +2343,15 @@
     "ko": "빈 빌딩, 공가, 가동률이 떨어진 임대 물건을 숙박시설로 전환합니다. 용도지역과 건물 용도, 검사완료증 유무, 소방법상의 요건, 200㎡ 초과 용도변경에 따른 건축확인신청을 확인하고, 여관업법(간이숙소·여관호텔 영업), 주택숙박사업법, 특구 민박 중 어느 틀에서 운영할 수 있는지를 판정합니다. 보건소·소방서·건축지도과와의 사전 상담, 인테리어와 비품 선정, 개업 전 판매 개시까지 함께합니다.",
     "zh-Hant": "我們將空置寫字樓、空置住宅及入住率下降的租賃物業改造為住宿設施。我們會確認用途地域、建築物用途、是否具備檢查合格證、消防法相關要求，以及超過200平方米的用途變更所涉及的建築確認申請，並判斷該案件適用旅館業法（簡易旅館・旅館飯店營業）、住宅宿泊事業法（民宿新法）或特區民宿中的哪一框架進行營運。我們全程陪同完成與保健所・消防・建築指導科的事前協商、內部裝修與備品選型，直至開業前的銷售啟動。"
   },
+  "c8f056ae0ceb6052": {
+    "ja": "立ち上げから、日々の利益まで。",
+    "locked": false,
+    "zh": "从启动到日常利润。",
+    "zh-Hant": "",
+    "en": "From launch to daily profits.",
+    "ko": "설립부터 일일 수익까지.",
+    "th": ""
+  },
   "42a0e807a4256e4f": {
     "ja": "第10条（お問い合わせ窓口）",
     "en": "Article 10 (Contact for Inquiries)",
@@ -2236,6 +2448,14 @@
     "ko": "자사의 숙박시설 운영과 운영 수탁을 전제로 사업을 설계하고 있습니다. 청소 동선, 성수기 인력 배치, OTA별 수수료까지 포함하여 실제 손익으로 판단합니다.",
     "locked": true
   },
+  "5bc34ee01cc70022": {
+    "en": "We design our business on the premise that we run lodging facilities ourselves and also take on operation contracts for others. We make decisions based on actual profit and loss — down to cleaning workflows, staffing during peak periods, and OTA commission rates.",
+    "zh": "我们以自主运营住宿设施、同时承接他方设施运营为前提设计业务体系，从清洁动线、旺季人员调配到各OTA手续费，均以实际损益为判断依据。",
+    "ko": "자사가 직접 숙박시설을 운영하고 타사 시설의 운영도 수탁하는 것을 전제로 사업을 설계합니다. 청소 동선, 성수기 인력 배치, OTA별 수수료까지 포함하여 실제 손익으로 판단합니다.",
+    "ja": "自社で宿泊施設を運営し、他社施設の運営も受託することを前提に事業を設計しています。清掃の動線、繁忙期の人繰り、OTAごとの手数料まで含めて、実際の損益で判断します。",
+    "locked": true,
+    "zh-Hant": "我們以自主營運住宿設施、同時承接他方設施營運為前提設計業務體系，從清潔動線、旺季人員調配到各OTA手續費，均以實際損益為判斷依據。"
+  },
   "e2a0c9ceba6e3d7c": {
     "ja": "自社ブランドの企画と商標管理、加盟募集、加盟店への経営指導・研修・共同仕入れを行います。",
     "en": "We handle planning and trademark management for our own brands, franchisee recruitment, and management guidance, training, and joint procurement for franchisees.",
@@ -2319,6 +2539,15 @@
     "zh": "我们不会止步于诊断与规划，还可提供由本公司整栋租赁运营，或受托运营的选项。由于我们是以自身承接运营为前提制定数据，因此方案不会流于纸上谈兵。",
     "ko": "진단과 계획에서 끝내지 않고, 당사가 일괄 임차하여 운영하거나 운영을 위탁받는 것까지 선택지로 제시할 수 있습니다. 직접 운영을 맡는 것을 전제로 수치를 산출하기 때문에 탁상 계획에 그치지 않습니다.",
     "zh-Hant": "我們不會止步於診斷與規劃，還可提供由本公司整棟租賃營運，或受託營運的選項。由於我們是以自身承接營運為前提製定資料，因此方案不會流於紙上談兵。"
+  },
+  "e2f33a4b9d9e747f": {
+    "ja": "診断と計画のみで終わらせず、当社が借り上げて運営する、あるいは運営を受託するところまでを選択肢としてご提示できます。自ら運営を引き受ける前提で数字を作るため、机上の計画になりません。運営受託（MC方式）・賃貸借方式・フランチャイズ加盟それぞれの条件は「運営受託・ブランド・FC」でご確認ください。",
+    "locked": false,
+    "zh": "不仅提供诊断和计划，我们还可提供从本公司租赁并运营，或接受运营委托的选择。以自行承担运营为前提制定数字，避免纸上谈兵。运营委托（MC方式）、租赁方式、特许加盟各自的条件请在“运营委托・品牌・FC”中确认。",
+    "zh-Hant": "",
+    "en": "We can offer as options the ability to either have our company lease and operate, or take on the operation contracting. By creating numbers with the premise of taking on operations ourselves, we avoid theoretical planning. Please check the conditions of operation contracting (MC method), lease agreement, and franchise membership in \"Operation Contracting, Brand, FC\".",
+    "ko": "진단과 계획에 그치지 않고, 당사가 임대하여 운영하거나 운영을 수탁하는 것도 선택지로 제시할 수 있습니다. 자체적으로 운영을 맡는 것을 전제로 한 수치를 만들기 때문에, 책상 위의 계획이 되지 않습니다. 운영 수탁(MC 방식), 임대차 방식, 프랜차이즈 가맹 각각의 조건은 \"운영 수탁·브랜드·FC\"에서 확인해 주십시오.",
+    "th": ""
   },
   "764bc282c8026e12": {
     "ja": "詳しく見る",
@@ -2545,6 +2774,15 @@
     "ko": "개업 지원",
     "locked": true
   },
+  "c26ef2b3f2e8652d": {
+    "ja": "開業支援（プレオープン）",
+    "locked": false,
+    "zh": "开业支持（预开业）",
+    "zh-Hant": "",
+    "en": "Pre-opening support (pre-opening)",
+    "ko": "개업 지원(프리오픈)",
+    "th": ""
+  },
   "7177787c6e84b7f6": {
     "ja": "電話",
     "en": "Phone",
@@ -2561,6 +2799,14 @@
     "ko": "전화번호",
     "locked": true
   },
+  "6db3a0c3f68dcf10": {
+    "en": "We turn demand forecasts and each property's sales policy into rules in advance, so daily rate changes happen automatically. Ceiling and floor prices, the line below which you will never discount, and the price band you want to maintain as a brand can all be set and changed by the property at any time. We also support settings that automatically raise rates during events or sudden demand spikes, preventing both lost sales and unnecessary discounting.",
+    "zh": "预先将需求预测与各设施的销售方针设定为规则，每日的价格调整自动完成。价格上限与下限、绝不再下调的底线、以及作为品牌希望维持的价位区间，设施方随时都可以自行设定与变更。同时支持在活动期间或需求骤增时自动上调价格的设定，既避免卖漏，也避免贱卖。",
+    "ko": "수요 예측과 시설별 판매 방침을 미리 규칙으로 정해 두고, 매일의 가격 개정을 자동으로 진행합니다. 상한가·하한가, 더 이상 내리지 않는 기준선, 브랜드로서 유지하고 싶은 가격대는 시설 측에서 언제든지 설정하고 변경할 수 있습니다. 이벤트나 갑작스러운 수요 증가 시 가격을 자동으로 올리는 설정에도 대응하여, 판매 기회 손실과 과도한 할인을 모두 방지합니다.",
+    "ja": "需要予測と施設ごとの販売方針をあらかじめルールにしておき、日々の価格改定を自動で行います。上限価格・下限価格、これ以上は値下げしないライン、ブランドとして維持したい価格帯は、施設側でいつでも設定・変更できます。イベントや急な需要増のときは価格を自動で引き上げる設定にも対応し、売り逃しと安売りのどちらも防ぎます。",
+    "locked": true,
+    "zh-Hant": "預先將需求預測與各設施的銷售方針設定為規則，每日的價格調整自動完成。價格上限與下限、絕不再下調的底線、以及作為品牌希望維持的價位區間，設施方隨時都可以自行設定與變更。同時支援在活動期間或需求驟增時自動上調價格的設定，既避免賣漏，也避免賤賣。"
+  },
   "6b6e9df4b6b16290": {
     "ja": "需要予測モデルと施設ごとの販売方針をルール化し、価格の更新を自動化します。上限・下限価格、値引きの下げ止まり、ブランドとして守る価格帯は施設側が必ず制御できる設計です。急な需要変動時に自動で価格を引き上げるブースト設定にも対応し、機会損失と値崩れの両方を抑えます。",
     "en": "We turn demand forecasting models and each property's sales policy into rules and automate price updates. The design always lets the property control the ceiling and floor prices, the point at which discounting stops, and the price bands that must be protected as part of the brand. We also support boost settings that automatically raise prices during sudden demand spikes, curbing both lost opportunity and price collapse.",
@@ -2575,125 +2821,5 @@
     "zh-Hant": "餐飲店、咖啡廳、酒吧、宴會設施、浴場設施等住宿設施附屬設施的經營",
     "ko": "음식점, 카페, 바, 연회 시설, 욕장 시설 그 밖의 숙박시설에 부수하는 시설의 경영",
     "locked": true
-  },
-  "fb4979f76276dc55": {
-    "en": "AI Dynamic Pricing (Automated Rate Adjustment)",
-    "zh": "AI动态定价（价格自动调整）",
-    "ko": "AI 다이내믹 프라이싱(가격 자동 조정)",
-    "ja": "AIダイナミックプライシング（価格の自動調整）",
-    "locked": true,
-    "zh-Hant": "AI動態定價（價格自動調整）"
-  },
-  "6db3a0c3f68dcf10": {
-    "en": "We turn demand forecasts and each property's sales policy into rules in advance, so daily rate changes happen automatically. Ceiling and floor prices, the line below which you will never discount, and the price band you want to maintain as a brand can all be set and changed by the property at any time. We also support settings that automatically raise rates during events or sudden demand spikes, preventing both lost sales and unnecessary discounting.",
-    "zh": "预先将需求预测与各设施的销售方针设定为规则，每日的价格调整自动完成。价格上限与下限、绝不再下调的底线、以及作为品牌希望维持的价位区间，设施方随时都可以自行设定与变更。同时支持在活动期间或需求骤增时自动上调价格的设定，既避免卖漏，也避免贱卖。",
-    "ko": "수요 예측과 시설별 판매 방침을 미리 규칙으로 정해 두고, 매일의 가격 개정을 자동으로 진행합니다. 상한가·하한가, 더 이상 내리지 않는 기준선, 브랜드로서 유지하고 싶은 가격대는 시설 측에서 언제든지 설정하고 변경할 수 있습니다. 이벤트나 갑작스러운 수요 증가 시 가격을 자동으로 올리는 설정에도 대응하여, 판매 기회 손실과 과도한 할인을 모두 방지합니다.",
-    "ja": "需要予測と施設ごとの販売方針をあらかじめルールにしておき、日々の価格改定を自動で行います。上限価格・下限価格、これ以上は値下げしないライン、ブランドとして維持したい価格帯は、施設側でいつでも設定・変更できます。イベントや急な需要増のときは価格を自動で引き上げる設定にも対応し、売り逃しと安売りのどちらも防ぎます。",
-    "locked": true,
-    "zh-Hant": "預先將需求預測與各設施的銷售方針設定為規則，每日的價格調整自動完成。價格上限與下限、絕不再下調的底線、以及作為品牌希望維持的價位區間，設施方隨時都可以自行設定與變更。同時支援在活動期間或需求驟增時自動上調價格的設定，既避免賣漏，也避免賤賣。"
-  },
-  "a2d1ba7730c48d5f": {
-    "en": "From revenue management and AI-driven automated rate adjustment to official website production and SEO, hotel operation outsourcing, guest-room cleaning and linen supply, and the conversion of idle real estate into lodging use—as an operator that runs hotels ourselves, we support revenue and on-site operations as one integrated whole.",
-    "zh": "从收益管理与AI价格自动调整、官网建设与SEO，到酒店委托运营、客房清洁与布草供应，再到闲置房产的住宿化改造。作为亲自运营酒店的经营者，我们将收益与现场运营一体化支持。",
-    "ko": "레비뉴 매니지먼트와 AI를 활용한 가격 자동 조정, 공식 웹사이트 제작과 SEO, 호텔 운영 위탁, 객실 청소·린넨 서플라이, 유휴 부동산의 숙박시설 전환까지. 스스로 호텔을 운영하는 사업자로서 수익과 현장을 하나로 지원합니다.",
-    "ja": "レベニューマネジメントとAIによる価格の自動調整、公式サイト制作とSEO、ホテルの運営受託、客室清掃・リネン供給、遊休不動産の宿泊転用まで。自らホテルを運営する事業者として、収益と現場を一体で支えます。",
-    "locked": true,
-    "zh-Hant": "從收益管理與AI價格自動調整、官網建設與SEO，到飯店委託營運、客房清潔與布草供應，再到閒置房產的住宿化改造。作為親自營運飯店的經營者，我們將收益與現場營運一體化支援。"
-  },
-  "c634123714b5db48": {
-    "en": "From revenue management and AI-driven automated rate adjustment, PMS/OTA operation, official website production and SEO, hotel operation outsourcing and franchise development, to guest-room cleaning, linen and supplies, and the conversion of idle real estate into lodging use—we provide, all together, the functions a lodging business needs.",
-    "zh": "从收益管理与AI价格自动调整、PMS・OTA运营，到官网建设与SEO、酒店委托运营与加盟连锁拓展，再到客房清洁・布草・备品供应，以及闲置房产的住宿化改造，我们统一提供住宿业务所需的各项功能。",
-    "ko": "수익 관리와 AI 가격 자동 조정, PMS·OTA 운영, 공식 웹사이트 제작과 SEO, 호텔 운영 위탁과 FC 전개, 객실 청소·린넨·비품 공급, 유휴 부동산의 숙박시설 전환까지. 숙박사업에 필요한 기능을 한데 모아 제공합니다.",
-    "ja": "収益管理とAIによる価格の自動調整、PMS・OTA運用、公式サイト制作とSEO、ホテルの運営受託とFC展開、客室清掃・リネン・備品供給、遊休不動産の宿泊転用まで。宿泊事業に必要な機能をまとめて提供します。",
-    "locked": true,
-    "zh-Hant": "從收益管理與AI價格自動調整、PMS・OTA營運，到官網建設與SEO、飯店委託營運與加盟連鎖拓展，再到客房清潔・布草・備品供應，以及閒置房產的住宿化改造，我們統一提供住宿業務所需的各項功能。"
-  },
-  "ed0ac06d08945ccd": {
-    "en": "Revenue management / AI dynamic pricing",
-    "zh": "收益管理・AI价格自动调整的引入",
-    "ko": "수익 관리·AI 가격 자동 조정 도입",
-    "ja": "収益管理・AIによる価格調整の導入",
-    "locked": true,
-    "zh-Hant": "收益管理・AI價格自動調整的引入"
-  },
-  "c707197932baddfe": {
-    "en": "Talk to us about implementing our systems, operation contracts and franchising, or request a quotation. We will review your enquiry and a member of our team will get back to you.",
-    "zh": "系统导入咨询、运营受托与加盟洽谈、报价申请请由此提交。我们确认内容后，将由专人与您联系。",
-    "ko": "시스템 도입 상담, 운영 수탁·가맹 문의, 견적 의뢰는 이곳에서. 내용을 확인한 뒤 담당자가 다시 연락드립니다.",
-    "ja": "システム導入のご相談、運営受託・加盟のお問い合わせ、お見積りのご依頼はこちらから。内容を確認のうえ、担当者より改めてご連絡いたします。",
-    "locked": true,
-    "zh-Hant": "系統匯入諮詢、營運受託與加盟洽談、報價申請請由此提交。我們確認內容後，將由專人與您聯絡。"
-  },
-  "2f90ae2dc337b3a7": {
-    "en": "We support the selection, implementation, and migration of PMS (property management systems), booking engines, and channel managers, centrally managing inventory across multiple OTAs to prevent overbooking. Our scope of operation includes listing content, plan design, photos, and review responses on platforms such as Rakuten Travel, Jalan, Booking.com, Expedia, and Agoda. Partial implementation that keeps your existing systems in place is also possible.",
-    "zh": "我们协助您选型、导入及迁移PMS（酒店管理系统）、预订引擎及渠道管理器，统一管理多个OTA的库存，防止超额预订。运营范围涵盖乐天旅游、Jalan、Booking.com、Expedia、Agoda等平台的信息发布、套餐设计、图片及评论回复。也支持在保留现有系统的基础上进行部分导入。",
-    "ko": "PMS(숙박 관리 시스템)와 예약 엔진, 사이트 컨트롤러의 선정·도입·이전을 지원하며, 복수 OTA의 재고를 일괄 관리하여 오버부킹을 방지합니다. 라쿠텐 트래블, 자란(じゃらん), Booking.com, Expedia, Agoda 등의 게재 내용, 플랜 설계, 사진, 리뷰 답변까지를 운영 대상으로 포함합니다. 기존 시스템을 유지한 채 부분적으로 도입하는 것도 가능합니다.",
-    "ja": "PMS（宿泊管理システム）や予約エンジン、サイトコントローラーの選定・導入・移行を支援し、複数OTAの在庫を一元管理してオーバーブッキングを防ぎます。楽天トラベル、じゃらん、Booking.com、Expedia、Agoda などの掲載内容、プラン設計、写真、レビュー返信までを運用対象に含めます。既存システムを残したままの部分導入も可能です。",
-    "locked": true,
-    "zh-Hant": "我們協助您選型、匯入及遷移PMS（飯店管理系統）、預訂引擎及渠道管理器，統一管理多個OTA的庫存，防止超額預訂。營運範圍涵蓋樂天旅遊、Jalan、Booking.com、Expedia、Agoda等平臺的資訊釋出、套餐設計、圖片及評論回覆。也支援在保留現有系統的基礎上進行部分匯入。"
-  },
-  "b734708e66c1f8ff": {
-    "en": "In addition to capturing branded searches for the property's name, we also capture the segment searching by \"area + purpose.\" We handle the technical side—page structure and internal links, structured data, page speed (Core Web Vitals), and multilingual hreflang settings—and we also manage Google Business Profile (MEO) information and review responses, and, as needed, listing ad operation.",
-    "zh": "除了针对设施名称的指名搜索，我们也吸引以“地区+目的”方式搜索的潜在客户。从技术层面完善页面结构、内部链接、结构化数据、加载速度（Core Web Vitals）以及多语言hreflang设置，同时负责完善Google商家资料（MEO）信息、处理用户评价，并可根据需要负责搜索广告的投放运营。",
-    "ko": "시설명으로 하는 지명 검색뿐 아니라 '지역+목적'으로 검색하는 고객층도 확보합니다. 페이지 구조와 내부 링크, 구조화 데이터, 표시 속도(Core Web Vitals), 다국어 hreflang 설정까지 기술적인 측면에서 정비하고, Google 비즈니스 프로필(MEO)의 정보 정비와 리뷰 대응, 필요에 따라 리스팅 광고 운영도 담당합니다.",
-    "ja": "施設名での指名検索に加え、「エリア＋目的」で探す層も取り込みます。ページ構造と内部リンク、構造化データ、表示速度（Core Web Vitals）、多言語のhreflang設定までを技術面から整え、Googleビジネスプロフィール（MEO）の情報整備と口コミ対応、必要に応じてリスティング広告の運用も担当します。",
-    "locked": true,
-    "zh-Hant": "除了針對設施名稱的指名搜尋，我們也吸引以「地區+目的」方式搜尋的潛在客戶。從技術層面完善頁面結構、內部連結、結構化資料、載入速度（Core Web Vitals）以及多語言hreflang設定，同時負責完善Google商家資料（MEO）資訊、處理使用者評價，並可根據需要負責搜尋廣告的投放營運。"
-  },
-  "913d3bdbee19cbf3": {
-    "en": "We build staffing plans based on room count and turnover rate, and finish rooms within the time between checkout and check-in. Our standard scope of work includes in-room cleaning, bathroom disinfection, linen replacement, amenity restocking, trash collection, and checking for and reporting lost items, with a standard working time set per room. We also arrange in advance for increased room volume during peak periods, stay-over cleaning for consecutive-night guests, and late check-out handling.",
-    "zh": "我们根据客房数量与周转次数制定人员计划，在退房到入住之间的时间内完成清洁工作。标准业务范围包括客房内清洁、浴室消毒、布草更换、洗漱用品补充、垃圾回收，以及遗失物品的确认与报告，并设定每间客房的标准作业时长进行运营管理。旺季增房、连住清洁（Stay-over）及延迟退房应对等事项均会事先约定。",
-    "ko": "객실 수와 회전율에 맞춘 인력 계획을 짜서 체크아웃부터 체크인까지의 시간 내에 마무리합니다. 청소, 욕실 소독, 린넨 교체, 어메니티 보충, 쓰레기 수거, 분실물 확인 및 보고까지를 표준 업무 범위로 하고, 객실당 표준 작업 시간을 정하여 운영합니다. 성수기 증실, 연박 청소(스테이오버), 레이트 체크아웃 대응도 사전에 협의합니다.",
-    "ja": "客室数と回転数に応じた要員計画を組み、チェックアウトからチェックインまでの時間内に仕上げます。客室内の清掃、バスルームの消毒、リネン交換、アメニティ補充、ゴミ回収、忘れ物の確認と報告までを標準の業務範囲とし、1室あたりの標準作業時間を定めて運用します。繁忙期の増室、連泊清掃（ステイオーバー）、レイトチェックアウト対応も事前に取り決めます。",
-    "locked": true,
-    "zh-Hant": "我們根據客房數量與週轉次數制定人員計劃，在退房到入住之間的時間內完成清潔工作。標準業務範圍包括客房內清潔、浴室消毒、布草更換、盥洗用品補充、垃圾回收，以及遺失物品的確認與報告，並設定每間客房的標準作業時長進行營運管理。旺季增房、連住清潔（Stay-over）及延遲退房應對等事項均會事先約定。"
-  },
-  "f92c433a6afdf560": {
-    "en": "We handle daily cleaning of the lobby, entrance, corridors, stairs, elevators, shared restrooms, communal baths, and waste-collection areas. We also carry out planned periodic cleaning at set intervals, including carpet shampoo cleaning and stain removal, floor polishing and waxing, glass cleaning, and disassembly cleaning of lighting fixtures and air-conditioner filters.",
-    "zh": "我们负责大厅、入口、走廊、楼梯、电梯、公共卫生间、大浴场及垃圾存放处的日常清洁。同时，还会按既定频次系统性开展地毯洗涤除渍、地板打磨上蜡、玻璃清洁、灯具及空调滤网拆解清洁等定期特别清洁工作。",
-    "ko": "로비, 입구, 복도, 계단, 엘리베이터, 공용 화장실, 대욕장, 쓰레기 집하장의 일상 청소를 진행합니다. 아울러 카펫 샴푸 클리닝과 얼룩 제거, 바닥 연마·왁싱, 유리 청소, 조명기구와 에어컨 필터 분해 청소 등 주기를 정한 정기 청소도 계획적으로 실시합니다.",
-    "ja": "ロビー、エントランス、廊下、階段、エレベーター、共用トイレ、大浴場、ゴミ置き場の日常清掃を行います。あわせて、カーペットのシャンプークリーニングとシミ抜き、床の研磨・ワックス、ガラス清掃、照明器具やエアコンフィルターの分解清掃など、頻度を決めた定期清掃も計画的に実施します。",
-    "locked": true,
-    "zh-Hant": "我們負責大廳、入口、走廊、樓梯、電梯、公共衛生間、大浴場及垃圾存放處的日常清潔。同時，還會按既定頻次系統性開展地毯洗滌除漬、地板打磨上蠟、玻璃清潔、燈具及空調濾網拆解清潔等定期特別清潔工作。"
-  },
-  "9ee474e31118bf8a": {
-    "en": "We select and supply shampoo products, toothbrushes, slippers, room wear, cleaning supplies, and guest-room items, balancing quality against unit cost. We handle both domestic procurement and imports, and after comparing your existing procurement and unit costs side by side, we propose switching only the items that should be switched. We can also plan original-specification (OEM) amenities.",
-    "zh": "我们在品质与单价之间取得平衡，精选并供应洗发水类产品、牙刷、拖鞋、馆内服、清洁用物料及客房备品。同时支持国内采购与进口采购，会将现有采购内容与单价进行对比，仅针对需要更换的部分提出建议。也可提供原创规格（OEM）洗漱用品的策划服务。",
-    "ko": "샴푸류, 치약솔, 슬리퍼, 실내복, 청소용 자재, 객실 비품을 품질과 단가의 균형을 고려하여 선정하고 공급합니다. 국내 조달과 수입 모두에 대응하며, 기존 매입 내용과 단가를 비교한 후 전환할 필요가 있는 항목만 제안합니다. 자체 사양(OEM)의 어메니티 기획도 가능합니다.",
-    "ja": "シャンプー類、歯ブラシ、スリッパ、館内着、清掃用資材、客室備品を、品質と単価のバランスで選定して供給します。国内調達と輸入の双方に対応し、既存の仕入れ内容と単価を並べて比較したうえで、切り替えるべきものだけをご提案します。オリジナル仕様（OEM）のアメニティ企画も可能です。",
-    "locked": true,
-    "zh-Hant": "我們在品質與單價之間取得平衡，精選並供應洗髮水類產品、牙刷、拖鞋、館內服、清潔用物料及客房備品。同時支援國內採購與進口採購，會將現有采購內容與單價進行對比，僅針對需要更換的部分提出建議。也可提供原創規格（OEM）盥洗用品的策劃服務。"
-  },
-  "50b2a4b3da6932c7": {
-    "en": "Automated pricing, cleaning shifts, supply ordering, and linen rotation are all completed within the same team. We don't create the disconnect where a system is introduced but the front line can't keep up.",
-    "zh": "价格自动调整、清洁排班、备品订购与布草周转均在同一团队内完成，不会出现系统导入后现场无法运转的脱节情况。",
-    "ko": "요금 자동 조정과 청소 시프트, 비품 발주, 리넨 순환을 같은 팀 안에서 완결합니다. 도입은 했지만 현장이 돌아가지 않는 단절을 만들지 않습니다.",
-    "ja": "料金の自動調整と清掃シフト、備品発注、リネンの回転を、同じチームの中で完結させます。導入したのに現場が回らない、という分断を起こしません。",
-    "locked": true,
-    "zh-Hant": "價格自動調整、清潔排班、備品訂購與布草週轉均在同一團隊內完成，不會出現系統匯入後現場無法運轉的脫節情況。"
-  },
-  "5bc34ee01cc70022": {
-    "en": "We design our business on the premise that we run lodging facilities ourselves and also take on operation contracts for others. We make decisions based on actual profit and loss — down to cleaning workflows, staffing during peak periods, and OTA commission rates.",
-    "zh": "我们以自主运营住宿设施、同时承接他方设施运营为前提设计业务体系，从清洁动线、旺季人员调配到各OTA手续费，均以实际损益为判断依据。",
-    "ko": "자사가 직접 숙박시설을 운영하고 타사 시설의 운영도 수탁하는 것을 전제로 사업을 설계합니다. 청소 동선, 성수기 인력 배치, OTA별 수수료까지 포함하여 실제 손익으로 판단합니다.",
-    "ja": "自社で宿泊施設を運営し、他社施設の運営も受託することを前提に事業を設計しています。清掃の動線、繁忙期の人繰り、OTAごとの手数料まで含めて、実際の損益で判断します。",
-    "locked": true,
-    "zh-Hant": "我們以自主營運住宿設施、同時承接他方設施營運為前提設計業務體系，從清潔動線、旺季人員調配到各OTA手續費，均以實際損益為判斷依據。"
-  },
-  "56b0696768d01b0b": {
-    "en": "We build the official website, booking flow, in-house guest information, and inquiry response as standard in five languages: Japanese, English, Chinese (Simplified / Traditional), and Korean. This is well suited to properties in urban areas and tourist destinations with a high proportion of inbound guests.",
-    "zh": "官网、预订路径、馆内引导、咨询应答均以日语、英语、中文（简体／繁体）、韩语5种语言为标准构建，适合访日游客占比较高的城市及观光地区设施。",
-    "ko": "공식 웹사이트, 예약 유도 경로, 시설 안내, 문의 대응을 일본어·영어·중국어(간체／번체)·한국어 5개 언어로 표준 구축합니다. 방일객 비율이 높은 도심지·관광지 시설에 적합합니다.",
-    "ja": "公式サイト、予約導線、館内案内、問い合わせ対応を日本語・英語・中国語（簡体字／繁体字）・韓国語の5言語を標準で構築します。訪日客比率の高い都市部・観光地の施設に適しています。",
-    "locked": true,
-    "zh-Hant": "官網、預訂路徑、館內引導、諮詢應答均以日語、英語、中文（簡體／繁體）、韓語5種語言為標準構建，適合訪日遊客佔比較高的城市及觀光地區設施。"
-  },
-  "cffe37850ee631dc": {
-    "en": "For urgent matters, please call us. The person in charge may be away, so we recommend the contact form if you need a reliable reply.",
-    "zh": "急事请直接电话联系。负责人有时会不在，如需确保得到回复，建议通过表单提交咨询。",
-    "ko": "급한 용무는 전화로 연락해 주세요. 담당자가 자리를 비울 수 있으므로, 확실한 답변을 원하시면 문의 양식을 이용해 주세요.",
-    "ja": "お急ぎの場合はお電話ください。担当者が不在のこともございますので、確実にご連絡を差し上げるにはフォームのご利用をおすすめします。",
-    "locked": true,
-    "zh-Hant": "急事請直接電話聯絡。負責人有時會不在，如需確保得到回覆，建議透過表單提交諮詢。"
   }
 }
