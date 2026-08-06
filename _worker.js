@@ -1282,6 +1282,13 @@ export default {
       }
     }
 
+    // 公開停止した言語（簡体字・繁体字・韓国語）は日本語版へ恒久リダイレクト
+    const gone = url.pathname.match(/^\/(zh|zh-hant|ko)(\/.*)?$/);
+    if (gone) {
+      const rest = (gone[2] || "/").replace(/^\/+/, "");
+      return Response.redirect(new URL("/" + rest, url).toString(), 301);
+    }
+
     return env.ASSETS.fetch(request);
   },
 };
