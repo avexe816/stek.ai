@@ -2120,8 +2120,19 @@
     return used;
   }
 
+  /** 画像が差し替わったときに古いキャッシュを見せないための版番号 */
+  function imgVer(name) {
+    const m = (state.imageMeta && state.imageMeta[name]) || null;
+    if (m && m.bytes) return String(m.bytes);
+    return String(state.head || "").slice(0, 8) || "1";
+  }
+
   function thumbUrl(name) {
-    return "/assets/img/" + name + "-sm.webp";
+    return "/assets/img/" + name + "-sm.webp?v=" + imgVer(name);
+  }
+
+  function fullUrl(name) {
+    return "/assets/img/" + name + ".webp?v=" + imgVer(name);
   }
 
   /** 写真を選ぶ欄（サムネイル＋選び直し） */
@@ -2130,7 +2141,7 @@
     const known = state.images.includes(name);
     const thumb = name
       ? known
-        ? h("img", { class: "imgpick-thumb", src: thumbUrl(name), alt: "", loading: "lazy" })
+        ? h("img", { class: "imgpick-thumb", src: thumbUrl(name), alt: "", loading: "lazy", onError: (e) => { const el = e.target; if (!el.dataset.fb) { el.dataset.fb = "1"; el.src = fullUrl(name); } } })
         : h("div", { class: "imgpick-thumb imgpick-thumb-missing" }, "見つかりません")
       : h("div", { class: "imgpick-thumb imgpick-thumb-empty" }, "写真なし");
 
@@ -2176,7 +2187,7 @@
           type: "button",
           onClick: () => pick(n),
         },
-        [h("img", { src: thumbUrl(n), alt: "", loading: "lazy" }), h("span", { class: "pick-name" }, n)]
+        [h("img", { src: thumbUrl(n), alt: "", loading: "lazy", onError: (e) => { const el = e.target; if (!el.dataset.fb) { el.dataset.fb = "1"; el.src = fullUrl(n); } } }), h("span", { class: "pick-name" }, n)]
       )
     );
 
@@ -2314,7 +2325,7 @@
               render();
             },
           }),
-          h("img", { src: thumbUrl(n), alt: "", loading: "lazy" }),
+          h("img", { src: thumbUrl(n), alt: "", loading: "lazy", onError: (e) => { const el = e.target; if (!el.dataset.fb) { el.dataset.fb = "1"; el.src = fullUrl(n); } } }),
         ]),
         h("div", { class: "lib-name" }, n + ".webp"),
         where.length
