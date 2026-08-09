@@ -893,7 +893,23 @@
     } catch (e) {}
   }
 
+  // 日本語・中国語などのIME入力中は再描画しない（変換が途中で消える不具合の対策）
+  let imeComposing = false;
+  let renderQueued = false;
+  document.addEventListener("compositionstart", () => { imeComposing = true; }, true);
+  document.addEventListener("compositionend", () => {
+    imeComposing = false;
+    // 確定直後の input イベントを先に処理させてから描画する
+    setTimeout(() => {
+      if (renderQueued) { renderQueued = false; render(); }
+    }, 0);
+  }, true);
+
   function render() {
+    if (imeComposing) {
+      renderQueued = true;
+      return;
+    }
     const root = document.getElementById("app");
     const snap = captureUiState(root);
     const hadJump = !!state.jumpTo;
