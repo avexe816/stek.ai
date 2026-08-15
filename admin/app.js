@@ -1263,6 +1263,11 @@
   // 編集中の内容が載るページを別タブで確認
   const GROUP_PREVIEW = {
     home: "/",
+    sections: "/",
+    products: "/",
+    pk_page: "/products/proofkeeping/",
+    ops_page: "/products/stek-ops/",
+    it_page: "/services/it-support/",
     services: "/services",
     services_page: "/services",
     news: "/news",
@@ -1319,8 +1324,11 @@
     };
 
     const isMultiline = typeof value === "string" && (value.length > 48 || value.includes("\n"));
+    const options = optionsFor(path);
     let control;
-    if (isImageKey(path)) {
+    if (options) {
+      control = renderSelect(options, value, onChange);
+    } else if (isImageKey(path)) {
       control = renderImageControl(value, onChange);
     } else if (typeof value === "number") {
       control = h("input", { type: "number", value: value, onInput: (e) => onChange(e.target.value === "" ? "" : Number(e.target.value)) });
@@ -1340,7 +1348,7 @@
     const labelRow = h("div", { class: "field-label-row" }, [
       h("span", { class: "field-label" + (advanced ? " field-label--adv" : "") }, advanced ? "上級者向け：" + label : label),
       dirty ? h("span", { class: "dirty-dot" }) : null,
-      typeof value === "string" && value.trim() && !isImageKey(path)
+      typeof value === "string" && value.trim() && !isImageKey(path) && !options
         ? h("button", { type: "button", class: "trans-btn", onClick: () => openTransPanel(value) }, "訳文")
         : null,
     ]);
@@ -1629,6 +1637,35 @@
     ],
   };
 
+  /** 選択式の候補。admin-schema.json の enums が優先、無ければ上の既定。
+   *  提供状況ラベルのように、書き間違えると事実と違う表示になる項目に使う。 */
+  function optionsFor(path) {
+    const fromSchema = (state.schema && state.schema.enums) || {};
+    const raw = fromSchema[path];
+    if (Array.isArray(raw) && raw.length) {
+      return raw.map((o) =>
+        typeof o === "string" ? { v: o, l: o } : { v: o.v == null ? "" : o.v, l: o.l || o.v || "" }
+      );
+    }
+    return SUBFIELD_OPTIONS[path] || null;
+  }
+
+  /** 候補に無い値が入っていても失わないよう、そのぶんを足した選択肢を返す */
+  function optionsWithCurrent(options, value) {
+    const cur = value == null ? "" : String(value);
+    if (options.some((o) => o.v === cur)) return options;
+    return [{ v: cur, l: cur ? cur + "（一覧にない値）" : "（未設定）" }].concat(options);
+  }
+
+  function renderSelect(options, value, onPick) {
+    const list = optionsWithCurrent(options, value);
+    return h(
+      "select",
+      { onChange: (e) => onPick(e.target.value) },
+      list.map((o) => h("option", { value: o.v, selected: String(value == null ? "" : value) === o.v }, o.l))
+    );
+  }
+
   /** "footer.columns.0.items" -> "footer.columns.items"（番号を除いた形） */
   function genericPath(path) {
     return String(path || "")
@@ -1647,7 +1684,7 @@
   function renderObjSubField(path, arr, idx, subKey, value, onChange) {
     const advanced = subKey === "id" || subKey === "no";
     const label = subFieldLabel(path, subKey);
-    const options = SUBFIELD_OPTIONS[genericPath(path) + "." + subKey];
+    const options = optionsFor(genericPath(path) + "." + subKey);
 
     const update = (val) => {
       const copy = arr.map((x) => x);
@@ -1657,13 +1694,7 @@
 
     let control;
     if (options) {
-      control = h(
-        "select",
-        { onChange: (e) => update(e.target.value) },
-        options.map((o) =>
-          h("option", { value: o.v, selected: String(value || "") === o.v }, o.l)
-        )
-      );
+      control = renderSelect(options, value, update);
     } else if (isImageKey(subKey)) {
       control = renderImageControl(value, (val) => update(val));
     } else if (Array.isArray(value)) {

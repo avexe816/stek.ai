@@ -18,13 +18,43 @@
       "id": "home",
       "key": "home",
       "name": "トップページ",
-      "desc": "ヒーロー、選ばれる理由、導入の流れ、よくあるご質問、下部の申し込み枠。"
+      "desc": "ヒーロー、現場の課題、製品の導入文、対象のお客さま、Web・IT支援、強み、導入の流れ、よくあるご質問、下部の申し込み枠。"
+    },
+    {
+      "id": "sections",
+      "key": "sections",
+      "name": "トップページの構成（順序・表示）",
+      "desc": "トップページの段の並び順と、表示するかどうかを決めます。上にあるものほど上に表示されます。「表示」を「非表示」に変えると、その段がページから消えます。「上級者向け：セクション名」は変更しないでください。"
+    },
+    {
+      "id": "products",
+      "key": "products",
+      "name": "製品（ProofKeeping / STEK OPS）",
+      "desc": "製品名、カテゴリー、説明、機能一覧、提供状況ラベル。提供状況は実際の開発状況に合わせてください。まだ使えない機能を「提供中」と表示しないでください。"
+    },
+    {
+      "id": "pk_page",
+      "key": "pk_page",
+      "name": "ProofKeeping ページ",
+      "desc": "/products/proofkeeping/ の内容。解決する課題、利用者別のメリット、利用の流れ、提供状況の表、料金、よくあるご質問。"
+    },
+    {
+      "id": "ops_page",
+      "key": "ops_page",
+      "name": "STEK OPS ページ",
+      "desc": "/products/stek-ops/ の内容。構想、ProofKeepingとの関係、モジュール一覧、権限の考え方、提供状況。"
+    },
+    {
+      "id": "it_page",
+      "key": "it_page",
+      "name": "Web・IT支援 ページ",
+      "desc": "/services/it-support/ の内容。支援できること、対応範囲、進め方。"
     },
     {
       "id": "services",
       "key": "services",
       "name": "事業内容（4領域）",
-      "desc": "トップページのカードと、事業内容ページの各セクションで共通して使われます。"
+      "desc": "事業内容ページの各セクションと、会社情報ページの「事業領域」で使われます。"
     },
     {
       "id": "services_page",
@@ -48,7 +78,7 @@
       "id": "about",
       "key": "about",
       "name": "会社情報ページ",
-      "desc": "代表メッセージ、会社概要、大切にしている3つのこと、よくいただくご相談。"
+      "desc": "代表メッセージ、会社概要、事業領域、大切にしている3つのこと、よくいただくご相談。"
     },
     {
       "id": "contact",
@@ -72,7 +102,7 @@
       "id": "menu",
       "key": "menu",
       "name": "ヘッダーのメニュー（追加・削除）",
-      "desc": "ヘッダー上部のメニューを自由に追加・削除・並べ替えできます。フッターのリンクは「フッター」で編集してください。リンク先には index / services / news / about / contact / privacy のいずれか、#flow のようなページ内リンク、https:// で始まる外部URLを入力してください。外部URLは自動で別タブで開きます。"
+      "desc": "ヘッダー上部のメニューを自由に追加・削除・並べ替えできます。フッターのリンクは「フッター」で編集してください。リンク先には index / services / news / about / contact / privacy / products/proofkeeping / products/stek-ops / services/it-support のいずれか、#products のようなページ内リンク、https:// で始まる外部URLを入力してください。外部URLは自動で別タブで開きます。"
     },
     {
       "id": "nav",
@@ -102,11 +132,10 @@
       "id": "pages",
       "key": "pages",
       "name": "自由ページ（追加・削除）",
-      "desc": "会社案内・採用情報など、好きなページを追加できます。ページ名（URL）を決め、見出し・本文・写真のブロックを積み上げてください。追加後は「メニュー（追加・削除）」でリンク先にページ名を入れると、ヘッダーやフッターに表示されます。"
+      "desc": "会社案内・採用情報など、好きなページを追加できます。ページ名（URL）を決め、見出し・本文・写真のブロックを積み上げてください。追加後は「ヘッダーのメニュー（追加・削除）」でリンク先にページ名を入れると、ヘッダーやフッターに表示されます。"
     }
   ],
   "itemLabels": {
-    "home.why": "理由",
     "home.flow": "ステップ",
     "home.faq": "質問",
     "services": "事業領域",
@@ -145,12 +174,75 @@
     "footer.columns.items.link": "リンク先（例：index / services / news / about / contact / privacy / #flow / https://…）",
     "footer.links": "最下部（© の行）に並べるリンク",
     "footer.links.label": "表示名",
-    "footer.links.link": "リンク先（例：privacy / https://…）"
+    "footer.links.link": "リンク先（例：privacy / https://…）",
+    "sections": "セクション",
+    "sections.label": "この段の名前（管理画面での表示用）",
+    "sections.id": "セクション名（変更しないでください）",
+    "sections.show": "表示するか",
+    "products": "製品",
+    "products.name": "製品名",
+    "products.category": "カテゴリー（例：客室清掃・点検・証跡管理）",
+    "products.status": "提供状況ラベル",
+    "products.heading": "キャッチコピー",
+    "products.body": "説明文",
+    "products.features": "機能",
+    "products.features.text": "機能名",
+    "products.features.note": "但し書き（例：PMS連携が前提 / 構想中。空欄なら出ません）",
+    "products.cta": "ボタンの文言",
+    "products.link": "リンク先（例：products/proofkeeping）",
+    "products.img": "写真",
+    "home.problems": "課題カード",
+    "home.problems.title": "課題の見出し",
+    "home.problems.body": "課題の説明",
+    "home.steps": "拡張のステップ",
+    "home.steps.note": "但し書き（例：構想中。空欄なら出ません）",
+    "home.audience": "対象のお客さま",
+    "home.audience.t": "対象の名前",
+    "home.audience.d": "説明",
+    "home.it_items": "支援内容（一覧）",
+    "pk_page.problems": "解決する課題",
+    "pk_page.benefits": "利用者別のメリット",
+    "pk_page.benefits.t": "利用者",
+    "pk_page.benefits.d": "メリット",
+    "pk_page.flow": "利用の流れ",
+    "pk_page.status_rows": "提供状況の行",
+    "pk_page.status_rows.k": "機能名",
+    "pk_page.status_rows.v": "状態",
+    "pk_page.status_rows.note": "前提条件・補足（空欄なら出ません）",
+    "pk_page.faq": "質問",
+    "ops_page.relation_points": "ProofKeepingとの関係（項目）",
+    "ops_page.relation_points.t": "見出し",
+    "ops_page.relation_points.d": "説明",
+    "ops_page.modules": "モジュール",
+    "ops_page.modules.t": "モジュール名",
+    "ops_page.modules.d": "説明",
+    "ops_page.modules.status": "提供状況ラベル",
+    "ops_page.perm_rows": "権限の行",
+    "ops_page.perm_rows.k": "対象者",
+    "ops_page.perm_rows.v": "見られる範囲",
+    "it_page.items": "支援内容",
+    "it_page.flow": "進め方のステップ",
+    "about.business": "事業領域",
+    "home.why": "強み",
+    "home.steps.no": "番号（01 など）",
+    "home.why.no": "番号（01 など）",
+    "home.flow.no": "番号（01 など）",
+    "pk_page.flow.no": "番号（01 など）",
+    "it_page.flow.no": "番号（01 など）",
+    "services.no": "番号（01 など）",
+    "products.id": "内部の識別子（変更しないでください）",
+    "services.id": "内部の識別子（変更しないでください）",
+    "about.values.no": "番号（01 など）",
+    "about.values.t": "見出し",
+    "about.values.d": "説明",
+    "about.cases.t": "ご相談の内容",
+    "about.cases.d": "当社の対応"
   },
   "titleKeys": [
     "label",
     "name",
     "title",
+    "text",
     "q",
     "h",
     "k",
@@ -184,12 +276,8 @@
     "home.hero_cta1": "ヒーロー：主ボタン",
     "home.hero_cta2": "ヒーロー：副ボタン",
     "home.hero_note": "ヒーロー：注記",
-    "home.pillars_eyebrow": "4領域：小見出し",
-    "home.pillars_title": "4領域：見出し",
-    "home.pillars_lead": "4領域：本文",
     "home.why_eyebrow": "選ばれる理由：小見出し",
     "home.why_title": "選ばれる理由：見出し",
-    "home.services_more": "カードのリンク文言",
     "home.flow_eyebrow": "導入の流れ：小見出し",
     "home.flow_title": "導入の流れ：見出し",
     "home.flow_lead": "導入の流れ：本文",
@@ -232,7 +320,120 @@
     "footer.contact_btn": "フッター：相談枠のボタン",
     "home.hero_img": "ヒーロー写真",
     "meta.og_img": "SNS共有時の写真",
-    "pages": "ページ一覧"
+    "pages": "ページ一覧",
+    "meta.proofkeeping_title": "ProofKeepingページ：検索タイトル",
+    "meta.proofkeeping_desc": "ProofKeepingページ：検索の説明文",
+    "meta.stek_ops_title": "STEK OPSページ：検索タイトル",
+    "meta.stek_ops_desc": "STEK OPSページ：検索の説明文",
+    "meta.itsupport_title": "Web・IT支援ページ：検索タイトル",
+    "meta.itsupport_desc": "Web・IT支援ページ：検索の説明文",
+    "home.hero_cta1_link": "ヒーロー：主ボタンのリンク先（例：#products / contact）",
+    "home.hero_cta2_link": "ヒーロー：副ボタンのリンク先（例：contact）",
+    "home.problem_eyebrow": "現場の課題：小見出し",
+    "home.problem_title": "現場の課題：見出し",
+    "home.problem_body": "現場の課題：本文",
+    "home.products_eyebrow": "製品：小見出し",
+    "home.products_title": "製品：見出し",
+    "home.products_lead": "製品：本文",
+    "home.relation_eyebrow": "小さく始める流れ：小見出し",
+    "home.relation_title": "小さく始める流れ：見出し",
+    "home.relation_body": "小さく始める流れ：本文",
+    "home.audience_eyebrow": "対象のお客さま：小見出し",
+    "home.audience_title": "対象のお客さま：見出し",
+    "home.it_eyebrow": "Web・IT支援：小見出し",
+    "home.it_title": "Web・IT支援：見出し",
+    "home.it_body": "Web・IT支援：本文",
+    "home.it_cta": "Web・IT支援：リンクの文言",
+    "home.news_eyebrow": "お知らせ：小見出し",
+    "home.news_title": "お知らせ：見出し",
+    "home.news_more": "お知らせ：一覧へのリンク文言",
+    "home.cta_button2": "下部の申し込み枠：副ボタン（空欄にすると出ません）",
+    "pk_page.hero_eyebrow": "見出し：小見出し",
+    "pk_page.hero_title": "見出し：製品名",
+    "pk_page.hero_lead": "見出し：冒頭の説明",
+    "pk_page.problem_title": "解決する課題：見出し",
+    "pk_page.benefit_title": "利用者別のメリット：見出し",
+    "pk_page.feature_title": "基本機能：見出し",
+    "pk_page.feature_lead": "基本機能：説明（機能の一覧は「製品」で編集します）",
+    "pk_page.screen_title": "画面イメージ：見出し",
+    "pk_page.screen_body": "画面イメージ：本文",
+    "pk_page.screen_img": "画面イメージ：写真",
+    "pk_page.screen_note": "画面イメージ：写真がないときに出す注記",
+    "pk_page.flow_title": "利用の流れ：見出し",
+    "pk_page.status_title": "提供状況：見出し",
+    "pk_page.status_lead": "提供状況：説明（時期を約束する書き方をしないでください）",
+    "pk_page.match_title": "稼働記録との突き合わせ：見出し",
+    "pk_page.match_body": "稼働記録との突き合わせ：本文",
+    "pk_page.price_title": "料金：見出し",
+    "pk_page.price_body": "料金：本文",
+    "pk_page.faq_title": "よくあるご質問：見出し",
+    "pk_page.cta_title": "末尾の案内：見出し",
+    "pk_page.cta_lead": "末尾の案内：本文",
+    "pk_page.cta_button": "末尾の案内：ボタン",
+    "ops_page.hero_eyebrow": "見出し：小見出し",
+    "ops_page.hero_title": "見出し：製品名",
+    "ops_page.hero_lead": "見出し：冒頭の説明",
+    "ops_page.concept_title": "構想：見出し",
+    "ops_page.concept_body": "構想：本文（空行で段落が分かれます）",
+    "ops_page.relation_title": "ProofKeepingとの関係：見出し",
+    "ops_page.relation_body": "ProofKeepingとの関係：本文",
+    "ops_page.module_title": "モジュール一覧：見出し",
+    "ops_page.module_lead": "モジュール一覧：説明",
+    "ops_page.share_title": "情報共有：見出し",
+    "ops_page.share_body": "情報共有：本文",
+    "ops_page.perm_title": "権限の考え方：見出し",
+    "ops_page.status_title": "提供状況：見出し",
+    "ops_page.status_lead": "提供状況：本文（空行で段落が分かれます）",
+    "ops_page.cta_title": "末尾の案内：見出し",
+    "ops_page.cta_lead": "末尾の案内：本文",
+    "ops_page.cta_button": "末尾の案内：ボタン",
+    "it_page.hero_eyebrow": "見出し：小見出し",
+    "it_page.hero_title": "見出し：大見出し",
+    "it_page.hero_lead": "見出し：冒頭の説明",
+    "it_page.status": "提供状況ラベル",
+    "it_page.intro_title": "冒頭：見出し",
+    "it_page.intro_body": "冒頭：本文（空行で段落が分かれます）",
+    "it_page.items_label": "支援内容：一覧のラベル",
+    "it_page.case_title": "対応範囲：見出し",
+    "it_page.case_body": "対応範囲：本文（空行で段落が分かれます）",
+    "it_page.flow_title": "進め方：見出し",
+    "it_page.cta_title": "末尾の案内：見出し",
+    "it_page.cta_lead": "末尾の案内：本文",
+    "it_page.cta_button": "末尾の案内：ボタン",
+    "about.hero_eyebrow": "見出し：小見出し",
+    "about.hero_lead": "見出し：冒頭の説明",
+    "about.business_title": "事業領域：見出し（空欄にすると枠ごと非表示）",
+    "about.business_lead": "事業領域：説明",
+    "about.business_more": "事業領域：事業内容ページへのリンク文言",
+    "services_page.hero_eyebrow": "見出し：小見出し",
+    "services_page.hero_title": "見出し：大見出し（改行はそのまま反映されます）",
+    "services_page.hero_lead": "見出し：本文",
+    "services_page.items_label": "各領域：内容一覧のラベル",
+    "services_page.cta_title": "末尾の案内：見出し",
+    "services_page.cta_lead": "末尾の案内：本文",
+    "contact.hero_eyebrow": "見出し：小見出し",
+    "contact.info_tel_label": "右側ボックス：電話番号の項目名",
+    "contact.info_hours_label": "右側ボックス：受付時間の項目名",
+    "contact.info_tel_note": "右側ボックス：電話についての注記",
+    "contact.kind_label": "フォーム項目名：お問い合わせ種別",
+    "contact.name_label": "フォーム項目名：お名前",
+    "contact.company_label": "フォーム項目名：会社名・施設名",
+    "contact.email_label": "フォーム項目名：メールアドレス",
+    "contact.tel_label": "フォーム項目名：電話番号",
+    "contact.reply_label": "フォーム項目名：ご希望の連絡方法",
+    "contact.message_label": "フォーム項目名：お問い合わせ内容",
+    "contact.message_placeholder": "お問い合わせ内容：入力欄の例文",
+    "contact.privacy_note": "送信ボタン付近の同意文",
+    "contact.privacy_link": "プライバシーポリシーへのリンク文言",
+    "contact.optional": "フォーム表示：任意の項目に付く文字",
+    "contact.required": "フォーム表示：必須の項目に付く文字",
+    "contact.sending": "送信中に表示する文言",
+    "common.lang_label": "共通：言語切替のラベル",
+    "common.menu": "共通：メニューボタン",
+    "common.close": "共通：閉じるボタン",
+    "common.back_home": "共通：ホームへ戻るリンク",
+    "common.page_top": "共通：ページ上部へ戻るリンク",
+    "common.skip": "共通：本文へスキップするリンク"
   },
   "images": {
     "dir": "assets/img"
@@ -278,6 +479,210 @@
     "footer.links": {
       "label": "",
       "link": ""
+    },
+    "sections": {
+      "label": "",
+      "id": "",
+      "show": "表示"
+    },
+    "products": {
+      "id": "",
+      "name": "",
+      "category": "",
+      "status": "構想中",
+      "heading": "",
+      "body": "",
+      "features": [
+        {
+          "text": "",
+          "note": ""
+        }
+      ],
+      "cta": "",
+      "link": "",
+      "img": ""
+    },
+    "products.features": {
+      "text": "",
+      "note": ""
+    },
+    "home.problems": {
+      "title": "",
+      "body": ""
+    },
+    "home.steps": {
+      "no": "",
+      "title": "",
+      "body": "",
+      "note": ""
+    },
+    "home.audience": {
+      "t": "",
+      "d": ""
+    },
+    "home.it_items": {
+      "title": ""
+    },
+    "home.why": {
+      "no": "",
+      "title": "",
+      "body": ""
+    },
+    "home.flow": {
+      "no": "",
+      "title": "",
+      "body": ""
+    },
+    "home.faq": {
+      "q": "",
+      "a": ""
+    },
+    "pk_page.problems": {
+      "title": "",
+      "body": ""
+    },
+    "pk_page.benefits": {
+      "t": "",
+      "d": ""
+    },
+    "pk_page.flow": {
+      "no": "",
+      "title": "",
+      "body": ""
+    },
+    "pk_page.status_rows": {
+      "k": "",
+      "v": "構想中",
+      "note": ""
+    },
+    "pk_page.faq": {
+      "q": "",
+      "a": ""
+    },
+    "ops_page.relation_points": {
+      "t": "",
+      "d": ""
+    },
+    "ops_page.modules": {
+      "t": "",
+      "d": "",
+      "status": "構想中"
+    },
+    "ops_page.perm_rows": {
+      "k": "",
+      "v": ""
+    },
+    "it_page.items": {
+      "title": "",
+      "body": ""
+    },
+    "it_page.flow": {
+      "no": "",
+      "title": "",
+      "body": ""
+    },
+    "about.values": {
+      "no": "",
+      "t": "",
+      "d": ""
+    },
+    "about.cases": {
+      "t": "",
+      "d": ""
+    },
+    "about.profile": {
+      "k": "",
+      "v": ""
+    },
+    "menu.header": {
+      "label": "",
+      "link": ""
+    },
+    "posts": {
+      "date": "",
+      "category": "",
+      "title": "",
+      "body": ""
+    },
+    "services.items": {
+      "title": "",
+      "body": ""
+    },
+    "privacy.articles": {
+      "h": "",
+      "b": ""
     }
+  },
+  "enums": {
+    "products.status": [
+      {
+        "v": "提供中",
+        "l": "提供中（すでにお使いいただけます）"
+      },
+      {
+        "v": "開発中・先行導入のご相談受付中",
+        "l": "開発中・先行導入のご相談受付中"
+      },
+      {
+        "v": "開発中",
+        "l": "開発中"
+      },
+      {
+        "v": "構想中",
+        "l": "構想中（まだ提供していません）"
+      }
+    ],
+    "it_page.status": [
+      {
+        "v": "提供中",
+        "l": "提供中（すでにお使いいただけます）"
+      },
+      {
+        "v": "開発中",
+        "l": "開発中"
+      },
+      {
+        "v": "構想中",
+        "l": "構想中（まだ提供していません）"
+      }
+    ],
+    "sections.show": [
+      {
+        "v": "表示",
+        "l": "表示する"
+      },
+      {
+        "v": "非表示",
+        "l": "非表示にする"
+      }
+    ],
+    "pk_page.status_rows.v": [
+      {
+        "v": "実装済み",
+        "l": "実装済み"
+      },
+      {
+        "v": "準備中",
+        "l": "準備中"
+      },
+      {
+        "v": "構想中",
+        "l": "構想中"
+      }
+    ],
+    "ops_page.modules.status": [
+      {
+        "v": "構想中",
+        "l": "構想中"
+      },
+      {
+        "v": "準備中",
+        "l": "準備中"
+      },
+      {
+        "v": "ProofKeepingで提供",
+        "l": "ProofKeepingで提供"
+      }
+    ]
   }
 }
