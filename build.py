@@ -37,7 +37,25 @@ LANGS = [
 ]
 LANG_DIR = {"ja": "", "en": "en", "zh": "zh", "zh-Hant": "zh-hant", "ko": "ko"}
 
-PAGES = ["index", "services", "news", "about", "contact", "privacy"]
+# ページ名。"/" を含むものはディレクトリ形式（/products/proofkeeping/）で出力する。
+PAGES = [
+    "index", "services", "news", "about", "contact", "privacy",
+    "products/proofkeeping", "products/stek-ops", "services/it-support",
+]
+
+# ページ名 → data/site.json の meta.<key>_title / _desc
+META_KEY = {
+    "index": "home",
+    "services": "services",
+    "news": "news",
+    "about": "about",
+    "contact": "contact",
+    "privacy": "privacy",
+    "products/proofkeeping": "proofkeeping",
+    "products/stek-ops": "stek_ops",
+    "services/it-support": "itsupport",
+}
+
 RE_SLUG = re.compile(r"^[a-z0-9][a-z0-9-]{0,38}[a-z0-9]$")
 NAV = [("index", "home"), ("services", "services"), ("about", "about"), ("contact", "contact")]
 
@@ -51,6 +69,12 @@ def img_tag(name, *, cls="", w=1200, hgt=750, eager=False, alt=""):
     return (f'<img src="/assets/img/{n}.webp" srcset="/assets/img/{n}-sm.webp 900w, /assets/img/{n}.webp 1800w" '
             f'sizes="(max-width:800px) 100vw, 50vw" alt="{alt}" width="{w}" height="{hgt}"{load}{a}>')
 
+# HTML 属性の断片。f-string の式の中に \" を書くと Python 3.11 以前で
+# SyntaxError になるため、定数に切り出して差し込む。
+ATTR_CURRENT_PAGE = ' aria-current="page"'
+ATTR_CURRENT_TRUE = ' aria-current="true"'
+ATTR_EXTERNAL = ' target="_blank" rel="noopener"'
+
 SVC_ICON = {
     # 収益管理・IT・Web — 上昇するグラフ
     "tech": '<svg class="svc-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 26h24"/><path d="M4 22V10M11 22v-7M18 22v-12M25 22V6"/><path d="M4 10l7 5 7-9 7 4" stroke-dasharray="0"/></svg>',
@@ -62,6 +86,13 @@ SVC_ICON = {
     "asset": '<svg class="svc-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h11v11H4z"/><path d="M4 20h11v8H4z"/><path d="M20 4h8v8h-8z"/><circle cx="23" cy="21" r="5"/><path d="M27 25l2.5 2.5"/></svg>',
 }
 
+# 管理画面から事業領域を増やしたときのための既定アイコン（丸に点）。
+# SVC_ICON に無い id でもビルドが止まらないようにする。
+SVC_ICON_DEFAULT = '<svg class="svc-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="3" fill="currentColor" stroke="none"/></svg>'
+
+
+def svc_icon(sid):
+    return SVC_ICON.get(str(sid or ""), SVC_ICON_DEFAULT)
 
 
 def e(s):
@@ -79,7 +110,45 @@ def para(s):
 def url(lang, page):
     d = LANG_DIR[lang]
     base = f"/{d}/" if d else "/"
-    return base if page == "index" else f"{base}{page}.html"
+    if page == "index":
+        return base
+    if "/" in page:  # 製品ページなどの階層パスはディレクトリ形式
+        return f"{base}{page}/"
+    return f"{base}{page}.html"
+
+
+def out_path(outdir, page):
+    """dist 内の書き出し先。階層パスは <dir>/index.html にする。"""
+    if page == "index":
+        return os.path.join(outdir, "index.html")
+    if "/" in page:
+        return os.path.join(outdir, *page.split("/"), "index.html")
+    return os.path.join(outdir, f"{page}.html")
+
+
+# 提供状況ラベル → バッジの見た目。文字だけでも意味が伝わるようにし、
+# 色だけで区別しない（ラベル文字列そのものを必ず表示する）。
+def status_class(text):
+    s = str(text or "")
+    if not s.strip():
+        return ""
+    if "構想" in s:
+        return "concept"
+    if "準備" in s:
+        return "prep"
+    if "開発" in s or "先行" in s:
+        return "dev"
+    if "提供" in s or "実装" in s:
+        return "live"
+    return "dev"
+
+
+def badge(text, *, small=False):
+    s = str(text or "").strip()
+    if not s:
+        return ""
+    cls = f"badge badge--{status_class(s)}" + (" badge--sm" if small else "")
+    return f'<span class="{cls}">{e(s)}</span>'
 
 
 # ------------------------------------------------------------------ chunks
@@ -97,8 +166,7 @@ def head(t, page, lang, s, custom=None):
         title = f"{custom.get('title','')}｜{s['brand']['legal']}"
         desc = custom.get("desc") or custom.get("lead") or t["meta"]["home_desc"]
     else:
-        key = {"index": "home", "services": "services", "news": "news", "about": "about",
-               "contact": "contact", "privacy": "privacy"}[page]
+        key = META_KEY[page]
         title = t["meta"][f"{key}_title"]
         desc = t["meta"][f"{key}_desc"]
     hl = dict((c, h) for c, h, _l, _s in LANGS)[lang]
@@ -176,19 +244,19 @@ def header(t, page, lang, s):
     items = menu_items(t, "header")
     nav = "".join(
         f'<a href="{resolve_link(lang, lk)}"'
-        f'{" aria-current=\"page\"" if lk == page else ""}'
-        f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}'
+        f'{ATTR_CURRENT_PAGE if lk == page else ""}'
+        f'{ATTR_EXTERNAL if is_ext(lk) else ""}'
         f'>{e(lb)}</a>'
         for lb, lk in items
     )
     langs = "".join(
-        f'<a href="{url(c, page)}" hreflang="{h}"{" aria-current=\"true\"" if c == lang else ""}>{e(l)}<i>{e(sh)}</i></a>'
+        f'<a href="{url(c, page)}" hreflang="{h}"{ATTR_CURRENT_TRUE if c == lang else ""}>{e(l)}<i>{e(sh)}</i></a>'
         for c, h, l, sh in LANGS
     )
     cur = next(sh for c, _h, _l, sh in LANGS if c == lang)
     mob = "".join(
         f'<a href="{resolve_link(lang, lk)}"'
-        f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a>'
+        f'{ATTR_EXTERNAL if is_ext(lk) else ""}>{e(lb)}</a>'
         for lb, lk in items
     )
     return f"""<header class="hd">
@@ -310,7 +378,7 @@ def footer(t, page, lang, s):
         else:
             li = "".join(
                 f'<li><a href="{resolve_link(lang, lk)}"'
-                f'{" target=\"_blank\" rel=\"noopener\"" if is_ext(lk) else ""}>{e(lb)}</a></li>'
+                f'{ATTR_EXTERNAL if is_ext(lk) else ""}>{e(lb)}</a></li>'
                 for lb, lk in col["items"]
             )
         if not li and not col["title"]:
@@ -378,93 +446,328 @@ def cta_band(t, lang):
 
 
 # ------------------------------------------------------------------- pages
-def page_index(t, lang, s):
+#
+# トップページは data/site.json の sections[] が正。
+# 並び順も表示・非表示も、管理画面の「トップページの構成」で変えられる。
+
+HIDE_WORDS = {"非表示", "off", "OFF", "no", "なし", "隠す"}
+
+PRODUCT_ICON = {
+    # ProofKeeping — チェック付きのボード
+    "proofkeeping": '<svg class="p-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5H8a2 2 0 0 0-2 2v19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3"/><rect x="11" y="3" width="10" height="5" rx="1.4"/><path d="m11 16 3 3 6.5-7"/><path d="M11 24h10"/></svg>',
+    # STEK OPS — つながる 4 つの点
+    "stek-ops": '<svg class="p-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16" cy="16" r="3.4"/><circle cx="7" cy="7" r="2.6"/><circle cx="25" cy="7" r="2.6"/><circle cx="7" cy="25" r="2.6"/><circle cx="25" cy="25" r="2.6"/><path d="m9 9 4.6 4.6M23 9l-4.6 4.6M9 23l4.6-4.6M23 23l-4.6-4.6"/></svg>',
+}
+
+PRODUCT_ICON_DEFAULT = '<svg class="p-ico" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="3"/><path d="M11 16h10"/></svg>'
+
+
+def by_id(rows):
+    return {str(r.get("id") or ""): r for r in (rows or []) if isinstance(r, dict)}
+
+
+def orig_status(s, pid):
+    """バッジの色は日本語の原文から決める（英語版でも同じ色になるように）。"""
+    p = by_id(s.get("products")).get(pid) or {}
+    return status_class(p.get("status"))
+
+
+def product_features(p, s_p):
+    """機能一覧。note（前提条件・構想中など）が入っていれば併記する。"""
+    out = []
+    s_feats = (s_p or {}).get("features") or []
+    for i, ft in enumerate(p.get("features") or []):
+        if not isinstance(ft, dict):
+            continue
+        text = str(ft.get("text") or "").strip()
+        if not text:
+            continue
+        note = str(ft.get("note") or "").strip()
+        s_note = ""
+        if i < len(s_feats) and isinstance(s_feats[i], dict):
+            s_note = str(s_feats[i].get("note") or "").strip()
+        note_html = ""
+        if note:
+            cls = status_class(s_note or note)
+            note_html = f'<span class="p-note p-note--{cls}">{e(note)}</span>'
+        out.append(f"<li>{e(text)}{note_html}</li>")
+    return "".join(out)
+
+
+# ---------------------------------------------------------------- sections
+def sec_hero(t, lang, s, alt):
     h = t["home"]
-    cards = "".join(f"""<a class="scard rv" href="{url(lang, 'services')}#{sv['id']}">
-      <span class="svc-mark">{SVC_ICON[sv['id']]}<span class="num">{e(sv['no'])}</span></span>
-      <h3>{e(sv['name'])}</h3>
-      <p>{e(sv['lead'])}</p>
-      <span class="more">{e(h['services_more'])}{ARROW}</span></a>""" for sv in t["services"])
-    why = "".join(f"""<li class="rv"><span class="num">{e(w['no'])}</span>
-      <div><h3>{e(w['title'])}</h3><p>{e(w['body'])}</p></div></li>""" for w in h["why"])
-    flow = "".join(f"""<li class="rv"><span class="num">{e(f['no'])}</span>
-      <h3>{e(f['title'])}</h3><p>{e(f['body'])}</p></li>""" for f in h["flow"])
-    faq = "".join(f"""<details><summary>{e(q['q'])}</summary><div class="a"><p>{e(q['a'])}</p></div></details>""" for q in h["faq"])
-    latest = (t.get("posts") or [])[:3]
-    news_html = ""
-    if latest:
-        rows = "".join(
-            f"""<li class="rv"><a href="{url(lang, 'news')}#post-{i + 1}">
-        <span class="post-meta"><time datetime="{e(p_['date'])}">{e(p_['date'])}</time>"""
-            + (f'<span class="post-cat">{e(p_["category"])}</span>' if p_.get("category") else "")
-            + f"""</span>
-        <h3>{e(p_['title'])}</h3></a></li>"""
-            for i, p_ in enumerate(latest))
-        news_html = f"""
-<section class="sec" id="news"><div class="wrap">
-  <div class="sec-head sec-head-row">
-    <div>
-      <p class="eyebrow">{e(h['news_eyebrow'])}</p>
-      <h2 class="h-sec" style="margin:0">{e(h['news_title'])}</h2>
-    </div>
-    <a class="txt-link" href="{url(lang, 'news')}">{e(h['news_more'])}{ARROW}</a>
-  </div>
-  <ul class="news-list">{rows}</ul>
-</div></section>
-"""
-    return f"""<main id="main">
-<section class="hero"><div class="wrap hero-in">
+    c1 = resolve_link(lang, h.get("hero_cta1_link") or "contact")
+    c2 = resolve_link(lang, h.get("hero_cta2_link") or "contact")
+    return f"""<section class="hero"><div class="wrap hero-in">
   <div>
     <p class="eyebrow">{e(h['hero_eyebrow'])}</p>
     <h1>{nl2br(h['hero_title'])}</h1>
     <p class="lead">{e(h['hero_lead'])}</p>
     <div class="hero-cta">
-      <a class="btn btn-p btn-lg" href="{url(lang, 'contact')}">{e(h['hero_cta1'])}{ARROW}</a>
-      <a class="btn btn-o btn-lg" href="{url(lang, 'services')}">{e(h['hero_cta2'])}</a>
+      <a class="btn btn-p btn-lg" href="{c1}">{e(h['hero_cta1'])}{ARROW}</a>
+      <a class="btn btn-o btn-lg" href="{c2}">{e(h['hero_cta2'])}</a>
     </div>
     <p class="small hero-note">{e(h['hero_note'])}</p>
   </div>
   <figure class="hero-fig">
     {img_tag(h.get('hero_img'), w=1200, hgt=960, eager=True)}
   </figure>
-</div></section>
+</div></section>"""
 
-<section class="sec sec-alt" id="services-top"><div class="wrap">
+
+def sec_problem(t, lang, s, alt):
+    h = t["home"]
+    cards = "".join(
+        f"""<li class="pb rv"><h3>{e(p.get('title',''))}</h3>"""
+        + (f"<p>{e(p['body'])}</p>" if p.get("body") else "")
+        + "</li>"
+        for p in (h.get("problems") or []) if isinstance(p, dict) and p.get("title")
+    )
+    if not cards:
+        return ""
+    return f"""<section class="sec{alt}" id="problem"><div class="wrap">
   <div class="sec-head">
-    <p class="eyebrow">{e(h['pillars_eyebrow'])}</p>
-    <h2 class="h-sec">{e(h['pillars_title'])}</h2>
-    <p class="lead">{e(h['pillars_lead'])}</p>
+    <p class="eyebrow">{e(h.get('problem_eyebrow',''))}</p>
+    <h2 class="h-sec">{e(h.get('problem_title',''))}</h2>
+    <p class="lead">{e(h.get('problem_body',''))}</p>
   </div>
-  <div class="grid-4">{cards}</div>
-</div></section>
+  <ul class="pbs">{cards}</ul>
+</div></section>"""
 
-<section class="sec" id="why"><div class="wrap">
+
+def sec_products(t, lang, s, alt):
+    h = t["home"]
+    s_by = by_id(s.get("products"))
+    cards = []
+    for p in (t.get("products") or []):
+        if not isinstance(p, dict) or not p.get("name"):
+            continue
+        pid = str(p.get("id") or "")
+        s_p = s_by.get(pid) or {}
+        icon = PRODUCT_ICON.get(pid, PRODUCT_ICON_DEFAULT)
+        st = str(p.get("status") or "").strip()
+        st_html = (
+            f'<span class="badge badge--{orig_status(s, pid)}">{e(st)}</span>' if st else ""
+        )
+        link = resolve_link(lang, p.get("link") or "contact")
+        cards.append(f"""<article class="pcard rv" id="product-{e(pid)}">
+      <div class="pcard-head">
+        <span class="p-mark">{icon}</span>
+        <div>
+          <p class="p-cat">{e(p.get('category',''))}</p>
+          <h3>{e(p['name'])}</h3>
+        </div>
+        {st_html}
+      </div>
+      <p class="p-heading">{e(p.get('heading',''))}</p>
+      <p class="p-body">{e(p.get('body',''))}</p>
+      <ul class="plist">{product_features(p, s_p)}</ul>
+      <a class="btn btn-o" href="{link}">{e(p.get('cta') or p['name'])}{ARROW}</a>
+    </article>""")
+    if not cards:
+        return ""
+    return f"""<section class="sec{alt}" id="products"><div class="wrap">
   <div class="sec-head">
-    <p class="eyebrow">{e(h['why_eyebrow'])}</p>
-    <h2 class="h-sec">{e(h['why_title'])}</h2>
+    <p class="eyebrow">{e(h.get('products_eyebrow',''))}</p>
+    <h2 class="h-sec">{e(h.get('products_title',''))}</h2>
+    <p class="lead">{e(h.get('products_lead',''))}</p>
+  </div>
+  <div class="pcards">{''.join(cards)}</div>
+</div></section>"""
+
+
+def sec_relation(t, lang, s, alt):
+    h = t["home"]
+    s_steps = (s.get("home") or {}).get("steps") or []
+    items = []
+    for i, st in enumerate(h.get("steps") or []):
+        if not isinstance(st, dict) or not st.get("title"):
+            continue
+        note = str(st.get("note") or "").strip()
+        s_note = ""
+        if i < len(s_steps) and isinstance(s_steps[i], dict):
+            s_note = str(s_steps[i].get("note") or "").strip()
+        note_html = (
+            f'<span class="badge badge--{status_class(s_note or note)} badge--sm">{e(note)}</span>'
+            if note else ""
+        )
+        items.append(
+            f'<li class="rv"><span class="num">{e(st.get("no",""))}</span>'
+            f'<h3>{e(st["title"])}{note_html}</h3><p>{e(st.get("body",""))}</p></li>'
+        )
+    if not items:
+        return ""
+    return f"""<section class="sec{alt}" id="relation"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">{e(h.get('relation_eyebrow',''))}</p>
+    <h2 class="h-sec">{e(h.get('relation_title',''))}</h2>
+    <p class="lead">{e(h.get('relation_body',''))}</p>
+  </div>
+  <ol class="flow">{''.join(items)}</ol>
+</div></section>"""
+
+
+def sec_audience(t, lang, s, alt):
+    h = t["home"]
+    cards = "".join(
+        f'<li class="aud rv"><h3>{e(a.get("t",""))}</h3><p>{e(a.get("d",""))}</p></li>'
+        for a in (h.get("audience") or []) if isinstance(a, dict) and a.get("t")
+    )
+    if not cards:
+        return ""
+    return f"""<section class="sec{alt}" id="audience"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">{e(h.get('audience_eyebrow',''))}</p>
+    <h2 class="h-sec">{e(h.get('audience_title',''))}</h2>
+  </div>
+  <ul class="auds">{cards}</ul>
+</div></section>"""
+
+
+def sec_itsupport(t, lang, s, alt):
+    h = t["home"]
+    items = "".join(
+        f'<li>{e(i.get("title",""))}</li>'
+        for i in (h.get("it_items") or []) if isinstance(i, dict) and i.get("title")
+    )
+    return f"""<section class="sec{alt}" id="itsupport"><div class="wrap">
+  <div class="it-in">
+    <div>
+      <p class="eyebrow">{e(h.get('it_eyebrow',''))}</p>
+      <h2 class="h-sec">{e(h.get('it_title',''))}</h2>
+      <p class="lead">{e(h.get('it_body',''))}</p>
+      <a class="txt-link" href="{url(lang, 'services/it-support')}">{e(h.get('it_cta',''))}{ARROW}</a>
+    </div>
+    <ul class="itlist">{items}</ul>
+  </div>
+</div></section>"""
+
+
+def sec_why(t, lang, s, alt):
+    h = t["home"]
+    why = "".join(
+        f'<li class="rv"><span class="num">{e(w.get("no",""))}</span>'
+        f'<div><h3>{e(w.get("title",""))}</h3><p>{e(w.get("body",""))}</p></div></li>'
+        for w in (h.get("why") or []) if isinstance(w, dict) and w.get("title")
+    )
+    if not why:
+        return ""
+    return f"""<section class="sec{alt}" id="why"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">{e(h.get('why_eyebrow',''))}</p>
+    <h2 class="h-sec">{e(h.get('why_title',''))}</h2>
   </div>
   <ul class="why">{why}</ul>
-</div></section>
+</div></section>"""
 
-<section class="sec sec-alt" id="flow"><div class="wrap">
+
+def sec_flow(t, lang, s, alt):
+    h = t["home"]
+    flow = "".join(
+        f'<li class="rv"><span class="num">{e(f_.get("no",""))}</span>'
+        f'<h3>{e(f_.get("title",""))}</h3><p>{e(f_.get("body",""))}</p></li>'
+        for f_ in (h.get("flow") or []) if isinstance(f_, dict) and f_.get("title")
+    )
+    if not flow:
+        return ""
+    return f"""<section class="sec{alt}" id="flow"><div class="wrap">
   <div class="sec-head">
-    <p class="eyebrow">{e(h['flow_eyebrow'])}</p>
-    <h2 class="h-sec">{e(h['flow_title'])}</h2>
-    <p class="lead">{e(h['flow_lead'])}</p>
+    <p class="eyebrow">{e(h.get('flow_eyebrow',''))}</p>
+    <h2 class="h-sec">{e(h.get('flow_title',''))}</h2>
+    <p class="lead">{e(h.get('flow_lead',''))}</p>
   </div>
   <ol class="flow">{flow}</ol>
-</div></section>
+</div></section>"""
 
-{news_html}
-<section class="sec sec-alt" id="faq"><div class="wrap">
+
+def sec_news(t, lang, s, alt):
+    h = t["home"]
+    latest = (t.get("posts") or [])[:3]
+    if not latest:
+        return ""
+    rows = "".join(
+        f"""<li class="rv"><a href="{url(lang, 'news')}#post-{i + 1}">
+        <span class="post-meta"><time datetime="{e(p_.get('date',''))}">{e(p_.get('date',''))}</time>"""
+        + (f'<span class="post-cat">{e(p_["category"])}</span>' if p_.get("category") else "")
+        + f"""</span>
+        <h3>{e(p_.get('title',''))}</h3></a></li>"""
+        for i, p_ in enumerate(latest))
+    return f"""<section class="sec{alt}" id="news"><div class="wrap">
+  <div class="sec-head sec-head-row">
+    <div>
+      <p class="eyebrow">{e(h.get('news_eyebrow',''))}</p>
+      <h2 class="h-sec" style="margin:0">{e(h.get('news_title',''))}</h2>
+    </div>
+    <a class="txt-link" href="{url(lang, 'news')}">{e(h.get('news_more',''))}{ARROW}</a>
+  </div>
+  <ul class="news-list">{rows}</ul>
+</div></section>"""
+
+
+def sec_faq(t, lang, s, alt):
+    h = t["home"]
+    faq = "".join(
+        f'<details><summary>{e(q.get("q",""))}</summary><div class="a"><p>{e(q.get("a",""))}</p></div></details>'
+        for q in (h.get("faq") or []) if isinstance(q, dict) and q.get("q")
+    )
+    if not faq:
+        return ""
+    return f"""<section class="sec{alt}" id="faq"><div class="wrap">
   <div class="sec-head">
-    <p class="eyebrow">{e(h['faq_eyebrow'])}</p>
-    <h2 class="h-sec">{e(h['faq_title'])}</h2>
+    <p class="eyebrow">{e(h.get('faq_eyebrow',''))}</p>
+    <h2 class="h-sec">{e(h.get('faq_title',''))}</h2>
   </div>
   <div class="faq">{faq}</div>
-</div></section>
-{cta_band(t, lang)}
-</main>"""
+</div></section>"""
+
+
+def sec_cta(t, lang, s, alt):
+    return cta_band(t, lang)
+
+
+SECTIONS = {
+    "hero": sec_hero,
+    "problem": sec_problem,
+    "products": sec_products,
+    "relation": sec_relation,
+    "audience": sec_audience,
+    "itsupport": sec_itsupport,
+    "why": sec_why,
+    "flow": sec_flow,
+    "news": sec_news,
+    "faq": sec_faq,
+    "cta": sec_cta,
+}
+
+SECTION_ORDER_DEFAULT = ["hero", "problem", "products", "relation", "audience",
+                         "itsupport", "why", "flow", "news", "faq", "cta"]
+
+
+def page_index(t, lang, s):
+    """sections[] の並び順どおりに段を積む。表示・非表示も同じ表で決まる。"""
+    rows = [x for x in (s.get("sections") or []) if isinstance(x, dict) and x.get("id")]
+    order = [(str(x["id"]).strip(), str(x.get("show") or "表示").strip()) for x in rows]
+    if not order:
+        order = [(sid, "表示") for sid in SECTION_ORDER_DEFAULT]
+
+    out, alt = [], 0
+    for sid, show in order:
+        if show in HIDE_WORDS:
+            continue
+        fn = SECTIONS.get(sid)
+        if fn is None:
+            print(f"  ! 知らないセクション名なので飛ばしました: {sid}")
+            continue
+        if sid in ("hero", "cta"):
+            html_ = fn(t, lang, s, "")
+        else:
+            html_ = fn(t, lang, s, " sec-alt" if alt % 2 == 0 else "")
+        if html_:
+            out.append(html_)
+            if sid not in ("hero", "cta"):
+                alt += 1
+    return '<main id="main">\n' + "\n".join(out) + "\n</main>"
 
 
 def page_services(t, lang, s):
@@ -475,7 +778,7 @@ def page_services(t, lang, s):
         blocks.append(f"""<section class="svc" id="{sv['id']}"><div class="wrap">
   <div class="svc-top">
     <div>
-      <span class="svc-mark">{SVC_ICON[sv['id']]}<span class="num">{e(sv['no'])}</span></span>
+      <span class="svc-mark">{svc_icon(sv["id"])}<span class="num">{e(sv['no'])}</span></span>
       <h2>{e(sv['name'])}</h2>
       <p class="sub">{e(sv['lead'])}</p>
       <p class="lead">{e(sv['body'])}</p>
@@ -508,6 +811,26 @@ def page_about(t, lang, s):
         for v in a["values"])
     cases = "".join(
         f'<li><h3>{e(c["t"])}</h3><p>{e(c["d"])}</p></li>' for c in a["cases"])
+
+    # 事業領域。トップページで主役から外した既存事業を、会社情報に残す。
+    biz_html = ""
+    if a.get("business_title"):
+        biz_cards = "".join(f"""<a class="scard" href="{url(lang, 'services')}#{sv['id']}">
+      <span class="svc-mark">{svc_icon(sv["id"])}<span class="num">{e(sv['no'])}</span></span>
+      <h3>{e(sv['name'])}</h3>
+      <p>{e(sv['lead'])}</p></a>""" for sv in t["services"])
+        more = ""
+        if a.get("business_more"):
+            more = (f'<a class="txt-link" style="margin-top:2rem" href="{url(lang, "services")}">'
+                    f'{e(a["business_more"])}{ARROW}</a>')
+        biz_html = f"""<section class="sec" id="business"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(a['business_title'])}</h2>
+    <p class="lead">{e(a.get('business_lead',''))}</p>
+  </div>
+  <div class="grid-4">{biz_cards}</div>
+  {more}
+</div></section>"""
     return f"""<main id="main">
 <section class="page-hero"><div class="wrap">
   <p class="eyebrow">{e(a['hero_eyebrow'])}</p>
@@ -525,7 +848,9 @@ def page_about(t, lang, s):
   <dl class="table">{rows}</dl>
 </div></section>
 
-<section class="sec"><div class="wrap">
+{biz_html}
+
+<section class="sec sec-alt"><div class="wrap">
   <div class="sec-head">
     <h2 class="h-sec" style="margin:0">{e(a['values_title'])}</h2>
     <p class="lead">{e(a['values_lead'])}</p>
@@ -533,7 +858,7 @@ def page_about(t, lang, s):
   <ul class="values">{vals}</ul>
 </div></section>
 
-<section class="sec sec-alt"><div class="wrap">
+<section class="sec"><div class="wrap">
   <div class="sec-head">
     <h2 class="h-sec" style="margin:0">{e(a['cases_title'])}</h2>
     <p class="lead">{e(a['cases_lead'])}</p>
@@ -685,19 +1010,294 @@ def page_custom(t, lang, s, pg):
   {inner}
 </div></section>''')
     hero_lead = str(pg.get("lead") or "").strip()
+    eyebrow = str(pg.get("eyebrow") or "").strip()
+    eyebrow_html = f'<p class="eyebrow">{e(eyebrow)}</p>' if eyebrow else ""
+    lead_html = f'<p class="lead">{e(hero_lead)}</p>' if hero_lead else ""
     return f'''<main id="main">
 <section class="page-hero"><div class="wrap">
-  {f"<p class=\'eyebrow\'>{e(pg.get('eyebrow'))}</p>" if pg.get("eyebrow") else ""}
+  {eyebrow_html}
   <h1>{e(pg.get("title") or "")}</h1>
-  {f"<p class=\'lead\'>{e(hero_lead)}</p>" if hero_lead else ""}
+  {lead_html}
 </div></section>
 {"".join(secs)}
 </main>'''
 
 
-BUILDERS = {"index": page_index, "services": page_services,
-    "news": page_news, "about": page_about,
-            "contact": page_contact, "privacy": page_privacy}
+# --------------------------------------------------------- 製品・サービス頁
+def prod_hero(t, lang, s, pid, page, *, status_text=None, status_cls=None):
+    """製品ページの冒頭。カテゴリーと提供状況は products[] を正とする。"""
+    p = by_id(t.get("products")).get(pid) or {}
+    cat = str(p.get("category") or "").strip()
+    st = status_text if status_text is not None else str(p.get("status") or "").strip()
+    cls = status_cls if status_cls is not None else orig_status(s, pid)
+    tags = []
+    if cat:
+        tags.append(f'<span class="p-cat">{e(cat)}</span>')
+    if st:
+        tags.append(f'<span class="badge badge--{cls}">{e(st)}</span>')
+    tag_html = f'<div class="ph-tags">{"".join(tags)}</div>' if tags else ""
+    return f"""<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">{e(page.get('hero_eyebrow',''))}</p>
+  <h1>{nl2br(page.get('hero_title',''))}</h1>
+  {tag_html}
+  <p class="lead">{e(page.get('hero_lead',''))}</p>
+</div></section>"""
+
+
+def cta_section(t, lang, page):
+    btn = str(page.get("cta_button") or "").strip()
+    if not (page.get("cta_title") or btn):
+        return ""
+    btn_html = (
+        f'<a class="btn btn-l btn-lg" href="{url(lang, "contact")}">{e(btn)}{ARROW}</a>'
+        if btn else ""
+    )
+    return f"""<section class="cta"><div class="wrap cta-in">
+  <div><h2>{nl2br(page.get('cta_title',''))}</h2><p>{e(page.get('cta_lead',''))}</p></div>
+  {btn_html}
+</div></section>"""
+
+
+def status_table(page, s_page):
+    """提供状況の表。ここがサイト内で唯一の状況の出どころ。"""
+    rows = page.get("status_rows") or []
+    s_rows = (s_page or {}).get("status_rows") or []
+    if not rows:
+        return ""
+    body = ""
+    for i, r in enumerate(rows):
+        if not isinstance(r, dict) or not r.get("k"):
+            continue
+        state = str(r.get("v") or "").strip()
+        s_state = ""
+        if i < len(s_rows) and isinstance(s_rows[i], dict):
+            s_state = str(s_rows[i].get("v") or "").strip()
+        note = str(r.get("note") or "").strip()
+        badge_html = (
+            f'<span class="badge badge--{status_class(s_state or state)} badge--sm">{e(state)}</span>'
+            if state else ""
+        )
+        note_html = f'<span class="st-note">{e(note)}</span>' if note else ""
+        body += (f'<div class="st-row"><div class="st-k">{e(r["k"])}</div>'
+                 f'<div class="st-v">{badge_html}{note_html}</div></div>')
+    return f'<div class="sttable">{body}</div>' if body else ""
+
+
+def page_proofkeeping(t, lang, s):
+    p = t.get("pk_page") or {}
+    sp = s.get("pk_page") or {}
+    prod = by_id(t.get("products")).get("proofkeeping") or {}
+    s_prod = by_id(s.get("products")).get("proofkeeping") or {}
+
+    probs = "".join(
+        f'<li class="pb"><h3>{e(x.get("title",""))}</h3><p>{e(x.get("body",""))}</p></li>'
+        for x in (p.get("problems") or []) if isinstance(x, dict) and x.get("title"))
+    bens = "".join(
+        f'<li class="aud"><h3>{e(x.get("t",""))}</h3><p>{e(x.get("d",""))}</p></li>'
+        for x in (p.get("benefits") or []) if isinstance(x, dict) and x.get("t"))
+    flow = "".join(
+        f'<li><span class="num">{e(x.get("no",""))}</span><h3>{e(x.get("title",""))}</h3>'
+        f'<p>{e(x.get("body",""))}</p></li>'
+        for x in (p.get("flow") or []) if isinstance(x, dict) and x.get("title"))
+    faq = "".join(
+        f'<details><summary>{e(x.get("q",""))}</summary><div class="a"><p>{e(x.get("a",""))}</p></div></details>'
+        for x in (p.get("faq") or []) if isinstance(x, dict) and x.get("q"))
+
+    screen_media = img_tag(p.get("screen_img")) or (
+        f'<p class="small screen-note">{e(p.get("screen_note",""))}</p>'
+        if p.get("screen_note") else "")
+
+    return f"""<main id="main">
+{prod_hero(t, lang, s, 'proofkeeping', p)}
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('problem_title',''))}</h2></div>
+  <ul class="pbs">{probs}</ul>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(p.get('feature_title',''))}</h2>
+    <p class="lead">{e(p.get('feature_lead',''))}</p>
+  </div>
+  <ul class="plist plist-wide">{product_features(prod, s_prod)}</ul>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('benefit_title',''))}</h2></div>
+  <ul class="auds">{bens}</ul>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('screen_title',''))}</h2></div>
+  <div class="prose"><p>{e(p.get('screen_body',''))}</p></div>
+  {screen_media}
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('flow_title',''))}</h2></div>
+  <ol class="flow flow-5">{flow}</ol>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="prose">
+    <h2>{e(p.get('match_title',''))}</h2>
+    {para(p.get('match_body',''))}
+  </div>
+</div></section>
+
+<section class="sec" id="status"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(p.get('status_title',''))}</h2>
+    <p class="lead">{e(p.get('status_lead',''))}</p>
+  </div>
+  {status_table(p, sp)}
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="prose">
+    <h2>{e(p.get('price_title',''))}</h2>
+    {para(p.get('price_body',''))}
+  </div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('faq_title',''))}</h2></div>
+  <div class="faq">{faq}</div>
+</div></section>
+{cta_section(t, lang, p)}
+</main>"""
+
+
+def page_stek_ops(t, lang, s):
+    p = t.get("ops_page") or {}
+    s_mods = (s.get("ops_page") or {}).get("modules") or []
+
+    pts = "".join(
+        f'<li class="aud"><h3>{e(x.get("t",""))}</h3><p>{e(x.get("d",""))}</p></li>'
+        for x in (p.get("relation_points") or []) if isinstance(x, dict) and x.get("t"))
+
+    mods = ""
+    for i, m in enumerate(p.get("modules") or []):
+        if not isinstance(m, dict) or not m.get("t"):
+            continue
+        st = str(m.get("status") or "").strip()
+        s_st = ""
+        if i < len(s_mods) and isinstance(s_mods[i], dict):
+            s_st = str(s_mods[i].get("status") or "").strip()
+        badge_html = (
+            f'<span class="badge badge--{status_class(s_st or st)} badge--sm">{e(st)}</span>'
+            if st else "")
+        mods += (f'<li><h3>{e(m["t"])}{badge_html}</h3><p>{e(m.get("d",""))}</p></li>')
+
+    perms = "".join(
+        f'<div><dt>{e(r.get("k",""))}</dt><dd>{e(r.get("v",""))}</dd></div>'
+        for r in (p.get("perm_rows") or []) if isinstance(r, dict) and r.get("k"))
+
+    return f"""<main id="main">
+{prod_hero(t, lang, s, 'stek-ops', p)}
+
+<section class="sec"><div class="wrap">
+  <div class="prose">
+    <h2>{e(p.get('concept_title',''))}</h2>
+    {para(p.get('concept_body',''))}
+  </div>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(p.get('relation_title',''))}</h2>
+    <p class="lead">{e(p.get('relation_body',''))}</p>
+  </div>
+  <ul class="auds">{pts}</ul>
+</div></section>
+
+<section class="sec" id="modules"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(p.get('module_title',''))}</h2>
+    <p class="lead">{e(p.get('module_lead',''))}</p>
+  </div>
+  <ul class="svc-items">{mods}</ul>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(p.get('share_title',''))}</h2>
+    <p class="lead">{e(p.get('share_body',''))}</p>
+  </div>
+  <div class="sec-head" style="margin-bottom:1.4rem"><h3 class="h-sub">{e(p.get('perm_title',''))}</h3></div>
+  <dl class="table">{perms}</dl>
+</div></section>
+
+<section class="sec" id="status"><div class="wrap">
+  <div class="prose">
+    <h2>{e(p.get('status_title',''))}</h2>
+    {para(p.get('status_lead',''))}
+  </div>
+</div></section>
+{cta_section(t, lang, p)}
+</main>"""
+
+
+def page_itsupport(t, lang, s):
+    p = t.get("it_page") or {}
+    items = "".join(
+        f'<li><h3>{e(x.get("title",""))}</h3><p>{e(x.get("body",""))}</p></li>'
+        for x in (p.get("items") or []) if isinstance(x, dict) and x.get("title"))
+    flow = "".join(
+        f'<li><span class="num">{e(x.get("no",""))}</span><h3>{e(x.get("title",""))}</h3>'
+        f'<p>{e(x.get("body",""))}</p></li>'
+        for x in (p.get("flow") or []) if isinstance(x, dict) and x.get("title"))
+    st = str(p.get("status") or "").strip()
+    s_st = str((s.get("it_page") or {}).get("status") or "").strip()
+    tag_html = (f'<div class="ph-tags"><span class="badge badge--{status_class(s_st or st)}">{e(st)}</span></div>'
+                if st else "")
+    return f"""<main id="main">
+<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">{e(p.get('hero_eyebrow',''))}</p>
+  <h1>{nl2br(p.get('hero_title',''))}</h1>
+  {tag_html}
+  <p class="lead">{e(p.get('hero_lead',''))}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="prose">
+    <h2>{e(p.get('intro_title',''))}</h2>
+    {para(p.get('intro_body',''))}
+  </div>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <p class="items-label">{e(p.get('items_label',''))}</p>
+  <ul class="svc-items">{items}</ul>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="prose">
+    <h2>{e(p.get('case_title',''))}</h2>
+    {para(p.get('case_body',''))}
+  </div>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('flow_title',''))}</h2></div>
+  <ol class="flow">{flow}</ol>
+</div></section>
+{cta_section(t, lang, p)}
+</main>"""
+
+
+BUILDERS = {
+    "index": page_index,
+    "services": page_services,
+    "news": page_news,
+    "about": page_about,
+    "contact": page_contact,
+    "privacy": page_privacy,
+    "products/proofkeeping": page_proofkeeping,
+    "products/stek-ops": page_stek_ops,
+    "services/it-support": page_itsupport,
+}
 
 
 # -------------------------------------------------------------------- main
@@ -719,8 +1319,9 @@ def build(langs=None):
         for page in PAGES:
             body = BUILDERS[page](t, code, site)
             doc = head(t, page, code, site) + header(t, page, code, site) + body + footer(t, page, code, site)
-            name = "index.html" if page == "index" else f"{page}.html"
-            with open(os.path.join(outdir, name), "w", encoding="utf-8") as f:
+            dest = out_path(outdir, page)
+            os.makedirs(os.path.dirname(dest), exist_ok=True)
+            with open(dest, "w", encoding="utf-8") as f:
                 f.write(doc)
             count += 1
         for pg in (t.get("pages") or []):
@@ -747,6 +1348,18 @@ def build(langs=None):
     sitemap(DIST)
 
     print(f"built {count} pages -> dist/")
+
+    # 公開文言の禁止語チェック（警告のみ。ビルドは止めない）
+    try:
+        from tools.check_words import check as check_words
+        hits = check_words(site)
+        if hits:
+            print(f"禁止語チェック: {len(hits)} 件（tools/check_words.py で詳細を確認してください）")
+            for path, word, _why, _around in hits[:5]:
+                print(f"  [{word}] {path}")
+    except Exception as err:  # チェックが壊れてもビルドは通す
+        print(f"禁止語チェックを飛ばしました: {err}")
+
     miss = r.report()
     if miss:
         print("translation gaps:", miss)
