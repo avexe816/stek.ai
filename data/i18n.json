@@ -42,7 +42,7 @@
     "ja": "7言語表示・オフライン対応",
     "locked": false,
     "zh": "多语言显示·离线支持",
-    "zh-Hant": "",
+    "zh-Hant": "多語言顯示·離線支援",
     "en": "7-language display and offline support",
     "th": ""
   },
@@ -165,7 +165,7 @@
     "ja": "PMS連携が前提",
     "locked": false,
     "zh": "以PMS连接为前提",
-    "zh-Hant": "",
+    "zh-Hant": "以PMS連線為前提",
     "en": "PMS integration is required",
     "th": ""
   },
@@ -204,7 +204,7 @@
     "ja": "ProofKeepingは、いつから使えますか。",
     "locked": false,
     "zh": "ProofKeeping从什么时候可以使用？",
-    "zh-Hant": "",
+    "zh-Hant": "ProofKeeping從什麼時候可以使用？",
     "en": "When can ProofKeeping be used?",
     "th": ""
   },
@@ -220,7 +220,7 @@
     "ja": "ProofKeepingを見る",
     "locked": false,
     "zh": "查看ProofKeeping",
-    "zh-Hant": "",
+    "zh-Hant": "檢視ProofKeeping",
     "en": "View ProofKeeping",
     "th": ""
   },
@@ -243,7 +243,7 @@
     "ja": "STEK OPSの構想を見る",
     "locked": false,
     "zh": "查看STEK OPS的构想",
-    "zh-Hant": "",
+    "zh-Hant": "檢視STEK OPS的構想",
     "en": "View the concept of STEK OPS",
     "th": ""
   },
@@ -315,7 +315,7 @@
     "ja": "「清掃した」を、確認できる記録に変える。",
     "locked": false,
     "zh": "将\"已清洁\"转化为可确认的记录。",
-    "zh-Hant": "",
+    "zh-Hant": "將\"已清潔\"轉化為可確認的記錄。",
     "en": "Turn \"cleaned\" into a verifiable record",
     "th": ""
   },
@@ -465,7 +465,7 @@
     "ja": "こうした状態になっていませんか",
     "locked": false,
     "zh": "是否出现了这样的情况",
-    "zh-Hant": "",
+    "zh-Hant": "是否出現了這樣的情況",
     "en": "Are you in such a situation?",
     "th": ""
   },
@@ -504,7 +504,7 @@
     "ja": "すでにPMSを使っています。入れ替えが必要ですか。",
     "locked": false,
     "zh": "我们已经使用了PMS，是否需要更换？",
-    "zh-Hant": "",
+    "zh-Hant": "我們已經使用了PMS，是否需要更換？",
     "en": "We are already using a PMS. Is replacement necessary?",
     "th": ""
   },
@@ -527,7 +527,7 @@
     "ja": "その日の担当を割り当てる",
     "locked": false,
     "zh": "分配当天的负责人",
-    "zh-Hant": "",
+    "zh-Hant": "分配當天的負責人",
     "en": "Assign daily staff",
     "th": ""
   },
@@ -551,7 +551,7 @@
     "ja": "どの客室が仕上がっているかの判断が分かれ、販売できる客室の確定が遅れます。",
     "locked": false,
     "zh": "对于哪间客房已经完成清洁的判断出现分歧，导致可销售客房的确认延迟。",
-    "zh-Hant": "",
+    "zh-Hant": "對於哪間客房已經完成清潔的判斷出現分歧，導致可銷售客房的確認延遲。",
     "en": "There is a difference in judgment about which rooms are ready, causing delays in confirming available rooms for sale.",
     "th": ""
   },
@@ -559,7 +559,7 @@
     "ja": "はい。ホテル・旅館だけでなく、客室清掃を受託する清掃会社にもお使いいただけます。担当割り当て、作業報告、点検、再清掃をひとつの流れで管理し、実施した内容を発注元へ記録として提示できます。",
     "locked": false,
     "zh": "可以。不仅限于酒店和旅馆，也可以提供给承接客房清洁的清洁公司。可将负责人分配、作业报告、检查、重新清洁等流程统一管理，并将实际执行内容作为记录提供给发包方。",
-    "zh-Hant": "",
+    "zh-Hant": "可以。不僅限於飯店和旅館，也可以提供給承接客房清潔的清潔公司。可將負責人分配、作業報告、檢查、重新清潔等流程統一管理，並將實際執行內容作為記錄提供給發包方。",
     "en": "Yes. It can be used not only by hotels and inns, but also by cleaning companies that handle guest room cleaning. It manages task assignment, work reports, inspection, and re-cleaning in a single workflow, and can present the implemented content as a record to the client.",
     "th": ""
   },
@@ -575,7 +575,7 @@
     "ja": "はじめから全施設・全部門に広げる必要はありません。一つの施設、一つの部門から始めて、続けられる形になってから広げます。",
     "locked": false,
     "zh": "不需要从一开始就扩展到所有设施和部门。从一个设施、一个部门开始，等可以持续进行后再扩展。",
-    "zh-Hant": "",
+    "zh-Hant": "不需要從一開始就擴充套件到所有設施和部門。從一個設施、一個部門開始，等可以持續進行後再擴充套件。",
     "en": "There is no need to expand to all facilities and departments from the beginning. We start with one facility or department and expand once it is running smoothly.",
     "th": ""
   },
@@ -583,7 +583,7 @@
     "ja": "まず、現在の運用を見せてください。",
     "locked": false,
     "zh": "首先，请展示当前的运营情况。",
-    "zh-Hant": "",
+    "zh-Hant": "首先，請展示當前的營運情況。",
     "en": "First, please show us your current operations.",
     "th": ""
   },
@@ -623,7 +623,7 @@
     "ja": "アメニティ・備品の在庫管理",
     "locked": false,
     "zh": "洗浴用品·用品的库存管理",
-    "zh-Hant": "",
+    "zh-Hant": "洗浴用品·用品的庫存管理",
     "en": "Inventory management of amenities and supplies",
     "th": ""
   },
@@ -874,7 +874,7 @@
     "ja": "スマートフォンで、見たことを選ぶだけで記録できます。電波が届かない客室でも入力でき、7言語で表示されます。",
     "locked": false,
     "zh": "仅需在智能手机上选择看到的内容即可记录。即使在信号无法到达的房间也能输入，支持7种语言显示。",
-    "zh-Hant": "",
+    "zh-Hant": "僅需在智慧手機上選擇看到的內容即可記錄。即使在訊號無法到達的房間也能輸入，支援7種語言顯示。",
     "en": "You can record what you see by selecting options on a smartphone. Input is possible even in rooms without signal, and it is displayed in seven languages.",
     "th": ""
   },
@@ -882,7 +882,7 @@
     "ja": "チェックリストによる点検と再清掃",
     "locked": false,
     "zh": "通过检查表进行检查和重新清洁",
-    "zh-Hant": "",
+    "zh-Hant": "透過檢查表進行檢查和重新清潔",
     "en": "Inspection and re-cleaning through checklists",
     "th": ""
   },
@@ -928,7 +928,7 @@
     "ja": "フロントと清掃会社の認識がずれる",
     "locked": false,
     "zh": "前台与清洁公司的认知出现偏差",
-    "zh-Hant": "",
+    "zh-Hant": "櫃台與清潔公司的認知出現偏差",
     "en": "The understanding between the front desk and the cleaning company is misaligned",
     "th": ""
   },
@@ -1047,7 +1047,7 @@
     "ja": "ホテル現場運営プラットフォーム",
     "locked": false,
     "zh": "酒店现场运营平台",
-    "zh-Hant": "",
+    "zh-Hant": "飯店現場營運平臺",
     "en": "Hotel site operation platform",
     "th": ""
   },
@@ -1127,7 +1127,7 @@
     "ja": "リネンの在庫・回収・納品管理",
     "locked": false,
     "zh": "布草的库存·回收·送货管理",
-    "zh-Hant": "",
+    "zh-Hant": "布草的庫存·回收·送貨管理",
     "en": "Management of linen inventory, collection, and delivery",
     "th": ""
   },
@@ -1243,7 +1243,7 @@
     "ja": "一つの施設、一つの部門から試します。導入研修は現場のスタッフの母語で行います。",
     "locked": false,
     "zh": "从一个设施、一个部门开始试用。导入培训将使用现场员工的母语进行。",
-    "zh-Hant": "",
+    "zh-Hant": "從一個設施、一個部門開始試用。匯入培訓將使用現場員工的母語進行。",
     "en": "We will try it with one facility or department. Training will be conducted in the native language of the on-site staff.",
     "th": ""
   },
@@ -1275,7 +1275,7 @@
     "ja": "不具合・汚損・忘れ物の報告が分散する",
     "locked": false,
     "zh": "问题、污损和遗漏物品的报告分散",
-    "zh-Hant": "",
+    "zh-Hant": "問題、汙損和遺漏物品的報告分散",
     "en": "Reports of defects, damage, and lost items are scattered",
     "th": ""
   },
@@ -1393,7 +1393,7 @@
     "ja": "人員配置とシフト",
     "locked": false,
     "zh": "人员配置与排班",
-    "zh-Hant": "",
+    "zh-Hant": "人員配置與排班",
     "en": "Staff scheduling and shifts",
     "th": ""
   },
@@ -1480,7 +1480,7 @@
     "ja": "使えません。記録を清掃スタッフ個人の評価に使わない設計にしています。個人の順位付けや、個人単位の作業時間の集計は行いません。記録の正確さを保つための前提であり、清掃会社にとっては、発注元が従業員個人を特定できないという契約上の安心材料にもなります。",
     "locked": false,
     "zh": "不可以。我们设计时并未将记录用于清洁员工个人的评估。不会进行个人排名或按个人统计工作时间。这是保持记录准确性的前提，对清洁公司而言，也是发包方无法识别员工个人的合同上的安心保障。",
-    "zh-Hant": "",
+    "zh-Hant": "不可以。我們設計時並未將記錄用於清潔員工個人的評估。不會進行個人排名或按個人統計工作時間。這是保持記錄準確性的前提，對清潔公司而言，也是發包方無法識別員工個人的合約上的安心保障。",
     "en": "It cannot be used. It is designed not to use the records for evaluating individual cleaning staff. We do not rank individuals or aggregate work time per individual. This is a prerequisite for maintaining the accuracy of the records, and it also provides contractual reassurance for the cleaning company that the client cannot identify individual employees.",
     "th": ""
   },
@@ -1495,7 +1495,7 @@
     "ja": "修繕の発注と対応履歴",
     "locked": false,
     "zh": "维修的下单与处理记录",
-    "zh-Hant": "",
+    "zh-Hant": "維修的下單與處理記錄",
     "en": "Maintenance requests and response history",
     "th": ""
   },
@@ -1526,7 +1526,7 @@
     "ja": "入室、作業、チェックリスト、写真、忘れ物、不具合をスマートフォンから記録します。",
     "locked": false,
     "zh": "通过智能手机记录入住、工作、检查清单、照片、遗漏物品和问题。",
-    "zh-Hant": "",
+    "zh-Hant": "透過智慧手機記錄入住、工作、檢查清單、照片、遺漏物品和問題。",
     "en": "Record check-in, work, checklists, photos, missed items, and issues from a smartphone.",
     "th": ""
   },
@@ -1634,7 +1634,7 @@
     "ja": "写真付きの証跡・不具合報告",
     "locked": false,
     "zh": "带有照片的证据及问题报告",
-    "zh-Hant": "",
+    "zh-Hant": "帶有照片的證據及問題報告",
     "en": "Evidence and issue reports with photos",
     "th": ""
   },
@@ -1665,7 +1665,7 @@
     "ja": "利用の流れ",
     "locked": false,
     "zh": "使用流程",
-    "zh-Hant": "",
+    "zh-Hant": "使用流程",
     "en": "Usage flow",
     "th": ""
   },
@@ -1673,7 +1673,7 @@
     "ja": "利用者別のメリット",
     "locked": false,
     "zh": "不同使用者的益处",
-    "zh-Hant": "",
+    "zh-Hant": "不同使用者的益處",
     "en": "Benefits by user type",
     "th": ""
   },
@@ -1838,7 +1838,7 @@
     "ja": "基本機能",
     "locked": false,
     "zh": "基本功能",
-    "zh-Hant": "",
+    "zh-Hant": "基本功能",
     "en": "Basic functions",
     "th": ""
   },
@@ -1854,7 +1854,7 @@
     "ja": "外国籍のスタッフが多いのですが、使えますか。",
     "locked": false,
     "zh": "有很多外籍员工，可以使用吗？",
-    "zh-Hant": "",
+    "zh-Hant": "有很多外籍員工，可以使用嗎？",
     "en": "Many of the cleaning staff are foreign nationals. Can it be used?",
     "th": ""
   },
@@ -1862,7 +1862,7 @@
     "ja": "外部パートナーとの範囲を限った共有",
     "locked": false,
     "zh": "与外部合作伙伴的有限共享",
-    "zh-Hant": "",
+    "zh-Hant": "與外部合作伙伴的有限共享",
     "en": "Limited sharing with external partners",
     "th": ""
   },
@@ -1933,7 +1933,7 @@
     "ja": "客室10室程度の施設や、1棟のみの運営でもご相談いただけます。まずは1施設・1部門からお試しいただく形をおすすめしています。",
     "locked": false,
     "zh": "10间左右客房的设施或仅运营一栋建筑的设施也可以咨询。我们建议从一个设施、一个部门开始试用。",
-    "zh-Hant": "",
+    "zh-Hant": "10間左右客房的設施或僅營運一棟建築的設施也可以諮詢。我們建議從一個設施、一個部門開始試用。",
     "en": "We can consult on facilities with around 10 guest rooms or those operating only one building. We recommend starting with one facility and one department.",
     "th": ""
   },
@@ -1941,7 +1941,7 @@
     "ja": "客室ごとに担当を割り当てます。当日の変更も画面から行えます。",
     "locked": false,
     "zh": "为每个房间分配负责人。当天的变更也可通过屏幕进行操作。",
-    "zh-Hant": "",
+    "zh-Hant": "為每個房間分配負責人。當天的變更也可透過螢幕進行操作。",
     "en": "Assign staff to each room. Changes on the day can be made from the screen.",
     "th": ""
   },
@@ -1949,7 +1949,7 @@
     "ja": "客室ごとの清掃ステータス",
     "locked": false,
     "zh": "每间客房的清洁状态",
-    "zh-Hant": "",
+    "zh-Hant": "每間客房的清潔狀態",
     "en": "Cleaning status per room",
     "th": ""
   },
@@ -1965,7 +1965,7 @@
     "ja": "客室ごとの状況をその場で確認でき、販売可能な客室を早く判断できます。清掃会社への依頼と結果が同じ画面に残ります。",
     "locked": false,
     "zh": "可以立即确认每个房间的情况，快速判断可销售的房间。向清洁公司提出的请求和结果会显示在同一屏幕上。",
-    "zh-Hant": "",
+    "zh-Hant": "可以立即確認每個房間的情況，快速判斷可銷售的房間。向清潔公司提出的請求和結果會顯示在同一螢幕上。",
     "en": "You can check the status of each room on-site and quickly determine available rooms for sale. Requests to the cleaning company and results are recorded on the same screen.",
     "th": ""
   },
@@ -1973,7 +1973,7 @@
     "ja": "客室と担当を登録する",
     "locked": false,
     "zh": "注册房间和负责人",
-    "zh-Hant": "",
+    "zh-Hant": "註冊房間和負責人",
     "en": "Register rooms and staff",
     "th": ""
   },
@@ -2029,7 +2029,7 @@
     "ja": "客室清掃の状況、点検、写真、再清掃、不具合、忘れ物を、客室単位で記録します。フロント、清掃責任者、清掃スタッフが同じ情報を見ている状態をつくり、実施した内容を後から確認できる記録として残します。",
     "locked": false,
     "zh": "记录客房清洁状况、检查、照片、重新清洁、问题、遗漏物品，以客房为单位进行记录。使前台、清洁负责人和清洁员工处于查看相同信息的状态，并作为可事后确认执行内容的记录进行保存。",
-    "zh-Hant": "",
+    "zh-Hant": "記錄客房清潔狀況、檢查、照片、重新清潔、問題、遺漏物品，以客房為單位進行記錄。使櫃台、清潔負責人和清潔員工處於檢視相同資訊的狀態，並作為可事後確認執行內容的記錄進行儲存。",
     "en": "Records the status of guest room cleaning, inspection, photos, re-cleaning, defects, and lost items per room. Creates a state where the front desk, cleaning supervisor, and cleaning staff are viewing the same information, and retains this as a record that allows verification of the implemented content later.",
     "th": ""
   },
@@ -2053,7 +2053,7 @@
     "ja": "客室清掃・点検・証跡管理",
     "locked": false,
     "zh": "客房清洁、检查、证据管理",
-    "zh-Hant": "",
+    "zh-Hant": "客房清潔、檢查、證據管理",
     "en": "Guest room cleaning, inspection, and evidence management",
     "th": ""
   },
@@ -2279,7 +2279,7 @@
     "ja": "対象範囲の整理",
     "locked": false,
     "zh": "范围整理",
-    "zh-Hant": "",
+    "zh-Hant": "範圍整理",
     "en": "Clarification of Scope",
     "th": ""
   },
@@ -2367,7 +2367,7 @@
     "ja": "小規模で開始",
     "locked": false,
     "zh": "小规模启动",
-    "zh-Hant": "",
+    "zh-Hant": "小規模啟動",
     "en": "Start with a Small Scale",
     "th": ""
   },
@@ -2383,7 +2383,7 @@
     "ja": "小規模な施設でも導入できますか。",
     "locked": false,
     "zh": "小型设施也可以导入吗？",
-    "zh-Hant": "",
+    "zh-Hant": "小型設施也可以匯入嗎？",
     "en": "Can it be implemented in small facilities?",
     "th": ""
   },
@@ -2486,7 +2486,7 @@
     "ja": "必要ありません。予約、料金、会計はこれまでどおりPMSで行っていただき、ProofKeepingは客室で起きたことの記録を受け持ちます。PMSを置き換える製品ではありません。",
     "locked": false,
     "zh": "不需要。预订、费用、会计仍请通过PMS进行，ProofKeeping负责记录客房内发生的事情。这不是替代PMS的产品。",
-    "zh-Hant": "",
+    "zh-Hant": "不需要。預訂、費用、會計仍請透過PMS進行，ProofKeeping負責記錄客房內發生的事情。這不是替代PMS的產品。",
     "en": "Not required. Reservations, charges, and accounting will continue to be handled via PMS, and ProofKeeping will take responsibility for recording what happened in the guest rooms. It is not a product that replaces PMS.",
     "th": ""
   },
@@ -2526,7 +2526,7 @@
     "ja": "忘れ物の記録",
     "locked": false,
     "zh": "遗漏物品的记录",
-    "zh-Hant": "",
+    "zh-Hant": "遺漏物品的記錄",
     "en": "Record of lost items",
     "th": ""
   },
@@ -2558,7 +2558,7 @@
     "ja": "担当割り当てから作業報告、点検、再清掃までを一つの流れで管理できます。実施した内容を発注元へ記録として提示できます。",
     "locked": false,
     "zh": "可以在一个流程中管理从人员分配到工作汇报、检查、重新清洁的所有环节。可以将实施内容作为记录提供给委托方。",
-    "zh-Hant": "",
+    "zh-Hant": "可以在一個流程中管理從人員分配到工作彙報、檢查、重新清潔的所有環節。可以將實施內容作為記錄提供給委託方。",
     "en": "Manage from staff assignments to work reports, inspections, and re-cleaning as a single process. You can present the contents of implemented tasks as records to the ordering party.",
     "th": ""
   },
@@ -2566,7 +2566,7 @@
     "ja": "担当者と作業状況の共有",
     "locked": false,
     "zh": "负责人与工作状态的共享",
-    "zh-Hant": "",
+    "zh-Hant": "負責人與工作狀態的共享",
     "en": "Sharing of staff and work status",
     "th": ""
   },
@@ -2647,7 +2647,7 @@
     "ja": "施設、客室、清掃スタッフを登録します。客室はCSVでまとめて取り込めます。",
     "locked": false,
     "zh": "注册设施、房间和清洁人员。房间信息可通过CSV文件批量导入。",
-    "zh-Hant": "",
+    "zh-Hant": "註冊設施、房間和清潔人員。房間資訊可透過CSV檔案批次匯入。",
     "en": "Register facilities, rooms, and cleaning staff. Rooms can be imported in bulk via CSV.",
     "th": ""
   },
@@ -2686,7 +2686,7 @@
     "ja": "施設の規模、客室数、対象範囲によって異なります。記録の件数や写真の枚数では課金しません。初回のご相談後に、月額と初期費用を明記したお見積りをお出しします。ご相談と概算のご提示は無料です。",
     "locked": false,
     "zh": "根据设施规模、客房数量和适用范围而有所不同。不会根据记录数量或照片数量收费。在首次咨询后，我们会提供包含月费和初期费用的报价单。咨询和概算报价是免费的。",
-    "zh-Hant": "",
+    "zh-Hant": "根據設施規模、客房數量和適用範圍而有所不同。不會根據記錄數量或照片數量收費。在首次諮詢後，我們會提供包含月費和初期費用的報價單。諮詢和概算報價是免費的。",
     "en": "It varies depending on the facility size, number of guest rooms, and scope of application. We do not charge based on the number of records or photos. After the initial consultation, we will provide a quotation with monthly fees and initial costs. Consultation and preliminary estimates are free of charge.",
     "th": ""
   },
@@ -2702,7 +2702,7 @@
     "ja": "施設単位での作業実績と原価の把握",
     "locked": false,
     "zh": "按设施单位掌握作业成果与成本",
-    "zh-Hant": "",
+    "zh-Hant": "按設施單位掌握作業成果與成本",
     "en": "Tracking of work records and costs by facility",
     "th": ""
   },
@@ -2866,7 +2866,7 @@
     "ja": "最初にシステム化する業務と、これまでの方法を残す業務を分けます。すべてを置き換えることはしません。",
     "locked": false,
     "zh": "区分出首先系统化的业务和保留原有方法的业务。不会全部替换。",
-    "zh-Hant": "",
+    "zh-Hant": "區分出首先系統化的業務和保留原有方法的業務。不會全部替換。",
     "en": "We will separate the business processes to be systematized and those to remain as they are. We will not replace everything.",
     "th": ""
   },
@@ -3071,7 +3071,7 @@
     "ja": "清掃、点検、リネン、備品、修繕、作業実績を施設単位でまとめます。ホテル運営会社と外部パートナーが、必要な範囲だけを共有できる現場運営基盤を目指します。",
     "locked": false,
     "zh": "将清洁、检查、布草、用品、维修、作业成果按设施单位进行汇总。旨在为酒店运营公司和外部合作伙伴提供仅共享必要范围的现场运营基础。",
-    "zh-Hant": "",
+    "zh-Hant": "將清潔、檢查、布草、用品、維修、作業成果按設施單位進行彙總。旨在為飯店營運公司和外部合作伙伴提供僅共享必要範圍的現場營運基礎。",
     "en": "Summarize cleaning, inspection, linen, amenities, maintenance, and work records by facility. Aiming to create a site operation foundation that allows hotel operation companies and external partners to share only the necessary scope.",
     "th": ""
   },
@@ -3087,7 +3087,7 @@
     "ja": "清掃の先にある現場業務を、ひとつにつなぐ。",
     "locked": false,
     "zh": "将清洁之后的现场业务统一整合",
-    "zh-Hant": "",
+    "zh-Hant": "將清潔之後的現場業務統一整合",
     "en": "Connect all on-site operations beyond cleaning",
     "th": ""
   },
@@ -3095,7 +3095,7 @@
     "ja": "清掃の現場で毎日使う操作から、責任者が確認する画面までを含みます。",
     "locked": false,
     "zh": "包括清洁现场每天使用的操作，以及负责人确认的界面。",
-    "zh-Hant": "",
+    "zh-Hant": "包括清潔現場每天使用的操作，以及負責人確認的介面。",
     "en": "Includes daily operations used at the cleaning site and the screen for supervisors to confirm.",
     "th": ""
   },
@@ -3111,7 +3111,7 @@
     "ja": "清掃の進捗を電話・紙・チャットで確認している",
     "locked": false,
     "zh": "通过电话、纸张或聊天确认清洁进度",
-    "zh-Hant": "",
+    "zh-Hant": "透過電話、紙張或聊天確認清潔進度",
     "en": "Confirming the progress of cleaning by phone, paper, or chat",
     "th": ""
   },
@@ -3119,7 +3119,7 @@
     "ja": "清掃スタッフ",
     "locked": false,
     "zh": "清洁员工",
-    "zh-Hant": "",
+    "zh-Hant": "清潔員工",
     "en": "Cleaning staff",
     "th": ""
   },
@@ -3127,7 +3127,7 @@
     "ja": "清掃スタッフが使う画面は7言語で表示できます。言語による機能の制限はありません。導入研修も、現場で使われている言語で実施します。",
     "locked": false,
     "zh": "清洁员工使用的界面可显示为7种语言。不会因语言而限制功能。导入培训也将使用现场使用的语言进行。",
-    "zh-Hant": "",
+    "zh-Hant": "清潔員工使用的介面可顯示為7種語言。不會因語言而限制功能。匯入培訓也將使用現場使用的語言進行。",
     "en": "The screen used by the cleaning staff is displayed in seven languages. There are no functional restrictions based on language. Training is conducted in the language used on-site.",
     "th": ""
   },
@@ -3135,7 +3135,7 @@
     "ja": "清掃スタッフの評価に使えますか。",
     "locked": false,
     "zh": "可以用于清洁员工的评估吗？",
-    "zh-Hant": "",
+    "zh-Hant": "可以用於清潔員工的評估嗎？",
     "en": "Can it be used for evaluating cleaning staff?",
     "th": ""
   },
@@ -3143,7 +3143,7 @@
     "ja": "清掃スタッフはスマートフォンの縦画面だけで作業します。数値の入力はキーボードを使わず、選択とステッパーで完了します。責任者と運営側はPCの一覧画面で、施設・客室・担当・状態を確認します。",
     "locked": false,
     "zh": "清洁员工仅使用智能手机的竖屏进行操作。数值输入不使用键盘，而是通过选择和步骤器完成。负责人和运营方可在电脑的列表界面确认设施、房间、负责人和状态。",
-    "zh-Hant": "",
+    "zh-Hant": "清潔員工僅使用智慧手機的豎屏進行操作。數值輸入不使用鍵盤，而是透過選擇和步驟器完成。負責人和營運方可在電腦的列表介面確認設施、房間、負責人和狀態。",
     "en": "Cleaning staff perform tasks using only the vertical screen of a smartphone. Numerical input is completed using selection and a stepper, without a keyboard. Supervisors and management confirm facilities, rooms, staff, and status on a PC list screen.",
     "th": ""
   },
@@ -3184,7 +3184,7 @@
     "ja": "清掃会社ですが、契約できますか。",
     "locked": false,
     "zh": "清洁公司也可以签约吗？",
-    "zh-Hant": "",
+    "zh-Hant": "清潔公司也可以簽約嗎？",
     "en": "Can cleaning companies also sign a contract?",
     "th": ""
   },
@@ -3192,7 +3192,7 @@
     "ja": "清掃品質や作業実績を客観的に確認できない",
     "locked": false,
     "zh": "无法客观确认清洁质量和工作成果",
-    "zh-Hant": "",
+    "zh-Hant": "無法客觀確認清潔品質和工作成果",
     "en": "Unable to objectively confirm cleaning quality and work performance",
     "th": ""
   },
@@ -3215,7 +3215,7 @@
     "ja": "清掃状況、担当者、点検、写真、再清掃、不具合、忘れ物を、客室単位で記録します。フロント、清掃責任者、清掃スタッフが、同じ情報を確認できる状態をつくります。",
     "locked": false,
     "zh": "记录客房的清洁情况、负责人、检查、照片、重新清洁、问题、遗漏物品，使前台、清洁负责人、清洁员工能够确认相同的信息。",
-    "zh-Hant": "",
+    "zh-Hant": "記錄客房的清潔情況、負責人、檢查、照片、重新清潔、問題、遺漏物品，使櫃台、清潔負責人、清潔員工能夠確認相同的資訊。",
     "en": "Records cleaning status, staff, inspection, photos, re-cleaning, issues, and lost items per room. Creates a state where front desk, cleaning supervisor, and cleaning staff can all confirm the same information.",
     "th": ""
   },
@@ -3263,7 +3263,7 @@
     "ja": "点検漏れや再清掃の履歴が残らない",
     "locked": false,
     "zh": "检查遗漏和重新清洁的记录无法保留",
-    "zh-Hant": "",
+    "zh-Hant": "檢查遺漏和重新清潔的記錄無法保留",
     "en": "Inspection omissions and re-cleaning history are not recorded",
     "th": ""
   },
@@ -3271,7 +3271,7 @@
     "ja": "無料で相談する",
     "locked": false,
     "zh": "免费咨询",
-    "zh-Hant": "",
+    "zh-Hant": "免費諮詢",
     "en": "Consult for free",
     "th": ""
   },
@@ -3318,7 +3318,7 @@
     "ja": "現在の清掃、点検、連絡、在庫管理の方法を伺います。オンラインで60分程度、費用はかかりません。",
     "locked": false,
     "zh": "询问目前的清洁、检查、联络、库存管理方法。在线进行约60分钟，不产生费用。",
-    "zh-Hant": "",
+    "zh-Hant": "詢問目前的清潔、檢查、聯絡、庫存管理方法。線上進行約60分鐘，不產生費用。",
     "en": "We will ask about your current cleaning, inspection, communication, and inventory management methods. It takes about 60 minutes online, and there is no cost.",
     "th": ""
   },
@@ -3341,7 +3341,7 @@
     "ja": "現在は開発中で、先行導入のご相談を承っている段階です。ご利用の環境と対象施設を伺ったうえで、開始できる時期を個別にご相談します。",
     "locked": false,
     "zh": "目前正在开发中，现阶段接受提前导入的咨询。在了解您的使用环境和适用设施后，将单独商讨开始时间。",
-    "zh-Hant": "",
+    "zh-Hant": "目前正在開發中，現階段接受提前匯入的諮詢。在瞭解您的使用環境和適用設施後，將單獨商討開始時間。",
     "en": "It is currently under development, and we are accepting inquiries for early implementation. We will consult individually on the start date based on your environment and target facilities.",
     "th": ""
   },
@@ -3365,7 +3365,7 @@
     "ja": "現場で記録する",
     "locked": false,
     "zh": "现场记录",
-    "zh-Hant": "",
+    "zh-Hant": "現場記錄",
     "en": "Record on site",
     "th": ""
   },
@@ -3405,7 +3405,7 @@
     "ja": "現状確認",
     "locked": false,
     "zh": "现状确认",
-    "zh-Hant": "",
+    "zh-Hant": "現狀確認",
     "en": "Current Situation Confirmation",
     "th": ""
   },
@@ -3428,7 +3428,7 @@
     "ja": "画面の写真は準備中です。先行導入のご相談時に、実際の画面をお見せしています。",
     "locked": false,
     "zh": "屏幕上的照片正在准备中。在提前导入的咨询过程中，我们会展示实际的屏幕画面。",
-    "zh-Hant": "",
+    "zh-Hant": "螢幕上的照片正在準備中。在提前匯入的諮詢過程中，我們會展示實際的螢幕畫面。",
     "en": "The screen image is being prepared. During consultations for early implementation, we show the actual screen.",
     "th": ""
   },
@@ -3436,7 +3436,7 @@
     "ja": "画面イメージ",
     "locked": false,
     "zh": "界面示意图",
-    "zh-Hant": "",
+    "zh-Hant": "介面示意圖",
     "en": "Screen image",
     "th": ""
   },
@@ -3444,7 +3444,7 @@
     "ja": "確認のたびに手が止まり、フロントと清掃現場の双方に待ち時間が生まれます。",
     "locked": false,
     "zh": "每次确认时都会停下工作，导致前台和清洁现场双方都产生等待时间。",
-    "zh-Hant": "",
+    "zh-Hant": "每次確認時都會停下工作，導致櫃台和清潔現場雙方都產生等待時間。",
     "en": "Each confirmation causes a pause, creating waiting times for both the front desk and the cleaning site.",
     "th": ""
   },
@@ -3468,7 +3468,7 @@
     "ja": "稼働記録との突き合わせ",
     "locked": false,
     "zh": "与运行记录的核对",
-    "zh-Hant": "",
+    "zh-Hant": "與執行記錄的核對",
     "en": "Verification with operational records",
     "th": ""
   },
@@ -3572,7 +3572,7 @@
     "ja": "紙、Excel、チャットを含め、いまどのように清掃や現場業務を管理しているかを確認し、最初に改善すべき範囲をご提案します。",
     "locked": false,
     "zh": "请确认目前如何管理清洁和现场业务，包括纸质文件、Excel、聊天等，并提出首先需要改进的方面。",
-    "zh-Hant": "",
+    "zh-Hant": "請確認目前如何管理清潔和現場業務，包括紙質檔案、Excel、聊天等，並提出首先需要改進的方面。",
     "en": "We will check how you currently manage cleaning and on-site operations, including paper, Excel, and chat, and propose areas for improvement first.",
     "th": ""
   },
@@ -3580,7 +3580,7 @@
     "ja": "紙とチャットに分かれ、対応がどこまで進んだかを追えなくなります。",
     "locked": false,
     "zh": "分别通过纸张和聊天进行，无法追踪处理进展到何处。",
-    "zh-Hant": "",
+    "zh-Hant": "分別透過紙張和聊天進行，無法追蹤處理進展到何處。",
     "en": "Divided between paper and chat, making it impossible to track how far the response has progressed.",
     "th": ""
   },
@@ -3682,7 +3682,7 @@
     "ja": "複数施設の進捗と実績を共通の形で確認できます。オーナーや委託先への報告に、記録をそのまま使えます。",
     "locked": false,
     "zh": "可以以统一的形式确认多个设施的进度和成果。向业主或委托方报告时，可以直接使用记录。",
-    "zh-Hant": "",
+    "zh-Hant": "可以以統一的形式確認多個設施的進度和成果。向業主或委託方報告時，可以直接使用記錄。",
     "en": "You can check progress and performance across multiple facilities in a common format. Records can be used directly for reports to owners and contractors.",
     "th": ""
   },
@@ -3698,7 +3698,7 @@
     "ja": "複数施設の進捗確認",
     "locked": false,
     "zh": "多个设施的进度确认",
-    "zh-Hant": "",
+    "zh-Hant": "多個設施的進度確認",
     "en": "Monitoring progress across multiple facilities",
     "th": ""
   },
@@ -3714,7 +3714,7 @@
     "ja": "記録が定着したことを確認してから、対象の施設や範囲を広げます。",
     "locked": false,
     "zh": "在确认记录已稳定后，再扩大适用的设施或范围。",
-    "zh-Hant": "",
+    "zh-Hant": "在確認記錄已穩定後，再擴大適用的設施或範圍。",
     "en": "Once we confirm that the records have been established, we will expand the scope of facilities or areas.",
     "th": ""
   },
@@ -3785,7 +3785,7 @@
     "ja": "説明できる材料がないため、話し合いが印象や記憶に頼ることになります。",
     "locked": false,
     "zh": "因为没有可以说明的材料，讨论将依赖于印象和记忆。",
-    "zh-Hant": "",
+    "zh-Hant": "因為沒有可以說明的材料，討論將依賴於印象和記憶。",
     "en": "Without materials to explain, discussions rely on impressions and memories.",
     "th": ""
   },
@@ -3793,7 +3793,7 @@
     "ja": "誰がいつ確認し、何をやり直したかを、後から確かめる手段がありません。",
     "locked": false,
     "zh": "无法事后确认是谁在何时进行了确认，以及重新做了什么。",
-    "zh-Hant": "",
+    "zh-Hant": "無法事後確認是誰在何時進行了確認，以及重新做了什麼。",
     "en": "There is no way to verify who confirmed what and what was redone at what time later.",
     "th": ""
   },
@@ -3840,7 +3840,7 @@
     "ja": "資料を請求する",
     "locked": false,
     "zh": "申请资料",
-    "zh-Hant": "",
+    "zh-Hant": "申請資料",
     "en": "Request information",
     "th": ""
   },
@@ -3994,7 +3994,7 @@
     "ja": "運用を見ながら拡張",
     "locked": false,
     "zh": "根据运行情况扩展",
-    "zh-Hant": "",
+    "zh-Hant": "根據執行情況擴充套件",
     "en": "Expand While Monitoring Operations",
     "th": ""
   },
@@ -4051,7 +4051,7 @@
     "ja": "開発中・先行導入のご相談受付中",
     "locked": false,
     "zh": "开发中·提前导入的咨询受理中",
-    "zh-Hant": "",
+    "zh-Hant": "開發中·提前匯入的諮詢受理中",
     "en": "Accepting consultations for development and early implementation",
     "th": ""
   },
