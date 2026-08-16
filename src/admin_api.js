@@ -24,7 +24,9 @@ const J = (obj, status = 200) =>
 const COOKIE = "__Host-steksid";
 const SESSION_HOURS = 12;
 const DATA_FILES = ["data/site.json", "data/i18n.json", "data/admin-schema.json"];
-const TRANSLATABLE = ["zh", "zh-Hant", "en", "ko"];
+// 管理画面で扱う訳文の言語。韓国語は管理機能から外している
+// （data/i18n.json に残っている ko の値はそのまま保持する）。
+const TRANSLATABLE = ["zh", "zh-Hant", "en"];
 
 // ---------------------------------------------------------------- utilities
 

@@ -3,15 +3,13 @@
     "ja",
     "en",
     "zh",
-    "zh-Hant",
-    "ko"
+    "zh-Hant"
   ],
   "langLabels": {
     "ja": "日本語（原稿）",
     "en": "English",
     "zh": "简体中文",
-    "zh-Hant": "繁體中文",
-    "ko": "한국어"
+    "zh-Hant": "繁體中文"
   },
   "groups": [
     {
