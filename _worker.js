@@ -16,10 +16,12 @@ import { connect } from "cloudflare:sockets";
 // ============================================================================
 // 自動翻訳（Cloudflare Workers AI）
 //
-//   日本語だけを人が書き、ほかの 4 言語は保存時に自動生成する。
-//   ・zh / en / ko … Workers AI の指示モデルで翻訳する
-//   ・zh-Hant     … 空のまま保存し、GitHub Actions 側で tools/zh_hant.py が
-//                   簡体字から変換して埋める（OpenCC + 用語表のほうが精度が高い）
+//   日本語だけを人が書き、ほかの言語は保存時に自動生成する。
+//   ・zh / en … Workers AI の指示モデルで翻訳する
+//   ・zh-Hant … 空のまま保存し、GitHub Actions 側で tools/zh_hant.py が
+//               簡体字から変換して埋める（OpenCC + 用語表のほうが精度が高い）
+//   ・ko      … 管理機能から外している。data/i18n.json に残っている値は
+//               保持するが、新しく作ることはしない
 //
 //   env.AI（Workers AI バインディング）が必要。名前は必ず AI にする。
 //   任意: env.AI_MODEL でモデルを差し替えられる。
@@ -29,7 +31,7 @@ const AI_MODEL_DEFAULT = "@cf/qwen/qwen3-30b-a3b-fp8";
 const AI_MODEL_FALLBACK = "@cf/meta/m2m100-1.2b";
 
 // 自動翻訳する言語。zh-Hant はビルド時に簡体字から変換するのでここには入れない。
-const AUTO_LANGS = ["zh", "en", "ko"];
+const AUTO_LANGS = ["zh", "en"];
 
 // 固有名詞の対訳表。地名・駅名はモデルが誤読しやすいので必ず渡す。
 // 「日本語 | 簡体字 | English | 한국어」の順。
@@ -93,7 +95,9 @@ const LANG_INFO = {
 // build.py / tools/i18n.py の JP_RE と同じ範囲
 const JP_RE = /[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9fff\u3000-\u303f\uff01-\uff60\u3005\u30fc]/;
 
-const ALL_LANGS = ["zh", "zh-Hant", "en", "ko", "th"];
+// 訳文エントリに必ず持たせる言語の枠。ko は新規に作らない
+// （既存エントリの ko は消さずにそのまま残る）。
+const ALL_LANGS = ["zh", "zh-Hant", "en", "th"];
 
 /** 翻訳が必要な文字列か（日本語の文字を含むか）。ブランド名や数字だけの行は対象外。 */
 export function needsTranslation(s) {
@@ -397,7 +401,9 @@ const J = (obj, status = 200) =>
 const COOKIE = "__Host-steksid";
 const SESSION_HOURS = 12;
 const DATA_FILES = ["data/site.json", "data/i18n.json", "data/admin-schema.json"];
-const TRANSLATABLE = ["zh", "zh-Hant", "en", "ko"];
+// 管理画面で扱う訳文の言語。韓国語は管理機能から外している
+// （data/i18n.json に残っている ko の値はそのまま保持する）。
+const TRANSLATABLE = ["zh", "zh-Hant", "en"];
 
 // ---------------------------------------------------------------- utilities
 

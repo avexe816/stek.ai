@@ -178,7 +178,7 @@
   }
 
   function translatableLangs() {
-    const all = (state.schema && state.schema.langs) || ["ja", "en", "zh", "zh-Hant", "ko"];
+    const all = (state.schema && state.schema.langs) || ["ja", "en", "zh", "zh-Hant"];
     return all.filter((l) => l !== "ja");
   }
 
@@ -333,7 +333,11 @@
 
   // ============================================================ 翻訳の状況
 
-  const LANG_JA = { en: "英語", zh: "簡体字中国語", ko: "韓国語", "zh-Hant": "繁体字中国語" };
+  const LANG_JA = { en: "英語", zh: "簡体字中国語", "zh-Hant": "繁体字中国語" };
+
+  // 「翻訳の状況」に出す並び順。実際に何を数えるかはサーバー（/translate-stats）が
+  // 返す言語に従うので、ここに残っていてもサーバーが返さない言語は表示されない。
+  const TRANS_ORDER = ["en", "zh"];
 
   async function loadTransStats() {
     state.trans.loading = true;
@@ -383,7 +387,7 @@
     const t = state.trans;
     const st = t.stats;
     const rows = st
-      ? ["en", "zh", "ko"].map((l) =>
+      ? TRANS_ORDER.filter((l) => st.missing && st.missing[l] != null).map((l) =>
           h("div", { class: "tr-row" }, [
             h("div", { class: "tr-lang" }, LANG_JA[l]),
             h("div", { class: "tr-bar" }, [
@@ -398,7 +402,7 @@
       h("div", { class: "main-inner" }, [
         h("div", { class: "group-head" }, [
           h("h1", null, "翻訳の状況"),
-          h("p", null, "日本語で書いた文章は、保存するときに英語・簡体字中国語・韓国語へ自動で翻訳されます（繁体字は公開時に簡体字から変換されます）。ここでは残っている未翻訳をまとめて処理できます。"),
+          h("p", null, "日本語で書いた文章は、保存するときに英語・簡体字中国語へ自動で翻訳されます（繁体字は公開時に簡体字から変換されます）。ここでは残っている未翻訳をまとめて処理できます。"),
         ]),
         h("div", { class: "card" }, [
           h("div", { class: "card-head" }, [h("h3", null, "言語ごとの状況")]),
