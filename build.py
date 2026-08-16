@@ -39,7 +39,7 @@ LANG_DIR = {"ja": "", "en": "en", "zh": "zh", "zh-Hant": "zh-hant", "ko": "ko"}
 
 # ページ名。"/" を含むものはディレクトリ形式（/products/proofkeeping/）で出力する。
 PAGES = [
-    "index", "services", "news", "about", "contact", "privacy",
+    "index", "services", "pricing", "news", "about", "contact", "privacy",
     "products/proofkeeping", "products/stek-ops", "services/it-support",
 ]
 
@@ -47,6 +47,7 @@ PAGES = [
 META_KEY = {
     "index": "home",
     "services": "services",
+    "pricing": "pricing",
     "news": "news",
     "about": "about",
     "contact": "contact",
@@ -1107,6 +1108,10 @@ def page_proofkeeping(t, lang, s):
         f'<p class="small screen-note">{e(p.get("screen_note",""))}</p>'
         if p.get("screen_note") else "")
 
+    pl = str(p.get("price_link") or "").strip()
+    price_link = (f'<p class="price-link"><a class="txt-link" href="{url(lang, "pricing")}">'
+                  f'{e(pl)}{ARROW}</a></p>') if pl else ""
+
     return f"""<main id="main">
 {prod_hero(t, lang, s, 'proofkeeping', p)}
 
@@ -1159,6 +1164,7 @@ def page_proofkeeping(t, lang, s):
     <h2>{e(p.get('price_title',''))}</h2>
     {para(p.get('price_body',''))}
   </div>
+  {price_link}
 </div></section>
 
 <section class="sec"><div class="wrap">
@@ -1287,9 +1293,135 @@ def page_itsupport(t, lang, s):
 </main>"""
 
 
+# ------------------------------------------------------------------ 料金頁
+# 表の値は文字列がそのまま意味を持つ（「含む」「準備中」「—」）。
+# 色や記号だけで差を表さない。読み上げでも同じ意味になるようにする。
+CELL_CLASS = {
+    "—": "pc-no",
+    "-": "pc-no",
+}
+
+
+def price_cell_class(text):
+    s = str(text or "").strip()
+    if s in CELL_CLASS:
+        return CELL_CLASS[s]
+    if s == "含む":
+        return "pc-yes"
+    if "準備" in s or "オプション" in s or "ご相談" in s:
+        return "pc-part"
+    return "pc-txt"
+
+
+def plan_cards(t, lang, p):
+    out = ""
+    for pl in (p.get("plans") or []):
+        if not isinstance(pl, dict) or not pl.get("name"):
+            continue
+        feats = "".join(
+            f"<li>{e(x)}</li>" for x in (pl.get("features") or []) if str(x).strip())
+        note = str(pl.get("note") or "").strip()
+        note_html = f'<p class="plan-note">{e(note)}</p>' if note else ""
+        btn = str(pl.get("cta") or "").strip()
+        btn_html = (f'<a class="btn btn-o" href="{url(lang, "contact")}">{e(btn)}{ARROW}</a>'
+                    if btn else "")
+        pnote = str(pl.get("price_note") or "").strip()
+        out += f"""<article class="plan">
+  <p class="plan-for">{e(pl.get('for',''))}</p>
+  <h3>{e(pl['name'])}</h3>
+  <p class="plan-price">{e(pl.get('price',''))}</p>
+  {f'<p class="plan-unit">{e(pnote)}</p>' if pnote else ''}
+  <p class="plan-body">{e(pl.get('body',''))}</p>
+  <ul class="plist">{feats}</ul>
+  {note_html}
+  {btn_html}
+</article>"""
+    return out
+
+
+def price_table(p):
+    rows = p.get("compare_rows") or []
+    cols = [str(c) for c in (p.get("compare_cols") or [])][:3]
+    if not rows or len(cols) < 3:
+        return ""
+    body = ""
+    for r in rows:
+        if not isinstance(r, dict) or not r.get("k"):
+            continue
+        note = str(r.get("note") or "").strip()
+        note_html = f'<span class="pc-note">{e(note)}</span>' if note else ""
+        cells = ""
+        for key, col in zip(("base", "pro", "ent"), cols):
+            v = str(r.get(key) or "—").strip()
+            cells += (f'<td class="{price_cell_class(v)}" data-col="{e(col)}">'
+                      f'<span class="pc-col">{e(col)}</span>'
+                      f'<span class="pc-v">{e(v)}</span></td>')
+        body += f'<tr><th scope="row">{e(r["k"])}{note_html}</th>{cells}</tr>'
+    heads = "".join(f'<th scope="col">{e(c)}</th>' for c in cols)
+    return f"""<div class="ptable-wrap">
+  <table class="ptable">
+    <thead><tr><th scope="col">{e(p.get('compare_head_label') or '機能')}</th>{heads}</tr></thead>
+    <tbody>{body}</tbody>
+  </table>
+</div>"""
+
+
+def page_pricing(t, lang, s):
+    p = t.get("pricing") or {}
+    notes = "".join(
+        f'<li class="aud"><h3>{e(x.get("t",""))}</h3><p>{e(x.get("d",""))}</p></li>'
+        for x in (p.get("notes") or []) if isinstance(x, dict) and x.get("t"))
+    faq = "".join(
+        f'<details><summary>{e(x.get("q",""))}</summary><div class="a"><p>{e(x.get("a",""))}</p></div></details>'
+        for x in (p.get("faq") or []) if isinstance(x, dict) and x.get("q"))
+
+    return f"""<main id="main">
+<section class="page-hero"><div class="wrap">
+  <p class="eyebrow">{e(p.get('hero_eyebrow',''))}</p>
+  <h1>{nl2br(p.get('hero_title',''))}</h1>
+  <p class="lead">{e(p.get('hero_lead',''))}</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(p.get('plans_title',''))}</h2>
+    <p class="lead">{e(p.get('plans_lead',''))}</p>
+  </div>
+  <div class="plans">{plan_cards(t, lang, p)}</div>
+</div></section>
+
+<section class="sec sec-alt" id="compare"><div class="wrap">
+  <div class="sec-head">
+    <h2 class="h-sec" style="margin:0">{e(p.get('compare_title',''))}</h2>
+    <p class="lead">{e(p.get('compare_lead',''))}</p>
+  </div>
+  {price_table(p)}
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="prose">
+    <h2>{e(p.get('policy_title',''))}</h2>
+    {para(p.get('policy_body',''))}
+  </div>
+</div></section>
+
+<section class="sec sec-alt"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('notes_title',''))}</h2></div>
+  <ul class="auds auds-3">{notes}</ul>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2 class="h-sec" style="margin:0">{e(p.get('faq_title',''))}</h2></div>
+  <div class="faq">{faq}</div>
+</div></section>
+{cta_section(t, lang, p)}
+</main>"""
+
+
 BUILDERS = {
     "index": page_index,
     "services": page_services,
+    "pricing": page_pricing,
     "news": page_news,
     "about": page_about,
     "contact": page_contact,

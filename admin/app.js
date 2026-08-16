@@ -1396,7 +1396,8 @@
 
   function guessArrayIsObjFromSchema(path) {
     // 文字列配列として知られているキーの一覧（admin-schema.itemLabels 由来 + 慣習）
-    const textArrayKeys = ["contact.kinds", "contact.reply_options", "about.purpose"];
+    const textArrayKeys = ["contact.kinds", "contact.reply_options", "about.purpose",
+      "pricing.compare_cols", "pricing.plans.features"];
     return !textArrayKeys.includes(path);
   }
 

@@ -49,6 +49,12 @@
       "desc": "/services/it-support/ の内容。支援できること、対応範囲、進め方。"
     },
     {
+      "id": "pricing",
+      "key": "pricing",
+      "name": "料金ページ",
+      "desc": "/pricing.html の内容。プラン（Base / Pro / Enterprise）、プランの違いの表、料金の考え方、補足、よくあるご質問。金額は目安として書いてください。確定していない金額を確定したように書かないでください。"
+    },
+    {
       "id": "services",
       "key": "services",
       "name": "事業内容（4領域）",
@@ -234,7 +240,13 @@
     "about.values.t": "見出し",
     "about.values.d": "説明",
     "about.cases.t": "ご相談の内容",
-    "about.cases.d": "当社の対応"
+    "about.cases.d": "当社の対応",
+    "pricing.plans": "プラン",
+    "pricing.plans.features": "含まれる内容",
+    "pricing.compare_rows": "表の行",
+    "pricing.compare_cols": "列名",
+    "pricing.notes": "補足",
+    "pricing.faq": "質問"
   },
   "titleKeys": [
     "label",
@@ -431,7 +443,47 @@
     "common.close": "共通：閉じるボタン",
     "common.back_home": "共通：ホームへ戻るリンク",
     "common.page_top": "共通：ページ上部へ戻るリンク",
-    "common.skip": "共通：本文へスキップするリンク"
+    "common.skip": "共通：本文へスキップするリンク",
+    "pricing.hero_eyebrow": "見出し：小見出し",
+    "pricing.hero_title": "見出し：ページタイトル",
+    "pricing.hero_lead": "見出し：冒頭の説明",
+    "pricing.plans_title": "プラン：見出し",
+    "pricing.plans_lead": "プラン：説明",
+    "pricing.plans": "プラン（追加・削除）",
+    "pricing.plans.name": "プラン名",
+    "pricing.plans.for": "対象のお客さま",
+    "pricing.plans.price": "金額（目安。「月額 5千円前後」のように書いてください）",
+    "pricing.plans.price_note": "金額の但し書き（含まれる室数・税別など）",
+    "pricing.plans.body": "プランの説明",
+    "pricing.plans.features": "含まれる内容",
+    "pricing.plans.note": "注記（提供状況や上限の断り書き）",
+    "pricing.plans.cta": "ボタン（お問い合わせページに移動します）",
+    "pricing.compare_title": "プランの違い：見出し",
+    "pricing.compare_lead": "プランの違い：説明",
+    "pricing.compare_head_label": "プランの違い：表の左上の見出し（既定は「機能」）",
+    "pricing.compare_cols": "表の列名（3つ。プラン名と合わせてください）",
+    "pricing.compare_rows": "プランの違い：表の行",
+    "pricing.compare_rows.k": "項目",
+    "pricing.compare_rows.base": "1列目の値",
+    "pricing.compare_rows.pro": "2列目の値",
+    "pricing.compare_rows.ent": "3列目の値",
+    "pricing.compare_rows.note": "注記（任意）",
+    "pricing.policy_title": "料金の考え方：見出し",
+    "pricing.policy_body": "料金の考え方：本文（空行で段落が分かれます）",
+    "pricing.notes_title": "補足：見出し",
+    "pricing.notes": "補足の項目",
+    "pricing.notes.t": "見出し",
+    "pricing.notes.d": "本文",
+    "pricing.faq_title": "よくあるご質問：見出し",
+    "pricing.faq": "質問",
+    "pricing.faq.q": "質問",
+    "pricing.faq.a": "答え",
+    "pricing.cta_title": "末尾の案内：見出し",
+    "pricing.cta_lead": "末尾の案内：本文",
+    "pricing.cta_button": "末尾の案内：ボタン",
+    "meta.pricing_title": "料金：検索タイトル",
+    "meta.pricing_desc": "料金：検索の説明文",
+    "pk_page.price_link": "料金：料金ページへのリンク文言（空にすると出ません）"
   },
   "images": {
     "dir": "assets/img"
@@ -609,6 +661,31 @@
     "privacy.articles": {
       "h": "",
       "b": ""
+    },
+    "pricing.plans": {
+      "name": "",
+      "for": "",
+      "price": "",
+      "price_note": "",
+      "body": "",
+      "features": [],
+      "note": "",
+      "cta": ""
+    },
+    "pricing.compare_rows": {
+      "k": "",
+      "base": "—",
+      "pro": "—",
+      "ent": "—",
+      "note": ""
+    },
+    "pricing.notes": {
+      "t": "",
+      "d": ""
+    },
+    "pricing.faq": {
+      "q": "",
+      "a": ""
     }
   },
   "enums": {
@@ -680,6 +757,72 @@
       {
         "v": "ProofKeepingで提供",
         "l": "ProofKeepingで提供"
+      }
+    ],
+    "pricing.compare_rows.base": [
+      {
+        "v": "含む",
+        "l": "含む"
+      },
+      {
+        "v": "オプション",
+        "l": "オプション（追加でご契約）"
+      },
+      {
+        "v": "個別のご相談",
+        "l": "個別のご相談（個別契約で承ります）"
+      },
+      {
+        "v": "準備中",
+        "l": "準備中（まだお使いいただけません）"
+      },
+      {
+        "v": "—",
+        "l": "含まない"
+      }
+    ],
+    "pricing.compare_rows.pro": [
+      {
+        "v": "含む",
+        "l": "含む"
+      },
+      {
+        "v": "オプション",
+        "l": "オプション（追加でご契約）"
+      },
+      {
+        "v": "個別のご相談",
+        "l": "個別のご相談（個別契約で承ります）"
+      },
+      {
+        "v": "準備中",
+        "l": "準備中（まだお使いいただけません）"
+      },
+      {
+        "v": "—",
+        "l": "含まない"
+      }
+    ],
+    "pricing.compare_rows.ent": [
+      {
+        "v": "含む",
+        "l": "含む"
+      },
+      {
+        "v": "オプション",
+        "l": "オプション（追加でご契約）"
+      },
+      {
+        "v": "個別のご相談",
+        "l": "個別のご相談（個別契約で承ります）"
+      },
+      {
+        "v": "準備中",
+        "l": "準備中（まだお使いいただけません）"
+      },
+      {
+        "v": "—",
+        "l": "含まない"
       }
     ]
   }
