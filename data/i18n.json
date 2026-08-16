@@ -15,6 +15,22 @@
     "ko": "1실 단가로 계약하는 것뿐만 아니라, 하우스키핑 부서 자체를 수탁하는 형태에도 대응합니다. 인력 채용과 교육, 근무 시간, 자재 재고 관리, 리넨 주문까지 부서 단위로 받아들여, 시설 측의 관리 노동을 줄입니다. 당사가 고용한 직원으로 부서를 구성하기 때문에, 시설 측에서 직원을 채용·교육할 필요가 없습니다.",
     "th": ""
   },
+  "98e2ea2545e28c2d": {
+    "ja": "1施設あたり／客室30室程度まで（税別の目安）",
+    "locked": true,
+    "en": "Per property / up to about 30 guest rooms (indicative, excluding tax)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "5cb0f9e1fcc4236c": {
+    "ja": "1施設あたり／客室50室程度まで（税別の目安）",
+    "locked": true,
+    "en": "Per property / up to about 50 guest rooms (indicative, excluding tax)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "9a26f2424acdcabd": {
     "ja": "1施設・1部門からでも承ります。初回のご相談とお見積りは無料です。",
     "en": "We accept requests starting from a single property or a single department. Your first consultation and quote are free of charge.",
@@ -30,6 +46,14 @@
     "ko": "시설 1곳, 부문 1개부터의 상담도 환영합니다.",
     "locked": true
   },
+  "587beea4adecaab1": {
+    "ja": "30室程度",
+    "locked": true,
+    "en": "About 30 rooms",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "f82bd651c32d0e18": {
     "ja": "4つの領域を、ひとつの窓口で。",
     "en": "Four areas, one point of contact.",
@@ -37,6 +61,22 @@
     "zh-Hant": "四大領域，一個聯絡入口。",
     "ko": "4가지 영역을, 하나의 창구에서.",
     "locked": true
+  },
+  "7e5d2ffc99c0b9f1": {
+    "ja": "50〜200室のホテル、客室清掃を受託する会社",
+    "locked": true,
+    "en": "Hotels with 50–200 rooms, and companies contracted for guest-room cleaning",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "bed0726c67107de2": {
+    "ja": "50室程度",
+    "locked": true,
+    "en": "About 50 rooms",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "c52f9b40638f2c7d": {
     "ja": "7言語表示・オフライン対応",
@@ -91,6 +131,30 @@
     "ko": "AI 활용·문의 대응 자동화",
     "zh-Hant": "AI應用與諮詢應答自動化"
   },
+  "d0735878b669fec0": {
+    "ja": "BaseとProで、清掃スタッフが使う画面は変わりますか。",
+    "locked": true,
+    "en": "Does the screen the cleaning staff use differ between Base and Pro?",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "3556b1dcdb7607aa": {
+    "ja": "Baseについて相談する",
+    "locked": true,
+    "en": "Ask about Base",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "d3fd5ea222035171": {
+    "ja": "Baseのすべての内容",
+    "locked": true,
+    "en": "Everything in Base",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "b0e1986aa87361c2": {
     "ja": "Cloudflare・GitHubによる運用基盤",
     "locked": false,
@@ -98,6 +162,30 @@
     "zh-Hant": "利用Cloudflare・GitHub的營運基礎架構",
     "en": "Operational infrastructure using Cloudflare and GitHub",
     "th": ""
+  },
+  "2bc14f420dfd1561": {
+    "ja": "Enterpriseについて相談する",
+    "locked": true,
+    "en": "Ask about Enterprise",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "a396b648865fe6b2": {
+    "ja": "Enterpriseの項目は、ご要件を伺ったうえで個別契約に含める形で承ります。現時点で標準機能として提供しているものではありません。",
+    "locked": true,
+    "en": "Enterprise items are taken on as part of an individual contract, once we have asked about your requirements. They are not offered as standard features at this point.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "f557784712719037": {
+    "ja": "Enterpriseは別の製品ですか。",
+    "locked": true,
+    "en": "Is Enterprise a separate product?",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "0c87e218d4d77a5b": {
     "ja": "OTAの販売状況、料金設定、清掃コストを確認し、改善余地と概算効果、費用をまとめてご提示します。",
@@ -169,6 +257,22 @@
     "en": "PMS integration is required",
     "th": ""
   },
+  "39718d8864c44062": {
+    "ja": "PMS連携（オプション）",
+    "locked": true,
+    "en": "PMS integration (option)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "01ed220d455797d7": {
+    "ja": "PMS連携（稼働記録との突き合わせ）",
+    "locked": true,
+    "en": "PMS integration (cross-checking against occupancy records)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "df17228908c77acb": {
     "ja": "PMS（宿泊施設管理システム）、予約管理、サイトコントローラー、料金管理を一本の流れに整えます。需要予測にもとづく料金の自動調整により、繁忙日の取りこぼしと閑散日の値崩れを同時に抑えます。既存システムを使い続けながらの部分導入にも対応します。",
     "en": "We bring PMS (property management system), reservation management, site controller, and rate management together into a single flow. Automated, demand-forecast-based pricing reduces both lost sales on peak days and price collapse on slow days at the same time. Partial implementation alongside your existing systems is also supported.",
@@ -216,6 +320,14 @@
     "en": "ProofKeeping is a service for hotels, inns, and hotel cleaning companies to record cleaning status per room, staff, inspection via checklists, photos as evidence, re-cleaning, issues, and forgotten items.",
     "th": ""
   },
+  "0afbada147179852": {
+    "ja": "ProofKeepingは、施設ごとの月額制です。記録の件数や写真の枚数では課金しません。現在は先行導入のご相談を承っている段階のため、下記は想定している目安です。正式な金額は、施設の規模と対象範囲を伺ったうえでお見積りとしてお出しします。",
+    "locked": true,
+    "en": "ProofKeeping is charged as a monthly fee per property. We do not charge by the number of records or photos. We are currently at the stage of discussing early adoption, so the figures below are indicative. We will provide the formal price as a quote once we have asked about the size of the property and the scope.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "f261e7a4fee5aa79": {
     "ja": "ProofKeepingを見る",
     "locked": false,
@@ -232,12 +344,44 @@
     "en": "ProofKeeping | Room Cleaning, Inspection, and Evidence Management",
     "th": ""
   },
+  "797b24071401baa8": {
+    "ja": "Proについて相談する",
+    "locked": true,
+    "en": "Ask about Pro",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "69dafe7321afc35c": {
+    "ja": "Proに複数施設の管理・セキュリティ・運用支援を加えた個別契約（月額5万円台から）",
+    "locked": true,
+    "en": "An individual contract adding multi-property management, security and operational support to Pro (from around 50,000 yen per month)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "7c3ebd458f7b610e": {
+    "ja": "Proのすべての内容",
+    "locked": true,
+    "en": "Everything in Pro",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "5350685a859f9567": {
     "ja": "SEO・MEO・広告運用",
     "en": "SEO, MEO, and Ad Operation",
     "zh": "SEO・MEO・广告运营",
     "ko": "SEO·MEO·광고 운영",
     "zh-Hant": "SEO・MEO・廣告營運"
+  },
+  "670f7dd0b7eb8caf": {
+    "ja": "STEK OPSの料金はありますか。",
+    "locked": true,
+    "en": "Is there pricing for STEK OPS?",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "9eddb749befac1e2": {
     "ja": "STEK OPSの構想を見る",
@@ -278,6 +422,14 @@
     "zh-Hant": "網路與IT支援",
     "en": "Web and IT Support",
     "th": ""
+  },
+  "da75b8e1bf440659": {
+    "ja": "Web・IT支援の費用はどのくらいですか。",
+    "locked": true,
+    "en": "How much does Web and IT support cost?",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "e34642265de1a447": {
     "ja": "Web・IT支援を見る",
@@ -469,6 +621,14 @@
     "en": "Are you in such a situation?",
     "th": ""
   },
+  "e1a19625739ebc3c": {
+    "ja": "ここに書いてある金額は確定していますか。",
+    "locked": true,
+    "en": "Are the figures shown here final?",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "3c2cc6123872cf5b": {
     "ja": "この内容で送信する",
     "en": "Submit",
@@ -507,6 +667,14 @@
     "zh-Hant": "我們已經使用了PMS，是否需要更換？",
     "en": "We are already using a PMS. Is replacement necessary?",
     "th": ""
+  },
+  "286f25576b8da585": {
+    "ja": "すべて税別の目安です。正式な金額は、お見積りとしてお出しします。",
+    "locked": true,
+    "en": "All figures are indicative and exclude tax. We provide the formal price as a quote.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "7c2281ce7193ecc7": {
     "ja": "その他",
@@ -595,6 +763,14 @@
     "ko": "먼저 지금의 수치를 보여 주세요.",
     "locked": true
   },
+  "e415b5e8f74eb439": {
+    "ja": "まだありません。STEK OPSは構想の段階です。リネン、備品、修繕など、必要になりそうな範囲を伺いながら設計を進めています。",
+    "locked": true,
+    "en": "Not yet. STEK OPS is at the concept stage. We are designing it while asking about the areas likely to be needed, such as linen, supplies and repairs.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "d1f2d14bff3f85e2": {
     "ja": "よくあるご質問",
     "en": "Frequently Asked Questions",
@@ -656,6 +832,14 @@
     "zh-Hant": "網站及網路應用程式的策劃、製作、營運及維護，以及利用網際網路開展廣告、資訊提供及獲客支援相關業務",
     "ko": "웹사이트 및 웹 애플리케이션의 기획, 제작, 운영 및 유지보수 그리고 인터넷을 이용한 광고, 정보 제공 및 집객 지원에 관한 업무",
     "locked": true
+  },
+  "6e0510a6658f5dba": {
+    "ja": "オプション",
+    "locked": true,
+    "en": "Option",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "6487918f567c848d": {
     "ja": "オーナー様が所有と経営を担い、当社が運営を受託します。支配人相当の責任者の配置、スタッフの採用と教育、シフト設計、料金設計とOTA運用、清掃品質の管理、仕入れ、日次・月次の収支管理までを一括してお引き受けします。報酬は売上連動のベースフィーと、GOP（営業総利益）連動のインセンティブフィーの組み合わせを基本とし、当社の報酬が施設の利益と同じ方向を向く形にします。",
@@ -838,6 +1022,14 @@
     "locked": true,
     "zh-Hant": "我們在品質與單價之間取得平衡，精選並供應洗髮水類產品、牙刷、拖鞋、館內服、清潔用物料及客房備品。同時支援國內採購與進口採購，會將現有采購內容與單價進行對比，僅針對需要更換的部分提出建議。也可提供原創規格（OEM）盥洗用品的策劃服務。"
   },
+  "2e8361e3a9beab4d": {
+    "ja": "シングルサインオン（SSO）",
+    "locked": true,
+    "en": "Single sign-on (SSO)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "d0363a052dbb540d": {
     "ja": "シーツ、デュベカバー、枕カバー、バスタオル、フェイスタオル、バスマット、館内着などを、レンタルまたは客先所有のいずれの形でも運用します。回収・洗濯・仕上げ・納品までを一括で手配し、必要枚数と回転数（在庫サイクル）を客室数と稼働から逆算して設計するため、欠品と過剰在庫の両方を防ぎます。",
     "en": "We handle sheets, duvet covers, pillowcases, bath towels, face towels, bath mats, and in-house robes, whether on a rental basis or using items owned by the property. We arrange collection, laundering, finishing, and delivery all together, and design the required quantity and turnover rate (inventory cycle) by working backward from room count and occupancy, preventing both shortages and excess inventory.",
@@ -878,6 +1070,30 @@
     "en": "You can record what you see by selecting options on a smartphone. Input is possible even in rooms without signal, and it is displayed in seven languages.",
     "th": ""
   },
+  "4b5f87af01806372": {
+    "ja": "スマートフォンでの利用",
+    "locked": true,
+    "en": "Use on a smartphone",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "aeb199aba098d8d2": {
+    "ja": "スマートフォン対応・7言語表示・オフライン対応",
+    "locked": true,
+    "en": "Smartphone support, display in seven languages, offline support",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "92f720c4324bec82": {
+    "ja": "チェックリストによる点検",
+    "locked": true,
+    "en": "Inspection by checklist",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "d7645c544b8304b2": {
     "ja": "チェックリストによる点検と再清掃",
     "locked": false,
@@ -885,6 +1101,14 @@
     "zh-Hant": "透過檢查表進行檢查和重新清潔",
     "en": "Inspection and re-cleaning through checklists",
     "th": ""
+  },
+  "bebf7fc67d7ba9ff": {
+    "ja": "チェーン本部、ホテル運営会社、大型の清掃会社",
+    "locked": true,
+    "en": "Chain head offices, hotel management companies and larger cleaning companies",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "923240f45421a658": {
     "ja": "ハウスキーピング部門の運営受託",
@@ -978,6 +1202,30 @@
     "zh-Hant": "隱私政策｜株式會社STEK",
     "ko": "개인정보처리방침｜주식회사 스텍(stek)",
     "locked": true
+  },
+  "8eec3c602a26cfae": {
+    "ja": "プラン",
+    "locked": true,
+    "en": "Plans",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "3fbc2d81e0c5495c": {
+    "ja": "プランと目安を見る",
+    "locked": true,
+    "en": "See the plans and indicative prices",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "c852e57357945db4": {
+    "ja": "プランの違い",
+    "locked": true,
+    "en": "What differs between the plans",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "69cddaef1d3ae27a": {
     "ja": "ページ上部へ",
@@ -1389,6 +1637,22 @@
     "locked": true,
     "zh-Hant": "人手不足，營運難以為繼"
   },
+  "63df3ff36412e91d": {
+    "ja": "人員・原価の把握",
+    "locked": true,
+    "en": "Staffing and cost figures",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "f4cea30b00476ac5": {
+    "ja": "人員・原価の把握は準備中です。PMS連携は、最初に接続するPMSの選定状況によって開始できる時期が変わります。",
+    "locked": true,
+    "en": "Staffing and cost figures are in preparation. For PMS integration, the start date depends on which PMS we connect to first.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "d7f2557a9fb28b94": {
     "ja": "人員配置とシフト",
     "locked": false,
@@ -1476,6 +1740,22 @@
     "ko": "회사 개요",
     "locked": true
   },
+  "906986821871f22a": {
+    "ja": "作業実績にもとづく人員・原価の把握",
+    "locked": true,
+    "en": "Staffing and cost figures based on recorded work",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "7de3988e4b22fd32": {
+    "ja": "作業実績にもとづく集計です。より広い原価管理は STEK OPS で検討しています",
+    "locked": true,
+    "en": "Aggregation based on recorded work. Broader cost management is being considered for STEK OPS",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "05ef349b9adcef23": {
     "ja": "使えません。記録を清掃スタッフ個人の評価に使わない設計にしています。個人の順位付けや、個人単位の作業時間の集計は行いません。記録の正確さを保つための前提であり、清掃会社にとっては、発注元が従業員個人を特定できないという契約上の安心材料にもなります。",
     "locked": false,
@@ -1506,6 +1786,38 @@
     "zh-Hant": "有關個人資料處理的諮詢，請透過本公司網站的諮詢表單與我們聯絡。",
     "ko": "개인정보 취급에 관한 문의는 당사 웹사이트의 문의 양식을 통해 연락해 주세요.",
     "locked": true
+  },
+  "779fcf073725ad7b": {
+    "ja": "個別",
+    "locked": true,
+    "en": "Individual",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "48d880a83d05ef33": {
+    "ja": "個別のお見積り",
+    "locked": true,
+    "en": "Individual quote",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "b177a75ef750f5ce": {
+    "ja": "個別のご相談",
+    "locked": true,
+    "en": "By individual discussion",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "0782cceb552fa230": {
+    "ja": "個別のシステム連携",
+    "locked": true,
+    "en": "Individual system integration",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "6956169cf75b293e": {
     "ja": "借上げ（サブリース）・運営の引受",
@@ -1630,6 +1942,22 @@
     "ko": "공용부 청소·위생 관리",
     "locked": true
   },
+  "973459c26dfc56fa": {
+    "ja": "再清掃の指示と完了確認",
+    "locked": true,
+    "en": "Re-cleaning instructions and completion checks",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "9727d1e54314f47e": {
+    "ja": "写真付きの報告",
+    "locked": true,
+    "en": "Reports with photos",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "f45d1c02c103a031": {
     "ja": "写真付きの証跡・不具合報告",
     "locked": false,
@@ -1661,6 +1989,22 @@
     "ko": "최초 상담부터 운영 개시까지 표준적으로 약 60~90일이 소요됩니다. 기존 시스템에서의 이전이나 성수기를 피한 전환도 조율합니다.",
     "locked": true
   },
+  "147f4a4006dc5f09": {
+    "ja": "初期費用",
+    "locked": true,
+    "en": "Setup cost",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "2df6beed98d5e328": {
+    "ja": "別の製品ではありません。Proと同じものをお使いいただき、複数施設の管理、セキュリティの要件、運用支援を個別の契約として加えます。",
+    "locked": true,
+    "en": "It is not. You use the same product as Pro, and multi-property management, security requirements and operational support are added as an individual contract.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "266c06cbbbc3231e": {
     "ja": "利用の流れ",
     "locked": false,
@@ -1668,6 +2012,14 @@
     "zh-Hant": "使用流程",
     "en": "Usage flow",
     "th": ""
+  },
+  "e688734d1429e831": {
+    "ja": "利用者アカウントの一括登録・停止",
+    "locked": true,
+    "en": "Bulk creation and deactivation of user accounts",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "837c48d46480b62f": {
     "ja": "利用者別のメリット",
@@ -1677,6 +2029,14 @@
     "en": "Benefits by user type",
     "th": ""
   },
+  "20030238639d1ec5": {
+    "ja": "制作の範囲によって変わるため、個別のお見積りです。初回のご相談とお見積りは無料です。",
+    "locked": true,
+    "en": "It varies with the scope of the work, so it is quoted individually. The first consultation and quote are free of charge.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "19f9058db14412b2": {
     "ja": "前各号に附帯関連する一切の業務",
     "en": "Any and all business incidental or related to the foregoing items",
@@ -1684,6 +2044,14 @@
     "zh-Hant": "與前述各項相關聯的一切業務",
     "ko": "전 각호에 부대·관련되는 일체의 업무",
     "locked": true
+  },
+  "2c653d51bb194d09": {
+    "ja": "割り当てと点検を仕組みにして、管理側の手間を減らすプランです。複数の施設をまとめて確認する、実績から人員と原価を把握する、といった運営側の作業に向いています。",
+    "locked": true,
+    "en": "A plan that makes assignment and inspection routine and reduces work on the management side. It suits operational tasks such as checking several properties together, or understanding staffing and cost from recorded work.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "baf87841d8c26afc": {
     "ja": "収支シミュレーションと事業計画",
@@ -1770,6 +2138,14 @@
     "ko": "접수 시간",
     "locked": true
   },
+  "af75ba3691a9d324": {
+    "ja": "受託している施設の単位でご契約いただけます。発注元のホテルへ、閲覧できる範囲を限った権限をお渡しすることもできます。",
+    "locked": true,
+    "en": "You can contract per property that you have been engaged for. We can also give the client hotel a permission limited to what they are able to view.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "6670f62a4df34e05": {
     "ja": "古物商許可",
     "en": "Secondhand Goods Dealer Permit",
@@ -1802,6 +2178,22 @@
     "zh-Hant": "可以。清潔業務以承包方式承接，由我方現場負責人負責人員配置與品質管理，具體報價根據委託內容及設施規模確定。",
     "ko": "가능합니다. 청소는 도급 방식으로 접수하며 당사의 현장 책임자가 인력 배치와 품질 관리를 담당합니다. 의뢰 내용과 시설 규모에 따라 견적을 산출합니다.",
     "locked": true
+  },
+  "5530231f3cbc4335": {
+    "ja": "含まれる客室数の目安",
+    "locked": true,
+    "en": "Guest rooms included (indicative)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "445880a709141d7d": {
+    "ja": "含む",
+    "locked": true,
+    "en": "Included",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "4290a16172a0f72a": {
     "ja": "周辺競合のADRと稼働率、想定客層、運営コスト（人件費、清掃費、OTA手数料、光熱費、修繕積立）を積み上げ、楽観・中立・悲観の3パターンで収支を作成します。転用工事費と回収期間、金融機関に提出できる形の事業計画までをまとめます。",
@@ -1849,6 +2241,22 @@
     "zh-Hant": "將報告和重新清潔的指示、完成確認納入同一流程，以便在一處跟蹤應對情況。",
     "en": "Align reports and instructions for re-cleaning and completion confirmation, allowing tracking of response status in one place.",
     "th": ""
+  },
+  "e20a20a991e8b923": {
+    "ja": "変えられます。プランの違いは設定の切り替えで反映されるため、データの移行やつくり直しは必要ありません。",
+    "locked": true,
+    "en": "Yes. The difference between plans is applied by switching settings, so no data migration or rebuilding is required.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "142fcafa19d9bf9c": {
+    "ja": "変わりません。スマートフォンでの利用、写真付きの報告、チェックリスト、7言語表示は、どちらのプランでも同じようにお使いいただけます。違いは、割り当て・点検・集計・権限といった管理側の機能です。",
+    "locked": true,
+    "en": "It does not. Use on a smartphone, reports with photos, checklists and display in seven languages work the same way on either plan. The difference lies in the management-side functions: assignment, inspection, aggregation and permissions.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "a5728a23e9182048": {
     "ja": "外国籍のスタッフが多いのですが、使えますか。",
@@ -1905,6 +2313,14 @@
     "locked": true,
     "zh-Hant": "我們堅持的三件事"
   },
+  "81905a960c704169": {
+    "ja": "契約期間",
+    "locked": true,
+    "en": "Contract term",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "9bbbcfed0aef1819": {
     "ja": "宅地建物取引業免許",
     "en": "Real Estate Brokerage License",
@@ -1936,6 +2352,22 @@
     "zh-Hant": "10間左右客房的設施或僅營運一棟建築的設施也可以諮詢。我們建議從一個設施、一個部門開始試用。",
     "en": "We can consult on facilities with around 10 guest rooms or those operating only one building. We recommend starting with one facility and one department.",
     "th": ""
+  },
+  "e07dd3a74a59f1d7": {
+    "ja": "客室30室を超える場合や、施設が複数になる場合は Pro をご案内します。",
+    "locked": true,
+    "en": "If you have more than about 30 guest rooms, or more than one property, we will suggest Pro.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "df433e94339b8739": {
+    "ja": "客室30室程度までで、施設が1つであれば、日々の清掃と点検の記録はBaseでひととおり行えます。判断に迷う場合は、いまの運用を伺ったうえでご案内します。",
+    "locked": true,
+    "en": "If you have up to about 30 guest rooms and a single property, Base covers the day-to-day recording of cleaning and inspection. If you are unsure, we will advise you after hearing how you work today.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "8863be13e5c76e6b": {
     "ja": "客室ごとに担当を割り当てます。当日の変更も画面から行えます。",
@@ -1985,6 +2417,14 @@
     "ko": "객실의 품질은 매일의 현장에서만 지킬 수 있습니다.",
     "locked": true
   },
+  "0faf37e9af1f502f": {
+    "ja": "客室数、施設の数、清掃の体制（自社か委託か）、いまお使いのシステムを伺い、月額と初期費用を明記したお見積りをお出しします。ご相談とお見積りは無料です。",
+    "locked": true,
+    "en": "We ask about the number of guest rooms, the number of properties, how cleaning is staffed (in-house or contracted) and the systems you use today, then provide a quote stating the monthly fee and the setup cost. Consultation and quotes are free of charge.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "df116922f3b191dc": {
     "ja": "客室数と回転に応じた要員計画を組み、チェックリストと写真で品質を記録します。繁忙期の増員にも対応します。",
     "en": "We build staffing plans based on room count and turnover, and record quality with checklists and photos. We also accommodate additional staffing during peak periods.",
@@ -2016,6 +2456,30 @@
     "zh": "我们根据客房数量与周转次数制定人员计划，在退房到入住之间的时间内完成清洁工作。标准业务范围包括清洁、浴室消毒、布草更换、洗漱用品补充、垃圾回收，以及遗失物品的确认与报告，并设定每间客房的标准作业时长进行运营管理。旺季增房、连住清洁（Stay-over）及延迟退房应对等事项均会事先约定。",
     "ko": "객실 수와 회전율에 맞춘 인력 계획을 짜서 체크아웃부터 체크인까지의 시간 내에 마무리합니다. 청소, 욕실 소독, 린넨 교체, 어메니티 보충, 쓰레기 수거, 분실물 확인 및 보고까지를 표준 업무 범위로 하고, 객실당 표준 작업 시간을 정하여 운영합니다. 성수기 증실, 연박 청소(스테이오버), 레이트 체크아웃 대응도 사전에 협의합니다.",
     "zh-Hant": "我們根據客房數量與週轉次數制定人員計劃，在退房到入住之間的時間內完成清潔工作。標準業務範圍包括清潔、浴室消毒、布草更換、盥洗用品補充、垃圾回收，以及遺失物品的確認與報告，並設定每間客房的標準作業時長進行營運管理。旺季增房、連住清潔（Stay-over）及延遲退房應對等事項均會事先約定。"
+  },
+  "6144b5ca8e88bccc": {
+    "ja": "客室数に応じた、施設ごとの月額制です。記録の件数や写真の枚数では課金しません。記録を減らすほど安くなる形にすると、記録そのものの質が落ちるためです。\n\n標準のプランは Base と Pro の2つで、複数施設の管理やセキュリティの要件がある場合は Enterprise として個別にお引き受けします。現場で毎日使う操作はBaseにも入っています。正式な価格は、先行導入のご相談の際にお知らせします。",
+    "locked": true,
+    "en": "A monthly fee per property, based on the number of guest rooms. We do not charge by the number of records or photos. If recording less made the service cheaper, the quality of the records themselves would fall.\n\nThere are two standard plans, Base and Pro. Where several properties have to be managed together, or where security requirements apply, we take that on individually as Enterprise. The operations used every day on site are included in Base as well. We will tell you the formal price when we discuss early adoption.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "b4b57aaa4e80a59e": {
+    "ja": "客室数に応じた、施設ごとの月額制です。記録の件数や写真の枚数では課金しません。記録を減らすほど安くなる形にすると、記録そのものの質が落ちるためです。\n\n現場で毎日必要になる操作は、いちばん下のプランにも入れています。スマートフォンでの利用、写真付きの報告、チェックリストによる点検、7言語表示は、Baseでもそのままお使いいただけます。上位のプランは、現場の操作を削って差をつけるのではなく、割り当て・点検・集計といった管理側の手間が減る部分で違いをつけています。\n\nプランの違いは設定の切り替えで反映されます。途中でプランを変えるときに、データの移行やつくり直しは必要ありません。",
+    "locked": true,
+    "en": "A monthly fee per property, based on the number of guest rooms. We do not charge by the number of records or photos. If recording less made the service cheaper, the quality of the records themselves would fall.\n\nThe operations needed every day on site are included in the lowest plan as well. Use on a smartphone, reports with photos, inspection by checklist and display in seven languages are all available on Base. The higher plans do not create a difference by taking operations away from the floor; they differ where they reduce work on the management side, such as assignment, inspection and aggregation.\n\nThe difference between plans is applied by switching settings. When you change plan later, no data migration or rebuilding is required.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "f7dfd408d12adcfa": {
+    "ja": "客室数を超えるとき",
+    "locked": true,
+    "en": "When you exceed the room count",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "bfc65c784b4e9a15": {
     "ja": "客室清掃、共用部清掃、ベッドメイキングを請負方式でお受けします。当社の現場責任者が要員の配置、当日の段取り、仕上がりの確認までを担当し、施設側の管理負担を減らします。リネン・タオルの供給と洗濯、アメニティや業務用資材の調達もあわせてご依頼いただけます。",
@@ -2056,6 +2520,14 @@
     "zh-Hant": "客房清潔、檢查、證據管理",
     "en": "Guest room cleaning, inspection, and evidence management",
     "th": ""
+  },
+  "a0e1665c8ff0325f": {
+    "ja": "客室清掃・点検・証跡管理 ProofKeeping の料金。施設ごとの月額制で、記録の件数や写真の枚数では課金しません。Base・Pro・Enterpriseの違いと目安を掲載しています。",
+    "locked": true,
+    "en": "Pricing for ProofKeeping, our guest-room cleaning, inspection and record-keeping product. A monthly fee per property, with the differences between Base, Pro and Enterprise and indicative prices.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "217531ad210d4eef": {
     "ja": "客室清掃会社",
@@ -2331,6 +2803,22 @@
     "en": "Support beyond implementation",
     "th": ""
   },
+  "2c558758e5f88434": {
+    "ja": "導入支援・運用設計への同席",
+    "locked": true,
+    "en": "Attendance at implementation and operational design",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "289c245945565ee9": {
+    "ja": "導入時の設定と研修の費用を別途お見積りします。施設の規模と対象範囲によって変わります。",
+    "locked": true,
+    "en": "We quote separately for setup and training at the time of introduction. It varies with the size of the property and the scope.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "507d8d4aa3e8aa55": {
     "ja": "導入相談",
     "locked": false,
@@ -2338,6 +2826,14 @@
     "zh-Hant": "引入諮詢",
     "en": "Implementation Consultation",
     "th": ""
+  },
+  "478e1c60ed746812": {
+    "ja": "小さい施設ですが、Baseで足りますか。",
+    "locked": true,
+    "en": "We are a small property. Is Base enough?",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "80096a87508427c5": {
     "ja": "小さく始めて、必要な機能だけを追加する。",
@@ -2370,6 +2866,14 @@
     "zh-Hant": "小規模啟動",
     "en": "Start with a Small Scale",
     "th": ""
+  },
+  "f6f8e68d25a94a2c": {
+    "ja": "小規模なホテル・旅館・民泊",
+    "locked": true,
+    "en": "Small hotels, ryokan and vacation rentals",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "4eba5a836e5459b6": {
     "ja": "小規模な施設でも依頼できますか。",
@@ -2410,6 +2914,14 @@
     "zh-Hant": "請透過本網站的諮詢表單聯絡我們",
     "ko": "본 사이트의 문의 양식을 통해 접수합니다",
     "locked": true
+  },
+  "0c7068e9a0faaf1a": {
+    "ja": "当日の進捗一覧",
+    "locked": true,
+    "en": "Same-day progress list",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "8ca7ecf17cf51ae6": {
     "ja": "当社が物件を借り受け、自らの責任で運営する形態です。オーナー様は稼働の変動にかかわらず賃料を受け取ることができ、運営上の判断と人の確保からは離れられます。固定賃料のみ、または固定賃料と売上連動賃料を組み合わせたハイブリッド型のいずれも設計可能です。",
@@ -2530,6 +3042,14 @@
     "en": "Record of lost items",
     "th": ""
   },
+  "6d0693d110c12460": {
+    "ja": "忘れ物・設備不具合の記録",
+    "locked": true,
+    "en": "Records of lost items and equipment faults",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "fe837ba65f4bd439": {
     "ja": "所在地",
     "en": "Location",
@@ -2545,6 +3065,14 @@
     "zh-Hant": "所有權與營運分離，以收益回應期待。",
     "ko": "소유와 운영을 분리하고, 수익으로 답합니다.",
     "locked": true
+  },
+  "8b661702b9b8ce62": {
+    "ja": "担当の自動割り当て・一括割り当て",
+    "locked": true,
+    "en": "Automatic and bulk assignment of staff",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "1391cc3ae426293c": {
     "ja": "担当割り当て、作業報告、点検、再清掃を一つの流れで管理し、サービス品質を記録として提示できます。",
@@ -2594,6 +3122,14 @@
     "locked": true,
     "zh-Hant": "方案會因案件而異，但我們判斷的標準始終不變。"
   },
+  "cd173d777db89d54": {
+    "ja": "操作履歴の保全と書き出し",
+    "locked": true,
+    "en": "Retention and export of the operation history",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "a58f4ad10530fa5f": {
     "ja": "数字を隠さない",
     "en": "We do not hide the numbers",
@@ -2601,6 +3137,38 @@
     "ko": "숫자를 숨기지 않습니다",
     "locked": true,
     "zh-Hant": "不隱藏數字"
+  },
+  "9a399c2d44cea261": {
+    "ja": "料金",
+    "locked": true,
+    "en": "Pricing",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "3398bf1790c2a62b": {
+    "ja": "料金についてよくあるご質問",
+    "locked": true,
+    "en": "Frequently asked questions about pricing",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "3ac93f397c915b4b": {
+    "ja": "料金に関する補足",
+    "locked": true,
+    "en": "Notes on pricing",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "ffd9992a37debec9": {
+    "ja": "料金の考え方",
+    "locked": true,
+    "en": "How we set the price",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "5e29741e81418695": {
     "ja": "料金の自動調整",
@@ -2625,6 +3193,14 @@
     "ja": "料金の自動調整と清掃シフト、備品発注、リネンの回転を、同じチームの中で完結させます。導入したのに現場が回らない、という分断を起こしません。",
     "locked": true,
     "zh-Hant": "價格自動調整、清潔排班、備品訂購與布草週轉均在同一團隊內完成，不會出現系統匯入後現場無法運轉的脫節情況。"
+  },
+  "90c453c2ab39510b": {
+    "ja": "料金・プラン｜ProofKeeping｜株式会社ステック",
+    "locked": true,
+    "en": "Pricing and plans | ProofKeeping | STEK Inc.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "3dd0fd5439218d1f": {
     "ja": "料金設定とチャネル構成、清掃・リネンの単価を並べて確認し、どこで利益が消えているかを整理します。",
@@ -2659,6 +3235,14 @@
     "en": "Consolidate progress and performance data per facility into a common format, leading to report and billing creation.",
     "th": ""
   },
+  "2fbaa803f3bd3763": {
+    "ja": "施設ごとの月額です。記録の件数、写真の枚数、利用者の人数では課金しません。",
+    "locked": true,
+    "en": "A monthly fee per property. We do not charge by the number of records, the number of photos, or the number of users.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "0a749bc81647c4b3": {
     "ja": "施設のコンセプト、客層、価格帯、内装、館内サービスを見直し、ブランドを掛け替えます。改修に大きな投資が必要かどうかは物件ごとに異なるため、投資額と回収期間を先に出したうえで判断していただきます。",
     "en": "We review a property's concept, target guest segment, price range, interior, and in-house services, and change its brand. Because whether major investment is needed for renovation differs by property, we present the investment amount and payback period first, so you can make an informed decision.",
@@ -2682,6 +3266,14 @@
     "ko": "시설 규모, 객실 수, 대상 범위에 따라 다릅니다. 최초 청취 이후 월 이용료와 초기 비용을 명시한 견적을 제공합니다. 청취와 개산 제시는 무료입니다.",
     "locked": true
   },
+  "3374da74c78ccfcf": {
+    "ja": "施設の規模、客室数、対象範囲によって異なります。記録の件数や写真の枚数では課金しません。プランの違いと月額の目安は料金ページに掲載しています。初回のご相談後に、月額と初期費用を明記したお見積りをお出しします。ご相談と概算のご提示は無料です。",
+    "locked": true,
+    "en": "It depends on the size of the property, the number of guest rooms and the scope. We do not charge by the number of records or photos. The differences between the plans and indicative monthly prices are shown on the pricing page. After a first consultation we provide a quote stating the monthly fee and the setup cost. The consultation and a rough estimate are free of charge.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "fcaa2a4e8994eb1f": {
     "ja": "施設の規模、客室数、対象範囲によって異なります。記録の件数や写真の枚数では課金しません。初回のご相談後に、月額と初期費用を明記したお見積りをお出しします。ご相談と概算のご提示は無料です。",
     "locked": false,
@@ -2690,6 +3282,14 @@
     "en": "It varies depending on the facility size, number of guest rooms, and scope of application. We do not charge based on the number of records or photos. After the initial consultation, we will provide a quotation with monthly fees and initial costs. Consultation and preliminary estimates are free of charge.",
     "th": ""
   },
+  "54a5d5ec02a953d7": {
+    "ja": "施設の規模を伺えば、金額をお出しできます。",
+    "locked": true,
+    "en": "Tell us the size of your property and we can give you a figure.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "7ed4e437c6d5187d": {
     "ja": "施設はあるが、運営を任せたい",
     "en": "We own the property but want operations handled",
@@ -2697,6 +3297,14 @@
     "ko": "시설은 있지만 운영을 맡기고 싶다",
     "locked": true,
     "zh-Hant": "已有物業，希望委託營運"
+  },
+  "442b3af80580b042": {
+    "ja": "施設をまたいだ集計と分析",
+    "locked": true,
+    "en": "Aggregation and analysis across properties",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "3eda6191b5c86b7f": {
     "ja": "施設単位での作業実績と原価の把握",
@@ -2720,6 +3328,14 @@
     "zh": "除了针对设施名称的指名搜索，我们还致力于吸引以“地区+目的”方式搜索的潜在客户。从技术层面完善页面结构、内部链接、结构化数据、加载速度（Core Web Vitals）以及多语言hreflang设置，同时负责完善Google商家资料（MEO）信息、处理用户评价，并可根据需要负责搜索广告的投放运营。",
     "ko": "시설명으로 하는 지명 검색뿐 아니라 '지역+목적'으로 검색하는 고객층까지 확보합니다. 페이지 구조와 내부 링크, 구조화 데이터, 표시 속도(Core Web Vitals), 다국어 hreflang 설정까지 기술적인 측면에서 정비하고, Google 비즈니스 프로필(MEO)의 정보 정비와 리뷰 대응, 필요에 따라 리스팅 광고 운영도 담당합니다.",
     "zh-Hant": "除了針對設施名稱的指名搜尋，我們還致力於吸引以「地區+目的」方式搜尋的潛在客戶。從技術層面完善頁面結構、內部連結、結構化資料、載入速度（Core Web Vitals）以及多語言hreflang設定，同時負責完善Google商家資料（MEO）資訊、處理使用者評價，並可根據需要負責搜尋廣告的投放營運。"
+  },
+  "6ea3546c6795ba49": {
+    "ja": "施設数が多く、社内の規程やセキュリティの要件がある場合の契約です。別の製品ではありません。Proと同じものをお使いいただき、契約と設定でご要件に合わせます。",
+    "locked": true,
+    "en": "A contract for cases with many properties, internal rules or security requirements. It is not a separate product. You use the same product as Pro, and we meet your requirements through the contract and the settings.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "dd097eea376acf25": {
     "ja": "旅行商品の販売開始時点までに登録を行います。",
@@ -2862,6 +3478,14 @@
     "en": "Management interface for updates",
     "th": ""
   },
+  "e709cec3d3914f2c": {
+    "ja": "最低利用期間は設けていません。まず1施設・1部門からお試しいただけます。",
+    "locked": true,
+    "en": "There is no minimum term. You can start with a single property or a single department.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "8c1771cb9da8eb58": {
     "ja": "最初にシステム化する業務と、これまでの方法を残す業務を分けます。すべてを置き換えることはしません。",
     "locked": false,
@@ -2869,6 +3493,14 @@
     "zh-Hant": "區分出首先系統化的業務和保留原有方法的業務。不會全部替換。",
     "en": "We will separate the business processes to be systematized and those to remain as they are. We will not replace everything.",
     "th": ""
+  },
+  "ec187bd6139c0153": {
+    "ja": "最初に接続するPMSは選定中です",
+    "locked": true,
+    "en": "The PMS we connect to first is still being selected",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "738580c4b95b6d58": {
     "ja": "最後のご案内（申し込み枠）",
@@ -2892,6 +3524,22 @@
     "zh": "月度报告与数据看板",
     "ko": "월간 리포트와 대시보드",
     "zh-Hant": "月度報告與資料看板"
+  },
+  "e17f5cb5e6f41331": {
+    "ja": "月額 1万円台半ば",
+    "locked": true,
+    "en": "Around 15,000 yen per month",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "4ff85d44162bf2ff": {
+    "ja": "月額 5千円前後",
+    "locked": true,
+    "en": "Around 5,000 yen per month",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "ab1a66add5a3b764": {
     "ja": "本ポリシーにおいて個人情報とは、個人情報の保護に関する法律第2条第1項に定める個人情報をいい、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるものをいいます。",
@@ -3051,6 +3699,22 @@
     "en": "In development",
     "th": ""
   },
+  "db4b72301269b673": {
+    "ja": "標準のプランは Base と Pro の2つです。Enterpriseは、Proに複数施設の管理・セキュリティ・運用支援を加えた個別契約として承ります。",
+    "locked": true,
+    "en": "The two standard plans are Base and Pro. Enterprise is an individual contract that adds multi-property management, security and operational support to Pro.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "e91280ffc2b50bcb": {
+    "ja": "権限の細かい設定",
+    "locked": true,
+    "en": "Fine-grained permission settings",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "762b545775c7d4fa": {
     "ja": "泊まる場所を、\n続けられる事業にする。",
     "en": "Turning a place to stay\ninto a business that lasts.",
@@ -3106,6 +3770,14 @@
     "zh-Hant": "從清潔記錄已固定的設施開始，考慮在STEK OPS中連線庫存和人員配置。",
     "en": "Consider connecting inventory and staff scheduling via STEK OPS from facilities where cleaning records are established.",
     "th": ""
+  },
+  "ca67eac4379d40af": {
+    "ja": "清掃の進捗を、紙・電話・チャットから画面へ移すためのプランです。いま誰がどの客室を担当し、どこまで終わっているかを、フロントと清掃の双方が同じ画面で確認できます。",
+    "locked": true,
+    "en": "A plan for moving cleaning progress off paper, phone calls and chat and onto a screen. The front desk and the cleaning team can see on the same screen who is assigned to which room and how far the work has got.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "fa4d2d7dd60a3bd7": {
     "ja": "清掃の進捗を電話・紙・チャットで確認している",
@@ -3187,6 +3859,14 @@
     "zh-Hant": "清潔公司也可以簽約嗎？",
     "en": "Can cleaning companies also sign a contract?",
     "th": ""
+  },
+  "7ea0bec564422829": {
+    "ja": "清掃会社の場合",
+    "locked": true,
+    "en": "For cleaning companies",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "5aa779b1e7f3e0ca": {
     "ja": "清掃品質や作業実績を客観的に確認できない",
@@ -3361,6 +4041,14 @@
     "locked": true,
     "zh-Hant": "只提出現場能夠運轉的方案"
   },
+  "994f5b5e193d5170": {
+    "ja": "現場で毎日使う操作はBaseにも入っています。上位のプランで増えるのは、割り当て・点検・集計・権限といった管理側の機能です。機能ごとの開発の状況は、ProofKeepingページの「提供状況」に掲載しています。",
+    "locked": true,
+    "en": "The operations used every day on site are included in Base as well. What the higher plans add is management-side functionality: assignment, inspection, aggregation and permissions. The development status of each function is shown under Availability on the ProofKeeping page.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "f46d416e5ce04874": {
     "ja": "現場で記録する",
     "locked": false,
@@ -3440,6 +4128,22 @@
     "en": "Screen image",
     "th": ""
   },
+  "8cd9fc4313cacc72": {
+    "ja": "目安の室数を超える場合は、上位の区分でお見積りします。途中でのプラン変更もできます。",
+    "locked": true,
+    "en": "If you go beyond the indicative number of rooms, we quote at the next tier. You can also change plan partway through.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
+  "fd36afd182fc026f": {
+    "ja": "確定していません。ProofKeepingは先行導入のご相談を承っている段階です。掲載しているのは現在想定している目安で、正式な金額は施設の規模と対象範囲を伺ったうえでお見積りとしてお出しします。",
+    "locked": true,
+    "en": "They are not. ProofKeeping is at the stage of discussing early adoption. The figures shown are what we currently expect; we will provide the formal price as a quote once we have asked about the size of the property and the scope.",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "9dadd595d673c277": {
     "ja": "確認のたびに手が止まり、フロントと清掃現場の双方に待ち時間が生まれます。",
     "locked": false,
@@ -3447,6 +4151,14 @@
     "zh-Hant": "每次確認時都會停下工作，導致櫃台和清潔現場雙方都產生等待時間。",
     "en": "Each confirmation causes a pause, creating waiting times for both the front desk and the cleaning site.",
     "th": ""
+  },
+  "43417b0da7876031": {
+    "ja": "稼働と応答についてのお約束（SLA）",
+    "locked": true,
+    "en": "Commitments on availability and response (SLA)",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "ca5d4105df8a1465": {
     "ja": "稼働率と平均単価、清掃にかかっている費用。この3つが分かれば、改善できる幅はおおよそご説明できます。",
@@ -3654,6 +4366,14 @@
     "en": "Display",
     "th": ""
   },
+  "2f509c130ebfed35": {
+    "ja": "表示している金額",
+    "locked": true,
+    "en": "The figures shown",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "3e4f501c046a5579": {
     "ja": "製品を見る",
     "locked": false,
@@ -3701,6 +4421,14 @@
     "zh-Hant": "多個設施的進度確認",
     "en": "Monitoring progress across multiple facilities",
     "th": ""
+  },
+  "f423f734de7611aa": {
+    "ja": "見積りを相談する",
+    "locked": true,
+    "en": "Ask for a quote",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "31eecb3ddc6da901": {
     "ja": "言語",
@@ -3805,6 +4533,14 @@
     "en": "There is no way to verify who confirmed what and when later.",
     "th": ""
   },
+  "3cab2eb2a3ba31a7": {
+    "ja": "課金の単位",
+    "locked": true,
+    "en": "Basis of charging",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
+  },
   "c3e792522dd6d2ab": {
     "ja": "課題が整理できていない段階でも構いません。数字を拝見して、優先順位のご提案から始めます。",
     "en": "It's fine if your challenges aren't fully sorted out yet. We'll look at your numbers and start by proposing priorities.",
@@ -3812,6 +4548,14 @@
     "zh-Hant": "即便問題尚未理清也沒有關係，我們會先檢視資料，再提出優先順序建議。",
     "ko": "과제가 정리되지 않은 단계라도 괜찮습니다. 수치를 확인한 후 우선순위 제안부터 시작합니다.",
     "locked": true
+  },
+  "1ee67a32f743496a": {
+    "ja": "請求・帳票の作成",
+    "locked": true,
+    "en": "Invoices and documents",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "4f15c546dcb63022": {
     "ja": "請負方式で受託し、要員の指揮命令は当社の現場責任者が行います。労働者派遣事業は行いません。",
@@ -3891,6 +4635,14 @@
     "zh-Hant": "提交即視為您已同意本公司隱私政策。",
     "ko": "전송 시, 개인정보처리방침에 동의한 것으로 간주합니다.",
     "locked": true
+  },
+  "3e7a9564ef837c44": {
+    "ja": "途中でプランを変えられますか。",
+    "locked": true,
+    "en": "Can we change plan partway through?",
+    "zh": "",
+    "zh-Hant": "",
+    "ko": ""
   },
   "a258e3b092bff124": {
     "ja": "連絡先",

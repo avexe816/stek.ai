@@ -3,7 +3,7 @@
 株式会社ステックのコーポレートサイト。日本語で原稿を書き、英語は
 翻訳メモリから自動で組み上げる静的サイトです。Cloudflare Pages（advanced mode）で公開します。
 
-- 公開ページ: 9 ページ × 2 言語 = 18 ページ
+- 公開ページ: 10 ページ × 2 言語 = 20 ページ
 - 管理画面: `/admin`（日本語 UI。文章・画像を編集して GitHub にコミット → 自動で再公開）
 - お問い合わせフォーム: `/api/contact`（自社 SMTP から送信）
 
@@ -15,6 +15,7 @@
 | `/products/proofkeeping/` | ProofKeeping（客室清掃・点検・証跡管理） |
 | `/products/stek-ops/` | STEK OPS（ホテル現場運営プラットフォームの構想） |
 | `/services/it-support/` | Web・IT支援 |
+| `/pricing.html` | 料金（Base / Pro / Enterprise）。方針は `docs/stek_pricing_plans.md` |
 | `/services.html` | 事業内容（4 領域） |
 | `/about.html` `/news.html` `/contact.html` `/privacy.html` | 会社情報・お知らせ・お問い合わせ・プライバシー |
 
