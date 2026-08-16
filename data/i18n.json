@@ -38,6 +38,14 @@
     "ko": "4가지 영역을, 하나의 창구에서.",
     "locked": true
   },
+  "c52f9b40638f2c7d": {
+    "ja": "7言語表示・オフライン対応",
+    "locked": false,
+    "zh": "多语言显示·离线支持",
+    "zh-Hant": "",
+    "en": "7-language display and offline support",
+    "th": ""
+  },
   "58d63aa72f845eee": {
     "ja": "ADR・OCC・RevPAR、チャネル別売上構成比、直販比率、OTB（先々の予約状況）、レビュースコアを同じ画面で共有します。良くない数字も加工せずお出しし、翌月に何を変えるかまでをセットでご報告します。",
     "en": "We share ADR, OCC, RevPAR, sales composition by channel, direct booking ratio, OTB (forward booking status), and review scores on the same screen. We present unfavorable numbers without dressing them up, and report together with what will change the following month.",
@@ -153,6 +161,14 @@
     "ko": "PMS·예약 관리·레베뉴 매니지먼트의 자동화부터 객실 청소·리넨·비품 공급까지. 호텔을 직접 운영하는 사업자로서 숙박시설의 수익과 현장을 함께 지원합니다.",
     "locked": true
   },
+  "c9e694a36ee1ede2": {
+    "ja": "PMS連携が前提",
+    "locked": false,
+    "zh": "以PMS连接为前提",
+    "zh-Hant": "",
+    "en": "PMS integration is required",
+    "th": ""
+  },
   "df17228908c77acb": {
     "ja": "PMS（宿泊施設管理システム）、予約管理、サイトコントローラー、料金管理を一本の流れに整えます。需要予測にもとづく料金の自動調整により、繁忙日の取りこぼしと閑散日の値崩れを同時に抑えます。既存システムを使い続けながらの部分導入にも対応します。",
     "en": "We bring PMS (property management system), reservation management, site controller, and rate management together into a single flow. Automated, demand-forecast-based pricing reduces both lost sales on peak days and price collapse on slow days at the same time. Partial implementation alongside your existing systems is also supported.",
@@ -184,12 +200,28 @@
     "en": "For early implementation of ProofKeeping, feedback on the STEK OPS concept, and inquiries regarding official website creation and IT support, please contact us here. We will get back to you after confirming the details.",
     "th": ""
   },
+  "bf67112545ff71cd": {
+    "ja": "ProofKeepingは、いつから使えますか。",
+    "locked": false,
+    "zh": "ProofKeeping从什么时候可以使用？",
+    "zh-Hant": "",
+    "en": "When can ProofKeeping be used?",
+    "th": ""
+  },
   "1a9f2df029ece7ea": {
     "ja": "ProofKeepingは、客室ごとの清掃ステータス、担当者、チェックリストによる点検、写真付きの証跡、再清掃、不具合、忘れ物を記録する、ホテル・旅館・客室清掃会社向けのサービスです。",
     "locked": false,
     "zh": "ProofKeeping是为酒店、旅馆和客房清洁公司提供的服务，用于记录每个客房的清洁状态、负责人、检查清单、带照片的证据、重新清洁、问题和遗漏物品。",
     "zh-Hant": "ProofKeeping是為飯店、旅館和客房清潔公司提供的服務，用於記錄每個客房的清潔狀態、負責人、檢查清單、帶照片的證據、重新清潔、問題和遺漏物品。",
     "en": "ProofKeeping is a service for hotels, inns, and hotel cleaning companies to record cleaning status per room, staff, inspection via checklists, photos as evidence, re-cleaning, issues, and forgotten items.",
+    "th": ""
+  },
+  "f261e7a4fee5aa79": {
+    "ja": "ProofKeepingを見る",
+    "locked": false,
+    "zh": "查看ProofKeeping",
+    "zh-Hant": "",
+    "en": "View ProofKeeping",
     "th": ""
   },
   "a3ec035f068d860a": {
@@ -206,6 +238,14 @@
     "zh": "SEO・MEO・广告运营",
     "ko": "SEO·MEO·광고 운영",
     "zh-Hant": "SEO・MEO・廣告營運"
+  },
+  "9eddb749befac1e2": {
+    "ja": "STEK OPSの構想を見る",
+    "locked": false,
+    "zh": "查看STEK OPS的构想",
+    "zh-Hant": "",
+    "en": "View the concept of STEK OPS",
+    "th": ""
   },
   "9358931267c9ae2d": {
     "ja": "STEK OPSは、清掃・点検の先にあるリネン、備品、修繕、人員、作業実績を施設単位でつなぐ現場運営プラットフォームの構想です。現在は構想段階で、ご意見とご相談を承っています。",
@@ -269,6 +309,14 @@
     "zh-Hant": "「建築物已存在，但缺乏營運體制」、「對當前營運公司的資料不滿意」。針對此類設施，我們將從合約形式開始共同設計並承接營運。我們可應對營運受託（MC方式）、租賃（租借）方式、特許加盟等，根據業主希望承擔的風險和收益波動程度，選擇最適合的形式。如果在開業前的物業尚未確定是否能作為住宿設施成立，可先透過「不動產利用·諮詢」確認可行性，再進入營運設計階段。",
     "en": "\"The building exists, but there is no operational structure,\" or \"you are not satisfied with the current operator's numbers.\" We will design and accept the operation together with the contract form. We respond to operation contracting (MC method), lease (rental) method, and franchise membership, and the optimal form varies depending on how much risk and revenue fluctuation the owner is willing to take. If the property before opening is still unclear whether it can function as a lodging facility, we first confirm the feasibility through \"real estate utilization and consulting,\" and then proceed with the operation design.",
     "ko": "\"건물은 있지만 운영 체제가 없다\", \"현재 운영 회사의 수치에 만족하지 못한다\". 이러한 시설의 운영을, 계약 형태부터 함께 설계하여 받아들입니다. 운영 수탁(MC 방식), 임대(리스) 방식, 프랜차이즈 가맹 중 어느 것도 대응하며, 오너님께서 얼마나 위험과 수익 변동을 감수할지를 따라 최적의 형태는 달라집니다. 개업 전의 물건이 아직 숙박시설로 성립할 수 있는지 모르는 단계였다면, 먼저 \"부동산 활용·컨설팅\"으로 가능 여부를 확인한 후 운영 설계로 이어갑니다.",
+    "th": ""
+  },
+  "6161e11bf12c3023": {
+    "ja": "「清掃した」を、確認できる記録に変える。",
+    "locked": false,
+    "zh": "将\"已清洁\"转化为可确认的记录。",
+    "zh-Hant": "",
+    "en": "Turn \"cleaned\" into a verifiable record",
     "th": ""
   },
   "0ae37cd30ad36be8": {
@@ -413,6 +461,14 @@
     "locked": true,
     "zh-Hant": "多數合作都從這些諮詢開始。若有相近的情況，請先告訴我們。"
   },
+  "d9393313d6e67559": {
+    "ja": "こうした状態になっていませんか",
+    "locked": false,
+    "zh": "是否出现了这样的情况",
+    "zh-Hant": "",
+    "en": "Are you in such a situation?",
+    "th": ""
+  },
   "3c2cc6123872cf5b": {
     "ja": "この内容で送信する",
     "en": "Submit",
@@ -444,6 +500,14 @@
     "ko": "상담·견적",
     "zh-Hant": "諮詢・報價"
   },
+  "d933fe3c0b2d2a47": {
+    "ja": "すでにPMSを使っています。入れ替えが必要ですか。",
+    "locked": false,
+    "zh": "我们已经使用了PMS，是否需要更换？",
+    "zh-Hant": "",
+    "en": "We are already using a PMS. Is replacement necessary?",
+    "th": ""
+  },
   "7c2281ce7193ecc7": {
     "ja": "その他",
     "en": "Other",
@@ -458,6 +522,14 @@
     "zh": "先确认这栋建筑是否具备成为住宿设施的条件。",
     "ko": "그 건물이 숙박시설로서 성립하는지를 먼저 확인합니다.",
     "zh-Hant": "先確認這棟建築是否具備成為住宿設施的條件。"
+  },
+  "e5839b811fd37c87": {
+    "ja": "その日の担当を割り当てる",
+    "locked": false,
+    "zh": "分配当天的负责人",
+    "zh-Hant": "",
+    "en": "Assign daily staff",
+    "th": ""
   },
   "af34fcd4d7ab0e6f": {
     "ja": "どこから手をつけるべきか、から相談できます。",
@@ -475,6 +547,22 @@
     "ko": "둘 다 가능",
     "locked": true
   },
+  "1d8aa7a23c796338": {
+    "ja": "どの客室が仕上がっているかの判断が分かれ、販売できる客室の確定が遅れます。",
+    "locked": false,
+    "zh": "对于哪间客房已经完成清洁的判断出现分歧，导致可销售客房的确认延迟。",
+    "zh-Hant": "",
+    "en": "There is a difference in judgment about which rooms are ready, causing delays in confirming available rooms for sale.",
+    "th": ""
+  },
+  "3cd05f1def5fc24a": {
+    "ja": "はい。ホテル・旅館だけでなく、客室清掃を受託する清掃会社にもお使いいただけます。担当割り当て、作業報告、点検、再清掃をひとつの流れで管理し、実施した内容を発注元へ記録として提示できます。",
+    "locked": false,
+    "zh": "可以。不仅限于酒店和旅馆，也可以提供给承接客房清洁的清洁公司。可将负责人分配、作业报告、检查、重新清洁等流程统一管理，并将实际执行内容作为记录提供给发包方。",
+    "zh-Hant": "",
+    "en": "Yes. It can be used not only by hotels and inns, but also by cleaning companies that handle guest room cleaning. It manages task assignment, work reports, inspection, and re-cleaning in a single workflow, and can present the implemented content as a record to the client.",
+    "th": ""
+  },
   "d0c0a153f0c08ca2": {
     "ja": "はい。客室10室程度の施設や、1棟のみの運営でもご相談いただけます。まずは料金設定の見直しや清掃だけ、といった部分的な導入も可能です。",
     "en": "Yes. We welcome inquiries from properties with around 10 rooms, or even a single building. Partial engagements, such as just a pricing review or just cleaning, are also possible.",
@@ -482,6 +570,22 @@
     "zh-Hant": "可以。客房約10間的設施，或僅營運一棟建築的業主均可諮詢。也可先從定價最佳化或清潔等單項服務開始匯入。",
     "ko": "네. 객실 10실 내외의 시설이나 1개 동만 운영하는 경우도 상담 가능합니다. 우선 요금 설정 재검토나 청소만 의뢰하는 등 부분적인 도입도 가능합니다.",
     "locked": true
+  },
+  "4f55b889939d000a": {
+    "ja": "はじめから全施設・全部門に広げる必要はありません。一つの施設、一つの部門から始めて、続けられる形になってから広げます。",
+    "locked": false,
+    "zh": "不需要从一开始就扩展到所有设施和部门。从一个设施、一个部门开始，等可以持续进行后再扩展。",
+    "zh-Hant": "",
+    "en": "There is no need to expand to all facilities and departments from the beginning. We start with one facility or department and expand once it is running smoothly.",
+    "th": ""
+  },
+  "dd2c4b64de8b81ca": {
+    "ja": "まず、現在の運用を見せてください。",
+    "locked": false,
+    "zh": "首先，请展示当前的运营情况。",
+    "zh-Hant": "",
+    "en": "First, please show us your current operations.",
+    "th": ""
   },
   "57e80401501e76c2": {
     "ja": "まずは、いまの数字を見せてください。",
@@ -514,6 +618,14 @@
     "zh-Hant": "負責用品、消耗品及業務用資材的策劃與採購，包括進口商品，在品質與單價之間取得平衡進行選定。",
     "ko": "어메니티, 소모품, 업무용 자재의 기획과 매입. 수입품을 포함하여 품질과 객단가의 균형으로 선정합니다.",
     "locked": true
+  },
+  "b8b53aa944534fd8": {
+    "ja": "アメニティ・備品の在庫管理",
+    "locked": false,
+    "zh": "洗浴用品·用品的库存管理",
+    "zh-Hant": "",
+    "en": "Inventory management of amenities and supplies",
+    "th": ""
   },
   "e3b896ea0748c98e": {
     "ja": "アメニティ・消耗品・備品の調達",
@@ -758,6 +870,22 @@
     "ko": "스텍(stek)은 'Stay(숙박)'와 'Technology(기술)'를 결합한 사명입니다. 기술만으로도, 근성만으로도 지속되지 않는 숙박 사업을 두 바퀴로 지탱하는 회사가 되고자 합니다.",
     "locked": true
   },
+  "664e39d2aa7fa880": {
+    "ja": "スマートフォンで、見たことを選ぶだけで記録できます。電波が届かない客室でも入力でき、7言語で表示されます。",
+    "locked": false,
+    "zh": "仅需在智能手机上选择看到的内容即可记录。即使在信号无法到达的房间也能输入，支持7种语言显示。",
+    "zh-Hant": "",
+    "en": "You can record what you see by selecting options on a smartphone. Input is possible even in rooms without signal, and it is displayed in seven languages.",
+    "th": ""
+  },
+  "d7645c544b8304b2": {
+    "ja": "チェックリストによる点検と再清掃",
+    "locked": false,
+    "zh": "通过检查表进行检查和重新清洁",
+    "zh-Hant": "",
+    "en": "Inspection and re-cleaning through checklists",
+    "th": ""
+  },
   "923240f45421a658": {
     "ja": "ハウスキーピング部門の運営受託",
     "en": "Outsourced Operation of the Housekeeping Department",
@@ -794,6 +922,14 @@
     "zh": "确认前台、清洁、检查、布草、用品的实际流程，设计不会过度增加输入的机制。不会设计出剥夺清洁人员每间客房使用时间的方案。",
     "zh-Hant": "確認櫃台、清潔、檢查、布草、用品的實際流程，設計不會過度增加輸入的機制。不會設計出剝奪清潔人員每間客房使用時間的方案。",
     "en": "We confirm the actual flow of front desk, cleaning, inspection, linen, and supplies, and create a system that does not overburden input. We will not design in a way that takes away the time cleaning staff use per room.",
+    "th": ""
+  },
+  "4632752e6e4538a5": {
+    "ja": "フロントと清掃会社の認識がずれる",
+    "locked": false,
+    "zh": "前台与清洁公司的认知出现偏差",
+    "zh-Hant": "",
+    "en": "The understanding between the front desk and the cleaning company is misaligned",
     "th": ""
   },
   "474701781cbfe37e": {
@@ -907,6 +1043,14 @@
     "en": "Can be used by both the hotel side and the companies supporting the front line.",
     "th": ""
   },
+  "9aba04c044c807a5": {
+    "ja": "ホテル現場運営プラットフォーム",
+    "locked": false,
+    "zh": "酒店现场运营平台",
+    "zh-Hant": "",
+    "en": "Hotel site operation platform",
+    "th": ""
+  },
   "d13f0562d98399f0": {
     "ja": "ホテル運営を、\n現場から整える。",
     "locked": false,
@@ -978,6 +1122,14 @@
     "zh-Hant": "布草、毛巾、寢具、衣物等纖維製品的洗滌、租賃、保管及配送相關業務，以及寢具、備品、用品等業務用資材的策劃、進出口及銷售",
     "ko": "리넨, 타월, 침구, 의류 그 밖의 섬유제품의 세탁, 렌탈, 보관 및 배송에 관한 업무 그리고 침구, 비품, 어메니티용품 그 밖의 업무용 자재의 기획, 수출입 및 판매",
     "locked": true
+  },
+  "8fc22a6fe5938b2b": {
+    "ja": "リネンの在庫・回収・納品管理",
+    "locked": false,
+    "zh": "布草的库存·回收·送货管理",
+    "zh-Hant": "",
+    "en": "Management of linen inventory, collection, and delivery",
+    "th": ""
   },
   "f5c9ef8158e24bfa": {
     "ja": "リネンサプライ・洗濯・配送",
@@ -1087,6 +1239,14 @@
     "ko": "로비, 복도, 욕장, 쓰레기 동선까지 포함한 일상 청소와 정기 청소를 진행합니다.",
     "locked": true
   },
+  "18f0132e1e2cb59b": {
+    "ja": "一つの施設、一つの部門から試します。導入研修は現場のスタッフの母語で行います。",
+    "locked": false,
+    "zh": "从一个设施、一个部门开始试用。导入培训将使用现场员工的母语进行。",
+    "zh-Hant": "",
+    "en": "We will try it with one facility or department. Training will be conducted in the native language of the on-site staff.",
+    "th": ""
+  },
   "eb7a9f52e33d07c3": {
     "ja": "一度にすべてを入れ替えることはしません。既存のシステムや取引先を活かしたまま、効果の出る順に組み替えていきます。",
     "en": "We never replace everything at once. Keeping your existing systems and partners in place, we rebuild in the order that delivers results.",
@@ -1109,6 +1269,14 @@
     "zh": "整理问题和遗漏物品的应对措施",
     "zh-Hant": "整理問題和遺漏物品的應對措施",
     "en": "Summarize responses to issues and missing items.",
+    "th": ""
+  },
+  "c3e5059bd90fad40": {
+    "ja": "不具合・汚損・忘れ物の報告が分散する",
+    "locked": false,
+    "zh": "问题、污损和遗漏物品的报告分散",
+    "zh-Hant": "",
+    "en": "Reports of defects, damage, and lost items are scattered",
     "th": ""
   },
   "b5508fe6f99aedd2": {
@@ -1221,6 +1389,14 @@
     "locked": true,
     "zh-Hant": "人手不足，營運難以為繼"
   },
+  "d7f2557a9fb28b94": {
+    "ja": "人員配置とシフト",
+    "locked": false,
+    "zh": "人员配置与排班",
+    "zh-Hant": "",
+    "en": "Staff scheduling and shifts",
+    "th": ""
+  },
   "0e304fb2996e42ed": {
     "ja": "代表メッセージ",
     "en": "Message from the President",
@@ -1300,12 +1476,28 @@
     "ko": "회사 개요",
     "locked": true
   },
+  "05ef349b9adcef23": {
+    "ja": "使えません。記録を清掃スタッフ個人の評価に使わない設計にしています。個人の順位付けや、個人単位の作業時間の集計は行いません。記録の正確さを保つための前提であり、清掃会社にとっては、発注元が従業員個人を特定できないという契約上の安心材料にもなります。",
+    "locked": false,
+    "zh": "不可以。我们设计时并未将记录用于清洁员工个人的评估。不会进行个人排名或按个人统计工作时间。这是保持记录准确性的前提，对清洁公司而言，也是发包方无法识别员工个人的合同上的安心保障。",
+    "zh-Hant": "",
+    "en": "It cannot be used. It is designed not to use the records for evaluating individual cleaning staff. We do not rank individuals or aggregate work time per individual. This is a prerequisite for maintaining the accuracy of the records, and it also provides contractual reassurance for the cleaning company that the client cannot identify individual employees.",
+    "th": ""
+  },
   "d3aaeac8f1185045": {
     "ja": "価格の判断を、勘から数字へ。",
     "en": "Turning pricing decisions from gut feeling into numbers.",
     "zh": "让价格决策从凭经验走向靠数据。",
     "ko": "가격 판단을, 감이 아닌 숫자로.",
     "zh-Hant": "讓價格決策從憑經驗走向靠資料。"
+  },
+  "9281fbd1254edd6e": {
+    "ja": "修繕の発注と対応履歴",
+    "locked": false,
+    "zh": "维修的下单与处理记录",
+    "zh-Hant": "",
+    "en": "Maintenance requests and response history",
+    "th": ""
   },
   "289d8e1878779465": {
     "ja": "個人情報の取扱いに関するお問い合わせは、当社ウェブサイトのお問い合わせフォームよりご連絡ください。",
@@ -1329,6 +1521,14 @@
     "zh-Hant": "備品與用品採購",
     "ko": "비품·어메니티 조달",
     "locked": true
+  },
+  "a6b4d3971e1f6cf3": {
+    "ja": "入室、作業、チェックリスト、写真、忘れ物、不具合をスマートフォンから記録します。",
+    "locked": false,
+    "zh": "通过智能手机记录入住、工作、检查清单、照片、遗漏物品和问题。",
+    "zh-Hant": "",
+    "en": "Record check-in, work, checklists, photos, missed items, and issues from a smartphone.",
+    "th": ""
   },
   "1205ffdde4ae37b0": {
     "ja": "公式サイト、予約導線、館内案内、問い合わせ対応を日・英・簡体・繁体・韓の5言語で標準構築します。訪日客比率の高い都市部・観光地の施設に適しています。",
@@ -1430,6 +1630,14 @@
     "ko": "공용부 청소·위생 관리",
     "locked": true
   },
+  "f45d1c02c103a031": {
+    "ja": "写真付きの証跡・不具合報告",
+    "locked": false,
+    "zh": "带有照片的证据及问题报告",
+    "zh-Hant": "",
+    "en": "Evidence and issue reports with photos",
+    "th": ""
+  },
   "b57a88e8ebdda2bd": {
     "ja": "出口戦略のご相談",
     "en": "Exit Strategy Consultation",
@@ -1452,6 +1660,22 @@
     "zh-Hant": "從首次諮詢到正式營運，標準週期約為60至90天。我們也可協調從現有系統遷移及避開旺季切換的時間安排。",
     "ko": "최초 상담부터 운영 개시까지 표준적으로 약 60~90일이 소요됩니다. 기존 시스템에서의 이전이나 성수기를 피한 전환도 조율합니다.",
     "locked": true
+  },
+  "266c06cbbbc3231e": {
+    "ja": "利用の流れ",
+    "locked": false,
+    "zh": "使用流程",
+    "zh-Hant": "",
+    "en": "Usage flow",
+    "th": ""
+  },
+  "837c48d46480b62f": {
+    "ja": "利用者別のメリット",
+    "locked": false,
+    "zh": "不同使用者的益处",
+    "zh-Hant": "",
+    "en": "Benefits by user type",
+    "th": ""
   },
   "19f9058db14412b2": {
     "ja": "前各号に附帯関連する一切の業務",
@@ -1610,12 +1834,36 @@
     "en": "Inventory checks rely on staff memory, and shortages become more likely during busy days.",
     "th": ""
   },
+  "5a9e99727f4ec152": {
+    "ja": "基本機能",
+    "locked": false,
+    "zh": "基本功能",
+    "zh-Hant": "",
+    "en": "Basic functions",
+    "th": ""
+  },
   "b586c5fce3db6118": {
     "ja": "報告と再清掃の指示、完了確認を同じ流れに乗せ、対応の状況を一か所で追えるようにします。",
     "locked": false,
     "zh": "将报告和重新清洁的指示、完成确认纳入同一流程，以便在一处跟踪应对情况。",
     "zh-Hant": "將報告和重新清潔的指示、完成確認納入同一流程，以便在一處跟蹤應對情況。",
     "en": "Align reports and instructions for re-cleaning and completion confirmation, allowing tracking of response status in one place.",
+    "th": ""
+  },
+  "a5728a23e9182048": {
+    "ja": "外国籍のスタッフが多いのですが、使えますか。",
+    "locked": false,
+    "zh": "有很多外籍员工，可以使用吗？",
+    "zh-Hant": "",
+    "en": "Many of the cleaning staff are foreign nationals. Can it be used?",
+    "th": ""
+  },
+  "c186bc62e11e7130": {
+    "ja": "外部パートナーとの範囲を限った共有",
+    "locked": false,
+    "zh": "与外部合作伙伴的有限共享",
+    "zh-Hant": "",
+    "en": "Limited sharing with external partners",
     "th": ""
   },
   "ab8df861437537e0": {
@@ -1681,12 +1929,52 @@
     "ko": "정관에 정한 사업 목적의 요지입니다.",
     "locked": true
   },
+  "c0150ea985ff399b": {
+    "ja": "客室10室程度の施設や、1棟のみの運営でもご相談いただけます。まずは1施設・1部門からお試しいただく形をおすすめしています。",
+    "locked": false,
+    "zh": "10间左右客房的设施或仅运营一栋建筑的设施也可以咨询。我们建议从一个设施、一个部门开始试用。",
+    "zh-Hant": "",
+    "en": "We can consult on facilities with around 10 guest rooms or those operating only one building. We recommend starting with one facility and one department.",
+    "th": ""
+  },
+  "8863be13e5c76e6b": {
+    "ja": "客室ごとに担当を割り当てます。当日の変更も画面から行えます。",
+    "locked": false,
+    "zh": "为每个房间分配负责人。当天的变更也可通过屏幕进行操作。",
+    "zh-Hant": "",
+    "en": "Assign staff to each room. Changes on the day can be made from the screen.",
+    "th": ""
+  },
+  "86d40d6efa084f0c": {
+    "ja": "客室ごとの清掃ステータス",
+    "locked": false,
+    "zh": "每间客房的清洁状态",
+    "zh-Hant": "",
+    "en": "Cleaning status per room",
+    "th": ""
+  },
   "8beb58ea65c440b2": {
     "ja": "客室ごとの清掃ステータス、担当者、チェックリストによる点検、写真をProofKeepingに残します。",
     "locked": false,
     "zh": "每间客房的清洁状态、负责人、检查清单和照片都会在ProofKeeping中保留。",
     "zh-Hant": "每間客房的清潔狀態、負責人、檢查清單和照片都會在ProofKeeping中保留。",
     "en": "Keep the cleaning status per room, assigned personnel, inspection by checklist, and photos in ProofKeeping.",
+    "th": ""
+  },
+  "43b73b9d95830f34": {
+    "ja": "客室ごとの状況をその場で確認でき、販売可能な客室を早く判断できます。清掃会社への依頼と結果が同じ画面に残ります。",
+    "locked": false,
+    "zh": "可以立即确认每个房间的情况，快速判断可销售的房间。向清洁公司提出的请求和结果会显示在同一屏幕上。",
+    "zh-Hant": "",
+    "en": "You can check the status of each room on-site and quickly determine available rooms for sale. Requests to the cleaning company and results are recorded on the same screen.",
+    "th": ""
+  },
+  "216a02cfc3316b5c": {
+    "ja": "客室と担当を登録する",
+    "locked": false,
+    "zh": "注册房间和负责人",
+    "zh-Hant": "",
+    "en": "Register rooms and staff",
     "th": ""
   },
   "6fc9c8d381123af3": {
@@ -1737,6 +2025,14 @@
     "ko": "객실 청소, 공용부 청소, 베드메이킹을 도급 방식으로 접수합니다. 당사의 현장 책임자가 인력 배치, 당일 진행, 마무리 확인까지 담당하여 시설 측의 관리 부담을 줄입니다. 리넨·타월 공급과 세탁, 어메니티 및 업무용 자재 조달도 함께 의뢰하실 수 있습니다.",
     "locked": true
   },
+  "315496d383cc7bc9": {
+    "ja": "客室清掃の状況、点検、写真、再清掃、不具合、忘れ物を、客室単位で記録します。フロント、清掃責任者、清掃スタッフが同じ情報を見ている状態をつくり、実施した内容を後から確認できる記録として残します。",
+    "locked": false,
+    "zh": "记录客房清洁状况、检查、照片、重新清洁、问题、遗漏物品，以客房为单位进行记录。使前台、清洁负责人和清洁员工处于查看相同信息的状态，并作为可事后确认执行内容的记录进行保存。",
+    "zh-Hant": "",
+    "en": "Records the status of guest room cleaning, inspection, photos, re-cleaning, defects, and lost items per room. Creates a state where the front desk, cleaning supervisor, and cleaning staff are viewing the same information, and retains this as a record that allows verification of the implemented content later.",
+    "th": ""
+  },
   "55f654e87f1982ea": {
     "ja": "客室清掃の進捗・点検・証跡から、リネン・備品・修繕まで。株式会社ステックは、宿泊施設の現場業務を、小さく始めて無理なくつなぐ仕組みを提供します。",
     "locked": false,
@@ -1752,6 +2048,14 @@
     "zh-Hant": "客房清潔與鋪床承包",
     "ko": "객실 청소·베드메이킹 도급",
     "locked": true
+  },
+  "f3c1472bd63c757d": {
+    "ja": "客室清掃・点検・証跡管理",
+    "locked": false,
+    "zh": "客房清洁、检查、证据管理",
+    "zh-Hant": "",
+    "en": "Guest room cleaning, inspection, and evidence management",
+    "th": ""
   },
   "217531ad210d4eef": {
     "ja": "客室清掃会社",
@@ -1971,6 +2275,14 @@
     "en": "Target Guests",
     "th": ""
   },
+  "bdfbb1e715327cca": {
+    "ja": "対象範囲の整理",
+    "locked": false,
+    "zh": "范围整理",
+    "zh-Hant": "",
+    "en": "Clarification of Scope",
+    "th": ""
+  },
   "948b67c94e7cb1ac": {
     "ja": "専任の宅地建物取引士と事務所の要件を満たしたうえで申請します。取得までは仲介業務を行いません。",
     "en": "We apply after meeting the requirements for a licensed real estate transaction specialist and office. We do not conduct brokerage business until the license is obtained.",
@@ -2051,6 +2363,14 @@
     "en": "Flow to Start Small",
     "th": ""
   },
+  "c6cebbe9584a9357": {
+    "ja": "小規模で開始",
+    "locked": false,
+    "zh": "小规模启动",
+    "zh-Hant": "",
+    "en": "Start with a Small Scale",
+    "th": ""
+  },
   "4eba5a836e5459b6": {
     "ja": "小規模な施設でも依頼できますか。",
     "en": "Can you take on small properties?",
@@ -2058,6 +2378,14 @@
     "zh-Hant": "小規模設施也可以委託嗎？",
     "ko": "소규모 시설도 의뢰할 수 있나요?",
     "locked": true
+  },
+  "c4d8d2fa5188c992": {
+    "ja": "小規模な施設でも導入できますか。",
+    "locked": false,
+    "zh": "小型设施也可以导入吗？",
+    "zh-Hant": "",
+    "en": "Can it be implemented in small facilities?",
+    "th": ""
   },
   "26f2e3ff412e167c": {
     "ja": "平日 10:00 – 18:00",
@@ -2154,6 +2482,14 @@
     "ko": "반드시 필요하지는 않습니다. 기존 PMS나 사이트 컨트롤러를 그대로 활용하면서 요금 최적화, 공식 사이트, 현장 지원만 맡기는 방식도 선택할 수 있습니다.",
     "locked": true
   },
+  "139dd06f88af7813": {
+    "ja": "必要ありません。予約、料金、会計はこれまでどおりPMSで行っていただき、ProofKeepingは客室で起きたことの記録を受け持ちます。PMSを置き換える製品ではありません。",
+    "locked": false,
+    "zh": "不需要。预订、费用、会计仍请通过PMS进行，ProofKeeping负责记录客房内发生的事情。这不是替代PMS的产品。",
+    "zh-Hant": "",
+    "en": "Not required. Reservations, charges, and accounting will continue to be handled via PMS, and ProofKeeping will take responsibility for recording what happened in the guest rooms. It is not a product that replaces PMS.",
+    "th": ""
+  },
   "8474501220fe6b18": {
     "ja": "必要な部分だけの単独導入も、全体の一括委託も可能です。",
     "en": "You can adopt just the parts you need, or entrust everything to us at once.",
@@ -2186,6 +2522,14 @@
     "ko": "필수 항목이 입력되지 않았습니다.",
     "locked": true
   },
+  "4f6faffc38df4cbc": {
+    "ja": "忘れ物の記録",
+    "locked": false,
+    "zh": "遗漏物品的记录",
+    "zh-Hant": "",
+    "en": "Record of lost items",
+    "th": ""
+  },
   "fe837ba65f4bd439": {
     "ja": "所在地",
     "en": "Location",
@@ -2208,6 +2552,22 @@
     "zh": "可通过一个流程管理任务分配、工作汇报、检查和重新清洁，并以记录形式展示服务质量。",
     "zh-Hant": "可透過一個流程管理任務分配、工作彙報、檢查和重新清潔，並以記錄形式展示服務品質。",
     "en": "Assign tasks, report work, inspect, and re-clean in a single workflow, and record service quality for presentation.",
+    "th": ""
+  },
+  "04c335ba633126fa": {
+    "ja": "担当割り当てから作業報告、点検、再清掃までを一つの流れで管理できます。実施した内容を発注元へ記録として提示できます。",
+    "locked": false,
+    "zh": "可以在一个流程中管理从人员分配到工作汇报、检查、重新清洁的所有环节。可以将实施内容作为记录提供给委托方。",
+    "zh-Hant": "",
+    "en": "Manage from staff assignments to work reports, inspections, and re-cleaning as a single process. You can present the contents of implemented tasks as records to the ordering party.",
+    "th": ""
+  },
+  "180640492e94febc": {
+    "ja": "担当者と作業状況の共有",
+    "locked": false,
+    "zh": "负责人与工作状态的共享",
+    "zh-Hant": "",
+    "en": "Sharing of staff and work status",
     "th": ""
   },
   "e6c6b607e805e250": {
@@ -2283,6 +2643,14 @@
     "ko": "신규 개업이나, 또는 전용 후의 시작 단계에서는 개업까지의 일정표 작성, 감독자와 직원 채용·교육, 업무 매뉴얼과 근무 시간표 정비, PMS·예약 기반·사이트 컨트롤러의 초기 설정, 납품업체 선정과 리넨·비품 조달, 개업 전 판매(프리오픈 세일)의 준비까지 담당합니다. 용도 변경과 관련된 건축 확인, 여관업법·소방법 관련 승인, 그리고 무엇보다도 숙박시설로 성립할 수 있는지의 판단은 \"부동산 활용·컨설팅\"에서 받아들여, 승인 취득 후 운영 체제 구축은 여기서 이어갑니다.",
     "th": ""
   },
+  "f7884e500d1038cd": {
+    "ja": "施設、客室、清掃スタッフを登録します。客室はCSVでまとめて取り込めます。",
+    "locked": false,
+    "zh": "注册设施、房间和清洁人员。房间信息可通过CSV文件批量导入。",
+    "zh-Hant": "",
+    "en": "Register facilities, rooms, and cleaning staff. Rooms can be imported in bulk via CSV.",
+    "th": ""
+  },
   "9a70e694562392da": {
     "ja": "施設ごとに分かれていた進捗と実績を共通の形にまとめ、報告と請求の作成につなげます。",
     "locked": false,
@@ -2314,6 +2682,14 @@
     "ko": "시설 규모, 객실 수, 대상 범위에 따라 다릅니다. 최초 청취 이후 월 이용료와 초기 비용을 명시한 견적을 제공합니다. 청취와 개산 제시는 무료입니다.",
     "locked": true
   },
+  "fcaa2a4e8994eb1f": {
+    "ja": "施設の規模、客室数、対象範囲によって異なります。記録の件数や写真の枚数では課金しません。初回のご相談後に、月額と初期費用を明記したお見積りをお出しします。ご相談と概算のご提示は無料です。",
+    "locked": false,
+    "zh": "根据设施规模、客房数量和适用范围而有所不同。不会根据记录数量或照片数量收费。在首次咨询后，我们会提供包含月费和初期费用的报价单。咨询和概算报价是免费的。",
+    "zh-Hant": "",
+    "en": "It varies depending on the facility size, number of guest rooms, and scope of application. We do not charge based on the number of records or photos. After the initial consultation, we will provide a quotation with monthly fees and initial costs. Consultation and preliminary estimates are free of charge.",
+    "th": ""
+  },
   "7ed4e437c6d5187d": {
     "ja": "施設はあるが、運営を任せたい",
     "en": "We own the property but want operations handled",
@@ -2321,6 +2697,14 @@
     "ko": "시설은 있지만 운영을 맡기고 싶다",
     "locked": true,
     "zh-Hant": "已有物業，希望委託營運"
+  },
+  "3eda6191b5c86b7f": {
+    "ja": "施設単位での作業実績と原価の把握",
+    "locked": false,
+    "zh": "按设施单位掌握作业成果与成本",
+    "zh-Hant": "",
+    "en": "Tracking of work records and costs by facility",
+    "th": ""
   },
   "b734708e66c1f8ff": {
     "en": "In addition to capturing branded searches for the property's name, we also capture the segment searching by \"area + purpose.\" We handle the technical side—page structure and internal links, structured data, page speed (Core Web Vitals), and multilingual hreflang settings—and we also manage Google Business Profile (MEO) information and review responses, and, as needed, listing ad operation.",
@@ -2476,6 +2860,14 @@
     "zh": "用于更新的管理界面",
     "zh-Hant": "用於更新的管理介面",
     "en": "Management interface for updates",
+    "th": ""
+  },
+  "8c1771cb9da8eb58": {
+    "ja": "最初にシステム化する業務と、これまでの方法を残す業務を分けます。すべてを置き換えることはしません。",
+    "locked": false,
+    "zh": "区分出首先系统化的业务和保留原有方法的业务。不会全部替换。",
+    "zh-Hant": "",
+    "en": "We will separate the business processes to be systematized and those to remain as they are. We will not replace everything.",
     "th": ""
   },
   "738580c4b95b6d58": {
@@ -2675,6 +3067,14 @@
     "ko": "법인 대상 카리스",
     "locked": true
   },
+  "5cdd495a0d3c4025": {
+    "ja": "清掃、点検、リネン、備品、修繕、作業実績を施設単位でまとめます。ホテル運営会社と外部パートナーが、必要な範囲だけを共有できる現場運営基盤を目指します。",
+    "locked": false,
+    "zh": "将清洁、检查、布草、用品、维修、作业成果按设施单位进行汇总。旨在为酒店运营公司和外部合作伙伴提供仅共享必要范围的现场运营基础。",
+    "zh-Hant": "",
+    "en": "Summarize cleaning, inspection, linen, amenities, maintenance, and work records by facility. Aiming to create a site operation foundation that allows hotel operation companies and external partners to share only the necessary scope.",
+    "th": ""
+  },
   "9f7850fa0d400089": {
     "ja": "清掃だけ、リネンだけの依頼は可能ですか。",
     "en": "Can we request only cleaning or only linen services?",
@@ -2683,12 +3083,68 @@
     "ko": "청소만, 리넨만 의뢰하는 것도 가능한가요?",
     "locked": true
   },
+  "fd841dc396e45187": {
+    "ja": "清掃の先にある現場業務を、ひとつにつなぐ。",
+    "locked": false,
+    "zh": "将清洁之后的现场业务统一整合",
+    "zh-Hant": "",
+    "en": "Connect all on-site operations beyond cleaning",
+    "th": ""
+  },
+  "51f5907892cdfa08": {
+    "ja": "清掃の現場で毎日使う操作から、責任者が確認する画面までを含みます。",
+    "locked": false,
+    "zh": "包括清洁现场每天使用的操作，以及负责人确认的界面。",
+    "zh-Hant": "",
+    "en": "Includes daily operations used at the cleaning site and the screen for supervisors to confirm.",
+    "th": ""
+  },
   "6d7e58ede64560f9": {
     "ja": "清掃の記録が定着した施設から、在庫や人員配置をSTEK OPSでつなぐことを検討します。",
     "locked": false,
     "zh": "从清洁记录已固定的设施开始，考虑在STEK OPS中连接库存和人员配置。",
     "zh-Hant": "從清潔記錄已固定的設施開始，考慮在STEK OPS中連線庫存和人員配置。",
     "en": "Consider connecting inventory and staff scheduling via STEK OPS from facilities where cleaning records are established.",
+    "th": ""
+  },
+  "fa4d2d7dd60a3bd7": {
+    "ja": "清掃の進捗を電話・紙・チャットで確認している",
+    "locked": false,
+    "zh": "通过电话、纸张或聊天确认清洁进度",
+    "zh-Hant": "",
+    "en": "Confirming the progress of cleaning by phone, paper, or chat",
+    "th": ""
+  },
+  "ab4561d751daae1f": {
+    "ja": "清掃スタッフ",
+    "locked": false,
+    "zh": "清洁员工",
+    "zh-Hant": "",
+    "en": "Cleaning staff",
+    "th": ""
+  },
+  "a19e473743a831a3": {
+    "ja": "清掃スタッフが使う画面は7言語で表示できます。言語による機能の制限はありません。導入研修も、現場で使われている言語で実施します。",
+    "locked": false,
+    "zh": "清洁员工使用的界面可显示为7种语言。不会因语言而限制功能。导入培训也将使用现场使用的语言进行。",
+    "zh-Hant": "",
+    "en": "The screen used by the cleaning staff is displayed in seven languages. There are no functional restrictions based on language. Training is conducted in the language used on-site.",
+    "th": ""
+  },
+  "63fbcb2cd1d5c68b": {
+    "ja": "清掃スタッフの評価に使えますか。",
+    "locked": false,
+    "zh": "可以用于清洁员工的评估吗？",
+    "zh-Hant": "",
+    "en": "Can it be used for evaluating cleaning staff?",
+    "th": ""
+  },
+  "605aee1a8e0c6271": {
+    "ja": "清掃スタッフはスマートフォンの縦画面だけで作業します。数値の入力はキーボードを使わず、選択とステッパーで完了します。責任者と運営側はPCの一覧画面で、施設・客室・担当・状態を確認します。",
+    "locked": false,
+    "zh": "清洁员工仅使用智能手机的竖屏进行操作。数值输入不使用键盘，而是通过选择和步骤器完成。负责人和运营方可在电脑的列表界面确认设施、房间、负责人和状态。",
+    "zh-Hant": "",
+    "en": "Cleaning staff perform tasks using only the vertical screen of a smartphone. Numerical input is completed using selection and a stepper, without a keyboard. Supervisors and management confirm facilities, rooms, staff, and status on a PC list screen.",
     "th": ""
   },
   "b29172e814fff759": {
@@ -2724,6 +3180,22 @@
     "en": "Record cleaning and inspection activities.",
     "th": ""
   },
+  "700c46a665892939": {
+    "ja": "清掃会社ですが、契約できますか。",
+    "locked": false,
+    "zh": "清洁公司也可以签约吗？",
+    "zh-Hant": "",
+    "en": "Can cleaning companies also sign a contract?",
+    "th": ""
+  },
+  "5aa779b1e7f3e0ca": {
+    "ja": "清掃品質や作業実績を客観的に確認できない",
+    "locked": false,
+    "zh": "无法客观确认清洁质量和工作成果",
+    "zh-Hant": "",
+    "en": "Unable to objectively confirm cleaning quality and work performance",
+    "th": ""
+  },
   "aff7fded9dd936d9": {
     "ja": "清掃完了がフロントへすぐ伝わらない",
     "locked": false,
@@ -2738,6 +3210,14 @@
     "zh": "由清洁人员以外的专人依照检查清单进行验收，并附照片记录。合同中明确规定了出现问题时的重新清洁规则、备品损坏或物品遗失的处理方式，以及投诉发生时的初步应对与费用分担界限，避免出现“说了没说”的争议。每月汇总问题倾向，并反馈到员工培训中。",
     "ko": "청소 담당자와는 별도의 담당자가 체크리스트에 따라 점검하고 사진과 함께 기록합니다. 미흡한 점이 발견된 경우의 재청소 규칙, 비품 파손이나 분실물 처리, 클레임 발생 시 1차 대응과 비용 부담의 경계까지 계약에 포함하여 '말했다·안 했다'와 같은 분쟁이 발생하지 않도록 합니다. 지적 사항의 경향은 매월 정리하여 교육에 반영합니다.",
     "zh-Hant": "由清潔人員以外的專人依照檢查清單進行驗收，並附照片記錄。合約中明確規定了出現問題時的重新清潔規則、備品損壞或物品遺失的處理方式，以及投訴發生時的初步應對與費用分擔界限，避免出現「說了沒說」的爭議。每月彙總問題傾向，並反饋到員工培訓中。"
+  },
+  "0939ac2ef07c41a7": {
+    "ja": "清掃状況、担当者、点検、写真、再清掃、不具合、忘れ物を、客室単位で記録します。フロント、清掃責任者、清掃スタッフが、同じ情報を確認できる状態をつくります。",
+    "locked": false,
+    "zh": "记录客房的清洁情况、负责人、检查、照片、重新清洁、问题、遗漏物品，使前台、清洁负责人、清洁员工能够确认相同的信息。",
+    "zh-Hant": "",
+    "en": "Records cleaning status, staff, inspection, photos, re-cleaning, issues, and lost items per room. Creates a state where front desk, cleaning supervisor, and cleaning staff can all confirm the same information.",
+    "th": ""
   },
   "f906692fad25d5ed": {
     "ja": "清掃状況をリアルタイムで確認し、販売可能な客室を早く判断できます。",
@@ -2779,6 +3259,22 @@
     "en": "No records are kept of inspections and re-cleaning.",
     "th": ""
   },
+  "8f2d268c3ab1170b": {
+    "ja": "点検漏れや再清掃の履歴が残らない",
+    "locked": false,
+    "zh": "检查遗漏和重新清洁的记录无法保留",
+    "zh-Hant": "",
+    "en": "Inspection omissions and re-cleaning history are not recorded",
+    "th": ""
+  },
+  "f8485634a8cc33bb": {
+    "ja": "無料で相談する",
+    "locked": false,
+    "zh": "免费咨询",
+    "zh-Hant": "",
+    "en": "Consult for free",
+    "th": ""
+  },
   "1514cadbd785742e": {
     "ja": "無料相談",
     "en": "Free Consultation",
@@ -2818,6 +3314,14 @@
     "ko": "현재 게재된 공지사항이 없습니다.",
     "zh-Hant": "目前暫無釋出的通知。"
   },
+  "697abf0b7cec3ab6": {
+    "ja": "現在の清掃、点検、連絡、在庫管理の方法を伺います。オンラインで60分程度、費用はかかりません。",
+    "locked": false,
+    "zh": "询问目前的清洁、检查、联络、库存管理方法。在线进行约60分钟，不产生费用。",
+    "zh-Hant": "",
+    "en": "We will ask about your current cleaning, inspection, communication, and inventory management methods. It takes about 60 minutes online, and there is no cost.",
+    "th": ""
+  },
   "8944bcf1dbb4c9c6": {
     "ja": "現在の稼働率、単価、販売チャネル、人員体制、課題を伺います。オンラインで60分程度、費用はかかりません。",
     "en": "We ask about your current occupancy rate, average rate, sales channels, staffing, and challenges. About 60 minutes online, at no cost.",
@@ -2832,6 +3336,14 @@
     "zh": "我们也支持从现有运营公司手中接手运营的形式。我们会梳理交接期间的预订数据、价格设置、员工雇用关系及与合作方的关系，在不停止营业的情况下完成切换。切换前，我们会将当前的损益状况与本公司承接后的预测并列呈现供您参考。",
     "ko": "현재 운영회사로부터 인수인계받는 형태의 위탁운영에도 대응합니다. 인수인계 기간 중의 예약 데이터, 요금 설정, 직원 고용, 거래처와의 관계를 정리하여 영업을 중단하지 않고 전환합니다. 전환 전에는 현재의 손익과 당사가 인수했을 경우의 전망을 함께 제시합니다.",
     "zh-Hant": "我們也支援從現有營運公司手中接手營運的形式。我們會梳理交接期間的預訂資料、價格設定、員工僱用關係及與合作方的關係，在不停止營業的情況下完成切換。切換前，我們會將當前的損益狀況與本公司承接後的預測並列呈現供您參考。"
+  },
+  "a9cf583c7d0fb42d": {
+    "ja": "現在は開発中で、先行導入のご相談を承っている段階です。ご利用の環境と対象施設を伺ったうえで、開始できる時期を個別にご相談します。",
+    "locked": false,
+    "zh": "目前正在开发中，现阶段接受提前导入的咨询。在了解您的使用环境和适用设施后，将单独商讨开始时间。",
+    "zh-Hant": "",
+    "en": "It is currently under development, and we are accepting inquiries for early implementation. We will consult individually on the start date based on your environment and target facilities.",
+    "th": ""
   },
   "bd9dfcf728b371bf": {
     "ja": "現場から設計する",
@@ -2848,6 +3360,14 @@
     "ko": "현장이 돌아가는 설계만 제안합니다",
     "locked": true,
     "zh-Hant": "只提出現場能夠運轉的方案"
+  },
+  "f46d416e5ce04874": {
+    "ja": "現場で記録する",
+    "locked": false,
+    "zh": "现场记录",
+    "zh-Hant": "",
+    "en": "Record on site",
+    "th": ""
   },
   "ef10c14ca802d72c": {
     "ja": "現場に必要な範囲から、始められます。",
@@ -2881,6 +3401,14 @@
     "ko": "현황 분석 및 제안",
     "locked": true
   },
+  "ac98ce07908e92b6": {
+    "ja": "現状確認",
+    "locked": false,
+    "zh": "现状确认",
+    "zh-Hant": "",
+    "en": "Current Situation Confirmation",
+    "th": ""
+  },
   "84a7f375c190e160": {
     "ja": "用途地域、建築基準法上の用途と検査済証の有無、消防設備の要件、延床面積と用途変更の要否、近隣への影響を確認し、旅館業法・住宅宿泊事業法・特区民泊のどの枠組みが取り得るかを整理します。初期の診断は費用をいただかずに行います。",
     "en": "We check the zoning, the use classification and presence of a certificate of inspection under the Building Standards Act, fire equipment requirements, total floor area and the need for a change of use, and the impact on neighboring properties, and organize which framework—the Hotel Business Act, the Private Lodging Business Act, or special-zone minpaku—the property can operate under. The initial assessment is provided free of charge.",
@@ -2895,6 +3423,30 @@
     "zh-Hant": "結合用途地域及建築用途，評估該物件是否能夠取得旅館業許可。",
     "ko": "용도지역과 건물 용도를 고려하여 여관업 허가 취득이 가능한 물건인지 여부까지 포함하여 검토합니다.",
     "locked": true
+  },
+  "4c847bf43c40aca5": {
+    "ja": "画面の写真は準備中です。先行導入のご相談時に、実際の画面をお見せしています。",
+    "locked": false,
+    "zh": "屏幕上的照片正在准备中。在提前导入的咨询过程中，我们会展示实际的屏幕画面。",
+    "zh-Hant": "",
+    "en": "The screen image is being prepared. During consultations for early implementation, we show the actual screen.",
+    "th": ""
+  },
+  "170f73cde88731a7": {
+    "ja": "画面イメージ",
+    "locked": false,
+    "zh": "界面示意图",
+    "zh-Hant": "",
+    "en": "Screen image",
+    "th": ""
+  },
+  "9dadd595d673c277": {
+    "ja": "確認のたびに手が止まり、フロントと清掃現場の双方に待ち時間が生まれます。",
+    "locked": false,
+    "zh": "每次确认时都会停下工作，导致前台和清洁现场双方都产生等待时间。",
+    "zh-Hant": "",
+    "en": "Each confirmation causes a pause, creating waiting times for both the front desk and the cleaning site.",
+    "th": ""
   },
   "ca5d4105df8a1465": {
     "ja": "稼働率と平均単価、清掃にかかっている費用。この3つが分かれば、改善できる幅はおおよそご説明できます。",
@@ -2911,6 +3463,14 @@
     "ko": "가동률·ADR·RevPAR부터 청소 단가까지, 같은 화면을 보며 논의합니다. 좋지 않은 숫자도 그대로 전해 드립니다.",
     "locked": true,
     "zh-Hant": "從入住率、ADR、RevPAR 到清掃單價，我們與您看著同一個畫面討論。不理想的數字，也會如實告知。"
+  },
+  "4954008ae7bf6349": {
+    "ja": "稼働記録との突き合わせ",
+    "locked": false,
+    "zh": "与运行记录的核对",
+    "zh-Hant": "",
+    "en": "Verification with operational records",
+    "th": ""
   },
   "95c2362157c994bb": {
     "ja": "空きビル、空き家、稼働の落ちた賃貸物件を宿泊施設へ転用します。用途地域と建物用途、検査済証の有無、消防法上の要件、200㎡超の用途変更にともなう建築確認申請を確認し、旅館業法（簡易宿所・旅館ホテル営業）、住宅宿泊事業法、特区民泊のどの枠組みで運営できるかを判定します。保健所・消防・建築指導課との事前相談、内装と備品の選定、開業前販売の立ち上げまで伴走します。",
@@ -3008,6 +3568,22 @@
     "ko": "제9조(본 방침의 변경)",
     "locked": true
   },
+  "c95ff23d8ec3c251": {
+    "ja": "紙、Excel、チャットを含め、いまどのように清掃や現場業務を管理しているかを確認し、最初に改善すべき範囲をご提案します。",
+    "locked": false,
+    "zh": "请确认目前如何管理清洁和现场业务，包括纸质文件、Excel、聊天等，并提出首先需要改进的方面。",
+    "zh-Hant": "",
+    "en": "We will check how you currently manage cleaning and on-site operations, including paper, Excel, and chat, and propose areas for improvement first.",
+    "th": ""
+  },
+  "7619629d4801fe2f": {
+    "ja": "紙とチャットに分かれ、対応がどこまで進んだかを追えなくなります。",
+    "locked": false,
+    "zh": "分别通过纸张和聊天进行，无法追踪处理进展到何处。",
+    "zh-Hant": "",
+    "en": "Divided between paper and chat, making it impossible to track how far the response has progressed.",
+    "th": ""
+  },
   "c4fb658a10db3bb9": {
     "ja": "紙・チャット・口頭に分かれ、対応がどこまで進んだか追えません。",
     "locked": false,
@@ -3102,12 +3678,28 @@
     "en": "You can check the progress, quality, cost, and status of external contractors for multiple facilities according to common standards.",
     "th": ""
   },
+  "434e65e69878b60b": {
+    "ja": "複数施設の進捗と実績を共通の形で確認できます。オーナーや委託先への報告に、記録をそのまま使えます。",
+    "locked": false,
+    "zh": "可以以统一的形式确认多个设施的进度和成果。向业主或委托方报告时，可以直接使用记录。",
+    "zh-Hant": "",
+    "en": "You can check progress and performance across multiple facilities in a common format. Records can be used directly for reports to owners and contractors.",
+    "th": ""
+  },
   "011271003f85580a": {
     "ja": "複数施設の進捗と請求をそろえる",
     "locked": false,
     "zh": "统一多个设施的进度和账单",
     "zh-Hant": "統一多個設施的進度和賬單",
     "en": "Coordinate progress and billing across multiple facilities.",
+    "th": ""
+  },
+  "ac3402f77cd07ac7": {
+    "ja": "複数施設の進捗確認",
+    "locked": false,
+    "zh": "多个设施的进度确认",
+    "zh-Hant": "",
+    "en": "Monitoring progress across multiple facilities",
     "th": ""
   },
   "31eecb3ddc6da901": {
@@ -3117,6 +3709,14 @@
     "zh-Hant": "語言",
     "ko": "언어",
     "locked": true
+  },
+  "6c646ce0ddfd6a6d": {
+    "ja": "記録が定着したことを確認してから、対象の施設や範囲を広げます。",
+    "locked": false,
+    "zh": "在确认记录已稳定后，再扩大适用的设施或范围。",
+    "zh-Hant": "",
+    "en": "Once we confirm that the records have been established, we will expand the scope of facilities or areas.",
+    "th": ""
   },
   "f364fa327de9b491": {
     "ja": "設定したルールと需要予測にもとづき、料金を自動で更新します。上限・下限は施設側で必ず制御できる設計です。",
@@ -3181,6 +3781,22 @@
     "ko": "자세히 보기",
     "locked": true
   },
+  "ee3792836b510a90": {
+    "ja": "説明できる材料がないため、話し合いが印象や記憶に頼ることになります。",
+    "locked": false,
+    "zh": "因为没有可以说明的材料，讨论将依赖于印象和记忆。",
+    "zh-Hant": "",
+    "en": "Without materials to explain, discussions rely on impressions and memories.",
+    "th": ""
+  },
+  "dd3c5f6248642fff": {
+    "ja": "誰がいつ確認し、何をやり直したかを、後から確かめる手段がありません。",
+    "locked": false,
+    "zh": "无法事后确认是谁在何时进行了确认，以及重新做了什么。",
+    "zh-Hant": "",
+    "en": "There is no way to verify who confirmed what and what was redone at what time later.",
+    "th": ""
+  },
   "5da2450deeb6faa8": {
     "ja": "誰がいつ確認したかを、後から確かめる手段がありません。",
     "locked": false,
@@ -3219,6 +3835,14 @@
     "zh": "租赁方式・整栋租赁",
     "ko": "임대차(리스) 방식·일괄 임차",
     "zh-Hant": "租賃方式・整棟租賃"
+  },
+  "09f8692a5bced3e0": {
+    "ja": "資料を請求する",
+    "locked": false,
+    "zh": "申请资料",
+    "zh-Hant": "",
+    "en": "Request information",
+    "th": ""
   },
   "45045706e47f6882": {
     "ja": "資本金",
@@ -3366,6 +3990,14 @@
     "ko": "운영자로서의 관점",
     "locked": true
   },
+  "d0d6179c69b5f5ac": {
+    "ja": "運用を見ながら拡張",
+    "locked": false,
+    "zh": "根据运行情况扩展",
+    "zh-Hant": "",
+    "en": "Expand While Monitoring Operations",
+    "th": ""
+  },
   "fe1809427246ce46": {
     "ja": "運用開始",
     "en": "Launch",
@@ -3413,6 +4045,14 @@
     "zh-Hant": "開業支援（預開業）",
     "en": "Pre-opening support (pre-opening)",
     "ko": "개업 지원(프리오픈)",
+    "th": ""
+  },
+  "5a349c30012f0598": {
+    "ja": "開発中・先行導入のご相談受付中",
+    "locked": false,
+    "zh": "开发中·提前导入的咨询受理中",
+    "zh-Hant": "",
+    "en": "Accepting consultations for development and early implementation",
     "th": ""
   },
   "7177787c6e84b7f6": {
